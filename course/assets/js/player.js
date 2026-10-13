@@ -77,6 +77,7 @@ function renderLine(i){
 function prefetch(i){
   if (S.voice !== 'audio' || !S.data) return;
   for (let k=i; k<i+3 && k<S.data.lines.length; k++){
+    if (!S.data.lines[k].a) continue;
     const src = audioSrc(S.seg.id, k);
     if (!S.cache[src]) { const a = new Audio(); a.preload = 'auto'; a.src = src; S.cache[src] = a; }
   }
@@ -158,6 +159,7 @@ function speak(i){
   renderLine(i); prefetch(i+1);
   if (S.voice === 'silent') return silentNext(i, tok);
   if (S.voice === 'speech') return speakTTS(i, tok);
+  if (!L.a) return fallback(i, tok); // 尚無錄音：改用瀏覽器雲哲／曉雨或字幕
   const src = audioSrc(S.seg.id, i);
   const a = S.cache[src] || new Audio(src);
   S.audio = a; a.playbackRate = S.speed;
