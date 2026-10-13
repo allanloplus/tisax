@@ -116,7 +116,7 @@ async function main() {
           const h = per * (items.length + 0.9);
           card(s, 0.6, y, 7.45, h - 0.1, bg);
           txt(s, label, { x: 0.78, y: y + 0.06, w: 4, h: 0.32, fontSize: 13, bold: true, color: col, margin: 0 });
-          txt(s, bulletRuns(items), { x: 0.78, y: y + 0.38, w: 7.1, h: h - 0.5, fontSize: items.length > 3 ? 14 : 15, color: HEX.ink, fit: 'shrink' });
+          txt(s, bulletRuns(items), { x: 0.78, y: y + 0.38, w: 7.1, h: h - 0.5, fontSize: items.length > 3 ? 15 : 16, color: HEX.ink, fit: 'shrink' });
           y += h;
         }
         // right column
@@ -140,7 +140,7 @@ async function main() {
         items.forEach((b, i) => {
           const rowH = Math.min(0.85, 5.2 / items.length); const yy = 1.5 + i * rowH;
           circle(s, 0.6, yy + (rowH - 0.5) / 2, 0.5, i % 2 ? HEX.teal : HEX.navy, String(i + 1), 15);
-          txt(s, b, { x: 1.3, y: yy, w: w - 0.7, h: rowH, fontSize: items.length > 5 ? 17 : 19, valign: 'middle', fit: 'shrink' });
+          txt(s, b, { x: 1.3, y: yy, w: w - 0.7, h: rowH, fontSize: items.length > 5 ? 19 : 21, valign: 'middle', fit: 'shrink' });
         });
         if (hasP) person(s, d.who, d.who === 'arale' ? 8.85 : 10.0, 1.4, 5.5);
         s.addNotes(notes); break;
@@ -148,8 +148,8 @@ async function main() {
       case 'table': {
         const s = addSlide('CONTENT', section);
         s.addText(d.title, { placeholder: 'title' });
-        const head = (d.head || []).map(h => ({ text: h, options: { bold: true, color: HEX.white, fill: { color: HEX.navy }, fontSize: 15 } }));
-        const rows = (d.rows || []).map((r, i) => r.map(c => ({ text: String(c), options: { fontSize: (d.rows.length > 5 || r.length > 3) ? 13 : 15, fill: { color: i % 2 ? HEX.white : HEX.bg } } })));
+        const head = (d.head || []).map(h => ({ text: h, options: { bold: true, color: HEX.white, fill: { color: HEX.navy }, fontSize: 17 } }));
+        const rows = (d.rows || []).map((r, i) => r.map(c => ({ text: String(c), options: { fontSize: (d.rows.length > 5 || r.length > 3) ? 15 : 17, fill: { color: i % 2 ? HEX.white : HEX.bg } } })));
         const nc = head.length || 1;
         s.addTable([head, ...rows], { x: 0.6, y: 1.45, w: 12.1, colW: Array(nc).fill(12.1 / nc), fontFace: FONT, color: HEX.ink, border: { type: 'solid', pt: 0.75, color: HEX.line }, margin: [4, 6, 4, 6], valign: 'middle', rowH: 0.55 });
         s.addNotes(notes); break;
@@ -163,7 +163,7 @@ async function main() {
           card(s, xx, 2.0, w, 4.3, i % 2 ? HEX.teal2 : HEX.blue2);
           circle(s, xx + w / 2 - 0.4, 2.25, 0.8, i % 2 ? HEX.teal : HEX.navy, String(i + 1), 22);
           txt(s, x.t, { x: xx + 0.12, y: 3.2, w: w - 0.24, h: 0.8, fontSize: 18, bold: true, align: 'center', color: HEX.navy, fit: 'shrink' });
-          txt(s, x.d, { x: xx + 0.15, y: 4.0, w: w - 0.3, h: 2.1, fontSize: 14, align: 'left', fit: 'shrink' });
+          txt(s, x.d, { x: xx + 0.15, y: 4.0, w: w - 0.3, h: 2.1, fontSize: n > 5 ? 15 : 16, align: 'left', fit: 'shrink' });
           if (i < n - 1) s.addShape(pres.shapes.RIGHT_ARROW, { x: xx + w - 0.02, y: 2.5, w: gap + 0.04, h: 0.3, fill: { color: HEX.amber }, line: { color: HEX.amber } });
         });
         s.addNotes(notes); break;
@@ -178,7 +178,7 @@ async function main() {
           card(s, xx, yy, w, h, HEX.bg, HEX.line);
           circle(s, xx + 0.25, yy + 0.25, 0.6, [HEX.navy, HEX.teal, 'C25A12', HEX.purple][i % 4], String(i + 1), 18);
           txt(s, c.t, { x: xx + 1.0, y: yy + 0.25, w: w - 1.2, h: 0.6, fontSize: 19, bold: true, color: HEX.navy, valign: 'middle', fit: 'shrink' });
-          txt(s, c.d, { x: xx + 0.25, y: yy + 1.0, w: w - 0.5, h: h - 1.2, fontSize: 15, fit: 'shrink' });
+          txt(s, c.d, { x: xx + 0.25, y: yy + 1.0, w: w - 0.5, h: h - 1.2, fontSize: 17, fit: 'shrink' });
         });
         s.addNotes(notes); break;
       }
@@ -191,7 +191,7 @@ async function main() {
           const xx = 0.6 + (i % 2) * 4.9, yy = 3.0 + Math.floor(i / 2) * 1.75;
           card(s, xx, yy, 4.7, 1.55, HEX.white, HEX.line);
           circle(s, xx + 0.2, yy + 0.45, 0.65, HEX.navy, 'ABCD'[i], 18);
-          txt(s, o, { x: xx + 1.0, y: yy + 0.15, w: 3.55, h: 1.25, fontSize: 16, valign: 'middle', fit: 'shrink' });
+          txt(s, o, { x: xx + 1.0, y: yy + 0.15, w: 3.55, h: 1.25, fontSize: 18, valign: 'middle', fit: 'shrink' });
         });
         person(s, 'arale', 9.85, 2.3, 4.3);
         s.addNotes(`【答案】${'ABCD'[d.answer] || ''}\n` + notes); break;
