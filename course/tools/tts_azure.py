@@ -13,6 +13,8 @@
   python tools/build.py
 
 雲端環境需允許連線 <region>.tts.speech.microsoft.com。
+在 Claude 雲端環境中也可不設 AZURE_SPEECH_KEY，改用「網路密鑰」自動帶入 Ocp-Apim-Subscription-Key 標頭：
+  python tools/tts_azure.py --region eastasia
 """
 import argparse, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor
@@ -31,8 +33,9 @@ def synth(key, region, text, who, dst):
     req = urllib.request.Request(
         f'https://{region}.tts.speech.microsoft.com/cognitiveservices/v1',
         data=ssml(text, who).encode('utf-8'), method='POST',
-        headers={'Ocp-Apim-Subscription-Key': key, 'Content-Type': 'application/ssml+xml',
-                 'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3', 'User-Agent': 'isa2027-course'})
+        headers=dict({'Content-Type': 'application/ssml+xml',
+                      'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3', 'User-Agent': 'isa2027-course'},
+                     **({'Ocp-Apim-Subscription-Key': key} if key else {})))
     for attempt in range(6):
         try:
             with urllib.request.urlopen(req, timeout=60) as r:
@@ -57,10 +60,13 @@ def main():
     ap.add_argument('--only', nargs='*')
     ap.add_argument('--force', action='store_true')
     ap.add_argument('--jobs', type=int, default=4)
+    ap.add_argument('--region')
     a = ap.parse_args()
-    key, region = os.environ.get('AZURE_SPEECH_KEY'), os.environ.get('AZURE_SPEECH_REGION')
-    if not key or not region:
-        raise SystemExit('請先設定 AZURE_SPEECH_KEY 與 AZURE_SPEECH_REGION')
+    ap_region = a.region or os.environ.get('AZURE_SPEECH_REGION')
+    key, region = os.environ.get('AZURE_SPEECH_KEY'), ap_region
+    if not region:
+        raise SystemExit('請以 --region 或 AZURE_SPEECH_REGION 指定 Azure 區域（例如 eastasia）')
+    # 未設定 AZURE_SPEECH_KEY 時，假設由雲端環境的「網路密鑰」自動帶入 Ocp-Apim-Subscription-Key
     man = load_manifest()
     def stale(seg, i, who, h):
         m = man.get(seg, {}).get(str(i), {})
