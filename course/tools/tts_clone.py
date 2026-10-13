@@ -2,7 +2,7 @@
 """用「ISO27001 實體安全動畫課」的講師／助教原聲當範本，以 ZipVoice 聲音複製產生全部對話語音。
 
   Allan 講師：tools/voice_prompts/allan_prompt.wav（雲哲原聲片段）
-  ARALE 助教：tools/voice_prompts/arale_prompt.wav（曉雨原聲片段）
+  ARALE 助教：tools/voice_prompts/arale_prompt2.wav（曉雨原聲片段），再加快 8%、升高約 2 個半音，更年輕活潑
 
   pip install sherpa-onnx soundfile
   # 模型：sherpa-onnx-zipvoice-distill-int8-zh-en-emilia、vocos_24khz.onnx（k2-fsa/sherpa-onnx GitHub releases）
@@ -17,10 +17,12 @@ from tts_common import iter_lines, load_manifest, save_manifest, out_path
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROMPT = {
     'allan': ('先看這張全景圖。實體安全這個屬性，我把它分成兩大塊：左邊是區域安全，右邊是設備安全。', 'allan_prompt.wav'),
-    'arale': ('哇！原來門鎖好了，資訊還是會從玻璃跟白板偷偷溜出去！', 'arale_prompt.wav'),
+    'arale': ('哇哈哈，大家好！我是助教阿拉蕾！今天要跟 Allan 老師一起去機房大冒險喔！', 'arale_prompt2.wav'),
 }
-SPEED = {'allan': 1.0, 'arale': 1.0}
-SIG = {w: f'clone|{PROMPT[w][1]}|{SPEED[w]}' for w in PROMPT}
+SPEED = {'allan': 1.0, 'arale': 1.08}
+# 合成後再升調（asetrate 比例；1.1225 ≈ +2 個半音），讓助教聽起來更年輕
+PITCH = {'allan': 1.0, 'arale': 1.1225}
+SIG = {w: f'clone2|{PROMPT[w][1]}|{SPEED[w]}|{PITCH[w]}' for w in PROMPT}
 
 def main():
     ap = argparse.ArgumentParser()
@@ -52,8 +54,9 @@ def main():
             audio = tts.generate(text, pt, ps, psr, SPEED[who], 4)
             wav = os.path.join(td, 'x.wav'); sf.write(wav, audio.samples, audio.sample_rate)
             dst = out_path(seg, i); os.makedirs(os.path.dirname(dst), exist_ok=True)
+            shift = f'asetrate={audio.sample_rate}*{PITCH[who]},aresample=24000,atempo={1 / PITCH[who]:.4f},' if PITCH[who] != 1.0 else ''
             subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-af',
-                            'silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,loudnorm=I=-16:TP=-1.5,apad=pad_dur=0.12',
+                            shift + 'silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse,loudnorm=I=-16:TP=-1.5,apad=pad_dur=0.12',
                             '-ac', '1', '-ar', '24000', '-b:a', '48k', dst], check=True)
             d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', dst],
                                      capture_output=True, text=True).stdout.strip() or 0)
