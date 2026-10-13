@@ -1,0 +1,47 @@
+# 用微軟台灣國語語音重新產生互動影音的對話語音，並自動提交回同一個分支
+#   Allan 老師：雲哲 zh-TW-YunJheNeural（語速、音調稍高）
+#   ARALE 助教：曉雨 zh-TW-HsiaoYuNeural（音調明顯拉高、語速加快）
+# 觸發：修改影音腳本（course/content/*.json）或語音設定（course/tools/tts_*.py）後 push；也可在 Actions 頁面手動執行。
+# 只會重錄「文字有變動」或「尚未用微軟語音錄製」的句子。
+name: Course audio (Microsoft Taiwan voices)
+on:
+  push:
+    branches: ['main', 'claude/**']
+    paths:
+      - 'course/content/*.json'
+      - 'course/tools/tts_*.py'
+      - '.github/workflows/course-tts.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: course-tts-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  tts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install edge-tts and ffmpeg
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          pip install -q edge-tts
+      - name: Render dialogue audio
+        working-directory: course
+        run: python tools/tts_edge.py --jobs 4
+      - name: Rebuild site data (line durations)
+        working-directory: course
+        run: python tools/build.py
+      - name: Commit audio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add course/audio course/data
+          if git diff --cached --quiet; then echo "No audio changes"; exit 0; fi
+          git commit -m "Render course audio with Microsoft Taiwan voices (YunJhe / HsiaoYu)"
+          for i in 1 2 3 4; do git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0; sleep $((i*5)); done
+          exit 1

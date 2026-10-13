@@ -128,41 +128,49 @@ function silentNext(i, tok){
   S.timer = setTimeout(() => { if (tok === S.token && S.playing) next(); }, ms);
 }
 let VOICES = [];
+// Allan = 微軟台灣國語男聲「雲哲」(YunJhe)；ARALE = 微軟台灣國語女聲「曉雨」(HsiaoYu)
 function pickVoices(){
   VOICES = (window.speechSynthesis ? speechSynthesis.getVoices() : []).filter(v => /zh[-_](TW|HK|CN)|Chinese|中文|國語/i.test(v.lang + ' ' + v.name));
   const tw = VOICES.filter(v => /TW|Taiwan|台灣|臺灣/i.test(v.lang + v.name));
   const pool = tw.length ? tw : VOICES;
-  const male = pool.find(v => /YunJhe|Zhiwei|Yunjian|Yunxi|Yunyang|male|男/i.test(v.name)) || null;
-  const female = pool.find(v => /HsiaoYu|HsiaoChen|Yating|Hanhan|Mei-?Jia|Xiaoxiao|Xiaoyi|female|女/i.test(v.name)) || pool[0] || null;
-  return {allan: male || pool[0] || null, arale: female};
+  const male = pool.find(v => /YunJhe|雲哲/i.test(v.name)) || pool.find(v => /Zhiwei|Yunjian|Yunxi|Yunyang|male|男/i.test(v.name)) || null;
+  const female = pool.find(v => /HsiaoYu|曉雨/i.test(v.name)) || pool.find(v => /HsiaoChen|Yating|Hanhan|Mei-?Jia|Xiaoxiao|Xiaoyi|female|女/i.test(v.name)) || pool[0] || null;
+  return {allan: male || pool[0] || null, arale: female, ok: !!(male && female)};
 }
+function speakTTS(i, tok){
+  const L = S.data.lines[i];
+  if (!window.speechSynthesis) return silentNext(i, tok);
+  const vv = pickVoices(); const u = new SpeechSynthesisUtterance(plain(L.text));
+  u.lang = 'zh-TW'; const v = vv[L.who]; if (v) u.voice = v;
+  const same = vv.allan && vv.allan === vv.arale;
+  // 雲哲：語速、音調稍高；曉雨：音調明顯拉高、語速加快
+  if (L.who === 'arale') { u.rate = S.speed * 1.16; u.pitch = same ? 1.7 : 1.35; }
+  else { u.rate = S.speed * 1.08; u.pitch = same ? 0.75 : 1.06; }
+  u.onend = () => { if (tok === S.token && S.playing) next(); };
+  u.onerror = () => { if (tok === S.token && S.playing) silentNext(i, tok); };
+  speechSynthesis.cancel(); speechSynthesis.speak(u);
+}
+// audio file missing: use browser 雲哲/曉雨 if available, otherwise timed subtitles
+function fallback(i, tok){ $('loading').classList.remove('on'); if (pickVoices().ok) speakTTS(i, tok); else silentNext(i, tok); }
 if (window.speechSynthesis) speechSynthesis.onvoiceschanged = pickVoices;
 function speak(i){
   const tok = ++S.token; const L = S.data.lines[i];
   renderLine(i); prefetch(i+1);
   if (S.voice === 'silent') return silentNext(i, tok);
-  if (S.voice === 'speech' && window.speechSynthesis){
-    const vv = pickVoices(); const u = new SpeechSynthesisUtterance(plain(L.text));
-    u.lang = 'zh-TW'; const v = vv[L.who]; if (v) u.voice = v;
-    u.rate = S.speed * (L.who === 'arale' ? 1.05 : 0.98);
-    u.pitch = L.who === 'arale' ? (v && v === vv.allan ? 1.6 : 1.25) : (v && v === vv.arale ? 0.6 : 0.95);
-    u.onend = () => { if (tok === S.token && S.playing) next(); };
-    u.onerror = () => { if (tok === S.token && S.playing) silentNext(i, tok); };
-    speechSynthesis.cancel(); speechSynthesis.speak(u); return;
-  }
+  if (S.voice === 'speech') return speakTTS(i, tok);
   const src = audioSrc(S.seg.id, i);
   const a = S.cache[src] || new Audio(src);
   S.audio = a; a.playbackRate = S.speed;
   try { a.preservesPitch = true; } catch(e){}
   a.onended = () => { if (tok === S.token && S.playing) next(); };
-  a.onerror = () => { if (tok === S.token && S.playing) silentNext(i, tok); };
+  a.onerror = () => { if (tok === S.token && S.playing) fallback(i, tok); };
   $('loading').classList.toggle('on', a.readyState < 3);
   a.oncanplay = () => $('loading').classList.remove('on');
   try { a.currentTime = 0; } catch(e){}
   const p = a.play(); if (p && p.catch) p.catch(err => {
     if (tok !== S.token) return;
     if (err && err.name === 'NotAllowedError') { setPlayingUI(false); $('overlay').classList.remove('hidden'); $('ovs').textContent = '點一下繼續播放'; }
-    else if (S.playing) { $('loading').classList.remove('on'); silentNext(i, tok); } // audio missing -> timed subtitles
+    else if (S.playing) fallback(i, tok); // audio missing
   });
 }
 

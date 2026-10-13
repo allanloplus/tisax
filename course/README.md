@@ -9,7 +9,7 @@
 |---|---|---|
 | 實體課程講師簡報 | `ISA2027_for_TISAX_標準要求解說_講師簡報.pptx` | 3 小時課程用，含講者備忘稿（notes）、隨堂測驗、情境討論；隨堂測驗答案在備忘稿 |
 | 線上文字教材 | `text.html` | 77 個控制項逐條解說（IS 45、PP 20、DP 12）＋TISAX 概論、ISA 結構與成熟度、稽核實務三章。每個控制項分「條文要求／詳細解說／實務作法／稽核實務」四個頁籤，可搜尋、可記錄閱讀進度、可列印 |
-| 互動影音教材 | `video.html` | Allan 顧問與 ARALE 的課堂對話（49 段、約 4.4 小時），投影畫面＋角色表情＋字幕＋逐字稿，可選章節、調語速 |
+| 互動影音教材 | `video.html` | Allan 顧問與 ARALE 的課堂對話（49 段、1,526 句），投影畫面＋角色表情＋字幕＋逐字稿，可選章節、調語速 |
 | 課後測驗與證書 | `quiz.html` | IS／PP／DP 各 10 題，80 分通過；需填公司名稱、單位、姓名、職稱、E-mail。通過可下載證書 PNG、證書＋題目解答 PDF（列印另存）與 HTML；未通過會列出建議複習的控制項並要求重新閱讀或重新測驗 |
 | 首頁 | `index.html` | 課程介紹與章節地圖 |
 
@@ -26,20 +26,24 @@
 每段影音不是一支大型 MP4，而是「對話腳本＋逐句語音檔」：
 - 每段的腳本檔只有幾 KB，每句語音約 30–60 KB（48 kbps 單聲道 MP3），按下播放只要下載第一句即可開始。
 - 播放時自動預先載入後面 2–3 句；語音檔缺漏時自動改以字幕計時播放，不會卡住。
-- 播放器另有「瀏覽器語音（台灣中文）」模式：在 Microsoft Edge 上會使用 Windows／Edge 內建的台灣中文語音。
 
-## 語音說明（重要）
+## 語音說明
 
-本次建置環境的網路政策封鎖了 Microsoft Edge 線上語音服務，所以內附的 MP3 是用**離線語音模型**（sherpa-onnx + Kokoro v1.0：男聲 zm_yunyang、年輕女聲 zf_xiaoyi）產生的，口音是**標準普通話**，不是台灣腔。
+- **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +8%、音調 +6Hz，聽起來比較有精神。
+- **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +16%、音調 +28Hz，比較俏皮。
 
-要換成**台灣男聲（YunJhe）＋台灣年輕女聲（HsiaoYu）**，在任何可正常上網的電腦執行：
+語音檔由 GitHub Actions（`.github/workflows/course-tts.yml`）在 GitHub 伺服器上產生並自動提交回分支：修改影音腳本或語音設定後 push 即會重錄有變動的句子，也可在 GitHub 的 Actions 頁面手動執行。
+也可以在自己電腦上產生：
 
 ```bash
 cd course
 pip install edge-tts          # 另需安裝 ffmpeg
-python tools/tts_edge.py      # 重新產生全部語音（約 1,500 句，可中斷後續跑）
+python tools/tts_edge.py      # 只重錄尚未用微軟語音錄製或文字有變動的句子
 python tools/build.py         # 更新每句長度
 ```
+
+語速／音調設定在 `tools/tts_edge.py` 的 `VOICE`。播放器的「瀏覽器即時語音」模式在 Microsoft Edge 上也會直接使用雲哲／曉雨；若某句語音檔不存在，播放器會自動改用瀏覽器語音或字幕計時播放。
+（`tools/tts_kokoro.py` 是離線語音的備用方案，口音為標準普通話。）
 
 ## 修改內容
 
