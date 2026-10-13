@@ -29,25 +29,20 @@
 
 ## 語音說明
 
-聲線沿用「資安宣導線上動畫課程」的設定：
-- **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +6%、音調 −2Hz。
-- **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +10%、音調 +28Hz（提高音調、稍快，可愛俏皮）。
+講師 Allan 與助教 ARALE 的聲音，沿用「ISO27001 實體安全動畫課」的原聲（Allan＝雲哲、ARALE＝曉雨）：
+以該課程的原聲片段（`tools/voice_prompts/`）為範本，用 ZipVoice 聲音複製產生本課程全部 1,526 句對話。
 
-### 在自己的 Windows 電腦錄音（免註冊任何帳號）
+修改台詞後重錄（只會重錄有變動的句子）：
 
-微軟的免費語音會拒絕雲端主機連線，因此請在一般家用／公司網路的電腦上錄製：
-
-1. 安裝 [Python](https://www.python.org/downloads/)（安裝第一個畫面勾選「Add python.exe to PATH」）與 [GitHub Desktop](https://desktop.github.com/)。
-2. 用 GitHub Desktop 複製（Clone）本專案，並切換到分支 `claude/nifty-babbage-efcjk8`。
-3. 打開 `course` 資料夾，雙擊 **`試錄一段_Windows.bat`**：錄「課程開場」一段並開啟資料夾讓您試聽。
-4. 聲音確認 OK 後，雙擊 **`錄製語音_Windows.bat`** 錄製全部 1,526 句（約 15–30 分鐘，可中斷後續錄）。
-5. 回到 GitHub Desktop，按「Commit」再按「Push origin」上傳。
-
-不需要另外安裝 ffmpeg（有安裝的話會自動統一音量）。語速／音調設定在 `tools/tts_edge.py` 的 `VOICE`。
-
-### 其他方式
-- Azure 語音服務（微軟官方 API，需 Azure 帳號）：`tools/tts_azure.py`，用法見檔案開頭。
-- 尚未錄製的句子，播放器在 Microsoft Edge 會直接用 Edge 內建的雲哲／曉雨念出，其他瀏覽器則以字幕計時播放。
+```bash
+cd course
+pip install sherpa-onnx soundfile          # 另需 ffmpeg
+# 模型（k2-fsa/sherpa-onnx GitHub releases）：
+#   tts-models/sherpa-onnx-zipvoice-distill-int8-zh-en-emilia.tar.bz2
+#   vocoder-models/vocos_24khz.onnx
+python tools/tts_clone.py --models <模型資料夾>
+python tools/build.py
+```
 
 ## 修改內容
 
@@ -55,7 +50,7 @@
 
 ```bash
 python tools/build.py                          # 重新產生 data/（文字教材、影音腳本、測驗）
-python tools/tts_edge.py --only v-is-1a        # 只重錄有改動的影音段落（腳本有變才會重錄）
+python tools/tts_clone.py --models <模型資料夾>  # 只重錄有改動的句子
 cd tools && npm install && node build_pptx.js  # 重新產生 PPTX
 ```
 

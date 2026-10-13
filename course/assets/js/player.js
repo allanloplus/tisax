@@ -8,10 +8,10 @@ window.VSEG = function(d){ window.__VSEG[d.id] = d; };
 
 const S = {
   seg:null, data:null, i:0, playing:false, started:false, token:0,
-  speed: +Store.get('speed', 1), voice: Store.get('voice', 'audio'),
+  speed: +Store.get('speed', 1),
   audio: new Audio(), timer:null, cache:{}, watched: Store.get('watched', {})
 };
-$('speed').value = String(S.speed); $('voice').value = S.voice;
+$('speed').value = String(S.speed);
 $('cc').checked = Store.get('cc', true); $('auto').checked = Store.get('auto', true);
 if (!$('cc').checked) $('sub').classList.add('hide');
 
@@ -75,7 +75,7 @@ function renderLine(i){
 
 /* ---------- loading ---------- */
 function prefetch(i){
-  if (S.voice !== 'audio' || !S.data) return;
+  if (!S.data) return;
   for (let k=i; k<i+3 && k<S.data.lines.length; k++){
     if (!S.data.lines[k].a) continue;
     const src = audioSrc(S.seg.id, k);
@@ -110,7 +110,6 @@ function setPlayingUI(p){ S.playing = p; $('bPlay').textContent = p ? '❚❚ �
 function stop(){
   clearTimeout(S.timer); S.audio.onended = S.audio.onerror = null;
   try { S.audio.pause(); } catch(e){}
-  if (window.speechSynthesis) speechSynthesis.cancel();
   setPlayingUI(false); $('loading').classList.remove('on');
 }
 function play(){ if (!S.data) return; S.started = true; $('overlay').classList.add('hidden'); setPlayingUI(true); speak(S.i); }
@@ -128,38 +127,12 @@ function silentNext(i, tok){
   const ms = ((L.d || Math.max(2.2, plain(L.text).length * 0.24)) / S.speed) * 1000 + 250;
   S.timer = setTimeout(() => { if (tok === S.token && S.playing) next(); }, ms);
 }
-let VOICES = [];
-// Allan = 微軟台灣國語男聲「雲哲」(YunJhe)；ARALE = 微軟台灣國語女聲「曉雨」(HsiaoYu)
-function pickVoices(){
-  VOICES = (window.speechSynthesis ? speechSynthesis.getVoices() : []).filter(v => /zh[-_](TW|HK|CN)|Chinese|中文|國語/i.test(v.lang + ' ' + v.name));
-  const tw = VOICES.filter(v => /TW|Taiwan|台灣|臺灣/i.test(v.lang + v.name));
-  const pool = tw.length ? tw : VOICES;
-  const male = pool.find(v => /YunJhe|雲哲/i.test(v.name)) || pool.find(v => /Zhiwei|Yunjian|Yunxi|Yunyang|male|男/i.test(v.name)) || null;
-  const female = pool.find(v => /HsiaoYu|曉雨/i.test(v.name)) || pool.find(v => /HsiaoChen|Yating|Hanhan|Mei-?Jia|Xiaoxiao|Xiaoyi|female|女/i.test(v.name)) || pool[0] || null;
-  return {allan: male || pool[0] || null, arale: female, ok: !!(male && female)};
-}
-function speakTTS(i, tok){
-  const L = S.data.lines[i];
-  if (!window.speechSynthesis) return silentNext(i, tok);
-  const vv = pickVoices(); const u = new SpeechSynthesisUtterance(plain(L.text));
-  u.lang = 'zh-TW'; const v = vv[L.who]; if (v) u.voice = v;
-  const same = vv.allan && vv.allan === vv.arale;
-  // 與錄製語音相同的聲線：雲哲 +6% 語速、略低音調；曉雨 +10% 語速、提高音調
-  if (L.who === 'arale') { u.rate = S.speed * 1.10; u.pitch = same ? 1.7 : 1.3; }
-  else { u.rate = S.speed * 1.06; u.pitch = same ? 0.75 : 0.97; }
-  u.onend = () => { if (tok === S.token && S.playing) next(); };
-  u.onerror = () => { if (tok === S.token && S.playing) silentNext(i, tok); };
-  speechSynthesis.cancel(); speechSynthesis.speak(u);
-}
-// audio file missing: use browser 雲哲/曉雨 if available, otherwise timed subtitles
-function fallback(i, tok){ $('loading').classList.remove('on'); if (pickVoices().ok) speakTTS(i, tok); else silentNext(i, tok); }
-if (window.speechSynthesis) speechSynthesis.onvoiceschanged = pickVoices;
+// 尚無錄音檔的句子：以字幕計時播放
+function fallback(i, tok){ $('loading').classList.remove('on'); silentNext(i, tok); }
 function speak(i){
   const tok = ++S.token; const L = S.data.lines[i];
   renderLine(i); prefetch(i+1);
-  if (S.voice === 'silent') return silentNext(i, tok);
-  if (S.voice === 'speech') return speakTTS(i, tok);
-  if (!L.a) return fallback(i, tok); // 尚無錄音：改用瀏覽器雲哲／曉雨或字幕
+  if (!L.a) return fallback(i, tok);
   const src = audioSrc(S.seg.id, i);
   const a = S.cache[src] || new Audio(src);
   S.audio = a; a.playbackRate = S.speed;
@@ -190,7 +163,6 @@ $('bNextSeg').onclick = () => { const k = SEGS.findIndex(s => s.id === S.seg.id)
 $('bPrevSeg').onclick = () => { const k = SEGS.findIndex(s => s.id === S.seg.id); if (k > 0) location.hash = 'seg=' + SEGS[k-1].id; };
 $('seek').onclick = e => { const kids = [...$('seek').children]; const k = kids.indexOf(e.target); if (k >= 0) jump(k); };
 $('speed').onchange = e => { S.speed = +e.target.value; Store.set('speed', S.speed); S.audio.playbackRate = S.speed; };
-$('voice').onchange = e => { S.voice = e.target.value; Store.set('voice', S.voice); if (S.voice === 'speech' && !window.speechSynthesis) alert('此瀏覽器不支援語音合成，建議使用 Microsoft Edge 或 Chrome。'); if (S.playing) jump(S.i); };
 $('cc').onchange = e => { Store.set('cc', e.target.checked); $('sub').classList.toggle('hide', !e.target.checked); };
 $('auto').onchange = e => Store.set('auto', e.target.checked);
 document.addEventListener('keydown', e => {
