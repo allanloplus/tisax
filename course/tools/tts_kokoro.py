@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
-"""Offline TTS with sherpa-onnx + Kokoro multi-lang v1.0 (zh/en).
+"""Offline TTS with sherpa-onnx + Kokoro multi-lang v1.1 (zh/en).
 
   pip install sherpa-onnx soundfile
-  # model: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_0.tar.bz2
-  python tools/tts_kokoro.py --model /path/to/kokoro-multi-lang-v1_0 [--only v-is-1]
+  # model: https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-multi-lang-v1_1.tar.bz2
+  python tools/tts_kokoro.py --model /path/to/kokoro-multi-lang-v1_1 [--only v-is-1]
 
 Only lines whose text changed (hash in audio/manifest.json) are regenerated.
-Voices: Allan -> zm_yunyang (male, sid 52); ARALE -> zf_xiaoyi (young female, sid 48).
-For true Taiwan-accent voices use tools/tts_edge.py instead.
+Voices (Kokoro v1.1 Chinese speakers, chosen for a young, cheerful sound):
+  Allan -> sid 95 (young bright male), speed 1.08
+  ARALE -> sid 41 (young lively girl), speed 1.12
+For Microsoft Taiwan voices use tools/tts_edge.py instead.
 """
 import argparse, os, subprocess, sys, tempfile, time
 import soundfile as sf
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tts_common import iter_lines, load_manifest, save_manifest, out_path
 
-SID = {'allan': 52, 'arale': 48}
-SPEED = {'allan': 1.0, 'arale': 1.06}
+SID = {'allan': 95, 'arale': 41}
+SPEED = {'allan': 1.08, 'arale': 1.12}
+SIG = {w: f'kokoro11|{SID[w]}|{SPEED[w]}' for w in SID}
 
 def main():
     ap = argparse.ArgumentParser()
@@ -36,7 +39,7 @@ def main():
         max_num_sentences=1)
     tts = sherpa_onnx.OfflineTts(cfg)
     man = load_manifest()
-    todo = [x for x in iter_lines(a.only) if man.get(x[0], {}).get(str(x[1]), {}).get('h') != x[4] or not os.path.exists(out_path(x[0], x[1]))]
+    todo = [x for x in iter_lines(a.only) if man.get(x[0], {}).get(str(x[1]), {}).get('h') != x[4] or man.get(x[0], {}).get(str(x[1]), {}).get('v') != SIG[x[2]] or not os.path.exists(out_path(x[0], x[1]))]
     print(f'{len(todo)} lines to synthesize', flush=True)
     t0 = time.time()
     with tempfile.TemporaryDirectory() as td:
@@ -51,7 +54,7 @@ def main():
                             '-ac', '1', '-ar', '24000', '-b:a', '48k', dst], check=True)
             d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', dst],
                                      capture_output=True, text=True).stdout.strip() or 0)
-            man.setdefault(seg, {})[str(i)] = {'h': h, 'd': round(d, 2)}
+            man.setdefault(seg, {})[str(i)] = {'h': h, 'd': round(d, 2), 'engine': 'kokoro11', 'v': SIG[who]}
             if n % 20 == 0 or n == len(todo):
                 save_manifest(man)
                 el = time.time() - t0
