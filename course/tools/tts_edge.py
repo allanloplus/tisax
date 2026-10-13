@@ -12,7 +12,7 @@ ARALE  -> zh-TW-HsiaoYuNeural 曉雨 (rate +10%, pitch +28Hz)
 （與「資安宣導線上動畫課程」相同的聲線設定）
 Lines are re-rendered when their text or the voice settings change; --force re-renders everything.
 """
-import argparse, asyncio, os, subprocess, sys
+import argparse, asyncio, os, shutil, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from tts_common import iter_lines, load_manifest, save_manifest, out_path
 
@@ -22,14 +22,27 @@ VOICE = {'allan': ('zh-TW-YunJheNeural', '+6%', '-2Hz'),
          'arale': ('zh-TW-HsiaoYuNeural', '+10%', '+28Hz')}
 SIG = {k: '|'.join(v) for k, v in VOICE.items()}
 
+HAS_FFMPEG = bool(shutil.which('ffmpeg') and shutil.which('ffprobe'))
+
 async def synth(text, who, dst):
     import edge_tts
     v, rate, pitch = VOICE[who]
     tmp = dst + '.tmp.mp3'
     await edge_tts.Communicate(text, v, rate=rate, pitch=pitch).save(tmp)
-    subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', tmp, '-af', 'loudnorm=I=-16:TP=-1.5,apad=pad_dur=0.12',
-                    '-ac', '1', '-ar', '24000', '-b:a', '48k', dst], check=True)
-    os.remove(tmp)
+    if HAS_FFMPEG:  # 有 ffmpeg 時統一音量；沒有也可以（edge-tts 原本就輸出 24kHz 48kbps 單聲道 MP3）
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', tmp, '-af', 'loudnorm=I=-16:TP=-1.5,apad=pad_dur=0.12',
+                        '-ac', '1', '-ar', '24000', '-b:a', '48k', dst], check=True)
+        os.remove(tmp)
+    else:
+        os.replace(tmp, dst)
+
+def duration(path):
+    if HAS_FFMPEG:
+        out = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path],
+                             capture_output=True, text=True).stdout.strip()
+        if out:
+            return float(out)
+    return os.path.getsize(path) * 8 / 48000  # 48 kbps CBR
 
 async def main():
     ap = argparse.ArgumentParser()
@@ -54,8 +67,7 @@ async def main():
                 except Exception as e:  # 網路不穩或被限流時退避重試
                     if attempt == 5: print('FAILED', seg, i, e, flush=True); return
                     await asyncio.sleep(min(30, 2 ** (attempt + 1)))
-            d = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', dst],
-                                     capture_output=True, text=True).stdout.strip() or 0)
+            d = duration(dst)
             man.setdefault(seg, {})[str(i)] = {'h': h, 'd': round(d, 2), 'engine': 'edge', 'v': SIG[who]}
             done += 1
             if done % 25 == 0:

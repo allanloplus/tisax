@@ -33,27 +33,21 @@
 - **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +6%、音調 −2Hz。
 - **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +10%、音調 +28Hz（提高音調、稍快，可愛俏皮）。
 
-**方式一（推薦）：Azure 語音服務（微軟官方，聲音與 Edge 相同）**
+### 在自己的 Windows 電腦錄音（免註冊任何帳號）
 
-```bash
-cd course
-export AZURE_SPEECH_KEY=你的金鑰
-export AZURE_SPEECH_REGION=eastasia   # 你的資源區域
-python tools/tts_azure.py
-python tools/build.py
-```
+微軟的免費語音會拒絕雲端主機連線，因此請在一般家用／公司網路的電腦上錄製：
 
-**方式二：edge-tts（非官方介面，微軟可能隨時封鎖；需能連線 `speech.platform.bing.com`）**
+1. 安裝 [Python](https://www.python.org/downloads/)（安裝第一個畫面勾選「Add python.exe to PATH」）與 [GitHub Desktop](https://desktop.github.com/)。
+2. 用 GitHub Desktop 複製（Clone）本專案，並切換到分支 `claude/nifty-babbage-efcjk8`。
+3. 打開 `course` 資料夾，雙擊 **`試錄一段_Windows.bat`**：錄「課程開場」一段並開啟資料夾讓您試聽。
+4. 聲音確認 OK 後，雙擊 **`錄製語音_Windows.bat`** 錄製全部 1,526 句（約 15–30 分鐘，可中斷後續錄）。
+5. 回到 GitHub Desktop，按「Commit」再按「Push origin」上傳。
 
-```bash
-cd course
-pip install edge-tts          # 另需安裝 ffmpeg
-python tools/tts_edge.py      # 只重錄尚未用微軟語音錄製、文字或聲線設定有變動的句子
-python tools/build.py         # 更新每句長度
-```
+不需要另外安裝 ffmpeg（有安裝的話會自動統一音量）。語速／音調設定在 `tools/tts_edge.py` 的 `VOICE`。
 
-語速／音調設定在 `tools/tts_edge.py` 的 `VOICE`。播放器的「瀏覽器即時語音」模式在 Microsoft Edge 上也會直接使用雲哲／曉雨；若某句語音檔不存在，播放器會自動改用瀏覽器語音或字幕計時播放。
-（`tools/tts_kokoro.py` 是離線語音的備用方案，口音為標準普通話。）
+### 其他方式
+- Azure 語音服務（微軟官方 API，需 Azure 帳號）：`tools/tts_azure.py`，用法見檔案開頭。
+- 尚未錄製的句子，播放器在 Microsoft Edge 會直接用 Edge 內建的雲哲／曉雨念出，其他瀏覽器則以字幕計時播放。
 
 ## 修改內容
 
