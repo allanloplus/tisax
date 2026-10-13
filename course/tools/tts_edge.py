@@ -40,7 +40,7 @@ async def main():
     man = load_manifest()
     def stale(seg, i, who, h):
         m = man.get(seg, {}).get(str(i), {})
-        return m.get('engine') != 'edge' or m.get('h') != h or m.get('v') != SIG[who] or not os.path.exists(out_path(seg, i))
+        return m.get('engine') not in ('edge', 'azure') or m.get('h') != h or m.get('v') != SIG[who] or not os.path.exists(out_path(seg, i))
     todo = [x for x in iter_lines(a.only) if a.force or stale(x[0], x[1], x[2], x[4])]
     print(f'{len(todo)} lines to synthesize')
     sem = asyncio.Semaphore(a.jobs); done = 0

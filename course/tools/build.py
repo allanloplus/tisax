@@ -55,10 +55,10 @@ def main():
             for i, L in enumerate(seg['lines']):
                 h = line_hash(L['who'], L['text'])
                 m = mseg.get(str(i))
-                dur = m['d'] if m and m.get('h') == h and m.get('engine') == 'edge' else estimate(L['text'])
+                dur = m['d'] if m and m.get('h') == h and m.get('engine') in ('edge', 'azure') else estimate(L['text'])
                 o = {'who': L['who'], 'emo': L.get('emo', ''), 'text': L['text'], 'd': dur}
                 # 只有用微軟台灣語音（雲哲／曉雨）錄製且文字相符的句子才標記為有錄音
-                if m and m.get('h') == h and m.get('engine') == 'edge' and os.path.exists(os.path.join(ROOT, 'audio', seg['id'], f'{i:03d}.mp3')):
+                if m and m.get('h') == h and m.get('engine') in ('edge', 'azure') and os.path.exists(os.path.join(ROOT, 'audio', seg['id'], f'{i:03d}.mp3')):
                     o['a'] = 1
                 if L.get('slide'): o['slide'] = L['slide']
                 lines.append(o)

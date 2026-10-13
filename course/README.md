@@ -33,7 +33,17 @@
 - **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +6%、音調 −2Hz。
 - **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +10%、音調 +28Hz（提高音調、稍快，可愛俏皮）。
 
-產生方式（需能連線 `speech.platform.bing.com`）：
+**方式一（推薦）：Azure 語音服務（微軟官方，聲音與 Edge 相同）**
+
+```bash
+cd course
+export AZURE_SPEECH_KEY=你的金鑰
+export AZURE_SPEECH_REGION=eastasia   # 你的資源區域
+python tools/tts_azure.py
+python tools/build.py
+```
+
+**方式二：edge-tts（非官方介面，微軟可能隨時封鎖；需能連線 `speech.platform.bing.com`）**
 
 ```bash
 cd course
