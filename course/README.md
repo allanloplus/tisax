@@ -29,8 +29,9 @@
 
 ## 語音說明
 
-- **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +8%、音調 +6Hz，聽起來比較有精神。
-- **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +16%、音調 +28Hz，比較俏皮。
+聲線沿用「資安宣導線上動畫課程」的設定：
+- **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +6%、音調 −2Hz。
+- **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +10%、音調 +28Hz（提高音調、稍快，可愛俏皮）。
 
 語音檔由 GitHub Actions（`.github/workflows/course-tts.yml`）在 GitHub 伺服器上產生並自動提交回分支：修改影音腳本或語音設定後 push 即會重錄有變動的句子，也可在 GitHub 的 Actions 頁面手動執行。
 也可以在自己電腦上產生：
@@ -38,7 +39,7 @@
 ```bash
 cd course
 pip install edge-tts          # 另需安裝 ffmpeg
-python tools/tts_edge.py      # 只重錄尚未用微軟語音錄製或文字有變動的句子
+python tools/tts_edge.py      # 只重錄尚未用微軟語音錄製、文字或聲線設定有變動的句子
 python tools/build.py         # 更新每句長度
 ```
 

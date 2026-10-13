@@ -143,9 +143,9 @@ function speakTTS(i, tok){
   const vv = pickVoices(); const u = new SpeechSynthesisUtterance(plain(L.text));
   u.lang = 'zh-TW'; const v = vv[L.who]; if (v) u.voice = v;
   const same = vv.allan && vv.allan === vv.arale;
-  // 雲哲：語速、音調稍高；曉雨：音調明顯拉高、語速加快
-  if (L.who === 'arale') { u.rate = S.speed * 1.16; u.pitch = same ? 1.7 : 1.35; }
-  else { u.rate = S.speed * 1.08; u.pitch = same ? 0.75 : 1.06; }
+  // 與錄製語音相同的聲線：雲哲 +6% 語速、略低音調；曉雨 +10% 語速、提高音調
+  if (L.who === 'arale') { u.rate = S.speed * 1.10; u.pitch = same ? 1.7 : 1.3; }
+  else { u.rate = S.speed * 1.06; u.pitch = same ? 0.75 : 0.97; }
   u.onend = () => { if (tok === S.token && S.playing) next(); };
   u.onerror = () => { if (tok === S.token && S.playing) silentNext(i, tok); };
   speechSynthesis.cancel(); speechSynthesis.speak(u);

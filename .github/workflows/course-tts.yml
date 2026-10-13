@@ -1,8 +1,9 @@
 # 用微軟台灣國語語音重新產生互動影音的對話語音，並自動提交回同一個分支
-#   Allan 老師：雲哲 zh-TW-YunJheNeural（語速、音調稍高）
-#   ARALE 助教：曉雨 zh-TW-HsiaoYuNeural（音調明顯拉高、語速加快）
+#   Allan 老師：雲哲 zh-TW-YunJheNeural（+6%／-2Hz）
+#   ARALE 助教：曉雨 zh-TW-HsiaoYuNeural（+10%／+28Hz）
+#   聲線沿用「資安宣導線上動畫課程」
 # 觸發：修改影音腳本（course/content/*.json）或語音設定（course/tools/tts_*.py）後 push；也可在 Actions 頁面手動執行。
-# 只會重錄「文字有變動」或「尚未用微軟語音錄製」的句子。
+# 只會重錄「文字或聲線設定有變動」或「尚未用微軟語音錄製」的句子。
 name: Course audio (Microsoft Taiwan voices)
 on:
   push:
@@ -32,11 +33,15 @@ jobs:
           pip install -q edge-tts
       - name: Render dialogue audio
         working-directory: course
-        run: python tools/tts_edge.py --jobs 4
+        timeout-minutes: 95          # 超時也會提交已完成的部分，下次執行會接續
+        continue-on-error: true
+        run: python -u tools/tts_edge.py --jobs 3
       - name: Rebuild site data (line durations)
+        if: always()
         working-directory: course
         run: python tools/build.py
       - name: Commit audio
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
