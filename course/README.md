@@ -33,8 +33,7 @@
 - **Allan 老師**：微軟台灣國語男聲「雲哲」（zh-TW-YunJheNeural），語速 +6%、音調 −2Hz。
 - **ARALE 助教**：微軟台灣國語女聲「曉雨」（zh-TW-HsiaoYuNeural），語速 +10%、音調 +28Hz（提高音調、稍快，可愛俏皮）。
 
-語音檔由 GitHub Actions（`.github/workflows/course-tts.yml`）在 GitHub 伺服器上產生並自動提交回分支：修改影音腳本或語音設定後 push 即會重錄有變動的句子，也可在 GitHub 的 Actions 頁面手動執行。
-也可以在自己電腦上產生：
+產生方式（需能連線 `speech.platform.bing.com`）：
 
 ```bash
 cd course
