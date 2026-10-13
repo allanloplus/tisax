@@ -2,10 +2,13 @@
 """用「ISO27001 實體安全動畫課」的講師／助教原聲當範本，以 ZipVoice 聲音複製產生全部對話語音。
 
   Allan 講師：tools/voice_prompts/allan_prompt.wav（雲哲原聲片段）
-  ARALE 助教：tools/voice_prompts/arale_prompt2.wav（曉雨原聲片段），再加快 8%、升高約 2 個半音，更年輕活潑
+  ARALE 助教：tools/voice_prompts/arale_prompt2.wav（曉雨原聲片段），不做後製，用高品質模型（fp32、8 步）
 
   pip install sherpa-onnx soundfile
-  # 模型：sherpa-onnx-zipvoice-distill-int8-zh-en-emilia、vocos_24khz.onnx（k2-fsa/sherpa-onnx GitHub releases）
+  # 模型（k2-fsa/sherpa-onnx GitHub releases，放在同一個資料夾）：
+  #   sherpa-onnx-zipvoice-distill-int8-zh-en-emilia/（Allan；含 lexicon.txt）
+  #   sherpa-onnx-zipvoice-distill-zh-en-emilia/（ARALE 高品質 fp32）
+  #   vocos_24khz.onnx
   python tools/tts_clone.py --models /path/to/models_dir [--only v-is-1a]
   python tools/build.py
 """
@@ -19,10 +22,12 @@ PROMPT = {
     'allan': ('先看這張全景圖。實體安全這個屬性，我把它分成兩大塊：左邊是區域安全，右邊是設備安全。', 'allan_prompt.wav'),
     'arale': ('哇哈哈，大家好！我是助教阿拉蕾！今天要跟 Allan 老師一起去機房大冒險喔！', 'arale_prompt2.wav'),
 }
-SPEED = {'allan': 1.0, 'arale': 1.08}
-# 合成後再升調（asetrate 比例；1.1225 ≈ +2 個半音），讓助教聽起來更年輕
-PITCH = {'allan': 1.0, 'arale': 1.1225}
-SIG = {w: f'clone2|{PROMPT[w][1]}|{SPEED[w]}|{PITCH[w]}' for w in PROMPT}
+SPEED = {'allan': 1.0, 'arale': 1.0}
+PITCH = {'allan': 1.0, 'arale': 1.0}
+# 模型品質：(使用的模型, 運算步數)
+QUALITY = {'allan': ('int8', 4), 'arale': ('fp32', 8)}
+SIG = {'allan': f'clone2|{PROMPT["allan"][1]}|1.0|1.0',
+       'arale': f'clone3|{PROMPT["arale"][1]}|1.0|1.0|fp32x8'}
 
 def main():
     ap = argparse.ArgumentParser()
@@ -32,11 +37,15 @@ def main():
     a = ap.parse_args()
     import sherpa_onnx
     M = a.models.rstrip('/') + '/'; Z = M + 'sherpa-onnx-zipvoice-distill-int8-zh-en-emilia/'
-    tts = sherpa_onnx.OfflineTts(sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
-        zipvoice=sherpa_onnx.OfflineTtsZipvoiceModelConfig(
-            tokens=Z + 'tokens.txt', encoder=Z + 'encoder.int8.onnx', decoder=Z + 'decoder.int8.onnx',
-            vocoder=M + 'vocos_24khz.onnx', data_dir=Z + 'espeak-ng-data', lexicon=Z + 'lexicon.txt'),
-        num_threads=a.threads)))
+    F = M + 'sherpa-onnx-zipvoice-distill-zh-en-emilia/'
+    def load(kind):
+        enc, dec = (Z + 'encoder.int8.onnx', Z + 'decoder.int8.onnx') if kind == 'int8' else (F + 'text_encoder.onnx', F + 'fm_decoder.onnx')
+        return sherpa_onnx.OfflineTts(sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
+            zipvoice=sherpa_onnx.OfflineTtsZipvoiceModelConfig(
+                tokens=Z + 'tokens.txt', encoder=enc, decoder=dec, vocoder=M + 'vocos_24khz.onnx',
+                data_dir=Z + 'espeak-ng-data', lexicon=Z + 'lexicon.txt'),
+            num_threads=a.threads)))
+    engines = {}
     prompts = {}
     for w, (txt, f) in PROMPT.items():
         x, sr = sf.read(os.path.join(HERE, 'voice_prompts', f), dtype='float32')
@@ -51,7 +60,9 @@ def main():
     with tempfile.TemporaryDirectory() as td:
         for n, (seg, i, who, text, h) in enumerate(todo, 1):
             pt, ps, psr = prompts[who]
-            audio = tts.generate(text, pt, ps, psr, SPEED[who], 4)
+            kind, steps = QUALITY[who]
+            if kind not in engines: engines[kind] = load(kind)
+            audio = engines[kind].generate(text, pt, ps, psr, SPEED[who], steps)
             wav = os.path.join(td, 'x.wav'); sf.write(wav, audio.samples, audio.sample_rate)
             dst = out_path(seg, i); os.makedirs(os.path.dirname(dst), exist_ok=True)
             shift = f'asetrate={audio.sample_rate}*{PITCH[who]},aresample=24000,atempo={1 / PITCH[who]:.4f},' if PITCH[who] != 1.0 else ''
