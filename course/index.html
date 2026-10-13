@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISA 2027 for TISAX 標準要求解說｜線上課程</title>
+<meta name="description" content="ISA 2027 for TISAX 標準要求解說：Information Security、Prototype Protection、Data Protection 逐條解說、資安管理實務作法與稽核實務。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23f2b705%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-size=%2224%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%230f2a44%22 font-family=%22Arial%22%3EISA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/common.js"></script>
+<script src="data/toc.js"></script>
+</head>
+<body>
+<header id="topbar"></header>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="tags"><span>VDA ISA 2027.1</span><span>TISAX</span><span>Information Security</span><span>Prototype Protection</span><span>Data Protection</span></div>
+      <h1>ISA 2027 for TISAX<br>標準要求解說</h1>
+      <p>由 ISMS／PIMS 輔導顧問暨驗證稽核員 <b>Allan 顧問</b> 主講、助教 <b>ARALE</b> 串場。逐條解說 ISA 2027 要求，對應資安管理實務作法，再從 Auditor 的角度告訴你評鑑時會怎麼問、要準備什麼、常在哪裡被開缺失。</p>
+      <div class="cta">
+        <a class="btn btn-amber" href="video.html">▶ 開始看互動影音</a>
+        <a class="btn btn-primary" href="text.html">📖 線上文字教材</a>
+        <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4)" href="quiz.html">📝 課後測驗與證書</a>
+      </div>
+      <p class="small" id="stats" style="margin-top:14px"></p>
+    </div>
+    <div class="chars"><img src="assets/img/ch/allan-full.webp" alt="Allan 顧問"><img class="arale" src="assets/img/ch/arale-full.webp" alt="助教 ARALE"></div>
+  </div>
+</section>
+<section class="block"><div class="wrap">
+  <div class="grid3">
+    <div class="card feature"><div class="ic" style="background:var(--blue-2)">📖</div><h3>線上文字教材</h3><p>每個控制項都有：條文要求（Must／Should／高／極高／SGA）、詳細解說、實務作法、稽核實務（稽核員常問、可準備證據、常見缺失）。可搜尋、可記錄閱讀進度。</p><a href="text.html">進入教材 →</a></div>
+    <div class="card feature"><div class="ic" style="background:var(--amber-2)">🎬</div><h3>互動影音教材</h3><p>Allan 顧問與 ARALE 的課堂對話，搭配投影畫面與字幕。每段約 3–8 分鐘、逐句載入，點下去馬上開始；可選章節、調整語速、看逐字稿。</p><a href="video.html">開始觀看 →</a></div>
+    <div class="card feature"><div class="ic" style="background:var(--green-2)">🏅</div><h3>課後測驗與證書</h3><p>Information Security、Prototype Protection、Data Protection 各 10 題。80 分通過即可下載結業證書（附題目與解答）；未通過請重新閱讀教材再挑戰。</p><a href="quiz.html">前往測驗 →</a></div>
+  </div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+  <h2>課程章節</h2>
+  <div class="toc-modules" id="toc"></div>
+</div></section>
+<div class="wrap footer">
+  <p>教材依據：VDA ISA 2027.1（2026-09-30），© ENX Association／VDA，以 CC BY-ND 4.0 及其衍生作品附加條款授權。本課程為<b>未經授權方核可之衍生教材</b>，並非 VDA、ENX 之官方文件，亦未使用其標誌；條文解釋以原版英文 ISA 為準。TISAX® 為 ENX Association 之註冊商標。</p>
+  <p>講師：Allan Lo｜助教：ARALE</p>
+</div>
+<script>
+renderTopbar('home');
+let nCtl=0,nSeg=0,dur=0;
+const MODS=[]; TOC.forEach(m=>{ const last=MODS[MODS.length-1]; if(last&&last.module===m.module) last.chapters=last.chapters.concat(m.chapters); else MODS.push({module:m.module,chapters:m.chapters.slice()}); });
+document.getElementById('toc').innerHTML = MODS.map(m=>{
+  const meta = MODULE_META[m.module];
+  return `<div class="card"><h3><span class="pill ${meta.cls}">${m.module}</span> ${esc(meta.label)}</h3><ol>${m.chapters.map(c=>{
+    nCtl+=c.controls.length; nSeg+=c.videos.length; dur+=c.videos.reduce((a,v)=>a+v.dur,0);
+    return `<li><a href="text.html#ch=${c.id}">${esc(c.title)}</a>${c.videos.length?` <a class="small" href="video.html#seg=${c.videos[0].id}" title="觀看影音">▶ ${c.videos.length} 段</a>`:''}</li>`;}).join('')}</ol></div>`;
+}).join('');
+document.getElementById('stats').textContent = `共 ${nCtl} 個控制項逐條解說・${nSeg} 段互動影音（約 ${Math.round(dur/60)} 分鐘）・3 份課後測驗`;
+</script>
+</body>
+</html>

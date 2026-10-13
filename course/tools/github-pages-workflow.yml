@@ -1,0 +1,31 @@
+# 選用：用 GitHub Pages 發佈線上課程
+# 使用方式：
+#   1. 把本檔複製到 .github/workflows/pages.yml
+#   2. GitHub 專案 Settings → Pages → Build and deployment → Source 選「GitHub Actions」
+#   3. push 到 main 之後，課程網址會是 https://<帳號>.github.io/<repo>/
+name: Deploy course to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: course
+      - id: deployment
+        uses: actions/deploy-pages@v4
