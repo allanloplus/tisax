@@ -37,8 +37,10 @@ CUSTOMER_README = """# ISA 2027 for TISAX 標準要求解說（授權版）
 授權用途：{note}
 {domains}
 ## 架設方式
-把本資料夾全部內容上傳到企業內部網站（IIS、Nginx、Apache 或任何靜態網站空間皆可），
-以瀏覽器開啟 `index.html` 即可；也可以直接在電腦上雙擊 `index.html` 使用。
+1. **先將 zip 檔「全部解壓縮」**（在 zip 檔上按右鍵 →「全部解壓縮…」）。
+   請勿直接在壓縮檔中點開 index.html，否則樣式、圖片與程式不會一起載入，畫面會變成純文字。
+2. 把解壓縮後資料夾內的全部內容上傳到企業內部網站（IIS、Nginx、Apache 或任何靜態網站空間皆可），
+   以瀏覽器開啟 `index.html` 即可；也可以直接在電腦上雙擊解壓縮後的 `index.html` 使用。
 
 - 線上文字教材：`text.html`
 - 互動影音教材：`video.html`
