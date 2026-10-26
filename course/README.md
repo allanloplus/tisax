@@ -1,6 +1,7 @@
 # ISA 2027 for TISAX 標準要求解說 — 線上課程
 
-講師：Allan Lo（Allan 顧問）｜助教：ARALE
+講師：Allan Lo（Allan 顧問）｜助教：ARALE  
+教材規劃製作：Allan Lo顧問（http://www.123hi.org）
 依據：VDA ISA 2027.1（2026-09-30，`ISA2027_1_EN.xlsx`）
 
 ## 交付內容
@@ -59,3 +60,7 @@ cd tools && npm install && node build_pptx.js  # 重新產生 PPTX
 ## 授權聲明
 
 ISA 由 ENX Association 提供、VDA 發行（Data Protection 頁籤版權屬 VDA），以 CC BY-ND 4.0 及其第 9 條衍生作品附加條款授權。本課程為**未經授權方核可之衍生教材**，未使用 VDA／ENX 標誌，條文解釋以原版英文 ISA 為準。TISAX® 為 ENX Association 之註冊商標。課後測驗證書僅證明完成本課程測驗，並非 TISAX 評鑑結果。
+
+---
+教材規劃製作：Allan Lo顧問（http://www.123hi.org）  
+Copyright © 2027 Allan Lo. All rights reserved.

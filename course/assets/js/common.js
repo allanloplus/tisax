@@ -59,4 +59,15 @@
     allan:{name:'Allan 顧問', img:e=>`assets/img/ch/allan-${e||'smile'}.webp`},
     arale:{name:'助教 ARALE', img:e=>`assets/img/ch/arale-${e||'happy'}.webp`}
   };
+
+  // 製作者與版權資訊：自動加在每一頁最下方
+  window.CREDIT = {maker:'教材規劃製作：Allan Lo顧問', url:'http://www.123hi.org', copy:'Copyright © 2027 Allan Lo. All rights reserved.'};
+  document.addEventListener('DOMContentLoaded', function(){
+    if (document.getElementById('credit')) return;
+    const d = document.createElement('div');
+    d.id = 'credit'; d.className = 'wrap credit';
+    d.innerHTML = `<div>${CREDIT.maker}（<a href="${CREDIT.url}" target="_blank" rel="noopener">www.123hi.org</a>）</div><div>${CREDIT.copy}</div>`;
+    const pa = document.getElementById('printArea');
+    pa ? document.body.insertBefore(d, pa) : document.body.appendChild(d);
+  });
 })();

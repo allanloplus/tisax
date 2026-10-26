@@ -130,7 +130,7 @@ function passView(rec){
   document.getElementById('dlpng').onclick = () => dl(url, `${rec.cert}.png`);
   document.getElementById('dlpdf').onclick = () => printPack(rec, url);
   document.getElementById('dlhtml').onclick = () => {
-    const html = `<!doctype html><meta charset="utf-8"><title>${rec.cert}</title><body style="font-family:'Microsoft JhengHei','PingFang TC',sans-serif;max-width:900px;margin:20px auto;line-height:1.7"><img src="${url}" style="width:100%"><h2>測驗題目與解答（${esc(rec.module)}）</h2>${printQA(rec)}</body>`;
+    const html = `<!doctype html><meta charset="utf-8"><title>${rec.cert}</title><body style="font-family:'Microsoft JhengHei','PingFang TC',sans-serif;max-width:900px;margin:20px auto;line-height:1.7"><img src="${url}" style="width:100%"><h2>測驗題目與解答（${esc(rec.module)}）</h2>${printQA(rec)}<p style="text-align:center;color:#555;font-size:13px">${CREDIT.maker}（<a href="${CREDIT.url}">www.123hi.org</a>）<br>${CREDIT.copy}</p></body>`;
     dl(URL.createObjectURL(new Blob([html], {type:'text/html'})), `${rec.cert}-解答.html`);
   };
   window.scrollTo(0,0);
@@ -148,7 +148,7 @@ function printQA(rec){
 }
 function printPack(rec, url){
   const pa = document.getElementById('printArea');
-  pa.innerHTML = `<img class="pcert" src="${url}"><h2>測驗題目與解答｜${esc(rec.module)}｜${esc(rec.info.name)}｜${esc(rec.cert)}</h2>${printQA(rec)}`;
+  pa.innerHTML = `<img class="pcert" src="${url}"><h2>測驗題目與解答｜${esc(rec.module)}｜${esc(rec.info.name)}｜${esc(rec.cert)}</h2>${printQA(rec)}<p style="text-align:center;font-size:9pt;color:#555">${CREDIT.maker}（www.123hi.org）<br>${CREDIT.copy}</p>`;
   const img = pa.querySelector('img'); const go = () => setTimeout(() => window.print(), 100);
   img.complete ? go() : (img.onload = go);
 }
@@ -205,7 +205,8 @@ function drawCert(rec){
   g.fillStyle = 'rgba(200,50,60,.9)'; g.font = `900 34px ${F}`; g.fillText('PASS', 0, -4); g.font = `700 22px ${F}`; g.fillText('ISA 2027', 0, 30);
   g.restore();
   g.textAlign = 'center'; g.font = `400 20px ${F}`; g.fillStyle = '#8a95a3';
-  g.fillText('本證書僅證明完成本課程線上測驗，非 TISAX 評鑑結果，亦非 ENX／VDA 之認證。', W/2, H-110);
+  g.fillText('本證書僅證明完成本課程線上測驗，非 TISAX 評鑑結果，亦非 ENX／VDA 之認證。', W/2, H-140);
+  g.fillText(`${CREDIT.maker}（www.123hi.org）　${CREDIT.copy}`, W/2, H-108);
   return c;
 }
 function fitText(g, t, x, y, maxW, size, F){ let s = size; g.font = `500 ${s}px ${F}`; while (g.measureText(t).width > maxW && s > 18) { s -= 2; g.font = `500 ${s}px ${F}`; } g.fillText(t, x, y); }

@@ -37,7 +37,7 @@ async function main() {
   const C = pres.SchemeColor;
 
   const footer = [
-    { text: { text: 'ISA 2027 for TISAX 標準要求解說｜講師 Allan Lo', options: { x: 0.6, y: 7.05, w: 7, h: 0.3, fontSize: 10, color: HEX.muted, fontFace: FONT } } }
+    { text: { text: 'ISA 2027 for TISAX 標準要求解說｜教材規劃製作：Allan Lo顧問 (www.123hi.org)｜Copyright © 2027 Allan Lo. All rights reserved.', options: { x: 0.6, y: 7.05, w: 11.4, h: 0.3, fontSize: 9, color: HEX.muted, fontFace: FONT } } }
   ];
   pres.defineSlideMaster({ title: 'CONTENT', background: { color: HEX.white },
     objects: footer.concat([
@@ -79,6 +79,8 @@ async function main() {
     card(s, 0.8, 5.55, 4.6, 0.95, HEX.navy2);
     txt(s, [{ text: '講師　Allan Lo', options: { bold: true, color: HEX.white, fontSize: 16, breakLine: true } },
       { text: 'ISMS／PIMS 輔導顧問・驗證稽核員', options: { color: 'CFE0F1', fontSize: 12 } }], { x: 1.0, y: 5.65, w: 4.3, h: 0.8 });
+    txt(s, [{ text: '教材規劃製作：Allan Lo顧問（', options: {} }, { text: 'www.123hi.org', options: { hyperlink: { url: 'http://www.123hi.org' }, color: 'CFE0F1' } }, { text: '）\nCopyright © 2027 Allan Lo. All rights reserved.', options: {} }],
+      { x: 0.8, y: 6.65, w: 7.4, h: 0.6, fontSize: 10, color: 'A9BBCD' });
     person(s, 'allan', 8.2, 0.9, 6.0);
     person(s, 'arale', 9.3, 1.9, 5.0);
     s.addNotes('開場：自我介紹，說明本課程三大主軸（ISA 2027 條文、資安實務作法、稽核實務），並提醒學員課後可使用線上文字教材、互動影音與課後測驗。');
