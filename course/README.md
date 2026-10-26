@@ -63,4 +63,4 @@ ISA 由 ENX Association 提供、VDA 發行（Data Protection 頁籤版權屬 VD
 
 ---
 教材規劃製作：Allan Lo顧問（http://www.123hi.org）  
-Copyright © 2027 Allan Lo. All rights reserved.
+Copyright © 2026 Allan Lo. All rights reserved.

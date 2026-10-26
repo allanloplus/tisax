@@ -61,7 +61,7 @@
   };
 
   // 製作者與版權資訊：自動加在每一頁最下方
-  window.CREDIT = {maker:'教材規劃製作：Allan Lo顧問', url:'http://www.123hi.org', copy:'Copyright © 2027 Allan Lo. All rights reserved.'};
+  window.CREDIT = {maker:'教材規劃製作：Allan Lo顧問', url:'http://www.123hi.org', copy:'Copyright © 2026 Allan Lo. All rights reserved.'};
   document.addEventListener('DOMContentLoaded', function(){
     if (document.getElementById('credit')) return;
     const d = document.createElement('div');
