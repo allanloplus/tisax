@@ -148,7 +148,7 @@ function printQA(rec){
 }
 function printPack(rec, url){
   const pa = document.getElementById('printArea');
-  pa.innerHTML = `<img class="pcert" src="${url}"><h2>測驗題目與解答｜${esc(rec.module)}｜${esc(rec.info.name)}｜${esc(rec.cert)}</h2>${printQA(rec)}<p style="text-align:center;font-size:9pt;color:#555">${CREDIT.maker}（www.123hi.org）<br>${CREDIT.copy}</p>`;
+  pa.innerHTML = `<img class="pcert" src="${url}"><h2>測驗題目與解答｜${esc(rec.module)}｜${esc(rec.info.name)}｜${esc(rec.cert)}</h2>${printQA(rec)}<p style="text-align:center;font-size:9pt;color:#555">${window.LICENSE ? esc(licenseText()) + '<br>' : ''}${CREDIT.maker}（www.123hi.org）<br>${CREDIT.copy}</p>`;
   const img = pa.querySelector('img'); const go = () => setTimeout(() => window.print(), 100);
   img.complete ? go() : (img.onload = go);
 }
@@ -186,6 +186,7 @@ function drawCert(rec){
   g.font = `400 36px ${F}`; g.fillStyle = '#1b2430'; g.fillText(`測驗成績 ${rec.score} 分（答對 ${rec.right} / ${rec.total} 題），成績合格，特頒此證。`, W/2, 910);
   // footer info
   g.textAlign = 'left'; g.font = `400 28px ${F}`; g.fillStyle = '#5b6777';
+  if (window.LICENSE) g.fillText(`授權單位：${LICENSE.company}${LICENSE.dept ? ' ' + LICENSE.dept : ''}`, 170, 1105);
   g.fillText(`證書編號：${rec.cert}`, 170, 1150);
   g.fillText(`發證日期：${rec.date}`, 170, 1195);
   g.fillText(`E-mail：${rec.info.email}`, 170, 1240);
