@@ -1,0 +1,1513 @@
+{
+ "key": "is6",
+ "module": "IS",
+ "chapters": [
+  {
+   "id": "is-6",
+   "title": "Chapter 6 — Supplier Relationships",
+   "title_en": "Supplier Relationships",
+   "intro": [
+    "The automotive industry is a long supply chain. The OEM gives design data to the Tier 1 supplier. The Tier 1 passes it on to Tier 2 suppliers, tool makers, design subcontractors, logistics companies and IT service providers. If one link fails, the customer's confidential information can leak. This is why ISA Chapter 6 requires you to \"extend\" information security to your contractors and partners.",
+    "This chapter has three controls: 6.1.1 Information security among contractors and cooperation partners (risk assessment, contracts, flow-down, evidence and monitoring), 6.1.2 Non-disclosure agreements, and 6.1.3 Responsibilities with external IT service providers. Key changes in ISA 2027: in 6.1.1, \"checking compliance with contractual agreements\" moved to the high protection needs requirements, and new very high protection needs requirements were added. 6.1.3 is the former control 1.2.4 with a new number, and ISA 2027.1 removed the \"must\" requirement for a supplier SoA."
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Classifying contractors by protection needs (summary of the ISA examples)"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Protection needs",
+      "Key criteria",
+      "Typical contractors",
+      "Suggested verification"
+     ],
+     "rows": [
+      [
+       "Normal",
+       "Access to normal-confidentiality information or security zones, can modify information with normal integrity needs, influence on systems with normal availability needs",
+       "Cleaning of general areas, classic logistics, maintenance staff",
+       "Self-assessment confirmed by management (e.g. ISA) or attestation/certificate; irregular sampling and event-related inspections"
+      ],
+      [
+       "High",
+       "Access to highly confidential information or security zones, can modify information with high integrity needs, influence on systems with at least high availability needs",
+       "Cleaning companies that clean security zones on their own, IT service providers (e.g. database administrators), consultants, agencies, tool design subcontractors",
+       "TISAX label for high protection needs or equivalent (e.g. ISO 27001 with matching scope); right to audit; regular sampling and event-related inspections"
+      ],
+      [
+       "Very high",
+       "Access to very highly confidential information or security zones, can modify information with very high integrity needs, influence on systems with at least very high availability needs",
+       "IT service providers (e.g. domain administrators), consultants, CAD design subcontractors, prototype manufacturers",
+       "TISAX label for very high protection needs; regular and event-related thorough inspections"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "info",
+     "title": "\"Contractor\" has a broad meaning",
+     "text": "In ISA, the term contractor includes classic suppliers, subcontractors, service providers, freelancers, other partner companies, and also cooperation partners such as academic institutions and research institutes."
+    },
+    {
+     "type": "h3",
+     "text": "The three steps suggested by the ISA"
+    },
+    {
+     "type": "olist",
+     "items": [
+      "**Identify contractors and set protection needs and security requirements**: for example, start from the list of creditors in the accounting department. Set the protection needs based on each contractor's tasks and its relevance to your own and your customers' processes. Most suppliers, such as office stationery suppliers, usually need no additional security requirements.",
+      "**Make sure contractors implement the requirements**: inform security-relevant contractors of the requirements in a suitable way and make them mandatory by contract. Then decide, based on risk, how to verify implementation.",
+      "**Build it into standard processes**: integrate information security into B2B and supplier management. Consider it already when you select a supplier, together with quality, delivery performance and credit rating, and add it to existing supplier evaluations (for example in your quality management system). Verify the agreed deliverables regularly using service reports and SLAs."
+     ]
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "Many Tier-2 plants have a supplier evaluation form with only three columns: quality, delivery and price. The easiest solution is to add a fourth column, \"information security\", and run it through the same process. No need to build a new system."
+    }
+   ],
+   "controls": [
+    {
+     "id": "6.1.1",
+     "title": "Information security among contractors and cooperation partners",
+     "q_en": "To what extent is information security ensured among contractors and cooperation partners?",
+     "q_zh": "To what extent is information security ensured among contractors and cooperation partners?",
+     "objective": "An appropriate level of information security is also maintained while collaborating with partners and contractors.",
+     "req": {
+      "must": [
+       "Contractors and partners are subjected to a security risk assessment.",
+       "An appropriate level of information security is ensured by contractual agreements with contractors and partners.",
+       "Where applicable, contractual agreements with clients and customers are passed on to contractors and partners."
+      ],
+      "should": [
+       "Contractors and partners are contractually obligated to pass on any requirements regarding an appropriate level of information security to their subcontractors.",
+       "Service reports and documents by contractors and partners are reviewed."
+      ],
+      "high": [
+       "Evidence is provided that the information security level of the supplier is adequate for the protection needs of the information (e.g., checked questionnaire/self-assessment, attestation, certificate, supplier audit). (C, I, A)",
+       "The supplier's level of compliance with the required evidence is documented, regularly and in case of changes (e.g., changes of requirements, change in supplier status, or supply chain structure) reviewed and monitored. (C, I, A)",
+       "The supplier's compliance with contractual agreements is checked, documented, regularly and in case of changes (e.g., changes of requirements, change in supplier status, or supply chain structure) reviewed and monitored. (C, I, A)"
+      ],
+      "vhigh": [
+       "The adequate level of information security should be demonstrated by a third party audit (an adequate TISAX label or equivalent) or an adequate supplier audit covering agreed and applicable customer requirements. If an audit was not conducted, a risk-based decision must be made by the organization's management to continue doing business with the supplier. A record of this decision exists. (C, I, A)",
+       "Contractual obligations with customers regarding transparency of supply chain risks are fulfilled. (C, I, A)"
+      ],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.19–A.5.22｜NIST CSF 2.0 GV.SC-02, GV.SC-03, GV.SC-04, GV.SC-05, GV.SC-06｜BSI IT-Grundschutz OPS.2.1, OPS.2.2, OPS.3.1, ORP.2｜NIST SP800-53r5 MA-4, CA-3, CA-6, PM-16, PM-30, SR-2, SR-3, SR-6, SR-7, SR-8",
+     "change2027": "In ISA 6, \"compliance with contractual agreements is checked\" was a must requirement. In ISA 2027 it moved to the high protection needs requirements and was rewritten: the supplier's compliance with contractual agreements must be checked, documented, and reviewed and monitored regularly and in case of changes. New very high protection needs requirements were also added: the information security level must be demonstrated by a third-party audit (TISAX label or equivalent) or a supplier audit; without an audit, management must make and record a risk-based decision; and contractual obligations on supply chain risk transparency must be fulfilled.",
+     "explain": [
+      "In ISA, the term \"contractor\" is very broad. It includes not only classic parts suppliers and subcontractors, but also service providers, freelancers, other partner companies, and even cooperation partners such as academic institutions and research institutes. In other words: anyone \"from outside\" who has access to your information or security zones, or who can affect your IT systems and processes, is in scope of this control.",
+      "The must requirements have three key points. First, contractors need a security risk assessment; you do not manage all of them the same way. Second, the level of information security must be fixed in a **contract**; a verbal promise or a good relationship is not enough. Third, the security clauses your customer (for example an OEM or Tier 1) requires from you must be **passed on** to your contractors, where applicable. The should requirements go one level deeper: contractors must pass the security requirements on to their own subcontractors, and you must review the service reports (for example SLA reports) that contractors provide.",
+      "For high protection needs, the focus moves from \"Do we have a contract?\" to \"Do we have evidence?\". You need reviewed questionnaires, self-assessments, certificates or supplier audit results that prove the supplier's level is adequate. You must also document the compliance status of this evidence and review it regularly and whenever requirements, the supplier's status or the supply chain structure change. \"Checking compliance with contractual agreements\" was a must requirement in ISA 6; ISA 2027 moved it to high protection needs and added documentation and continuous monitoring.",
+      "The very high protection needs requirements are a key new point in ISA 2027. In principle, the level must be proven by a third-party audit (a TISAX label of the right level or equivalent) or by a supplier audit that covers the customer's requirements. If there really was no audit, you cannot just leave it: management must make a **risk-based decision** on whether to continue the business relationship, and this decision must be recorded. In addition, if a customer contract requires transparency of supply chain risks (for example, disclosure of your subcontractor chain), you must fulfil it. This control is closely linked to 6.1.2 (NDAs), 6.1.3 (IT service responsibilities), 1.3 (assets and classification) and Prototype Protection 8.1."
+     ],
+     "practice": [
+      "Create a \"supplier security classification list\": start from the accounts payable or vendor master data and list all suppliers. Columns: supplier name, service provided, type of information accessed, access to security zones (yes/no), remote access (yes/no), protection needs (normal / high / very high), contact person, assessment date.",
+      "Write an \"information security policy for service providers\" or a \"contractor security requirements\" document. List minimum requirements per protection level (confidentiality, access control, incident reporting deadline, return and deletion of data, approval required for subcontracting, right to audit) and use it as a contract annex.",
+      "Update the purchasing process and contract templates: add a checkbox \"Involves access to information or systems?\" to the purchase request form; if checked, the information security contact must co-approve. Add security clauses, a right to audit, and a flow-down clause for subcontractors to the standard terms and conditions of purchase.",
+      "Verify according to risk level: for normal, collect a self-assessment signed by management (a short version of the ISA questionnaire works well); for high, require a TISAX AL2 label or an ISO 27001 certificate (check that the scope covers the service) and keep the right to irregular sampling; for very high, require the matching TISAX label or perform an on-site supplier audit.",
+      "Create a \"supplier security evidence tracker\": record validity dates, scope and assessment objectives of certificates and labels, and set reminders 60–90 days before expiry. Trigger a reassessment when a supplier changes owners or subcontractors, or has a security incident.",
+      "Review SLA reports, service reports and ticket records of IT service providers every quarter or every six months. Add a security score to the annual supplier evaluation (it can be part of the IATF 16949 supplier evaluation).",
+      "For very high protection needs suppliers without audit evidence yet, fill in a \"supplier risk acceptance decision form\" that states the risk, compensating measures and deadline. It must be signed by the general manager or an authorized senior manager and filed.",
+      "List the security and supply chain transparency clauses in your customer contracts (for example disclosure of subcontractors, incident reporting within 24 hours). Create a mapping table to confirm that they have been passed on to the relevant contractors."
+     ],
+     "audit": {
+      "questions": [
+       "Which contractors or service providers receive or process data in need of protection? Please show the list.",
+       "Which contractors have access to your security zones, for example the prototype area or the server room?",
+       "Apart from the NDA, which other contractual agreements on information security are in place?",
+       "When and by whom are security risk assessments of contractors performed? What triggers a reassessment?",
+       "How do you verify that contractors comply with the contract and the security policy? Where is the record of the last check?",
+       "Have the security clauses required by your customer been passed on to your subcontractors? Please give an example.",
+       "How is network or system maintenance by IT service providers controlled? How do you prevent them from accessing information with high or very high protection needs?",
+       "If a very high protection needs supplier has no TISAX label, who decided to continue the business relationship? Where is the record?"
+      ],
+      "evidence": [
+       "NDA template and signed examples",
+       "Example of a contractor security risk assessment (focus on information security aspects)",
+       "Information security policy for service providers, or security clauses in contracts and general terms of purchase",
+       "Description of the B2B / supplier management process (selection, evaluation, qualification)",
+       "Supplier self-assessments, TISAX labels, copies of ISO 27001 certificates and records of validity checks",
+       "Supplier evaluation records and supplier audit reports",
+       "List of approved suppliers (including security classification)",
+       "SLA reports and review records",
+       "Management risk acceptance decisions (very high protection needs)"
+      ],
+      "findings": [
+       "Purchasing only evaluates quality and delivery; there is no security aspect at all, and no contractor has had a security risk assessment.",
+       "The outsourced IT service provider has domain administrator rights, but the contract only has a general confidentiality clause, with no security requirements and no right to audit.",
+       "Security clauses required by the customer contract were not passed on to the design subcontractor that actually handles the customer's drawings.",
+       "A supplier's ISO 27001 certificate expired long ago, or its scope does not cover the service provided, but the supplier is still listed as approved.",
+       "A prototype subcontractor with very high protection needs has no TISAX label and there is no record of a management risk decision.",
+       "SLA reports from cloud or IT providers were never reviewed; only after a service outage did the company notice that the agreed availability had not been met."
+      ]
+     },
+     "tip": "Start by pulling the supplier list from the accounting vendor master data. About 90 percent of them, such as stationery or catering suppliers, can be marked \"not security-relevant\" right away. Put your effort into the few suppliers that really touch customer data: IT service providers, design subcontractors and prototype transport companies."
+    },
+    {
+     "id": "6.1.2",
+     "title": "Non-disclosure agreements",
+     "q_en": "To what extent is non-disclosure regarding the exchange of information contractually agreed?",
+     "q_zh": "To what extent is non-disclosure regarding the exchange of information contractually agreed?",
+     "objective": "Non-disclosure agreements provide legal protection for an organization's information particularly where information is exchanged beyond the boundaries of the organization.",
+     "req": {
+      "must": [
+       "The non-disclosure requirements are determined and fulfilled.",
+       "Requirements and procedures for applying non-disclosure agreements are known to all persons passing on information in need of protection.",
+       "Valid non-disclosure agreements are concluded prior to forwarding sensitive information.",
+       "The requirements and procedures for the use of non-disclosure agreements and the handling of information requiring protection are reviewed at regular intervals."
+      ],
+      "should": [
+       "Non-disclosure agreement templates are available and checked for legal applicability.",
+       "Non-disclosure agreements include the persons/organizations involved, the type of information covered by the agreement, the subject of the agreement, the validity period of the agreement and the responsibilities of the obliged party.",
+       "Non-disclosure agreements include provisions for the handling of sensitive information beyond the contractual relationship.",
+       "Options of demonstrating compliance with specifications (e.g., review by an independent third-party or audit rights) are defined.",
+       "A process for monitoring the validity period of temporary non-disclosure agreements and initiating their extension in due time is defined and implemented."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.14, A.6.6｜BSI IT-Grundschutz OPS.2.1, OPS.2.2, OPS.3.1, ORP.5, CON.2",
+     "change2027": "",
+     "explain": [
+      "This control has no additional requirements for high or very high protection needs. This means that non-disclosure agreements (NDAs) are a basic task for every protection level. You can remember the four must requirements as \"determine, know, sign first, review regularly\": determine when non-disclosure requirements apply and fulfil them; everyone who passes protected information to the outside must know the NDA rules and procedures; a valid NDA must exist **before** information is shared; and the NDA rules and the handling of protected information must be reviewed regularly.",
+      "\"Sign first, share later\" is what auditors check most often. Many sales or R&D staff send drawings first to meet a quotation deadline and sign the NDA afterwards. This is a typical non-conformity. The other key word is \"valid\": if an NDA has an end date and you keep exchanging information after it expires, there is no protection. This is why the should requirements ask for a process to monitor expiry and extend NDAs.",
+      "The should requirements are very specific about NDA content: who the parties are, what type of information is covered, the subject of the cooperation, the validity period, and the responsibilities of the obliged party. The NDA must also state how information is handled after the contract ends (return, deletion, how many years confidentiality continues) and how compliance can be demonstrated (third-party review or right to audit). The legal department or a lawyer must also confirm that the templates are legally enforceable.",
+      "Two practical notes. First, employees' confidentiality obligations belong to the HR controls in 2.1 (for example the confidentiality clause in the employment contract); this control focuses on exchanging information with external organizations. Second, an NDA from your customer is sometimes stricter than your own template. Make sure the customer NDA requirements reach the internal staff in charge and your downstream contractors. This matches the \"flow-down\" requirement in 6.1.1."
+     ],
+     "practice": [
+      "Write an \"NDA management procedure\": when an NDA is needed, who reviews it, which template version to use, where signed NDAs are filed (for example a contract management system or a SharePoint contract library), and the check steps before information is sent.",
+      "Prepare two or three NDA templates reviewed by the legal department: one-way (we disclose), mutual (both sides disclose) and project-specific. Content: parties, type of information, subject, period, return and deletion, confidentiality period after the contract, right to audit, liability for breach, governing law and place of jurisdiction.",
+      "Create an \"NDA register\" with columns for partner company, signing date, expiry date, projects covered, internal contact and file location. Set an automatic reminder (for example Power Automate or a Google Sheets reminder) 60 days before expiry so the contact person can start the extension.",
+      "Add a checkpoint to the quotation, RFQ and external file transfer processes: before sending confidential drawings (classification C3 or higher), the person in charge must confirm a valid entry in the NDA register. A DLP tool or secure file exchange platform can require an NDA number for external sharing.",
+      "Run an NDA awareness session once a year for roles that often share information externally, such as sales, R&D, purchasing and project managers. Keep attendance lists or e-learning completion records.",
+      "Review the NDA procedure and templates once a year to check that they still meet legal and customer requirements (for example current trade secret case law in your country, or a new customer NDA version). Record the review result.",
+      "Before visitors and temporary staff enter a security zone, have them sign an electronic confidentiality statement in the access control or visitor management system."
+     ],
+     "audit": {
+      "questions": [
+       "Which versions of NDA templates do you have? Were they checked by the legal department or a lawyer?",
+       "Before you provide drawings or specifications to an external party, how do you confirm that a valid NDA is signed?",
+       "How do sales and R&D staff learn about the NDA rules? Are there awareness records?",
+       "How do you track the expiry of NDAs with a fixed term? Please show the list of NDAs that will expire soon.",
+       "How does the NDA regulate the return or deletion of information after the contract ends?",
+       "When was the NDA procedure last reviewed? What was improved?"
+      ],
+      "evidence": [
+       "NDA templates and legal review records",
+       "Samples of signed NDAs, with a signing date before the date information was shared",
+       "NDA register and expiry reminder records",
+       "NDA management procedure or work instruction",
+       "Awareness or training records of relevant staff",
+       "Records of regular reviews of the procedure and templates"
+      ],
+      "findings": [
+       "A project sample shows that drawings were sent before the NDA was signed.",
+       "The NDA expired more than a year ago, but both parties still exchange design data.",
+       "The NDA template does not regulate the return or deletion of data after the contract ends.",
+       "An R&D engineer did not know that an NDA was needed first and sent files to an external design company from a private email account.",
+       "There is no NDA register, so the organization cannot say which NDAs are currently valid."
+      ]
+     },
+     "tip": "One of my favorite audit checks: I pick one email with drawings sent to an external party and compare it with the NDA signing date. If the dates do not match, that is a finding. So \"sign first, share later\" must be a hard gate in your process."
+    },
+    {
+     "id": "6.1.3",
+     "title": "Responsibilities with external IT service providers",
+     "q_en": "To what extent are the responsibilities between external IT service providers and the own organization defined?",
+     "q_zh": "To what extent are the responsibilities between external IT service providers and the own organization defined?",
+     "objective": "It is important that a common understanding of the division of responsibilities exists, and that all security requirements are implemented. Therefore, when using external IT service providers and IT services, the responsibilities regarding the implementation of information security measures are to be defined and verifiably documented.",
+     "req": {
+      "must": [
+       "The IT services concerned are identified.",
+       "The security requirements relevant to the IT service are determined.",
+       "The organization responsible for implementing the requirement is defined and aware of its responsibility.",
+       "Mechanisms for shared responsibilities are specified and implemented.",
+       "The responsible organization fulfils its respective responsibilities."
+      ],
+      "should": [
+       "In case of IT services, configuration has been conceptualized, implemented, and documented based on the necessary security requirements.",
+       "The responsible staff is adequately trained."
+      ],
+      "high": [
+       "A list exists indicating the IT services concerned and the respective responsible IT service providers. (C, I, A)",
+       "The applicability of the ISA controls has been evaluated and documented. (C, I, A)",
+       "The service configuration is included in the regular security assessments. (C, I, A)",
+       "Proof is provided that the IT service providers fulfil their responsibility. (C, I, A)",
+       "Integration into local protective measures (such as secure authentication mechanisms) is established and documented. (C, I, A)"
+      ],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.23, A.8.9｜ISO 27017 CLD.6.3.1｜ISA/IEC 62443-2-1 6.2.3｜NIST CSF 2.0 GV.OC-05, GV.SC-01, GV.SC-02｜BSI-Standard 200-2 8.1, 8.2, 8.4｜BSI IT-Grundschutz OPS.2.1, OPS.2.2, OPS.3.1, ORP.2｜NIST SP800-53r5 MA-4, PT-1, PL-2",
+     "change2027": "This control was 1.2.4 in ISA 6. It was renumbered to 6.1.3 and moved to the supplier relationships chapter. ISA 2027.1 also removed the supplier SoA (Statement of Applicability) requirement from the must requirements.",
+     "explain": [
+      "This control was 1.2.4 in ISA 6. ISA 2027 moved it to Chapter 6, and the message is clear: using cloud or outsourced IT services is basically a supplier management topic. The core idea is the **shared responsibility model**. For example, with Microsoft 365, Microsoft is responsible for the data centers and the platform, but accounts, MFA, sharing settings and retention policies are your own responsibility.",
+      "You can follow the five must steps in order: 1) identify your IT services (SaaS, IaaS, outsourced IT operations, MSSP and so on); 2) determine the security requirements for each service; 3) define who is responsible for each requirement, and make sure that party knows it; 4) specify and implement the shared responsibility mechanisms; 5) each responsible party actually does its part. Many companies stop after the first two steps and never write down \"Is this our job or the provider's job?\".",
+      "The should requirements ask that the configuration of IT services is planned, implemented and documented according to the security requirements, for example Conditional Access in Microsoft 365, restrictions on external sharing, and audit log retention. The responsible staff must also be properly trained; a new IT colleague should not configure Entra ID by trial and error.",
+      "For high protection needs there are five requirements: a list of IT services and responsible providers; an evaluated and documented applicability of the ISA controls for the service (who is responsible for which control); service configuration included in regular security assessments; proof that the provider fulfils its responsibilities (for example a SOC 2 report, ISO 27001 / 27017 certificates, TISAX results); and integration with local protective measures, for example connecting the cloud service to the company's SSO and MFA. Note: ISA 2027.1 removed the former must requirement for a supplier SoA, but for high protection needs a responsibility matrix that records the applicability of ISA controls is still the clearest approach."
+     ],
+     "practice": [
+      "Create an \"IT service inventory\" with columns for service name (e.g. Microsoft 365, Google Workspace, AWS, cloud ERP, outsourced IT operations, managed EDR / SOC), service type (SaaS / PaaS / IaaS / outsourcing), provider, protection needs of the information processed, internal owner, and location of the contract and SLA.",
+      "For each important service, create a responsibility matrix (RACI) covering identity management, MFA, backup, patching, logging, encryption, incident reporting and data deletion. Mark each item as provider, own company, or shared responsibility.",
+      "For high protection needs, create an applicability table with the ISA controls as rows. For each control, mark who is responsible in this service and where the evidence comes from.",
+      "Configure cloud services according to a security baseline and document it, for example enable Security Defaults or Conditional Access in Microsoft 365, restrict external sharing and turn on the unified audit log. Review regularly with Microsoft Secure Score or a CIS Benchmark.",
+      "Collect proof of provider responsibility every year: SOC 2 Type II reports, ISO 27001 / 27017 certificates, documents from the cloud provider's trust center. Record your review conclusion.",
+      "Integrate cloud services into company authentication: use Entra ID or Google accounts for SSO, enforce MFA, and disable accounts of leavers automatically.",
+      "Send IT staff who manage cloud services to vendor or professional training (for example a Microsoft 365 administrator course) and keep training records."
+     ],
+     "audit": {
+      "questions": [
+       "Which external IT services do you use? Please show the service list and the related providers.",
+       "Taking Microsoft 365 as an example, which security measures are Microsoft's responsibility and which are yours? Is this documented?",
+       "Which security requirements is the configuration of your cloud services based on? Do you have configuration documents?",
+       "What training have the staff who manage cloud services received?",
+       "How do you confirm that the providers fulfil their responsibilities? Which reports or certificates have you reviewed?",
+       "Are your cloud services connected to the company's SSO and MFA?",
+       "How often is the configuration of cloud services reviewed? What was the result of the last review?"
+      ],
+      "evidence": [
+       "IT service inventory and list of responsible providers",
+       "Shared responsibility matrix or ISA control applicability table",
+       "Cloud configuration baseline documents and configuration screenshots",
+       "Regular security assessment reports (e.g. Secure Score, configuration audit results)",
+       "Proof of provider responsibility (SOC 2 reports, ISO 27001 / 27017 certificates) and review records",
+       "Records of SSO / MFA integration settings",
+       "Training records of relevant staff"
+      ],
+      "findings": [
+       "The company believed cloud backup was the provider's responsibility, but the contract did not include it; after data was deleted by mistake, it could not be restored.",
+       "The outsourced IT provider and the company each thought patching was the other party's job, so servers were not updated for a long time.",
+       "A cloud service is not integrated with the company MFA and uses only user name and password.",
+       "There is no IT service inventory; a shadow-IT SaaS service processes customer data but was never identified.",
+       "The cloud provider's SOC 2 report or certificates were never reviewed, so there is no proof that the provider fulfils its responsibilities."
+      ]
+     },
+     "tip": "The most common misunderstanding about shared responsibility is \"Once we are in the cloud, we are secure.\" I ask my clients to take a sheet of A4 paper and draw two columns: \"provider does\" on the left, \"we do\" on the right. The boxes you cannot fill in are usually where the next incident will come from."
+    }
+   ],
+   "summary": [
+    "Contractors include suppliers, subcontractors, service providers, freelancers, and academic or research partners.",
+    "6.1.1 must: risk assessment, contracts that ensure the security level, and flow-down of customer requirements where applicable. Should: pass requirements on to subcontractors and review service reports.",
+    "6.1.1 high: evidence of the supplier's security level; compliance with evidence and with contracts must be documented, and reviewed and monitored regularly and in case of changes.",
+    "6.1.1 very high (new in 2027): third-party audit (TISAX label or equivalent) or supplier audit; without an audit, a recorded management risk decision; fulfil supply chain transparency obligations.",
+    "6.1.2 NDAs: \"sign first, share later\", everyone who shares information knows the rules, regular reviews. Templates must be legally checked and cover parties, type of information, subject, period, responsibilities and post-contract handling; monitor expiry.",
+    "6.1.3 (formerly 1.2.4) uses the shared responsibility model for cloud and IT services. High protection needs: service list, ISA control applicability, regular configuration assessments, proof of provider responsibility, and integration with local authentication."
+   ]
+  },
+  {
+   "id": "is-7",
+   "title": "Chapter 7 — Compliance",
+   "title_en": "Compliance",
+   "intro": [
+    "Information security is not only a technical topic; it is also a legal and contractual topic. Security clauses in customer contracts, data protection law, trade secret law, software licenses: if you miss one of them, it can become a breach of contract or of the law. That costs money and damages your reputation.",
+    "ISA Chapter 7 has two controls: 7.1.1 Compliance with regulatory and contractual provisions, and 7.1.2 Protection of personal data. Neither has additional requirements for high or very high protection needs, so both are basic requirements for every assessment level. Besides the ISA requirements, this chapter also gives typical examples of laws that companies usually need to consider, using the EU and Taiwan as examples."
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Typical entries in a legal register (supplementary)"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Law / requirement category",
+      "Link to information security",
+      "Typical measures"
+     ],
+     "rows": [
+      [
+       "Personal data protection law (e.g. EU GDPR, Taiwan PDPA, or your national law)",
+       "Security of personal data and notification of data breaches",
+       "Inventory of personal data, data protection policy, incident notification process"
+      ],
+      [
+       "Trade secret law (e.g. EU Trade Secrets Directive and national laws, Taiwan Trade Secrets Act)",
+       "Trade secrets are protected only if reasonable confidentiality measures are taken",
+       "Information classification, NDAs, access control, offboarding handover"
+      ],
+      [
+       "Copyright law and software licensing",
+       "Legal risk of using unlicensed software",
+       "Software license inventory, installation control, regular inventory checks"
+      ],
+      [
+       "Cybersecurity and critical-infrastructure laws (e.g. EU NIS2 Directive, EU Cyber Resilience Act, UNECE R155 for vehicles, Taiwan Cyber Security Management Act)",
+       "Security obligations for regulated entities and often for their suppliers and service providers",
+       "Check whether you are regulated or a supplier of a regulated entity; implement the contractual requirements"
+      ],
+      [
+       "Customer contracts / TISAX requirements",
+       "Security clauses, NDAs, incident reporting, prototype protection",
+       "Extracts of contract clauses, assigned owners, flow-down to subcontractors"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "warn",
+     "title": "Always check the latest legal version",
+     "text": "The table above is practical guidance and not part of the ISA text. Laws change. For the exact wording, the competent authorities and the effective dates, always check the official legal database and the latest announcements of the authorities in your country, and ask a legal professional if needed."
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "Let me write that down! 7.1.1 covers \"all laws and contracts\", and 7.1.2 highlights \"personal data\" separately. You can build one combined register for both."
+    }
+   ],
+   "controls": [
+    {
+     "id": "7.1.1",
+     "title": "Compliance with regulatory and contractual provisions",
+     "q_en": "To what extent is compliance with regulatory and contractual provisions ensured?",
+     "q_zh": "To what extent is compliance with regulatory and contractual provisions ensured?",
+     "objective": "Non-compliance with legal, regulatory, or contractual provisions can create risks to the information security of customers and the organization itself. Therefore, it is essential to ensure that these provisions are known and observed.",
+     "req": {
+      "must": [
+       "Legal, regulatory, and contractual provisions of relevance to information security (see examples) are determined at regular intervals.",
+       "Policies regarding compliance with the provisions are defined, implemented, and communicated to the responsible persons."
+      ],
+      "should": [
+       "The integrity of records in accordance with legal, regulatory, and contractual provisions and business requirements is considered."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.31, A.5.32, A.5.33｜NIST CSF 2.0 GV.SC-02, GV.OC-03｜BSI IT-Grundschutz ORP.5",
+     "change2027": "",
+     "explain": [
+      "Laws, regulations, standards, contracts and even self-imposed requirements can create requirements for processes, infrastructure, projects and workflows. Some of them relate directly to information security. The purpose of this control is to identify and understand these requirements and to define how to meet them. If they are not identified or not followed, the result can be a breach of contract or of the law, with financial and material damage and loss of reputation, not only for you but also for your customers and partners.",
+      "There are two must requirements. First, determine the legal, regulatory and contractual provisions relevant to information security **at regular intervals**; the ISA suggests collecting them in a kind of \"legal register\". Second, define and implement policies for compliance and communicate them to the responsible persons. So a list alone is not enough: you must also say how compliance is achieved and who is responsible, for example through guidelines, action plans or work instructions.",
+      "The should requirement is about the integrity of records. If laws or contracts set requirements for documents and records, such as protection against loss, retention periods or access rights, you must record and consider them. In the automotive industry, examples are the record retention requirements of IATF 16949 and the traceability records required by customer contracts.",
+      "The general examples in the ISA include authors' rights and copyright, cryptography laws, intellectual property, archiving, information security legislation, data protection, the Trade Secrets Act, and contractual provisions (general terms and conditions, terms of purchase, framework contracts, individual contracts). Typical entries in a legal register are your personal data protection law (for example the EU GDPR or Taiwan's PDPA), trade secret law, copyright law (software licensing), cybersecurity laws if you are a regulated entity or its supplier (for example national laws implementing NIS2, or Taiwan's Cyber Security Management Act), commercial and tax laws on retention of accounting records, plus customer security requirements and NDAs. Auditors also often ask about intellectual property clauses, software license management and open source licenses."
+     ],
+     "practice": [
+      "Create a \"register of legal and contractual requirements\" with columns for law or contract name, article or clause, link to information security, departments concerned, owner, how compliance is achieved (related procedure or control), date of last review, and review result.",
+      "Review the register at least once a year, and update it immediately when a law changes, a new customer contract is signed, or a new business starts (for example handling prototypes). You can subscribe to change notifications from the official legal database or ask a legal advisor to provide updates.",
+      "Copy the security clauses from customer contracts, quality agreements, TISAX requirements and NDAs into the register, and assign a sales or project contact as owner.",
+      "Write a \"software license management policy\": keep a license inventory, scan installed software regularly with asset management tools (e.g. Intune, PDQ, Snipe-IT, OCS Inventory), forbid unlicensed software, and require IT approval for software downloads.",
+      "If R&D uses open source software, keep a list of open source components (SBOM) and check the license terms with tools (e.g. FOSSA, Black Duck, OSS Review Toolkit). Disclose to the customer where necessary.",
+      "Check the intellectual property clauses in purchase contracts and employment contracts to confirm who owns the results of outsourced development.",
+      "For record integrity: set retention policies on file servers or in Microsoft 365 according to retention periods, store important records as read-only or in tamper-proof storage, and restrict access rights.",
+      "Run compliance and security awareness for responsible staff every year, covering trade secrets, personal data and software licensing, and keep records."
+     ],
+     "audit": {
+      "questions": [
+       "Which laws and regulations are relevant to your ISMS? Please show the register.",
+       "Which customer contract requirements must be included in your ISMS?",
+       "How often is this register reviewed? When was the last review, and what changed?",
+       "Who is responsible for implementing and complying with each legal and contractual requirement?",
+       "Is compliance reported? What was the result of the last audit?",
+       "How do you manage software licenses? What are your rules for downloading software from the internet?",
+       "What do your contracts with subcontractors and employees say about intellectual property?",
+       "When R&D uses open source software, how do you check the license terms and make them transparent to customers?",
+       "How often do you run awareness activities? How do you make sure all employees are reached?"
+      ],
+      "evidence": [
+       "Register of legal and contractual requirements and records of regular reviews",
+       "Compliance policies, procedures or work instructions",
+       "Records of assigned owners",
+       "Compliance check reports or internal audit reports",
+       "Software license inventory and software inventory reports",
+       "Open source component list and license review records",
+       "Awareness and training records",
+       "Record retention periods and retention policy settings"
+      ],
+      "findings": [
+       "The legal register has not been updated for three years and does not include recently amended laws or new customer contract requirements.",
+       "The register only lists the names of laws, without how compliance is achieved or who is responsible.",
+       "Nobody knows about the security clauses in a customer contract; sales filed the contract right after signing.",
+       "An inventory check found unlicensed CAD or tool software on several computers.",
+       "R&D uses GPL-licensed components but did not assess the license impact on the software delivered to the customer."
+      ]
+     },
+     "tip": "A legal register is not a printout of your country's entire law database. What matters is that next to each item you write clearly \"how we comply and who is responsible\". Auditors look at how compliance is put into practice, not at how long the list is."
+    },
+    {
+     "id": "7.1.2",
+     "title": "Protection of personal data",
+     "q_en": "To what extent is the protection of personal data considered when implementing information security?",
+     "q_zh": "To what extent is the protection of personal data considered when implementing information security?",
+     "objective": "Privacy and protection of personal data are considered in the implementation of information security as required by relevant national legislation and regulations, where applicable.",
+     "req": {
+      "must": [
+       "Legal and contractual information security requirements regarding the procedures and processes in the processing of personal data are determined.",
+       "Regulations regarding the compliance with legal and contractual requirements for the protection of personal data are defined and known to the involved persons.",
+       "Processes and procedures for the protection of personally identifiable information are considered in the information security management system."
+      ],
+      "should": [],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.34｜BSI IT-Grundschutz CON.2",
+     "change2027": "",
+     "explain": [
+      "This control has only must requirements; there are no should, high or very high requirements. It is a basic requirement for every organization that takes part in TISAX. Its purpose is to \"consider personal data protection within information security\". It is not a full assessment of a data protection management system. If your assessment objectives include the Data Protection module (processing personal data on behalf of a customer, in line with Article 28 GDPR on processors), there is a separate set of more detailed data protection controls.",
+      "The three must requirements: first, identify the legal and contractual security requirements for processes that handle personal data; second, define rules for compliance and make sure the people involved know them; third, include personal data protection processes in the ISMS, for example by considering personal data in the asset inventory, risk assessment, access control and incident management.",
+      "Legal context: most countries have a personal data protection law that requires appropriate security measures to prevent personal data from being stolen, altered, damaged, lost or disclosed, and to notify affected persons (and often the authority) after a data breach. Examples are the EU GDPR and Taiwan's Personal Data Protection Act (PDPA) with its enforcement rules. If you work with European customers or process data of people in the EU, such as employees or drivers, the GDPR may apply even if your company is outside the EU. Data protection laws and supervisory authorities change in many countries; always check the latest official wording and dates.",
+      "Typical personal data in the automotive industry: employee HR and payroll data, visitor registration, access control records and CCTV images, test vehicle driving data or test driver information, customer contact data, and connected-vehicle or after-sales service data. All of these must be marked in the asset inventory and risk assessment, and linked with the legal register (7.1.1), asset classification (1.3) and incident management (5.2)."
+     ],
+     "practice": [
+      "Create an \"inventory of personal data\": list each category of personal data (e.g. HR, payroll, visitors, CCTV images, customer contacts), the purpose of collection, storage location, retention period, who has access, and whether processing is outsourced.",
+      "Include your personal data protection law (for example the GDPR or your national law) and the personal data clauses of customer contracts in the legal register, and assign owners.",
+      "Write a \"personal data protection policy\" covering information and consent, principles for collection, processing and use, security measures, supervision of processors, data subject rights, the data breach notification process, and deletion and destruction.",
+      "Include personal data in the ISMS: classify data that contains personal data as confidential, add data breach scenarios to the risk assessment, and add the step \"notify affected persons\" to the incident management procedure.",
+      "When personal data processing is outsourced (e.g. payroll service, cloud HR system), agree on security measures, right to audit and incident reporting in the contract, and assess the provider together with supplier management in 6.1.1.",
+      "Run personal data protection awareness every year for staff who handle personal data, such as HR, general affairs and sales, and keep records.",
+      "Technical measures: least-privilege access for HR folders, DLP to detect personal data in outgoing emails, and automatic overwriting of CCTV recordings after the defined retention period."
+     ],
+     "audit": {
+      "questions": [
+       "Which of your processes handle personal data? Please show the inventory.",
+       "Which legal and contractual requirements apply to personal data? Do your customer contracts contain personal data clauses?",
+       "What are your rules for personal data protection? How do the people involved learn about them?",
+       "How is personal data represented in the ISMS risk assessment and asset inventory?",
+       "What is your process for handling and notifying a personal data breach?",
+       "How do you supervise providers that process personal data on your behalf?"
+      ],
+      "evidence": [
+       "Inventory of personal data",
+       "Personal data protection policy or procedure",
+       "Personal data entries in the legal register",
+       "Personal data risks in the risk assessment",
+       "Personal data breach notification process in the incident management procedure",
+       "Personal data protection awareness records",
+       "Contract clauses with processors"
+      ],
+      "findings": [
+       "There is a data protection policy, but the ISMS asset inventory and risk assessment contain no personal data at all.",
+       "HR data is stored in a shared folder that the whole company can read.",
+       "The incident management procedure does not include the step of notifying affected persons after a personal data breach.",
+       "The contract with the outsourced payroll provider has no personal data protection or security requirements."
+      ]
+     },
+     "tip": "Many companies think personal data is a job for the legal or HR department, and that the ISMS is only about confidential drawings. But auditors often go straight to the access rights of the HR shared folder. If the whole company can read it, it is clear that personal data is not really part of the ISMS."
+    }
+   ],
+   "summary": [
+    "7.1.1 must: determine legal, regulatory and contractual provisions relevant to information security at regular intervals; define and implement compliance policies and communicate them to the responsible persons.",
+    "7.1.1 should: consider the integrity of records according to laws, contracts and business needs, for example protection against loss, retention periods and access rights.",
+    "The legal register must state how compliance is achieved and who is responsible, and cover intellectual property, software and open source licenses, trade secrets, cryptography, archiving and contract clauses.",
+    "7.1.2 must: determine legal and contractual security requirements for processing personal data; define rules and make them known to the people involved; include PII protection processes in the ISMS.",
+    "Typical laws to consider: personal data protection (e.g. EU GDPR, Taiwan PDPA), trade secrets, copyright and software licensing, cybersecurity laws (e.g. NIS2, Taiwan Cyber Security Management Act) and customer contracts; whether the GDPR applies depends on your customers and data."
+   ]
+  }
+ ],
+ "video": [
+  {
+   "id": "v-is-6a",
+   "chapter": "is-6",
+   "title": "6.1.1 Information security among contractors and partners",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Hello everyone, and welcome to Chapter 6, Supplier Relationships! In this part we talk about 6.1.1: how to make sure contractors and partners protect information too.",
+     "slide": {
+      "title": "6.1.1 Contractors and partners",
+      "bullets": [
+       "Extend security to the supply chain",
+       "Must, should, high, very high",
+       "Key changes in the 2027 version"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Hi everyone, I'm Allan. Let me start with a question. Where is the most dangerous security gap in your company? Very often, it's not inside your company. It's at your suppliers."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Wow, at our suppliers? But they're not even our own people."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Exactly, and because they're not your own people, they're easy to forget. I once worked with a Tier-2 plant. Their firewall was perfect, but customer drawings leaked from the private email of a design subcontractor."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "That sounds so unfair. You do everything right, and then your teammate lets you down."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "That's why ISA first defines the term. Contractors are a broad group: classic suppliers, subcontractors, service providers, freelancers, and even partners like universities and research institutes.",
+     "slide": {
+      "title": "Who is a contractor?",
+      "bullets": [
+       "Suppliers and subcontractors",
+       "Service providers and freelancers",
+       "Other partner companies",
+       "Universities and research institutes"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So the university lab that does a research project with us is also in scope?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Correct! If they touch your information, enter your security zones, or can affect your systems, you have to manage them."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Let's look at the requirements. There are three must requirements. Allan, can you explain them for us?",
+     "slide": {
+      "title": "6.1.1 Three must requirements",
+      "bullets": [
+       "Security risk assessment of contractors",
+       "Contracts ensure an adequate level",
+       "Pass customer requirements down"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "First, contractors and partners get a security risk assessment. Second, contracts must ensure an appropriate security level. Third, where applicable, your customer's contract requirements are passed on to contractors."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Allan, what does passing on, or flow-down, mean? It sounds a bit abstract."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Here's an example. The carmaker wants you to report security incidents within a certain time. If you give drawings to a tool subcontractor, they need the same reporting duty. Otherwise the chain is broken."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "I see! It's like a relay race. The baton has to go all the way down the line."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Great comparison! The should requirements add two more points. Contractors must pass the security requirements on to their own subcontractors, and you must review the service reports and documents they send you.",
+     "slide": {
+      "title": "6.1.1 Should",
+      "bullets": [
+       "Contractors pass it on to subcontractors",
+       "Review service reports and documents",
+       "For example SLA reports"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Service reports, like the monthly reports our IT provider sends us?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Yes. But often those reports go straight into a folder and nobody reads them. In one audit I asked if availability targets were met. The IT manager opened the file, and two were missed last quarter."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Haha, that must have been awkward. They got the reports but nobody read them."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Next, high protection needs. The focus moves from having a contract to having evidence. For example a reviewed questionnaire, self-assessment, attestation, certificate or supplier audit.",
+     "slide": {
+      "title": "6.1.1 High protection needs",
+      "bullets": [
+       "Evidence of the supplier's security level",
+       "Document, review and monitor compliance",
+       "Check and record contract compliance",
+       "Review again when things change"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "And you must document how well the supplier meets that evidence. Review and monitor it regularly, and also when requirements change, the supplier's status changes, or the supply chain structure changes."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The third point: the supplier's compliance with the contract is checked, documented, and reviewed regularly and when things change. In ISA 6 this was a must. In 2027 it moved to high, but it's now more complete."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, so getting the certificate is not the end. You have to keep tracking it."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "That's right. I once saw a company keep a copy of a supplier's ISO certificate for five years. It had expired long ago. The auditor checked the validity and wrote a finding."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what about very high protection needs? I heard that's new in the 2027 version?",
+     "slide": {
+      "title": "6.1.1 Very high, new",
+      "bullets": [
+       "Third-party audit, TISAX label or equal",
+       "Or a supplier audit covering customer needs",
+       "No audit: recorded management decision",
+       "Fulfil supply chain transparency duties"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Yes, this is important. For very high, the security level should be proven by a third-party audit, like a matching TISAX label or equivalent, or by a supplier audit that covers the customer requirements."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "And if there was really no audit? Then management must make a risk-based decision on whether to continue working with that supplier, and that decision must be recorded."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "So basically, the boss has to sign it and take responsibility in writing?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "You could put it that way. Also, if a customer contract requires transparency about supply chain risks, for example telling them which subcontractors you use, you must do that too."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Got it! So where do we start in practice?",
+     "slide": {
+      "title": "Three practical steps",
+      "bullets": [
+       "List contractors from accounting data",
+       "Classify by protection needs",
+       "Add security to supplier selection"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "My favorite starting point is the vendor master data in accounting. You may find several hundred suppliers, but most of them deliver stationery, lunch boxes or plumbing. Just mark them as not security-relevant."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The ten or twenty that are left, like IT service providers, design subcontractors, prototype transport, or cleaners for security zones, you classify as normal, high or very high, and set requirements for each."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "And once they're classified, how do we verify each level?",
+     "slide": {
+      "title": "Verification by level",
+      "table": {
+       "head": [
+        "Level",
+        "Verification method"
+       ],
+       "rows": [
+        [
+         "Normal",
+         "Self-assessment signed by management"
+        ],
+        [
+         "High",
+         "TISAX label or ISO 27001"
+        ],
+        [
+         "Very high",
+         "Matching TISAX label and thorough checks"
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The ISA example: for normal, a self-assessment confirmed by management or a certificate. For high, a matching label or ISO 27001 with the right scope. For very high, a matching TISAX label and thorough checks."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "And finally, add security to your existing supplier evaluation. Next to quality, delivery and price, add one more column for security, and use the same process. That's the easiest way."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So when an auditor looks at 6.1.1, what do they usually ask?",
+     "slide": {
+      "title": "Typical audit questions",
+      "bullets": [
+       "Which suppliers handle protected data?",
+       "Security clauses beyond the NDA?",
+       "How is contract compliance checked?",
+       "Where is the very high decision record?"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Common questions are: which suppliers handle protected data, who can enter security zones, which security clauses exist apart from the NDA, and how you check that suppliers comply."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "The most common finding: the outsourced IT provider has domain admin rights, but the contract has only one line about confidentiality. No security requirements, and no right to audit."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Let me sum up! For 6.1.1: assess, sign a contract, pass it down, get evidence, and keep tracking. Next, we look at NDAs and shared responsibility for cloud services. Stay with us!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-6b",
+   "chapter": "is-6",
+   "title": "6.1.2–6.1.3 NDAs and IT service responsibilities",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Welcome back! In this part we look at 6.1.2, non-disclosure agreements, and 6.1.3, responsibilities with external IT services, which moved here from 1.2.4.",
+     "slide": {
+      "title": "6.1.2 and 6.1.3",
+      "bullets": [
+       "Non-disclosure agreements, NDA",
+       "External IT service responsibilities",
+       "Shared responsibility model"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Let's start with NDAs. I'm sure every company has NDAs. But here's my question: do you sign the NDA first and then send the drawings, or send the drawings first and sign later?"
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Um, sales says customers are always in a hurry for quotes, so I think we often send first."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "That's exactly what auditors love to check! In audits I pick an email with drawings sent outside and compare it with the NDA signing date. If the dates don't match, that's a finding."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "6.1.2 has four must requirements. First, non-disclosure requirements are determined and fulfilled. Second, everyone who passes on protected information knows the NDA requirements and procedures.",
+     "slide": {
+      "title": "6.1.2 Four must requirements",
+      "bullets": [
+       "Determine and fulfil NDA requirements",
+       "Everyone sharing info knows the rules",
+       "Valid NDA before sharing sensitive info",
+       "Review NDA rules regularly"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Third, a valid NDA must be signed before sensitive information is passed on. Fourth, the NDA rules and the handling of protected information are reviewed regularly."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Let me make it easy to remember: determine, know, sign first, review regularly!"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Easy to remember. And pay attention to the word valid. If an NDA has an end date and you keep exchanging data after it expires, you have no protection."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "There are five should requirements, even more than the must ones!",
+     "slide": {
+      "title": "6.1.2 Should",
+      "bullets": [
+       "Templates checked for legal validity",
+       "Parties, info, subject, period, duties",
+       "Handling after the contract ends",
+       "Ways to show compliance",
+       "Monitor expiry and extend in time"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "First, have NDA templates that were checked for legal applicability. Second, the content clearly states the parties, the type of information, the subject, the validity period and the duties of the obliged party."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Third, rules for sensitive information after the contract ends. Fourth, ways to show compliance, like a third-party review or audit rights. Fifth, monitor expiry of fixed-term NDAs and extend them in time."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Allan, what does handling information after the contract ends mean?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "For example, data must be returned or deleted when the cooperation ends, and kept secret for a number of years. Many free templates from the internet miss this part, and your drawings stay on the partner's hard drive."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, that's scary. So how do we do it in practice?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "I suggest an NDA register: partner, signing date, expiry date, project, contact person and file location. Then set a reminder sixty days before expiry with Power Automate or a spreadsheet.",
+     "slide": {
+      "title": "NDA in practice",
+      "bullets": [
+       "Legally reviewed one-way and mutual templates",
+       "NDA register with expiry reminders",
+       "Check NDA before sending drawings",
+       "Yearly awareness and review"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Also add a check to the process for sending confidential drawings, for example the sharing platform asks for an NDA number. And run awareness once a year for sales, R&D and purchasing."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Got it! Next is 6.1.3. I heard it used to be 1.2.4?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Yes. ISA 2027 moved it from Chapter 1 to Chapter 6, because using cloud or outsourced IT is really supplier management. And 2027.1 removed the supplier SoA requirement from the must requirements.",
+     "slide": {
+      "title": "6.1.3 Version changes",
+      "bullets": [
+       "ISA 6 control 1.2.4 is now 6.1.3",
+       "Moved to supplier relationships",
+       "2027.1 removed supplier SoA from must"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So what's the core idea of 6.1.3?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The core is the shared responsibility model. Take Microsoft 365. Microsoft runs the data centers and the platform, but accounts, MFA, external sharing and retention policies are your responsibility."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Oh, I thought once you move to the cloud, Microsoft takes care of everything!"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Many managers think so. I saw a company that thought cloud backup was the provider's job. Then data was deleted by mistake, and when they read the contract, backup was not included at all."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "I see. So what are the must requirements of 6.1.3?",
+     "slide": {
+      "title": "6.1.3 Five must steps",
+      "bullets": [
+       "Identify the IT services",
+       "Determine security requirements",
+       "Define who is responsible, and tell them",
+       "Specify shared responsibility mechanisms",
+       "Each party fulfils its duties"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Five steps. Identify the IT services. Determine the security requirements for each. Define who is responsible for each one, and make sure they know. Set up shared responsibility. And everyone does their part."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There are two should requirements. The configuration of IT services is planned, implemented and documented according to the security requirements, and the responsible staff is properly trained."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "So you can't let a brand-new IT colleague figure out Entra ID by trial and error."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "For high protection needs there are five requirements. A list of IT services and providers, documented applicability of the ISA controls, and service configuration in the regular security assessments.",
+     "slide": {
+      "title": "6.1.3 High protection needs",
+      "bullets": [
+       "List of IT services and providers",
+       "ISA control applicability documented",
+       "Configuration in regular assessments",
+       "Proof providers fulfil duties",
+       "Integration with local authentication"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Plus proof that the IT service providers fulfil their responsibilities, and documented integration with local protection, for example connecting the cloud service to the company's SSO and MFA."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "But where do we get proof that the provider fulfils its responsibilities?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Big cloud providers usually have a trust center where you can download SOC 2 reports or ISO 27001 and 27017 certificates. After downloading, write a review record. Don't just file them."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "In practice, I ask clients to take a sheet of A4 paper and draw two columns: provider does on the left, we do on the right. The boxes you can't fill in are usually where the next incident comes from.",
+     "slide": {
+      "title": "Responsibility matrix",
+      "bullets": [
+       "Who handles identity and MFA?",
+       "Who handles backup and restore?",
+       "Who handles patching and logging?",
+       "Incident reporting and data deletion"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what does the auditor ask about 6.1.3?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "They ask for your IT service list, pick one service, and ask what the provider does, what you do, whether it's documented, and whether the cloud service uses MFA."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Let's sum up! NDAs: sign first, share later, and track expiry. IT services: draw clear lines of responsibility and get proof from the provider. Next we move to Chapter 7, Compliance. Bye for now!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-7a",
+   "chapter": "is-7",
+   "title": "7.1.1 Compliance with regulatory and contractual provisions",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Hello everyone, and welcome to Chapter 7, Compliance! First we look at 7.1.1: how to make sure laws, regulations and contract requirements are followed.",
+     "slide": {
+      "title": "7.1.1 Legal and contract compliance",
+      "bullets": [
+       "Why compliance is a security topic",
+       "Must and should",
+       "How to build a legal register"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Many people get sleepy when they hear the word law. But compliance is the part of security where you can most easily get fined. Breach of contract or of the law costs money and hurts your reputation."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "But we're a factory, not a law firm. Do we really need to know so many laws?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "You don't have to become a lawyer. But you need to know which laws and contracts affect your security, and that someone is responsible for meeting them. That's the spirit of 7.1.1."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The objective is clear. If you don't follow laws, regulations or contracts, it creates security risks for your customers and for yourself. So you must make sure these provisions are known and followed.",
+     "slide": {
+      "title": "7.1.1 Objective",
+      "bullets": [
+       "Non-compliance creates security risks",
+       "Affects you and your customers",
+       "Provisions must be known and followed"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So how many must requirements does 7.1.1 have?",
+     "slide": {
+      "title": "7.1.1 Must",
+      "bullets": [
+       "Regularly determine relevant provisions",
+       "Define and implement compliance policies",
+       "Communicate to responsible persons"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Two. First, determine the laws, regulations and contract provisions relevant to security at regular intervals. Note the word regular. Doing it once is not enough."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Second, define and implement policies for meeting these provisions, and communicate them to the responsible people. So besides the list, you explain how you comply and who is responsible."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "And the should requirement? Is there an extra one?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "One should requirement: consider the integrity of records according to laws, contracts and business needs. For example, records must not get lost, you need retention periods, and you control who has access.",
+     "slide": {
+      "title": "7.1.1 Should",
+      "bullets": [
+       "Consider the integrity of records",
+       "Prevent loss and manipulation",
+       "Retention periods and access rights"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, that sounds a lot like record keeping in the quality system!"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Exactly. IATF 16949 quality records and customer traceability records can be managed together. Retention policies in Microsoft 365 or read-only storage already solve a lot."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Does the ISA give examples of what kinds of provisions it means?",
+     "slide": {
+      "title": "Examples in the ISA",
+      "bullets": [
+       "Copyright, authors' rights, IP",
+       "Cryptography, archiving",
+       "Security laws, data protection, trade secrets",
+       "Contract and purchasing terms"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Yes. The ISA lists authors' rights, copyright, cryptography, intellectual property, archiving, security laws, data protection, trade secrets, and contract terms, including framework and individual contracts."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "In practice, which laws do companies usually put in their register?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Typical ones are a data protection law like the GDPR or Taiwan's PDPA, trade secret law, copyright law for software licensing, and cybersecurity laws like NIS2 if you or your customers are regulated.",
+     "slide": {
+      "title": "Typical laws to consider",
+      "bullets": [
+       "Personal data protection, e.g. GDPR",
+       "Trade secret law",
+       "Copyright and software licensing",
+       "Cybersecurity laws, e.g. NIS2"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "A quick reminder: laws change. Always check the exact wording and dates in your country's official legal database and the latest announcements from the authorities."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Allan, what does trade secret law have to do with security?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "To be protected by law, a trade secret usually needs reasonable confidentiality measures. If your drawings sit in a folder the whole company can read, it's hard to claim they were a trade secret."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "So if your security is bad, you can even lose in court!"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "That's right. That's why security and legal are actually good friends."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So in practice, how do we build a legal register?",
+     "slide": {
+      "title": "Legal register columns",
+      "bullets": [
+       "Law or contract name and clause",
+       "Link to security, departments",
+       "Owner and how you comply",
+       "Last review date and result"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Suggested columns: name of the law or contract, the clause, the link to security, departments concerned, the owner, how you comply and which procedure covers it, and the last review date and result."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "The worst register I ever saw listed over a hundred laws with nothing next to them, and it was three years old. When the auditor asked how they comply, the person in charge could only smile awkwardly."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "A long list, but nothing behind it, right?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Right. What matters is that each line says how you comply and who's responsible. Also copy the security clauses from customer contracts into it. Don't let sales just file the contract after signing."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Do auditors also ask about software licenses and open source?",
+     "slide": {
+      "title": "Further audit questions",
+      "bullets": [
+       "License management and download rules",
+       "IP clauses in contracts",
+       "Open source license review",
+       "Awareness frequency and coverage"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Yes. For software licenses you need a license inventory. Scan installed software regularly with Intune or another inventory tool, and don't allow people to download unlicensed software."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "If R&D uses open source components, keep a component list, check the license terms, and inform the customer where needed. Auditors also ask about IP ownership in contracts and employment contracts."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Our engineers really love downloading free tools from the internet."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "That's very common. I once checked a plant where several computers had unlicensed CAD software. That kind of finding is very hard to explain."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Let me sum up! 7.1.1 means: identify laws and contracts regularly, write down how you comply, name an owner, and take care of record integrity. Next up, personal data protection!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-7b",
+   "chapter": "is-7",
+   "title": "7.1.2 Protection of personal data",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Welcome back! This is the last control in Chapter 7: 7.1.2, protection of personal data. Let's see how personal data fits into information security.",
+     "slide": {
+      "title": "7.1.2 Protection of personal data",
+      "bullets": [
+       "Personal data is part of security",
+       "Three must requirements",
+       "Legal context and examples"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Many companies think personal data is a job for HR or legal, and that the ISMS only protects customer drawings. But TISAX clearly requires that information security considers personal data protection."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Does this control have extra requirements for high or very high protection needs?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "No. 7.1.2 has only must requirements, so every company in an assessment has to meet them. The objective is to consider privacy and personal data protection in security, as required by relevant national laws.",
+     "slide": {
+      "title": "7.1.2 Objective",
+      "bullets": [
+       "Based on national laws",
+       "Consider privacy in security work",
+       "Only must, for everyone"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So Allan, what are the three must requirements?",
+     "slide": {
+      "title": "7.1.2 Must",
+      "bullets": [
+       "Determine legal and contract requirements",
+       "Define rules, make them known",
+       "Include PII protection in the ISMS"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "First, determine the legal and contractual security requirements for processes that handle personal data. Second, define rules for compliance and make sure the people involved know them."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Third, processes for protecting personally identifiable information are included in the ISMS. That means asset inventory, risk assessment, access control and incident management all consider personal data."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "So how is this different from the TISAX Data Protection module?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Good question. 7.1.2 is a basic requirement in the security module. If you process personal data for a customer and your assessment includes data protection, there's a whole separate set of more detailed controls."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, so 7.1.2 is the starter version, and the data protection module is the advanced version."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "You can remember it that way. But don't take the starter version lightly!"
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Which laws are we talking about? It must be different in every country.",
+     "slide": {
+      "title": "Legal context",
+      "bullets": [
+       "National data protection law, e.g. PDPA",
+       "Appropriate security measures",
+       "Notify people after a breach",
+       "GDPR for EU data and customers"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Yes, but the ideas are similar. Taiwan's PDPA, for example, requires companies to take proper security measures so personal data is not stolen, altered, damaged, lost or leaked."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Most laws, including the GDPR, also require you to notify people after a data breach. And if you work with European customers or process data of people in the EU, the GDPR may apply to you."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Data protection laws and authorities change in many countries. Always check the latest official wording and dates. Here I'm only giving you the general picture."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "What personal data does an auto-parts plant have? It feels like we only make parts.",
+     "slide": {
+      "title": "Typical personal data in automotive",
+      "bullets": [
+       "Employee HR and payroll data",
+       "Visitor and access control records",
+       "CCTV images",
+       "Test vehicle and test driver data"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Actually quite a lot! Employee HR and payroll data, visitor registration, access control records, CCTV images, customer business cards, and test vehicle driving data and test driver information."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Oh, so CCTV recordings also count as personal data!"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Of course. If you can see a face, it's personal data. So you need rules on how long recordings are kept and who can view them."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "In practice, where do we start with personal data protection?",
+     "slide": {
+      "title": "Personal data in practice",
+      "bullets": [
+       "Inventory of personal data",
+       "Personal data protection policy",
+       "Add to risk and incident management",
+       "Cover processors in supplier management"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Step one: an inventory of personal data. For each category, list the purpose, storage location, retention period, who has access, and whether it's outsourced."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Next, write a personal data protection policy covering information and consent, security measures, supervision of processors, data subject rights, breach notification and deletion."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The key is linking it back to the ISMS. Classify data with personal data as confidential, add data breach scenarios to the risk assessment, and add a step to notify affected people in the incident procedure."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What if payroll is outsourced to an accounting firm?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Then we're back to supplier management in 6.1.1. The contract must cover security measures, right to audit and incident reporting, and you include the provider in the risk assessment."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Everything connects across the chapters! So how does the auditor check this?",
+     "slide": {
+      "title": "Audit focus",
+      "bullets": [
+       "Inventory of processes with personal data",
+       "Personal data in the risk assessment",
+       "Breach notification process",
+       "Access rights to HR shared folders"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "They ask which processes handle personal data, which legal and contract requirements apply, how personal data appears in the risk assessment, and how you notify people after a breach."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "The most common finding: I check the access rights of the HR shared folder, and the whole company can read it. The policy looks great, but personal data was never really part of the ISMS."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Then it falls apart right away. A great policy doesn't help."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "So don't worry. Start with three things: the inventory, access rights and the incident procedure. Most companies can close the gaps in one or two months."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Great! To sum up, 7.1.2 means: determine the legal and contract requirements for personal data, define rules everyone knows, and include personal data in the ISMS.",
+     "slide": {
+      "title": "Chapter 7 summary",
+      "bullets": [
+       "7.1.1 Identify laws and contracts regularly",
+       "Document how you comply, and the owner",
+       "7.1.2 Personal data requirements and rules",
+       "Personal data in ISMS risk and incidents"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Compliance and personal data protection are not extra work. They are the foundation that makes your security strong."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "That's the end of Chapters 6 and 7! Thank you, Allan. See you in the next unit, bye!"
+    }
+   ]
+  }
+ ]
+}

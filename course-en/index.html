@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISA 2027 for TISAX — Requirements Explained | Online Course</title>
+<meta name="description" content="ISA 2027 for TISAX — Requirements Explained: Information Security, Prototype Protection and Data Protection explained control by control, with implementation practice and audit practice.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23f2b705%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-size=%2224%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%230f2a44%22 font-family=%22Arial%22%3EISA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/license.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="data/toc.js"></script>
+</head>
+<body>
+<header id="topbar"></header>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="tags"><span>VDA ISA 2027.1</span><span>TISAX</span><span>Information Security</span><span>Prototype Protection</span><span>Data Protection</span></div>
+      <h1>ISA 2027 for TISAX<br>Requirements Explained</h1>
+      <div class="lic-hero" data-lic-company hidden></div>
+      <p>Presented by <b>Allan</b>, an ISMS/PIMS consultant and certification-body auditor, with his assistant <b>ARALE</b>. We explain every ISA 2027 requirement, show how to implement it in practice, and tell you — from the auditor's side of the table — what you will be asked, what evidence to prepare and where findings are most often raised.</p>
+      <div class="cta">
+        <a class="btn btn-amber" href="video.html">▶ Watch the videos</a>
+        <a class="btn btn-primary" href="text.html">📖 Online textbook</a>
+        <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4)" href="quiz.html">📝 Quizzes & certificate</a>
+      </div>
+      <p class="small" id="stats" style="margin-top:14px"></p>
+    </div>
+    <div class="chars"><img src="assets/img/ch/allan-full.webp" alt="Allan"><img class="arale" src="assets/img/ch/arale-full.webp" alt="ARALE"></div>
+  </div>
+</section>
+<section class="block"><div class="wrap">
+  <div class="grid3">
+    <div class="card feature"><div class="ic" style="background:var(--blue-2)">📖</div><h3>Online textbook</h3><p>Every control has: the requirements (must / should / high / very high / SGA), a detailed explanation, implementation practice and audit practice (what auditors ask, evidence to prepare, common findings). Searchable, with reading progress.</p><a href="text.html">Open the textbook →</a></div>
+    <div class="card feature"><div class="ic" style="background:var(--amber-2)">🎬</div><h3>Interactive video</h3><p>Classroom dialogue between Allan and ARALE with slides and subtitles. Each part takes about 3–8 minutes and loads line by line, so it starts instantly. Choose chapters, change the speed or read the transcript.</p><a href="video.html">Start watching →</a></div>
+    <div class="card feature"><div class="ic" style="background:var(--green-2)">🏅</div><h3>Quizzes & certificate</h3><p>Information Security, Prototype Protection and Data Protection: 10 questions each. Score 80 or more to download your certificate (with questions and answers); otherwise review the material and try again.</p><a href="quiz.html">Go to the quizzes →</a></div>
+  </div>
+</div></section>
+<section class="block" style="padding-top:0"><div class="wrap">
+  <h2>Course chapters</h2>
+  <div class="toc-modules" id="toc"></div>
+</div></section>
+<div class="wrap footer">
+  <p>Source: VDA ISA 2027.1 (2026-09-30), © ENX Association / VDA, licensed under CC BY-ND 4.0 with additional terms for derivatives. This course is a <b>derivative work not approved by the licensor</b>; it is not an official VDA or ENX document and does not use their logos. The original English ISA prevails. TISAX® is a registered trademark of ENX Association.</p>
+  <p>Lecturer: Allan Lo | Assistant: ARALE</p>
+</div>
+<script>
+renderTopbar('home');
+let nCtl=0,nSeg=0,dur=0;
+const MODS=[]; TOC.forEach(m=>{ const last=MODS[MODS.length-1]; if(last&&last.module===m.module) last.chapters=last.chapters.concat(m.chapters); else MODS.push({module:m.module,chapters:m.chapters.slice()}); });
+document.getElementById('toc').innerHTML = MODS.map(m=>{
+  const meta = MODULE_META[m.module];
+  return `<div class="card"><h3><span class="pill ${meta.cls}">${m.module}</span> ${esc(meta.label)}</h3><ol>${m.chapters.map(c=>{
+    nCtl+=c.controls.length; nSeg+=c.videos.length; dur+=c.videos.reduce((a,v)=>a+v.dur,0);
+    return `<li><a href="text.html#ch=${c.id}">${esc(c.title)}</a>${c.videos.length?` <a class="small" href="video.html#seg=${c.videos[0].id}" title="Watch the video">▶ ${c.videos.length} part${c.videos.length>1?'s':''}</a>`:''}</li>`;}).join('')}</ol></div>`;
+}).join('');
+document.getElementById('stats').textContent = `${nCtl} controls explained · ${nSeg} video parts (about ${Math.round(dur/60)} minutes) · 3 quizzes`;
+</script>
+<div id="unzip-hint" style="display:none;margin:40px auto;max-width:720px;padding:24px 28px;border:3px solid #c8323c;border-radius:14px;background:#fff4f4;color:#1b2430;font:18px/1.6 Arial,Helvetica,sans-serif">
+  <b style="font-size:22px;color:#c8323c">⚠ Please extract the ZIP file first</b><br>
+  This page was opened directly from inside a ZIP file, so its styles, images and scripts were not extracted and the page cannot work.<br>
+  Right-click the ZIP file → <b>Extract All…</b>, then open <b>index.html</b> in the extracted folder.
+</div>
+<script>if (!window.renderTopbar) { var h = document.getElementById('unzip-hint'); h.style.display = 'block'; document.body.insertBefore(h, document.body.firstChild); }</script>
+</body>
+</html>
