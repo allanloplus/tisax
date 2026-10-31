@@ -1,0 +1,5 @@
+tools/node_modules/
+tools/package-lock.json
+__pycache__/
+*.pyc
+audio/**/*.tmp.mp3
