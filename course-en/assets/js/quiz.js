@@ -157,7 +157,7 @@ function dl(href, name){ const a = document.createElement('a'); a.href = href; a
 /* ---------- certificate drawing ---------- */
 const imgCache = {};
 function img(src){ if (!imgCache[src]) { const i = new Image(); i.src = src; imgCache[src] = i; } return imgCache[src]; }
-['assets/img/ch/allan-full.webp','assets/img/ch/arale-wave.webp'].forEach(img);
+['assets/img/ch/allan-full.webp','assets/img/ch/arale-wave.webp','assets/img/signature.png'].forEach(img);
 function drawCert(rec){
   const W = 2000, H = 1414, c = document.createElement('canvas'); c.width = W; c.height = H;
   const g = c.getContext('2d'); const F = '"Segoe UI",Roboto,Arial,"Microsoft JhengHei","PingFang TC",sans-serif';
@@ -193,7 +193,14 @@ function drawCert(rec){
   // signature
   g.textAlign = 'center'; g.strokeStyle = '#1b2430'; g.lineWidth = 2;
   g.beginPath(); g.moveTo(W-760, 1180); g.lineTo(W-380, 1180); g.stroke();
-  g.font = `italic 600 58px "Brush Script MT","Segoe Script",cursive`; g.fillStyle = '#0f2a44'; g.fillText(CFG.instructor || 'Allan Lo', W-570, 1165);
+  const sig = img('assets/img/signature.png');
+  if (sig.complete && sig.naturalWidth) {   // instructor's handwritten signature (assets/img/signature.png)
+    const bw = 400, bh = 150, k = Math.min(bw / sig.naturalWidth, bh / sig.naturalHeight);
+    const sw = sig.naturalWidth * k, sh = sig.naturalHeight * k;
+    g.drawImage(sig, W - 570 - sw / 2, 1172 - sh, sw, sh);
+  } else {
+    g.font = `italic 600 58px "Brush Script MT","Segoe Script",cursive`; g.fillStyle = '#0f2a44'; g.fillText(CFG.instructor || 'Allan Lo', W-570, 1165);
+  }
   g.font = `500 28px ${F}`; g.fillStyle = '#5b6777'; g.fillText(`Instructor ${CFG.instructor || 'Allan Lo'}`, W-570, 1225);
   // characters
   const a = img('assets/img/ch/allan-full.webp'), r = img('assets/img/ch/arale-wave.webp');
