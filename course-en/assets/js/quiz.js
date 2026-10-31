@@ -181,8 +181,8 @@ function drawCert(rec){
   g.font = `500 36px ${F}`; g.fillStyle = '#1b2430';
   fitText(g, `${rec.info.company}　${rec.info.unit}　${rec.info.title}`, W/2, 660, 1500, 36, F);
   g.font = `400 36px ${F}`;
-  g.fillText('has completed the course "ISA 2027 for TISAX — Requirements Explained"', W/2, 760);
-  g.font = `800 46px ${F}`; g.fillStyle = col; g.fillText(`and passed the ${rec.module} post-course quiz`, W/2, 835);
+  fitText(g, 'has completed the course "ISA 2027 for TISAX — Requirements Explained"', W/2, 760, 1240, 36, F);
+  g.font = `800 46px ${F}`; g.fillStyle = col; { const t = `and passed the ${rec.module} post-course quiz`; let z = 46; g.font = `800 ${z}px ${F}`; while (g.measureText(t).width > 1240 && z > 28) { z -= 2; g.font = `800 ${z}px ${F}`; } g.fillText(t, W/2, 835); }
   g.font = `400 36px ${F}`; g.fillStyle = '#1b2430'; g.fillText(`with a score of ${rec.score} (${rec.right} of ${rec.total} correct).`, W/2, 910);
   // footer info
   g.textAlign = 'left'; g.font = `400 28px ${F}`; g.fillStyle = '#5b6777';

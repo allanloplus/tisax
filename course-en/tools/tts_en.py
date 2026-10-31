@@ -16,7 +16,7 @@ from tts_common import iter_lines, load_manifest, save_manifest, out_path
 # speaker id in kokoro-multi-lang-v1_0, speed, pitch factor (rubberband, 1.0 = unchanged)
 VOICE = {
     'allan': {'name': 'am_michael', 'sid': 16, 'speed': 1.0, 'pitch': 1.0},
-    'arale': {'name': 'af_jessica', 'sid': 4, 'speed': 1.08, 'pitch': 1.0},
+    'arale': {'name': 'af_jessica', 'sid': 4, 'speed': 1.08, 'pitch': 1.0905},  # +1.5 semitones, younger
 }
 SIG = {w: f"kokoro-en|{v['name']}|{v['speed']}|{v['pitch']}" for w, v in VOICE.items()}
 

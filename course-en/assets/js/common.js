@@ -50,7 +50,7 @@
     el.className = 'topbar';
     el.innerHTML = `<div class="wrap">
       ${active==='text'?'<button class="btn btn-ghost menu-btn" style="color:#fff;border-color:rgba(255,255,255,.3);padding:6px 12px" onclick="document.querySelector(\'.sidebar\').classList.toggle(\'open\')">☰ Chapters</button>':''}
-      <a class="brand" href="index.html"><span class="logo">ISA</span><span>ISA 2027 for TISAX — Requirements Explained</span></a>
+      <a class="brand" href="index.html"><span class="logo">ISA</span><span title="ISA 2027 for TISAX — Requirements Explained">ISA 2027 for TISAX</span></a>
       ${window.COURSE_LICENSE && window.COURSE_LICENSE.company ? `<span class="lic-badge" title="${esc(licenseText())}">Licensed to: ${esc(window.COURSE_LICENSE.company)}</span>` : ''}
       <nav class="topnav">${items.map(i=>`<a href="${i[0]}" class="${i[2]===active?'on':''}">${i[1]}</a>`).join('')}
       <button class="theme-btn" onclick="toggleTheme()" title="Toggle dark / light mode">◐</button></nav></div>`;
