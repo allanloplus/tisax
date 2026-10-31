@@ -156,7 +156,7 @@ function dl(href, name){ const a = document.createElement('a'); a.href = href; a
 
 /* ---------- certificate drawing ---------- */
 const imgCache = {};
-function img(src){ if (!imgCache[src]) { const i = new Image(); i.src = src; imgCache[src] = i; } return imgCache[src]; }
+function img(src){ if (!imgCache[src]) { const i = new Image(); i.src = (window.CERT_IMG && window.CERT_IMG[src]) || src; imgCache[src] = i; } return imgCache[src]; }
 ['assets/img/ch/allan-full.webp','assets/img/ch/arale-wave.webp','assets/img/signature.png'].forEach(img);
 function drawCert(rec){
   const W = 2000, H = 1414, c = document.createElement('canvas'); c.width = W; c.height = H;
