@@ -1,0 +1,9256 @@
+{
+"v-audit-1a": {
+"0": {
+"d": 9.65,
+"engine": "clone",
+"h": "caaf0a6fa64e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.2,
+"engine": "clone",
+"h": "1f6b1879968d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.75,
+"engine": "clone",
+"h": "9a3a598def37",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 2.9,
+"engine": "clone",
+"h": "e7c0ec597bfd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 7.22,
+"engine": "clone",
+"h": "c9250058ecae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 8.74,
+"engine": "clone",
+"h": "034c76299468",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.61,
+"engine": "clone",
+"h": "e026c7661646",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 7.3,
+"engine": "clone",
+"h": "b1d3349e9c82",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 7.27,
+"engine": "clone",
+"h": "00cec9fead9f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 4.49,
+"engine": "clone",
+"h": "90c4279adfaa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 4.82,
+"engine": "clone",
+"h": "0f9ecc532f36",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 8.09,
+"engine": "clone",
+"h": "a12555fabb87",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 6.79,
+"engine": "clone",
+"h": "36f581a42ef5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 8.42,
+"engine": "clone",
+"h": "b76401dc009b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 5.45,
+"engine": "clone",
+"h": "a4776a4dbaf1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 5.64,
+"engine": "clone",
+"h": "6a5727771541",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 9.5,
+"engine": "clone",
+"h": "7cb13abbf019",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 6.07,
+"engine": "clone",
+"h": "4502950130e1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 7.37,
+"engine": "clone",
+"h": "53526608534d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 6.79,
+"engine": "clone",
+"h": "be030fa85d93",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.17,
+"engine": "clone",
+"h": "93e565d3b13f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 9.36,
+"engine": "clone",
+"h": "bdf96367cbd9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.5,
+"engine": "clone",
+"h": "21fc27776c45",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.25,
+"engine": "clone",
+"h": "c41f9f3b5c3d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 7.63,
+"engine": "clone",
+"h": "3870fa7d6dca",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 9.94,
+"engine": "clone",
+"h": "b7265da4bf86",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.73,
+"engine": "clone",
+"h": "26e39441a9d7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-1b": {
+"0": {
+"d": 7.7,
+"engine": "clone",
+"h": "97a0fec3e75b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.75,
+"engine": "clone",
+"h": "e1672e55bd9f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.56,
+"engine": "clone",
+"h": "d33855e7a1d7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 7.13,
+"engine": "clone",
+"h": "169a00e865bc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 5.76,
+"engine": "clone",
+"h": "9fd59c954e2c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 8.4,
+"engine": "clone",
+"h": "b844a3daa30f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.01,
+"engine": "clone",
+"h": "6bbf8afaf59e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.77,
+"engine": "clone",
+"h": "c4cfbe5b95d8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.78,
+"engine": "clone",
+"h": "914268a30749",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 7.73,
+"engine": "clone",
+"h": "2c9cbf6d9141",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.34,
+"engine": "clone",
+"h": "b4503e72babd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 10.18,
+"engine": "clone",
+"h": "08a656f786fc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.97,
+"engine": "clone",
+"h": "c3a321ca455b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 9.19,
+"engine": "clone",
+"h": "f2ccf9a9f900",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 5.38,
+"engine": "clone",
+"h": "9fe9fca1b2e8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 8.54,
+"engine": "clone",
+"h": "b11ae66050ee",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 7.58,
+"engine": "clone",
+"h": "4623df1431e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 6.34,
+"engine": "clone",
+"h": "3fbac7adc4c2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.34,
+"engine": "clone",
+"h": "f7d3b67a0330",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.02,
+"engine": "clone",
+"h": "c504f05aaa9d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 10.66,
+"engine": "clone",
+"h": "7d2077f860ff",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 4.68,
+"engine": "clone",
+"h": "29649f6faa26",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 8.74,
+"engine": "clone",
+"h": "faa82f9fe2c3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 9.29,
+"engine": "clone",
+"h": "0d5f988f0199",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 6.1,
+"engine": "clone",
+"h": "cd99a4ef54c9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 7.61,
+"engine": "clone",
+"h": "2faaa7ca222e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 9.31,
+"engine": "clone",
+"h": "9f670ce4de8e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 6.26,
+"engine": "clone",
+"h": "89ac50816b65",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.66,
+"engine": "clone",
+"h": "277215183e01",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 7.01,
+"engine": "clone",
+"h": "8684ba52b671",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-2a": {
+"0": {
+"d": 6.62,
+"engine": "clone",
+"h": "6978f437a8be",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 6.67,
+"engine": "clone",
+"h": "57d15fa5bb85",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 6.34,
+"engine": "clone",
+"h": "2e64ccb0ab7f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.58,
+"engine": "clone",
+"h": "78bfcee0d155",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.77,
+"engine": "clone",
+"h": "5d06f03a7580",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 9.29,
+"engine": "clone",
+"h": "7b6bb55cd530",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 4.78,
+"engine": "clone",
+"h": "1dab0a13a2c3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 6.38,
+"engine": "clone",
+"h": "d7a52f59fd3c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 7.08,
+"engine": "clone",
+"h": "bb6e0b17562c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 7.61,
+"engine": "clone",
+"h": "9fead801ec1d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 4.08,
+"engine": "clone",
+"h": "a8b8cd03dd88",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 5.76,
+"engine": "clone",
+"h": "9b24e88e76d6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.9,
+"engine": "clone",
+"h": "8f24bcff6db6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.7,
+"engine": "clone",
+"h": "858321024dea",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.77,
+"engine": "clone",
+"h": "8a9081a4d3d4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.22,
+"engine": "clone",
+"h": "cccb73dcbc4f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 7.01,
+"engine": "clone",
+"h": "e4d9d560d64f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 6.6,
+"engine": "clone",
+"h": "a3e0a6a84285",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 8.11,
+"engine": "clone",
+"h": "ed9cb2d829f0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.26,
+"engine": "clone",
+"h": "994fa9e26405",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 5.83,
+"engine": "clone",
+"h": "8754930e0e51",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.38,
+"engine": "clone",
+"h": "07b84a48bfa3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 6.91,
+"engine": "clone",
+"h": "00fa052689e3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.37,
+"engine": "clone",
+"h": "cef76a17911f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 5.71,
+"engine": "clone",
+"h": "ffca4f62c7b4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.94,
+"engine": "clone",
+"h": "1324530ebef7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 6.86,
+"engine": "clone",
+"h": "56018fc0e509",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.84,
+"engine": "clone",
+"h": "9266205a204f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 7.34,
+"engine": "clone",
+"h": "549f7d9894a9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.08,
+"engine": "clone",
+"h": "67c31ffde208",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-2b": {
+"0": {
+"d": 7.54,
+"engine": "clone",
+"h": "fa63e59ded06",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.01,
+"engine": "clone",
+"h": "d4d9dea8358d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.3,
+"engine": "clone",
+"h": "9375a668e4d0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 3.58,
+"engine": "clone",
+"h": "e5e509c209d8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 7.56,
+"engine": "clone",
+"h": "9f7e5d8bf9ba",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 8.57,
+"engine": "clone",
+"h": "0ba60ed71324",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 5.76,
+"engine": "clone",
+"h": "9eaaad38ae46",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 8.26,
+"engine": "clone",
+"h": "5644ef8331d7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.27,
+"engine": "clone",
+"h": "1201ea5762a7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.29,
+"engine": "clone",
+"h": "6cba934e0674",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 9.89,
+"engine": "clone",
+"h": "d49f653beb36",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 6.55,
+"engine": "clone",
+"h": "012c489c6259",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 6.77,
+"engine": "clone",
+"h": "d2a2b1845ce5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 5.88,
+"engine": "clone",
+"h": "c33ec002c7b3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.36,
+"engine": "clone",
+"h": "9d16cb583db4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 8.47,
+"engine": "clone",
+"h": "2cbd9418d7ea",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 6.17,
+"engine": "clone",
+"h": "c94d327146e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.56,
+"engine": "clone",
+"h": "789718e727f8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 7.63,
+"engine": "clone",
+"h": "4927b1be1e15",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 7.99,
+"engine": "clone",
+"h": "a59448ec8e44",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.38,
+"engine": "clone",
+"h": "648cfb234a43",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 8.21,
+"engine": "clone",
+"h": "a7d86266bee4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 6.91,
+"engine": "clone",
+"h": "4f3803af3c03",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.67,
+"engine": "clone",
+"h": "232d488ecd42",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 6.41,
+"engine": "clone",
+"h": "550ed0464135",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.1,
+"engine": "clone",
+"h": "30e6ba7db924",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 6.79,
+"engine": "clone",
+"h": "2b79d7672f1d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 7.87,
+"engine": "clone",
+"h": "7b416140794b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 7.22,
+"engine": "clone",
+"h": "8aa9da911ea6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 8.11,
+"engine": "clone",
+"h": "8544b2e4a413",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-3a": {
+"0": {
+"d": 7.61,
+"engine": "clone",
+"h": "2196f1fb93dd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.66,
+"engine": "clone",
+"h": "9c37e9588686",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 6.5,
+"engine": "clone",
+"h": "eab598c1cebc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.24,
+"engine": "clone",
+"h": "8f52f3783b7d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 6.6,
+"engine": "clone",
+"h": "d18009cf0ca3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 7.85,
+"engine": "clone",
+"h": "de33460aac61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 4.39,
+"engine": "clone",
+"h": "6efbd94995e8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 9.53,
+"engine": "clone",
+"h": "b141d68ddfa2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 6.31,
+"engine": "clone",
+"h": "eb1a28af1f02",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 8.78,
+"engine": "clone",
+"h": "45a8b96f12c3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.88,
+"engine": "clone",
+"h": "22b95504ccf3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 4.27,
+"engine": "clone",
+"h": "614fc75eff6c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 7.94,
+"engine": "clone",
+"h": "c2d9c94186fd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 6.5,
+"engine": "clone",
+"h": "2930155f9508",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 7.54,
+"engine": "clone",
+"h": "8214b2c13907",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 6.96,
+"engine": "clone",
+"h": "2d9b13baa106",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 8.59,
+"engine": "clone",
+"h": "feae804e592d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.3,
+"engine": "clone",
+"h": "def26355a8e8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 4.13,
+"engine": "clone",
+"h": "c0c4a674b7ca",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.34,
+"engine": "clone",
+"h": "e5715fb0f9fc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.21,
+"engine": "clone",
+"h": "a1b23bd1052b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 6.31,
+"engine": "clone",
+"h": "b3b327204bd5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 8.18,
+"engine": "clone",
+"h": "34e411dbcc0e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.42,
+"engine": "clone",
+"h": "cc135d597839",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 7.2,
+"engine": "clone",
+"h": "bf10c1c4fff5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.59,
+"engine": "clone",
+"h": "e18877749d52",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 7.78,
+"engine": "clone",
+"h": "2693659267be",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.15,
+"engine": "clone",
+"h": "2798c2a690b0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 3.86,
+"engine": "clone",
+"h": "0a46c3775ab1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 10.39,
+"engine": "clone",
+"h": "121dcab5cb1a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 6.34,
+"engine": "clone",
+"h": "cd29d17788a1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-3b": {
+"0": {
+"d": 8.69,
+"engine": "clone",
+"h": "8d3c5d0b6d4b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.22,
+"engine": "clone",
+"h": "29f11da6c71e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.3,
+"engine": "clone",
+"h": "abaa493f5a9c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 3.41,
+"engine": "clone",
+"h": "bc29f50eb373",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 8.09,
+"engine": "clone",
+"h": "45471944a5d8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 7.56,
+"engine": "clone",
+"h": "bbecac17dd42",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 8.28,
+"engine": "clone",
+"h": "71b55c14edd4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 9.6,
+"engine": "clone",
+"h": "642dfa737abe",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 7.34,
+"engine": "clone",
+"h": "fab7ae901b60",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 8.28,
+"engine": "clone",
+"h": "9c4637c49e1c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.82,
+"engine": "clone",
+"h": "b4243a4850c3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 5.54,
+"engine": "clone",
+"h": "1e3d1b06a260",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.2,
+"engine": "clone",
+"h": "4f2db0f988bc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 3.94,
+"engine": "clone",
+"h": "e00ad05010c4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 8.3,
+"engine": "clone",
+"h": "4fa05dbfdf1e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 7.7,
+"engine": "clone",
+"h": "73c8c661b5e0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 8.81,
+"engine": "clone",
+"h": "05245498a1b3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.57,
+"engine": "clone",
+"h": "ff1472092d19",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 8.98,
+"engine": "clone",
+"h": "20460aa07ffd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 7.8,
+"engine": "clone",
+"h": "da185a4f5c61",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 4.34,
+"engine": "clone",
+"h": "d303385f3a3d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 5.35,
+"engine": "clone",
+"h": "f1e69160760d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.77,
+"engine": "clone",
+"h": "a8c22adaa07d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 6.1,
+"engine": "clone",
+"h": "4f6d1c0b51a9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.67,
+"engine": "clone",
+"h": "e298e0f68e3f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.26,
+"engine": "clone",
+"h": "a98fd2543516",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 7.39,
+"engine": "clone",
+"h": "8da11b327ee6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 5.4,
+"engine": "clone",
+"h": "6c2ed1cdeac6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 5.86,
+"engine": "clone",
+"h": "5a6bbc8e3665",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-audit-end": {
+"0": {
+"d": 10.54,
+"engine": "clone",
+"h": "ebcecdaacd8c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.4,
+"engine": "clone",
+"h": "3db42fea2946",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.54,
+"engine": "clone",
+"h": "609b8806afe8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 7.27,
+"engine": "clone",
+"h": "1d2bcb28b203",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 7.25,
+"engine": "clone",
+"h": "f30f12ac5686",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 5.02,
+"engine": "clone",
+"h": "48105e9814c9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 5.06,
+"engine": "clone",
+"h": "128f16ae58d9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.72,
+"engine": "clone",
+"h": "08353c537133",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 7.39,
+"engine": "clone",
+"h": "26964c5f62a7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 5.04,
+"engine": "clone",
+"h": "2c3a2a27ffb5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 6.43,
+"engine": "clone",
+"h": "51d2b5d9c83a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.34,
+"engine": "clone",
+"h": "20431be71e7e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.54,
+"engine": "clone",
+"h": "9a63df27ea8e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 7.03,
+"engine": "clone",
+"h": "ae7cc5e7505d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.48,
+"engine": "clone",
+"h": "6776698f7970",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 5.95,
+"engine": "clone",
+"h": "b147f8d3788c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-dp-1a": {
+"0": {
+"d": 10.39,
+"engine": "clone",
+"h": "15a29f5da174",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.59,
+"engine": "clone",
+"h": "710d448aed91",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 5.54,
+"engine": "clone",
+"h": "dcc538c26ff1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 6.43,
+"engine": "clone",
+"h": "6f4c97dde1ac",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.08,
+"engine": "clone",
+"h": "77bc408e2ea8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 10.73,
+"engine": "clone",
+"h": "e7822f9bdbef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 11.28,
+"engine": "clone",
+"h": "67a3c19f2a72",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.94,
+"engine": "clone",
+"h": "201ce7df39d1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 9.77,
+"engine": "clone",
+"h": "1761811e0d0a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 4.54,
+"engine": "clone",
+"h": "93d2aa8418b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 6.89,
+"engine": "clone",
+"h": "06ebb3ba74fc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 5.09,
+"engine": "clone",
+"h": "ac17979faf4d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 9.26,
+"engine": "clone",
+"h": "01e47998cc85",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 9.19,
+"engine": "clone",
+"h": "f7503f3d940b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 7.87,
+"engine": "clone",
+"h": "a1a1c4d4c92a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 4.68,
+"engine": "clone",
+"h": "0584b3b9edab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 7.7,
+"engine": "clone",
+"h": "a23ba78528fc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.44,
+"engine": "clone",
+"h": "957b1611e968",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 5.57,
+"engine": "clone",
+"h": "c183ee0dd0bc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 10.42,
+"engine": "clone",
+"h": "a4c43cae6999",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 9.0,
+"engine": "clone",
+"h": "d87959b44953",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.14,
+"engine": "clone",
+"h": "99f42c4848b9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 4.37,
+"engine": "clone",
+"h": "4863ef12bd1f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.08,
+"engine": "clone",
+"h": "a4740c18a544",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 6.86,
+"engine": "clone",
+"h": "3412c8922fdd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 7.63,
+"engine": "clone",
+"h": "02b544d7bcae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 3.43,
+"engine": "clone",
+"h": "2989fdce8021",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"33": {
+"d": 7.54,
+"engine": "clone",
+"h": "da2a93e618e1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"34": {
+"d": 6.26,
+"engine": "clone",
+"h": "4c3d9f84fb85",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"35": {
+"d": 15.19,
+"engine": "clone",
+"h": "3682f95e53f4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 4.99,
+"engine": "clone",
+"h": "b4cc9bb507d1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 10.42,
+"engine": "clone",
+"h": "1b7bf4e5fddc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.87,
+"engine": "clone",
+"h": "4aea78dda604",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 6.14,
+"engine": "clone",
+"h": "7d06c13a29e1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 8.88,
+"engine": "clone",
+"h": "6ba3591d7fca",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.87,
+"engine": "clone",
+"h": "a0df8f70ce9c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-dp-1b": {
+"0": {
+"d": 11.28,
+"engine": "clone",
+"h": "e01e55d3e23a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.06,
+"engine": "clone",
+"h": "e67f928142b4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.66,
+"engine": "clone",
+"h": "ce3b9c0c514e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 8.3,
+"engine": "clone",
+"h": "a4d6d45814bc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.48,
+"engine": "clone",
+"h": "d096a741fc20",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 8.11,
+"engine": "clone",
+"h": "735c3c81ddd4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 8.54,
+"engine": "clone",
+"h": "85eb456703be",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 4.87,
+"engine": "clone",
+"h": "44d772065426",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 8.28,
+"engine": "clone",
+"h": "34c3f30a46a6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 7.06,
+"engine": "clone",
+"h": "c096b2029498",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 10.51,
+"engine": "clone",
+"h": "d5b2b7f26198",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 10.18,
+"engine": "clone",
+"h": "d11b455db5cf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 10.3,
+"engine": "clone",
+"h": "1281c1a67285",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 4.22,
+"engine": "clone",
+"h": "4fac50b077f2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 10.66,
+"engine": "clone",
+"h": "9ad18ffe0333",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 8.21,
+"engine": "clone",
+"h": "3fe8fbee2ca3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 10.85,
+"engine": "clone",
+"h": "f02dbb496761",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.58,
+"engine": "clone",
+"h": "1d0e0b2121aa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 8.9,
+"engine": "clone",
+"h": "3d7dba46f857",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.62,
+"engine": "clone",
+"h": "4e1567a44589",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 9.29,
+"engine": "clone",
+"h": "876b22eedf4c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 7.06,
+"engine": "clone",
+"h": "fbb3d6f90192",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 16.46,
+"engine": "clone",
+"h": "83f84f2d5c46",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.63,
+"engine": "clone",
+"h": "c3b37b7e4ec9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.08,
+"engine": "clone",
+"h": "328293e96a4a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 9.34,
+"engine": "clone",
+"h": "764e9ef4395b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.9,
+"engine": "clone",
+"h": "74360c6d358d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 8.59,
+"engine": "clone",
+"h": "88618df401e2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 5.26,
+"engine": "clone",
+"h": "da4e93ef6c47",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 4.7,
+"engine": "clone",
+"h": "8c6d33b66235",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-dp-1c": {
+"0": {
+"d": 11.86,
+"engine": "clone",
+"h": "838dc01a9b05",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.45,
+"engine": "clone",
+"h": "89be3604168a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.84,
+"engine": "clone",
+"h": "6bd345b18b63",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.17,
+"engine": "clone",
+"h": "1979b1289e9b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.23,
+"engine": "clone",
+"h": "112d092c0a22",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 4.51,
+"engine": "clone",
+"h": "57faa2dee9d6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 9.65,
+"engine": "clone",
+"h": "500560a79fc0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 8.21,
+"engine": "clone",
+"h": "581739d49427",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.82,
+"engine": "clone",
+"h": "579a9e488ac0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.48,
+"engine": "clone",
+"h": "00f207d44fe8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 10.2,
+"engine": "clone",
+"h": "c9e756752031",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.41,
+"engine": "clone",
+"h": "5737c6bc41d6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 8.98,
+"engine": "clone",
+"h": "89799aca9a15",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.15,
+"engine": "clone",
+"h": "449a23464585",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.86,
+"engine": "clone",
+"h": "d609ac899ebe",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 9.74,
+"engine": "clone",
+"h": "40c9a1136a17",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 9.26,
+"engine": "clone",
+"h": "a679f20ef90c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.46,
+"engine": "clone",
+"h": "bb1cd4f29891",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 9.79,
+"engine": "clone",
+"h": "3cb1c10f79dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 5.83,
+"engine": "clone",
+"h": "75d0c8520719",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 6.34,
+"engine": "clone",
+"h": "9583c6d90f8a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.27,
+"engine": "clone",
+"h": "58f038335a67",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 9.82,
+"engine": "clone",
+"h": "8479dd0a98ce",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 10.37,
+"engine": "clone",
+"h": "96bea74754b7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 18.38,
+"engine": "clone",
+"h": "c24a87aa9407",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 4.34,
+"engine": "clone",
+"h": "33cf6ea422db",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 7.99,
+"engine": "clone",
+"h": "749a0081e770",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 8.21,
+"engine": "clone",
+"h": "e272fbd53829",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 4.66,
+"engine": "clone",
+"h": "7ad454e3c2ad",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 8.95,
+"engine": "clone",
+"h": "50dca0c0139a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.32,
+"engine": "clone",
+"h": "20353140f114",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-dp-2a": {
+"0": {
+"d": 11.52,
+"engine": "clone",
+"h": "f95fd91893aa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.81,
+"engine": "clone",
+"h": "46a1b5217927",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 6.31,
+"engine": "clone",
+"h": "24fd532f2f61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 8.52,
+"engine": "clone",
+"h": "7a7693e0b509",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.5,
+"engine": "clone",
+"h": "91a74f61d226",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 10.9,
+"engine": "clone",
+"h": "a801663eaf76",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 8.5,
+"engine": "clone",
+"h": "79326aa9c001",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 8.28,
+"engine": "clone",
+"h": "55af8ff2938e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.6,
+"engine": "clone",
+"h": "6e5122defa8b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.7,
+"engine": "clone",
+"h": "021ce34f7f59",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 10.32,
+"engine": "clone",
+"h": "3dde7106e7da",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 5.66,
+"engine": "clone",
+"h": "cf15f5ca6043",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 3.6,
+"engine": "clone",
+"h": "766bc9ec8382",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 3.48,
+"engine": "clone",
+"h": "c8396348a660",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 10.1,
+"engine": "clone",
+"h": "8380b4e500e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.86,
+"engine": "clone",
+"h": "2a341f9e6005",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.81,
+"engine": "clone",
+"h": "c0c8718c70ff",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.62,
+"engine": "clone",
+"h": "0126d3ca6ba9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.86,
+"engine": "clone",
+"h": "94dee4b0f7e0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 10.08,
+"engine": "clone",
+"h": "b2227d9bc683",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.22,
+"engine": "clone",
+"h": "8ded7604516e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 8.33,
+"engine": "clone",
+"h": "d125af8ea1ab",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 8.04,
+"engine": "clone",
+"h": "9caa557d0c63",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 10.18,
+"engine": "clone",
+"h": "f5c559744d22",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 14.66,
+"engine": "clone",
+"h": "f6be12519fe9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.3,
+"engine": "clone",
+"h": "15885acf1ca2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.62,
+"engine": "clone",
+"h": "923616dc9c69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.2,
+"engine": "clone",
+"h": "b987cebb5ebb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 6.62,
+"engine": "clone",
+"h": "36f9c784c867",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 7.87,
+"engine": "clone",
+"h": "e7485dda490b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 4.03,
+"engine": "clone",
+"h": "e9c4f3d04d8a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-dp-2b": {
+"0": {
+"d": 9.89,
+"engine": "clone",
+"h": "954e6b8fce80",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 4.06,
+"engine": "clone",
+"h": "fa4f6fa0f003",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.75,
+"engine": "clone",
+"h": "5039e6a947b0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.1,
+"engine": "clone",
+"h": "1f10dbf98bc0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.23,
+"engine": "clone",
+"h": "fd1dab71774c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 4.01,
+"engine": "clone",
+"h": "93e56733b725",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 7.37,
+"engine": "clone",
+"h": "3f89476c55a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 9.84,
+"engine": "clone",
+"h": "5cc55b0300ee",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.91,
+"engine": "clone",
+"h": "8ee26682d6d6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 7.92,
+"engine": "clone",
+"h": "156dd9f6ea0c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.36,
+"engine": "clone",
+"h": "23e6afbf803a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 7.37,
+"engine": "clone",
+"h": "3bf65d087968",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 8.52,
+"engine": "clone",
+"h": "393747b4268d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.92,
+"engine": "clone",
+"h": "69828a5cc7c5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.22,
+"engine": "clone",
+"h": "dc2ece290b86",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 5.42,
+"engine": "clone",
+"h": "886211f353a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 7.9,
+"engine": "clone",
+"h": "8dc9a1bb392c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.18,
+"engine": "clone",
+"h": "89e6e42c709b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.22,
+"engine": "clone",
+"h": "b7ff5ec786ba",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 8.57,
+"engine": "clone",
+"h": "8fd9c11d176f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.21,
+"engine": "clone",
+"h": "663891653e8a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.58,
+"engine": "clone",
+"h": "fd256c7fe493",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.17,
+"engine": "clone",
+"h": "bfd7477cbdd5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 4.03,
+"engine": "clone",
+"h": "cc498d1e8b24",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 8.71,
+"engine": "clone",
+"h": "6914a70fd64f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 16.15,
+"engine": "clone",
+"h": "0129c7e05234",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.75,
+"engine": "clone",
+"h": "fb5fefc7f37a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.91,
+"engine": "clone",
+"h": "9ba843e5ca65",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.56,
+"engine": "clone",
+"h": "a046e140001a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.36,
+"engine": "clone",
+"h": "f95ef386987e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 8.06,
+"engine": "clone",
+"h": "e971b488dee7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.79,
+"engine": "clone",
+"h": "40c6ac21e826",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-intro-0": {
+"0": {
+"d": 12.36,
+"engine": "clone",
+"h": "8647c16c6256",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 10.49,
+"engine": "clone",
+"h": "91c5fec3e599",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"10": {
+"d": 8.35,
+"engine": "clone",
+"h": "19a3dcb44d78",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 8.45,
+"engine": "clone",
+"h": "3662f2d6bd3a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.76,
+"engine": "clone",
+"h": "833f70a59aad",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 7.37,
+"engine": "clone",
+"h": "1132adce079f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.02,
+"engine": "clone",
+"h": "ad443f28c0e5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 7.9,
+"engine": "clone",
+"h": "4c367a781e97",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.8,
+"engine": "clone",
+"h": "7132cbc60911",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 5.38,
+"engine": "clone",
+"h": "2a3f578fa643",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 5.81,
+"engine": "clone",
+"h": "abe327afaef6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 8.28,
+"engine": "clone",
+"h": "3dc4428dd3f6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 8.38,
+"engine": "clone",
+"h": "98f75a880f1d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 11.02,
+"engine": "clone",
+"h": "eba12ca16d25",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 5.76,
+"engine": "clone",
+"h": "7e101acaa8a4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 5.95,
+"engine": "clone",
+"h": "f06bec88103c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 9.17,
+"engine": "clone",
+"h": "4cf84bc7592d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 7.01,
+"engine": "clone",
+"h": "6773a141ba79",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 5.9,
+"engine": "clone",
+"h": "831454fe9d69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 8.35,
+"engine": "clone",
+"h": "0897e4bfb2c8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 5.88,
+"engine": "clone",
+"h": "0cb52184098f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 6.62,
+"engine": "clone",
+"h": "1444eaa7e52f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 6.29,
+"engine": "clone",
+"h": "3d14db97dc2a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-intro-1a": {
+"0": {
+"d": 10.03,
+"engine": "clone",
+"h": "9ce0d0c32721",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.15,
+"engine": "clone",
+"h": "8e9aba36eca4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 6.38,
+"engine": "clone",
+"h": "3bb297118fbf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 9.82,
+"engine": "clone",
+"h": "50376119f53b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 12.02,
+"engine": "clone",
+"h": "744fe66e48a0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 8.9,
+"engine": "clone",
+"h": "bfe2e428e03c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 11.09,
+"engine": "clone",
+"h": "22b0c5be1601",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 4.58,
+"engine": "clone",
+"h": "2702ed3ae3cf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.85,
+"engine": "clone",
+"h": "f0038557d64d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 7.01,
+"engine": "clone",
+"h": "b8d53d536de6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 8.06,
+"engine": "clone",
+"h": "7f77e1aeaaf6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 8.4,
+"engine": "clone",
+"h": "a2581391bc61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.32,
+"engine": "clone",
+"h": "bbd660df5a11",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 8.35,
+"engine": "clone",
+"h": "67c84aea3246",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 8.66,
+"engine": "clone",
+"h": "f15c2de1875d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 4.37,
+"engine": "clone",
+"h": "c68c218a37a7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 6.07,
+"engine": "clone",
+"h": "99a8cd407f61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.27,
+"engine": "clone",
+"h": "69b0c779b8a0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 6.89,
+"engine": "clone",
+"h": "b36fe8361a1f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.77,
+"engine": "clone",
+"h": "b4eaf1b19150",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 9.17,
+"engine": "clone",
+"h": "450e694fcab6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 7.3,
+"engine": "clone",
+"h": "a69f30820e93",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 7.66,
+"engine": "clone",
+"h": "eea96b9e0127",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 4.3,
+"engine": "clone",
+"h": "c36e9d972279",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 7.44,
+"engine": "clone",
+"h": "6dbd583becab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.18,
+"engine": "clone",
+"h": "a494759516bb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 8.28,
+"engine": "clone",
+"h": "7b2b77595b46",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 9.65,
+"engine": "clone",
+"h": "8bd7cb59dacb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 7.68,
+"engine": "clone",
+"h": "2df0c00a840d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 8.64,
+"engine": "clone",
+"h": "0b10520f6da2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.82,
+"engine": "clone",
+"h": "c3374a7937e8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-intro-1b": {
+"0": {
+"d": 11.06,
+"engine": "clone",
+"h": "a985733c5efa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.28,
+"engine": "clone",
+"h": "383d8f7918c5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.44,
+"engine": "clone",
+"h": "8179ae621de9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 7.37,
+"engine": "clone",
+"h": "82dba56ecc7d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.64,
+"engine": "clone",
+"h": "f877f9fdf3f6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.62,
+"engine": "clone",
+"h": "c76b9e06ba6b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.69,
+"engine": "clone",
+"h": "9b36c25ad661",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 8.76,
+"engine": "clone",
+"h": "58429ee21026",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.21,
+"engine": "clone",
+"h": "c55b691127fb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 8.83,
+"engine": "clone",
+"h": "de49371cd9e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.37,
+"engine": "clone",
+"h": "724c2db16432",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 6.6,
+"engine": "clone",
+"h": "65d1851c24f7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.94,
+"engine": "clone",
+"h": "1a114690ca56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 5.4,
+"engine": "clone",
+"h": "515d45f539c2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 9.58,
+"engine": "clone",
+"h": "6f4dd259c3ed",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 7.1,
+"engine": "clone",
+"h": "6df1d08edfc6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 6.82,
+"engine": "clone",
+"h": "4ed9d41b871c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 5.71,
+"engine": "clone",
+"h": "7c4ef6e75c07",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 8.33,
+"engine": "clone",
+"h": "c7db96b9bd8a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 7.82,
+"engine": "clone",
+"h": "2c73cde22f33",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 10.46,
+"engine": "clone",
+"h": "874356e0f1d4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.8,
+"engine": "clone",
+"h": "9251763851f5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 5.35,
+"engine": "clone",
+"h": "dc719133052e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 7.49,
+"engine": "clone",
+"h": "1c8b3c747b43",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 10.78,
+"engine": "clone",
+"h": "15d3a8a24810",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 6.67,
+"engine": "clone",
+"h": "13d8f88f818a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.54,
+"engine": "clone",
+"h": "eb1e65b535ab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 7.27,
+"engine": "clone",
+"h": "31c84f6ff159",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 9.05,
+"engine": "clone",
+"h": "44617d6e7d51",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.55,
+"engine": "clone",
+"h": "e1fa5454b0fb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 6.07,
+"engine": "clone",
+"h": "2e2bcecf8bdf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 9.48,
+"engine": "clone",
+"h": "19895911c5a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-intro-2a": {
+"0": {
+"d": 9.6,
+"engine": "clone",
+"h": "2015ad9e27fc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.26,
+"engine": "clone",
+"h": "7eaec2e863e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.45,
+"engine": "clone",
+"h": "2fa391d92327",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 7.15,
+"engine": "clone",
+"h": "5f0399439286",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 11.86,
+"engine": "clone",
+"h": "73e6511198dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 7.15,
+"engine": "clone",
+"h": "9e67542cfe00",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 8.06,
+"engine": "clone",
+"h": "1a9819722ecc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 5.93,
+"engine": "clone",
+"h": "2a559200fa65",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 4.37,
+"engine": "clone",
+"h": "687850ced2de",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 8.38,
+"engine": "clone",
+"h": "59a612ab40a9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 6.67,
+"engine": "clone",
+"h": "afb229fb9810",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 6.38,
+"engine": "clone",
+"h": "a77b488c8437",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.32,
+"engine": "clone",
+"h": "e008f485990e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 3.48,
+"engine": "clone",
+"h": "a1fdb7e28309",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 5.76,
+"engine": "clone",
+"h": "9880db9b0ea2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 7.97,
+"engine": "clone",
+"h": "cb8029e910a1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 5.38,
+"engine": "clone",
+"h": "991a01f8ddb1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.47,
+"engine": "clone",
+"h": "6767545bc1c8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 9.96,
+"engine": "clone",
+"h": "8d194a74092d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 6.41,
+"engine": "clone",
+"h": "76b899660bd9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 7.8,
+"engine": "clone",
+"h": "28942fe32a84",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 6.67,
+"engine": "clone",
+"h": "ecda20c2f684",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 7.85,
+"engine": "clone",
+"h": "836be7423fd6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 6.58,
+"engine": "clone",
+"h": "d320c3b29a9a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 7.9,
+"engine": "clone",
+"h": "c50f45b253da",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 6.22,
+"engine": "clone",
+"h": "adad96a2ba5c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 6.14,
+"engine": "clone",
+"h": "4ed926048e83",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 8.74,
+"engine": "clone",
+"h": "1c4f3981eec0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 8.02,
+"engine": "clone",
+"h": "15f6b5f00d23",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 6.65,
+"engine": "clone",
+"h": "085837af3913",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 9.46,
+"engine": "clone",
+"h": "06e0b0f709e9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.26,
+"engine": "clone",
+"h": "c47c422436dd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-intro-2b": {
+"0": {
+"d": 9.55,
+"engine": "clone",
+"h": "3fbeebc49c54",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.11,
+"engine": "clone",
+"h": "6d8c4e3a839e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 6.77,
+"engine": "clone",
+"h": "1442ef48422f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 4.51,
+"engine": "clone",
+"h": "8121c767cdff",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 9.6,
+"engine": "clone",
+"h": "0e1b4e1f3d0a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 9.17,
+"engine": "clone",
+"h": "ddf65e0e24e9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 9.36,
+"engine": "clone",
+"h": "2f4df0c04a42",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 10.2,
+"engine": "clone",
+"h": "e193e082ea68",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.98,
+"engine": "clone",
+"h": "21a0afe567b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.62,
+"engine": "clone",
+"h": "aca0f77b42b4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 2.95,
+"engine": "clone",
+"h": "b7d3a660109b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 10.97,
+"engine": "clone",
+"h": "2773c0c4410d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 6.89,
+"engine": "clone",
+"h": "338d58f7399c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 8.81,
+"engine": "clone",
+"h": "9f68b1ec90b7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.6,
+"engine": "clone",
+"h": "7d9a71a62f44",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 2.42,
+"engine": "clone",
+"h": "a315ee0dfceb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 7.9,
+"engine": "clone",
+"h": "2e53108a138b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 6.55,
+"engine": "clone",
+"h": "d07d825d702b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 7.44,
+"engine": "clone",
+"h": "802777a90044",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 7.82,
+"engine": "clone",
+"h": "bdf350ec6a60",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 7.13,
+"engine": "clone",
+"h": "6fd9f5e1b5a9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.85,
+"engine": "clone",
+"h": "ecd882680f13",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 8.38,
+"engine": "clone",
+"h": "5c66bf897fd9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 6.19,
+"engine": "clone",
+"h": "1852bbb7190d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 12.19,
+"engine": "clone",
+"h": "eb7a6625ad79",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 7.56,
+"engine": "clone",
+"h": "fd15e2dccbb1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 6.91,
+"engine": "clone",
+"h": "69b7c4fe56b5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 7.32,
+"engine": "clone",
+"h": "88e3918c3ebd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.15,
+"engine": "clone",
+"h": "6d987ee475b2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 4.15,
+"engine": "clone",
+"h": "e342ccd82dd7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 9.38,
+"engine": "clone",
+"h": "b48919637cd1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.56,
+"engine": "clone",
+"h": "e39b0e1f870a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-intro-2c": {
+"0": {
+"d": 10.13,
+"engine": "clone",
+"h": "e943f476deb7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.23,
+"engine": "clone",
+"h": "e85da96c93c9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 9.77,
+"engine": "clone",
+"h": "19a8b2be97a5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.62,
+"engine": "clone",
+"h": "35883acde833",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.55,
+"engine": "clone",
+"h": "79105e358b00",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 6.91,
+"engine": "clone",
+"h": "9f696f397b91",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 6.7,
+"engine": "clone",
+"h": "32f04f0f0ded",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 7.94,
+"engine": "clone",
+"h": "22a384e6f0c1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 8.78,
+"engine": "clone",
+"h": "370fb0784383",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 9.02,
+"engine": "clone",
+"h": "b56b52c8d395",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 10.46,
+"engine": "clone",
+"h": "9988395fbb79",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.58,
+"engine": "clone",
+"h": "d12155360927",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 8.69,
+"engine": "clone",
+"h": "9e64f5cad843",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 9.05,
+"engine": "clone",
+"h": "24432f6c9694",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 11.71,
+"engine": "clone",
+"h": "7bccf7b04635",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 9.98,
+"engine": "clone",
+"h": "b98b223456c1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 11.33,
+"engine": "clone",
+"h": "b61559939b69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 6.02,
+"engine": "clone",
+"h": "6e7ccf99e9a4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 9.74,
+"engine": "clone",
+"h": "accce795a670",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 11.57,
+"engine": "clone",
+"h": "9e4752a2e2d4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.45,
+"engine": "clone",
+"h": "7af3f90c1a29",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 15.38,
+"engine": "clone",
+"h": "4e2ef78b068d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 7.37,
+"engine": "clone",
+"h": "bc8f59ed236e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 9.31,
+"engine": "clone",
+"h": "eb3ede5e976c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 4.54,
+"engine": "clone",
+"h": "c8f9b46d2129",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.83,
+"engine": "clone",
+"h": "2eb8539bd63c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 7.46,
+"engine": "clone",
+"h": "bfb0b4457c9a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.5,
+"engine": "clone",
+"h": "276f9c5d8bdb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 9.12,
+"engine": "clone",
+"h": "b81129d965f4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 8.09,
+"engine": "clone",
+"h": "83eefc3b2db2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 6.6,
+"engine": "clone",
+"h": "7353afef6f12",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-1a": {
+"0": {
+"d": 11.47,
+"engine": "clone",
+"h": "67da23985fd5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 9.26,
+"engine": "clone",
+"h": "d62c0fefa4a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.51,
+"engine": "clone",
+"h": "f59a829fa6e6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.0,
+"engine": "clone",
+"h": "99d0650130ae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 10.22,
+"engine": "clone",
+"h": "009e179c78fd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 5.74,
+"engine": "clone",
+"h": "10226a756b39",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.71,
+"engine": "clone",
+"h": "4f29161c3d34",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.05,
+"engine": "clone",
+"h": "8de467577498",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 10.25,
+"engine": "clone",
+"h": "075cda50b2eb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 5.02,
+"engine": "clone",
+"h": "aa1cb340dbf9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 9.17,
+"engine": "clone",
+"h": "7f0199795193",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 8.42,
+"engine": "clone",
+"h": "118bd0f3ca8a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 8.28,
+"engine": "clone",
+"h": "664407974ce6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 6.62,
+"engine": "clone",
+"h": "7545e5ae1842",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 8.78,
+"engine": "clone",
+"h": "f74f0ff89fc5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 7.42,
+"engine": "clone",
+"h": "1db57bd7befb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.7,
+"engine": "clone",
+"h": "56f490ce3744",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 9.46,
+"engine": "clone",
+"h": "7d3652b16fb6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 14.21,
+"engine": "clone",
+"h": "243fcba58d63",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.22,
+"engine": "clone",
+"h": "f8a58aba19ff",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 10.9,
+"engine": "clone",
+"h": "87b58df13dfe",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.06,
+"engine": "clone",
+"h": "b27342d9ecfe",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 8.66,
+"engine": "clone",
+"h": "4af2e6bc68d7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 8.42,
+"engine": "clone",
+"h": "180170a2a20c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 5.11,
+"engine": "clone",
+"h": "319ff5449b6d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 8.26,
+"engine": "clone",
+"h": "9af2287ab447",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 9.67,
+"engine": "clone",
+"h": "44128e0bdd4f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 7.92,
+"engine": "clone",
+"h": "d967d2a353cf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"34": {
+"d": 13.7,
+"engine": "clone",
+"h": "58f237bf62f2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"35": {
+"d": 7.18,
+"engine": "clone",
+"h": "c8df40cf2ce9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"36": {
+"d": 3.94,
+"engine": "clone",
+"h": "76500403b08c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 3.67,
+"engine": "clone",
+"h": "4bcd88c54ce1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 9.24,
+"engine": "clone",
+"h": "6c373144b7b1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 9.17,
+"engine": "clone",
+"h": "2d459a501a0b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 7.18,
+"engine": "clone",
+"h": "b0e07b8dfaa9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.56,
+"engine": "clone",
+"h": "95c10fbbb022",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 9.96,
+"engine": "clone",
+"h": "27f94dfa3142",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1b": {
+"0": {
+"d": 7.99,
+"engine": "clone",
+"h": "f709444bfb89",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 3.65,
+"engine": "clone",
+"h": "7ec37d941c44",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.86,
+"engine": "clone",
+"h": "5f3f73b8843c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.6,
+"engine": "clone",
+"h": "e7bafa8dedb0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.94,
+"engine": "clone",
+"h": "7b3ac693ba5c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 9.94,
+"engine": "clone",
+"h": "f911aa73fd89",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 2.09,
+"engine": "clone",
+"h": "dbdc72923946",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 7.03,
+"engine": "clone",
+"h": "198d72aa120c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 10.34,
+"engine": "clone",
+"h": "98c556050824",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 4.06,
+"engine": "clone",
+"h": "14b0d7135d08",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 10.92,
+"engine": "clone",
+"h": "f10cc582b612",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 4.06,
+"engine": "clone",
+"h": "f312b716ca4d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 4.01,
+"engine": "clone",
+"h": "62ef2b0432ec",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 11.4,
+"engine": "clone",
+"h": "9cb11ea9a448",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 5.23,
+"engine": "clone",
+"h": "d0d85e722c23",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 7.2,
+"engine": "clone",
+"h": "fc7d4e03dfdb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 5.66,
+"engine": "clone",
+"h": "fff0ceb35c98",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 3.07,
+"engine": "clone",
+"h": "116d3dc347eb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 11.52,
+"engine": "clone",
+"h": "be4f3bb9bd9e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 6.58,
+"engine": "clone",
+"h": "ef88c0b843a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.9,
+"engine": "clone",
+"h": "49036f9c5fb9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.55,
+"engine": "clone",
+"h": "cfd6c5d8fd2f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.43,
+"engine": "clone",
+"h": "ee3850e6e13c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.97,
+"engine": "clone",
+"h": "aa2b306c94f1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 9.53,
+"engine": "clone",
+"h": "a2fdd91efd2d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 10.39,
+"engine": "clone",
+"h": "b0b70027facb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 3.41,
+"engine": "clone",
+"h": "c36de4595658",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"33": {
+"d": 8.9,
+"engine": "clone",
+"h": "45f3e2032a2d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"34": {
+"d": 12.89,
+"engine": "clone",
+"h": "3d7ba82c4442",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"35": {
+"d": 6.41,
+"engine": "clone",
+"h": "de4061c78761",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"36": {
+"d": 3.89,
+"engine": "clone",
+"h": "913579ff990c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 5.78,
+"engine": "clone",
+"h": "df1ce1a2ec56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 3.5,
+"engine": "clone",
+"h": "e3c3b96b2ab1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 11.02,
+"engine": "clone",
+"h": "7f0ecb370a86",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.84,
+"engine": "clone",
+"h": "a7d0c64be5a7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 7.66,
+"engine": "clone",
+"h": "6928b1683b2d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 9.89,
+"engine": "clone",
+"h": "108d4a88282a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1c": {
+"0": {
+"d": 10.34,
+"engine": "clone",
+"h": "b3013e522c9a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.87,
+"engine": "clone",
+"h": "55f7e5726782",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.78,
+"engine": "clone",
+"h": "83292f7fd248",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 7.75,
+"engine": "clone",
+"h": "f373dd50ab02",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 7.68,
+"engine": "clone",
+"h": "1b01ad1bfa04",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.58,
+"engine": "clone",
+"h": "5a66de05cd8f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 10.2,
+"engine": "clone",
+"h": "b7f92405c0da",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 9.72,
+"engine": "clone",
+"h": "0c002d282293",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.43,
+"engine": "clone",
+"h": "306f52d5c141",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 8.81,
+"engine": "clone",
+"h": "100dbf452c9e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.3,
+"engine": "clone",
+"h": "e6450321426f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.58,
+"engine": "clone",
+"h": "1884a45c1fa4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 3.41,
+"engine": "clone",
+"h": "597ca6106d21",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 9.24,
+"engine": "clone",
+"h": "b629797c19ef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.41,
+"engine": "clone",
+"h": "8060b4ceaad6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.86,
+"engine": "clone",
+"h": "f41750690c70",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 9.12,
+"engine": "clone",
+"h": "61bf1937651c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 9.53,
+"engine": "clone",
+"h": "75cb49ce1f72",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.43,
+"engine": "clone",
+"h": "0b65f75d09d4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.26,
+"engine": "clone",
+"h": "792bf2375067",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.36,
+"engine": "clone",
+"h": "d08e4d062e26",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 9.17,
+"engine": "clone",
+"h": "5aecf37db736",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.58,
+"engine": "clone",
+"h": "c6c621f1e299",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 9.65,
+"engine": "clone",
+"h": "dd65f979e289",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 9.98,
+"engine": "clone",
+"h": "df2c283b67ea",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 3.72,
+"engine": "clone",
+"h": "bc2a9118712d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 7.61,
+"engine": "clone",
+"h": "ffacc348cf83",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 11.23,
+"engine": "clone",
+"h": "6893ba9cadbb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"34": {
+"d": 7.63,
+"engine": "clone",
+"h": "5117a8df806a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"35": {
+"d": 3.22,
+"engine": "clone",
+"h": "f95d2508553b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 9.12,
+"engine": "clone",
+"h": "995e3a75d165",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.34,
+"engine": "clone",
+"h": "632badbda566",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 7.78,
+"engine": "clone",
+"h": "8966f964d5be",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 8.98,
+"engine": "clone",
+"h": "5401b4772ba9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.82,
+"engine": "clone",
+"h": "c7d05dd87011",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 11.64,
+"engine": "clone",
+"h": "4c0e2ddc874e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1d": {
+"0": {
+"d": 10.54,
+"engine": "clone",
+"h": "45fa2cd779cc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 9.72,
+"engine": "clone",
+"h": "7fd3cd32a2a0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.72,
+"engine": "clone",
+"h": "1df68bdf6636",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 10.97,
+"engine": "clone",
+"h": "560851398537",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 5.26,
+"engine": "clone",
+"h": "9ac2dc1be1e8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 9.24,
+"engine": "clone",
+"h": "bc5291a85811",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 9.72,
+"engine": "clone",
+"h": "f7fb4fe64f14",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.77,
+"engine": "clone",
+"h": "0842c9edee3d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 9.91,
+"engine": "clone",
+"h": "15cca44f5215",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 8.86,
+"engine": "clone",
+"h": "089421ce4aa1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 5.33,
+"engine": "clone",
+"h": "c19124304c7d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 8.64,
+"engine": "clone",
+"h": "6b66bef50a37",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 3.31,
+"engine": "clone",
+"h": "a603f076cdb4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 5.06,
+"engine": "clone",
+"h": "149b5f826388",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 8.35,
+"engine": "clone",
+"h": "d7e3eddec4c6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 11.71,
+"engine": "clone",
+"h": "e12262a138a0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 10.66,
+"engine": "clone",
+"h": "2eabe30cca09",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.13,
+"engine": "clone",
+"h": "39864071a409",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 8.06,
+"engine": "clone",
+"h": "e427f42dcacf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.72,
+"engine": "clone",
+"h": "83bb6f68b88e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 11.35,
+"engine": "clone",
+"h": "d784f2c3325c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.94,
+"engine": "clone",
+"h": "3d61c24d0b9c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.67,
+"engine": "clone",
+"h": "eb75b124b4b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 10.22,
+"engine": "clone",
+"h": "262c820bc53e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 11.83,
+"engine": "clone",
+"h": "33a498199d43",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 3.62,
+"engine": "clone",
+"h": "f8e31280d5b6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 11.33,
+"engine": "clone",
+"h": "7d061c5fc472",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 13.68,
+"engine": "clone",
+"h": "085116c56976",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"34": {
+"d": 7.68,
+"engine": "clone",
+"h": "54c7eb588bca",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"35": {
+"d": 3.31,
+"engine": "clone",
+"h": "c8d2eef54d96",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 3.46,
+"engine": "clone",
+"h": "cc8c3f2cf49c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 7.06,
+"engine": "clone",
+"h": "1c2031d58d02",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 8.62,
+"engine": "clone",
+"h": "a5d1cf3a6aa6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 8.45,
+"engine": "clone",
+"h": "7e1ba8f257b1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.68,
+"engine": "clone",
+"h": "c745c704fa18",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 7.63,
+"engine": "clone",
+"h": "aa8c919b0be5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1e": {
+"0": {
+"d": 10.82,
+"engine": "clone",
+"h": "f5c9516b9d0d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.18,
+"engine": "clone",
+"h": "f6e0f617d020",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.67,
+"engine": "clone",
+"h": "4d546ef396e3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 11.57,
+"engine": "clone",
+"h": "77382b28cc44",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 5.28,
+"engine": "clone",
+"h": "25cf14bdaa4b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 4.2,
+"engine": "clone",
+"h": "cf8ab13fbb1f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 10.39,
+"engine": "clone",
+"h": "fd493574ed58",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 4.25,
+"engine": "clone",
+"h": "efe4dc81d0cb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 8.71,
+"engine": "clone",
+"h": "f75b9d0532e7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 10.85,
+"engine": "clone",
+"h": "aa9ce6b53251",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.86,
+"engine": "clone",
+"h": "3cb9c44f4504",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 9.62,
+"engine": "clone",
+"h": "3c3cbe1f3cde",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 4.03,
+"engine": "clone",
+"h": "fe1a07d144b3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 5.3,
+"engine": "clone",
+"h": "0e4b67539e16",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.94,
+"engine": "clone",
+"h": "2db7b42b0267",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 8.11,
+"engine": "clone",
+"h": "2f394942c424",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 13.08,
+"engine": "clone",
+"h": "6cdbaf5935d8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 3.07,
+"engine": "clone",
+"h": "964a22674b9c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 10.18,
+"engine": "clone",
+"h": "507acab66409",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.29,
+"engine": "clone",
+"h": "40d9f36f2c97",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 9.14,
+"engine": "clone",
+"h": "ad29a35979c0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.24,
+"engine": "clone",
+"h": "3293de2f0369",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.94,
+"engine": "clone",
+"h": "e751b30e1a1e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.42,
+"engine": "clone",
+"h": "63a54ca6ec48",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 9.36,
+"engine": "clone",
+"h": "0b50ef97a804",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 10.37,
+"engine": "clone",
+"h": "7163a2c5d362",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 8.33,
+"engine": "clone",
+"h": "528c7a5cc746",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 3.82,
+"engine": "clone",
+"h": "913579ff990c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.76,
+"engine": "clone",
+"h": "6f2773ec0662",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.89,
+"engine": "clone",
+"h": "f4e53bdf6a17",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.74,
+"engine": "clone",
+"h": "e21832a894db",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 8.86,
+"engine": "clone",
+"h": "b247995b58bf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.86,
+"engine": "clone",
+"h": "b1ef31b3092a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 10.08,
+"engine": "clone",
+"h": "68b491350035",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1f": {
+"0": {
+"d": 7.68,
+"engine": "clone",
+"h": "526645710b16",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 9.05,
+"engine": "clone",
+"h": "bbbcbb982c07",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.41,
+"engine": "clone",
+"h": "1b1f8787308e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.02,
+"engine": "clone",
+"h": "79549228b559",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.76,
+"engine": "clone",
+"h": "9f6938a0ad82",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.48,
+"engine": "clone",
+"h": "51a415caff33",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 10.18,
+"engine": "clone",
+"h": "0f91de8a9c52",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 2.93,
+"engine": "clone",
+"h": "1e7f32c79bcf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 9.96,
+"engine": "clone",
+"h": "0db0b6fc9450",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 11.5,
+"engine": "clone",
+"h": "f4362337e0ce",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 2.98,
+"engine": "clone",
+"h": "be87c6b174cd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 10.27,
+"engine": "clone",
+"h": "5420435b0f41",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 4.22,
+"engine": "clone",
+"h": "b059b4c2ba18",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 9.46,
+"engine": "clone",
+"h": "51e56df38126",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 4.3,
+"engine": "clone",
+"h": "36bee74079c9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 10.49,
+"engine": "clone",
+"h": "264de4083bc8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 8.45,
+"engine": "clone",
+"h": "341bd3083ecd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.93,
+"engine": "clone",
+"h": "653064b726c0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.38,
+"engine": "clone",
+"h": "5b57b8867e40",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 10.08,
+"engine": "clone",
+"h": "f08a70ce09db",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 12.36,
+"engine": "clone",
+"h": "937f144f30a9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 3.72,
+"engine": "clone",
+"h": "7464b8312fc2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 11.23,
+"engine": "clone",
+"h": "cd5463c945dd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 7.37,
+"engine": "clone",
+"h": "18d50bba53f5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 14.57,
+"engine": "clone",
+"h": "07e70fed5181",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 5.09,
+"engine": "clone",
+"h": "0fe64b6ad2d3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 4.01,
+"engine": "clone",
+"h": "52b8fddbccfa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 5.45,
+"engine": "clone",
+"h": "57b9684036e3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 11.02,
+"engine": "clone",
+"h": "9c2f1b0e179a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.41,
+"engine": "clone",
+"h": "5e1c66bb9c68",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 4.32,
+"engine": "clone",
+"h": "86f8a511fbfa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 7.54,
+"engine": "clone",
+"h": "c0b405eee292",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 10.1,
+"engine": "clone",
+"h": "c7bf16ed5c86",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-1g": {
+"0": {
+"d": 7.42,
+"engine": "clone",
+"h": "cb1186dac1c1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 9.38,
+"engine": "clone",
+"h": "a46248443a61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.4,
+"engine": "clone",
+"h": "19030fc6a164",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 11.54,
+"engine": "clone",
+"h": "200ba613cf3b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.42,
+"engine": "clone",
+"h": "1497add3ae95",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 8.98,
+"engine": "clone",
+"h": "1f04d4032095",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 3.19,
+"engine": "clone",
+"h": "00155e18afc0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 8.02,
+"engine": "clone",
+"h": "82f72e761a10",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.25,
+"engine": "clone",
+"h": "16f4548cde08",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 8.4,
+"engine": "clone",
+"h": "b365b595974a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.42,
+"engine": "clone",
+"h": "a48ba50a7828",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 11.74,
+"engine": "clone",
+"h": "987e637814a5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 8.64,
+"engine": "clone",
+"h": "cad635580aff",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 5.62,
+"engine": "clone",
+"h": "b62607a8d8fe",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 11.06,
+"engine": "clone",
+"h": "80cb74102c2e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.46,
+"engine": "clone",
+"h": "52318ac539b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.47,
+"engine": "clone",
+"h": "9526f57dca44",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.9,
+"engine": "clone",
+"h": "8f45e3e7578e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 10.92,
+"engine": "clone",
+"h": "8862015b3908",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 4.61,
+"engine": "clone",
+"h": "00699b008e23",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 9.82,
+"engine": "clone",
+"h": "0be0c48276bc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 7.51,
+"engine": "clone",
+"h": "ce994cf70723",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 8.76,
+"engine": "clone",
+"h": "a3fd6b0b87aa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 5.47,
+"engine": "clone",
+"h": "35c03d19abcd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 10.73,
+"engine": "clone",
+"h": "51528356b7cd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 9.48,
+"engine": "clone",
+"h": "51e4337443f4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.38,
+"engine": "clone",
+"h": "b3dd7ad0b7f1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 8.86,
+"engine": "clone",
+"h": "4cb1ca4b3d97",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 8.59,
+"engine": "clone",
+"h": "f1772e2f6527",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.6,
+"engine": "clone",
+"h": "5f3c55e1e90d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-2a": {
+"0": {
+"d": 9.24,
+"engine": "clone",
+"h": "de0d069e0351",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.01,
+"engine": "clone",
+"h": "f25fd6672276",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.84,
+"engine": "clone",
+"h": "1d3ceff992f1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.12,
+"engine": "clone",
+"h": "1fa217dfad11",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.25,
+"engine": "clone",
+"h": "5505a152fef0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 10.27,
+"engine": "clone",
+"h": "2d4e7905e9c2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.46,
+"engine": "clone",
+"h": "2104425ea6ba",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 6.48,
+"engine": "clone",
+"h": "3344932b665d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 6.43,
+"engine": "clone",
+"h": "0a141861ef97",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 7.54,
+"engine": "clone",
+"h": "230838c9c419",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.4,
+"engine": "clone",
+"h": "0677d9f9b30c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 4.7,
+"engine": "clone",
+"h": "68a630dc1738",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 6.79,
+"engine": "clone",
+"h": "99b1a32d4cd6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 8.5,
+"engine": "clone",
+"h": "cd3d4b64a409",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 7.56,
+"engine": "clone",
+"h": "de9a4cfaeba8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 6.41,
+"engine": "clone",
+"h": "bc5f6465c7ed",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 6.77,
+"engine": "clone",
+"h": "2ebaf4a2ad56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.44,
+"engine": "clone",
+"h": "883540ad426d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 8.26,
+"engine": "clone",
+"h": "a21f5d68a561",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 7.27,
+"engine": "clone",
+"h": "0906a83e4c0c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 4.1,
+"engine": "clone",
+"h": "4f07d7664dfa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 5.69,
+"engine": "clone",
+"h": "e52e76c18bbb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 12.89,
+"engine": "clone",
+"h": "b0441e3832f4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 9.77,
+"engine": "clone",
+"h": "8300f79490e1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 7.37,
+"engine": "clone",
+"h": "3b95479f8a77",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 9.0,
+"engine": "clone",
+"h": "bff37b25a668",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 8.18,
+"engine": "clone",
+"h": "b98473f76e10",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 5.06,
+"engine": "clone",
+"h": "375eb51aa87c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 7.66,
+"engine": "clone",
+"h": "60b5495ddcad",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.7,
+"engine": "clone",
+"h": "17caa5310d50",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 7.97,
+"engine": "clone",
+"h": "740e52349cb9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-2b": {
+"0": {
+"d": 11.5,
+"engine": "clone",
+"h": "1b524b508379",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.57,
+"engine": "clone",
+"h": "f1df71eb68dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.25,
+"engine": "clone",
+"h": "7dfdecaff3c8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 3.29,
+"engine": "clone",
+"h": "456c7ba12428",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 8.86,
+"engine": "clone",
+"h": "96c6e9a3ce8c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 6.96,
+"engine": "clone",
+"h": "bfcf362a96c8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 4.39,
+"engine": "clone",
+"h": "f35de2b33f07",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 7.58,
+"engine": "clone",
+"h": "cacbfb498753",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 6.34,
+"engine": "clone",
+"h": "f99137b4ed6c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.12,
+"engine": "clone",
+"h": "97b7e2d233ce",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 9.22,
+"engine": "clone",
+"h": "f5782b8272b5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 9.91,
+"engine": "clone",
+"h": "962c3069ac8c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 5.98,
+"engine": "clone",
+"h": "21cb2c81c00b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 3.0,
+"engine": "clone",
+"h": "ec81cc622a41",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 9.79,
+"engine": "clone",
+"h": "b1521f78fe21",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 7.46,
+"engine": "clone",
+"h": "2f0830947512",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 4.03,
+"engine": "clone",
+"h": "a4debd3086ab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 7.8,
+"engine": "clone",
+"h": "010d2fafd099",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 2.66,
+"engine": "clone",
+"h": "f48adfb072df",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.24,
+"engine": "clone",
+"h": "a69fabdfd3f7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 9.36,
+"engine": "clone",
+"h": "86670af926b2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 3.14,
+"engine": "clone",
+"h": "d4be7317b010",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 9.36,
+"engine": "clone",
+"h": "ddf89289cd47",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 6.43,
+"engine": "clone",
+"h": "d05e50378b74",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 3.82,
+"engine": "clone",
+"h": "415c8db73b0c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 13.1,
+"engine": "clone",
+"h": "61ea6687d4fd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 9.07,
+"engine": "clone",
+"h": "34bc1f683179",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 3.7,
+"engine": "clone",
+"h": "18e769ed77bf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 8.4,
+"engine": "clone",
+"h": "300bd95702ad",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.18,
+"engine": "clone",
+"h": "2a925a87d890",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 10.06,
+"engine": "clone",
+"h": "d58c15992e0d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.56,
+"engine": "clone",
+"h": "5e1732b1b607",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 8.47,
+"engine": "clone",
+"h": "52890b3db429",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-3a": {
+"0": {
+"d": 9.29,
+"engine": "clone",
+"h": "d8a4d71b86fc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 10.03,
+"engine": "clone",
+"h": "6eb8c5894b19",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.68,
+"engine": "clone",
+"h": "a93c02ef41c7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.79,
+"engine": "clone",
+"h": "3bb6c9b2afb3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.53,
+"engine": "clone",
+"h": "c6e1dc6576b8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 7.7,
+"engine": "clone",
+"h": "437537361d5c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.99,
+"engine": "clone",
+"h": "8cb2c2a56c09",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 3.53,
+"engine": "clone",
+"h": "16fd8ba56cfc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.66,
+"engine": "clone",
+"h": "de1c999164dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 9.19,
+"engine": "clone",
+"h": "ff4a8fba457f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.3,
+"engine": "clone",
+"h": "1d7e99050e6f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 5.62,
+"engine": "clone",
+"h": "7dc5dc0c3018",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 5.11,
+"engine": "clone",
+"h": "54831314803d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 6.74,
+"engine": "clone",
+"h": "76d4acf97d27",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.77,
+"engine": "clone",
+"h": "4d78c8e38ef1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 7.58,
+"engine": "clone",
+"h": "7660fea44f1a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 8.47,
+"engine": "clone",
+"h": "d55e982fc997",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 3.79,
+"engine": "clone",
+"h": "250e31047a19",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 3.86,
+"engine": "clone",
+"h": "761b363bcffd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 8.95,
+"engine": "clone",
+"h": "df6db2207635",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 6.22,
+"engine": "clone",
+"h": "efe1a49de485",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 3.77,
+"engine": "clone",
+"h": "16412bf7f9f8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 6.17,
+"engine": "clone",
+"h": "a25eb45dfe07",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 7.63,
+"engine": "clone",
+"h": "f497f68f3bef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 9.82,
+"engine": "clone",
+"h": "184dc55bea76",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 8.57,
+"engine": "clone",
+"h": "e024b4a76d47",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 6.82,
+"engine": "clone",
+"h": "4f4f42ce6c19",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.22,
+"engine": "clone",
+"h": "0eaa80f9dea9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 8.52,
+"engine": "clone",
+"h": "dddb15b8c59d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.26,
+"engine": "clone",
+"h": "90575c0886ba",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 6.91,
+"engine": "clone",
+"h": "594ad32a8f7d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 4.2,
+"engine": "clone",
+"h": "091b47153c99",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-3b": {
+"0": {
+"d": 10.92,
+"engine": "clone",
+"h": "14d3afbd66b4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.06,
+"engine": "clone",
+"h": "559be298f770",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.66,
+"engine": "clone",
+"h": "eed9786d5589",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 8.69,
+"engine": "clone",
+"h": "7967463e4f5e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 6.58,
+"engine": "clone",
+"h": "46f5712c9f9a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 8.06,
+"engine": "clone",
+"h": "d71e68f6156b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 5.74,
+"engine": "clone",
+"h": "03f771c79a54",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 7.87,
+"engine": "clone",
+"h": "cff7fd83ad99",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.85,
+"engine": "clone",
+"h": "4408268e58a8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 9.84,
+"engine": "clone",
+"h": "e879d9477000",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.19,
+"engine": "clone",
+"h": "3528a7b75fe0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 6.55,
+"engine": "clone",
+"h": "15cf9d22cba1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 3.43,
+"engine": "clone",
+"h": "2a0b1ba73c32",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 8.57,
+"engine": "clone",
+"h": "dd97bfa37f8a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 4.39,
+"engine": "clone",
+"h": "0f1b9c946588",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 9.53,
+"engine": "clone",
+"h": "922283a1fd7b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.84,
+"engine": "clone",
+"h": "4d78c8e38ef1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 9.48,
+"engine": "clone",
+"h": "3815a299f1db",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 8.93,
+"engine": "clone",
+"h": "367c062cde0d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 5.74,
+"engine": "clone",
+"h": "67f1ee1ae8c8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 6.36,
+"engine": "clone",
+"h": "f34c8c4e2b96",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 8.26,
+"engine": "clone",
+"h": "7d41877e4e7b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.53,
+"engine": "clone",
+"h": "f83f44ffe270",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.07,
+"engine": "clone",
+"h": "351ae67f0ee6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 3.86,
+"engine": "clone",
+"h": "5a94a21e32cc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 10.78,
+"engine": "clone",
+"h": "b7c2c1b786c4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 8.06,
+"engine": "clone",
+"h": "236390a78bf8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.08,
+"engine": "clone",
+"h": "0e9d16761035",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 3.36,
+"engine": "clone",
+"h": "64dc55659437",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 9.26,
+"engine": "clone",
+"h": "5c2eebfdf3c5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 2.98,
+"engine": "clone",
+"h": "d9122eb06b24",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 6.31,
+"engine": "clone",
+"h": "068fc1ed6a58",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 5.45,
+"engine": "clone",
+"h": "3180615ab194",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-4a": {
+"0": {
+"d": 9.6,
+"engine": "clone",
+"h": "a8a16f8d1f5f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.58,
+"engine": "clone",
+"h": "bf7b6cde2535",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.5,
+"engine": "clone",
+"h": "22ba1b9f0a8b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 4.1,
+"engine": "clone",
+"h": "4d78c8e38ef1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 10.42,
+"engine": "clone",
+"h": "eb7b77e344c9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 9.84,
+"engine": "clone",
+"h": "2f573f405f2b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 4.32,
+"engine": "clone",
+"h": "8a59bbbc195f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 10.42,
+"engine": "clone",
+"h": "35afe440bf63",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.91,
+"engine": "clone",
+"h": "f4c4066f6645",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 9.36,
+"engine": "clone",
+"h": "00f3caeb5f31",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 9.14,
+"engine": "clone",
+"h": "39f12ce3731a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.62,
+"engine": "clone",
+"h": "80b2706122e0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 4.37,
+"engine": "clone",
+"h": "01ec17d849ce",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 9.65,
+"engine": "clone",
+"h": "3b3071fd2e3e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 8.95,
+"engine": "clone",
+"h": "225a0800d4a5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 4.01,
+"engine": "clone",
+"h": "9c6250e05dc3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 4.06,
+"engine": "clone",
+"h": "5c0a94f42ebb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 10.7,
+"engine": "clone",
+"h": "12f11924fdad",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 5.23,
+"engine": "clone",
+"h": "875af86ab2a2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 4.08,
+"engine": "clone",
+"h": "8e6986c7dc11",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 7.46,
+"engine": "clone",
+"h": "0bbe0289dd32",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 8.57,
+"engine": "clone",
+"h": "c8c9daa23142",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.55,
+"engine": "clone",
+"h": "453db99b30f4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 8.76,
+"engine": "clone",
+"h": "2adb965bf4c8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 8.64,
+"engine": "clone",
+"h": "d105050628c5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 12.36,
+"engine": "clone",
+"h": "c4454fd75bbd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 6.46,
+"engine": "clone",
+"h": "7df02e4d41f3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 6.84,
+"engine": "clone",
+"h": "222be4bde191",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 5.11,
+"engine": "clone",
+"h": "58d2f56e5b24",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 7.68,
+"engine": "clone",
+"h": "6a0e5e931e56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.67,
+"engine": "clone",
+"h": "6f6499b3040b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 6.05,
+"engine": "clone",
+"h": "ed1a620d5f78",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.62,
+"engine": "clone",
+"h": "55779582fd1f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-4b": {
+"0": {
+"d": 11.21,
+"engine": "clone",
+"h": "b53aac9c16ed",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.39,
+"engine": "clone",
+"h": "3d50393b2d21",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.6,
+"engine": "clone",
+"h": "145be1f408d0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.53,
+"engine": "clone",
+"h": "eef29c02eaf3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 6.1,
+"engine": "clone",
+"h": "e3a1dd9d4b14",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 4.1,
+"engine": "clone",
+"h": "0cd0eaba36bf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.18,
+"engine": "clone",
+"h": "f79cfae453b6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.17,
+"engine": "clone",
+"h": "d6c95fbe2809",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 9.31,
+"engine": "clone",
+"h": "385ef42ebe5d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 9.55,
+"engine": "clone",
+"h": "414b4a83c5f8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.11,
+"engine": "clone",
+"h": "f9fe55ad51c7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 7.18,
+"engine": "clone",
+"h": "f8d260fd1402",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.94,
+"engine": "clone",
+"h": "50da1877fdc5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 6.84,
+"engine": "clone",
+"h": "db5db82f4214",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.12,
+"engine": "clone",
+"h": "cac4c037c27d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 9.22,
+"engine": "clone",
+"h": "91b3b9a55f7d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 7.01,
+"engine": "clone",
+"h": "19b964dc10c2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.1,
+"engine": "clone",
+"h": "df1620aa5b69",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 7.66,
+"engine": "clone",
+"h": "bae85963eff2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 4.32,
+"engine": "clone",
+"h": "7ad5cadfea65",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 5.81,
+"engine": "clone",
+"h": "593bd054bc39",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.67,
+"engine": "clone",
+"h": "6c392b47e4c4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.5,
+"engine": "clone",
+"h": "5cb9b1d99dc9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 3.41,
+"engine": "clone",
+"h": "1c03751166b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 7.85,
+"engine": "clone",
+"h": "39203ab74082",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 10.87,
+"engine": "clone",
+"h": "f7a82d3740f2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 8.45,
+"engine": "clone",
+"h": "0768c74e92c1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.87,
+"engine": "clone",
+"h": "15142d30caea",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.6,
+"engine": "clone",
+"h": "288477a16b9b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.34,
+"engine": "clone",
+"h": "e73d4924e932",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 7.97,
+"engine": "clone",
+"h": "c5f15fb13bc6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.22,
+"engine": "clone",
+"h": "85e597e30ccd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 6.89,
+"engine": "clone",
+"h": "8f2a086414b4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-5a": {
+"0": {
+"d": 13.68,
+"engine": "clone",
+"h": "700931b1c3d0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.37,
+"engine": "clone",
+"h": "e97fb4b4e0d6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.16,
+"engine": "clone",
+"h": "0e91468add6e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 11.21,
+"engine": "clone",
+"h": "59d2f5d2e2db",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.55,
+"engine": "clone",
+"h": "0c9726ddf73d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 8.86,
+"engine": "clone",
+"h": "7d836d03b81c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 3.53,
+"engine": "clone",
+"h": "f40f5c4e011c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 10.44,
+"engine": "clone",
+"h": "ea5a3dc1bc03",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.81,
+"engine": "clone",
+"h": "e6f0f20d934c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 10.3,
+"engine": "clone",
+"h": "43bb1a0b17b0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.58,
+"engine": "clone",
+"h": "eaeb707c764e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 7.37,
+"engine": "clone",
+"h": "ae38f6dfc496",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.49,
+"engine": "clone",
+"h": "81060d89ae59",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 7.37,
+"engine": "clone",
+"h": "f7471f4a948f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 11.47,
+"engine": "clone",
+"h": "912163ab4cfa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 6.31,
+"engine": "clone",
+"h": "b3702143afa7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 10.25,
+"engine": "clone",
+"h": "478a7b139a10",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 5.83,
+"engine": "clone",
+"h": "b6511a6d8caa",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 3.82,
+"engine": "clone",
+"h": "96f4d2288ad2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 3.48,
+"engine": "clone",
+"h": "3b220ad3f4c2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 9.74,
+"engine": "clone",
+"h": "ad51795f8977",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 11.16,
+"engine": "clone",
+"h": "5a3e8d845ed4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 3.91,
+"engine": "clone",
+"h": "6b4c47ccecd7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 10.25,
+"engine": "clone",
+"h": "ce03297a40b1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 9.36,
+"engine": "clone",
+"h": "29934ae34964",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 13.9,
+"engine": "clone",
+"h": "ec180792b407",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 7.56,
+"engine": "clone",
+"h": "dfe99ff32ffd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 10.42,
+"engine": "clone",
+"h": "c9e93e6d136a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.56,
+"engine": "clone",
+"h": "4780f2ffd366",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 7.51,
+"engine": "clone",
+"h": "73e4726defd0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 8.76,
+"engine": "clone",
+"h": "a5c245251518",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.48,
+"engine": "clone",
+"h": "0613706b5581",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-5b": {
+"0": {
+"d": 9.91,
+"engine": "clone",
+"h": "7a63945027b6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.28,
+"engine": "clone",
+"h": "93bf297f734e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.52,
+"engine": "clone",
+"h": "4bebf2363deb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 5.78,
+"engine": "clone",
+"h": "1a6ebe26b091",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 11.21,
+"engine": "clone",
+"h": "29a9ee1de5f5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 4.58,
+"engine": "clone",
+"h": "a93c30f48e32",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 3.02,
+"engine": "clone",
+"h": "e8720d29157e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 10.73,
+"engine": "clone",
+"h": "14fb44de880b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.3,
+"engine": "clone",
+"h": "118bd5a49e1c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 9.72,
+"engine": "clone",
+"h": "0842bc90e3bf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.5,
+"engine": "clone",
+"h": "f1866bf9172d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 11.35,
+"engine": "clone",
+"h": "53ba5b9b3a5b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 5.26,
+"engine": "clone",
+"h": "cfe1b94911ff",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 3.94,
+"engine": "clone",
+"h": "ec53490a589d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 9.65,
+"engine": "clone",
+"h": "f08ce6a58cea",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 9.29,
+"engine": "clone",
+"h": "6c40111812ef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 5.64,
+"engine": "clone",
+"h": "b230166c5e5b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 2.95,
+"engine": "clone",
+"h": "e33c5471f450",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 4.46,
+"engine": "clone",
+"h": "95ebe3da2c46",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.31,
+"engine": "clone",
+"h": "9106acd034d5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.65,
+"engine": "clone",
+"h": "868f59eb0b1c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 10.01,
+"engine": "clone",
+"h": "b41ee52749ae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 12.24,
+"engine": "clone",
+"h": "0ecfab55af09",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.91,
+"engine": "clone",
+"h": "9e2177cec4f7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 6.86,
+"engine": "clone",
+"h": "4aff353b7b23",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 8.76,
+"engine": "clone",
+"h": "8e5432bdea4b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 11.14,
+"engine": "clone",
+"h": "8203c0f5fb9a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.48,
+"engine": "clone",
+"h": "c88682f17df7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 8.09,
+"engine": "clone",
+"h": "a399351ca033",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.53,
+"engine": "clone",
+"h": "16d875965c18",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-5c": {
+"0": {
+"d": 10.46,
+"engine": "clone",
+"h": "509aa1ca677e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 9.6,
+"engine": "clone",
+"h": "49fac2678adf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 10.37,
+"engine": "clone",
+"h": "338d54f7732c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 4.75,
+"engine": "clone",
+"h": "be21122f021e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 8.76,
+"engine": "clone",
+"h": "da6026d2d27b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 12.94,
+"engine": "clone",
+"h": "92a4c27ed59c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 6.91,
+"engine": "clone",
+"h": "76132f27da6f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 6.91,
+"engine": "clone",
+"h": "ef74415873e6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.49,
+"engine": "clone",
+"h": "94ccc5171742",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 10.85,
+"engine": "clone",
+"h": "c7e0b16430f6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.47,
+"engine": "clone",
+"h": "2f932b8cf33b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 4.66,
+"engine": "clone",
+"h": "1085535ca10b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 3.41,
+"engine": "clone",
+"h": "6af4272e316b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 13.18,
+"engine": "clone",
+"h": "5392956b62b0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.5,
+"engine": "clone",
+"h": "6c9c63761629",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 7.94,
+"engine": "clone",
+"h": "d6b19b8f4061",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 4.13,
+"engine": "clone",
+"h": "dc5e5dd690dc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 11.76,
+"engine": "clone",
+"h": "ecebd7f019c5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.55,
+"engine": "clone",
+"h": "aabe40198017",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 12.26,
+"engine": "clone",
+"h": "decce9009e1d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.6,
+"engine": "clone",
+"h": "09a019ee8d22",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 10.8,
+"engine": "clone",
+"h": "6a82b1cde898",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 11.64,
+"engine": "clone",
+"h": "e37c73e7f9e6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 8.78,
+"engine": "clone",
+"h": "67ec252decc2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 8.95,
+"engine": "clone",
+"h": "930636939237",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.98,
+"engine": "clone",
+"h": "cf0ec82e8e10",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 6.12,
+"engine": "clone",
+"h": "c34caa794f2b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 11.62,
+"engine": "clone",
+"h": "a76c3401f9e5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.67,
+"engine": "clone",
+"h": "73349dc920ac",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 9.55,
+"engine": "clone",
+"h": "eab664f81be4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-5d": {
+"0": {
+"d": 11.33,
+"engine": "clone",
+"h": "429b47ae0afb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.22,
+"engine": "clone",
+"h": "adc3780e8d9f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.82,
+"engine": "clone",
+"h": "c027937a50fb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 10.97,
+"engine": "clone",
+"h": "f00e0716e4bb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 8.98,
+"engine": "clone",
+"h": "d0d4e56ad347",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 2.95,
+"engine": "clone",
+"h": "04b2d251c529",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 9.29,
+"engine": "clone",
+"h": "c270a160550a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 6.7,
+"engine": "clone",
+"h": "d164e06bb6e9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 12.55,
+"engine": "clone",
+"h": "66d90272a013",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 4.01,
+"engine": "clone",
+"h": "9a0387098818",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 10.7,
+"engine": "clone",
+"h": "184e7254465a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.65,
+"engine": "clone",
+"h": "b32d9e9c7e5b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 9.67,
+"engine": "clone",
+"h": "e691934a2730",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 12.46,
+"engine": "clone",
+"h": "900ae0db4759",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.86,
+"engine": "clone",
+"h": "8bf8f651136f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 10.01,
+"engine": "clone",
+"h": "a46c2d3ef4e1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.79,
+"engine": "clone",
+"h": "966bbbfe8fba",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 8.69,
+"engine": "clone",
+"h": "abc027ef03a3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 4.27,
+"engine": "clone",
+"h": "abc97e79bee0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 11.64,
+"engine": "clone",
+"h": "9bccce89bf75",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 9.22,
+"engine": "clone",
+"h": "5ef3f10a605b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 13.32,
+"engine": "clone",
+"h": "a0201edc8b7f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 3.94,
+"engine": "clone",
+"h": "d24c256dc8ee",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 11.16,
+"engine": "clone",
+"h": "d422b200f535",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.46,
+"engine": "clone",
+"h": "172abcd63f52",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 11.88,
+"engine": "clone",
+"h": "08f6d3bc9361",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 9.38,
+"engine": "clone",
+"h": "3dbbc9388bcf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.06,
+"engine": "clone",
+"h": "5d90986d6a67",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 11.04,
+"engine": "clone",
+"h": "02f8faf6b504",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-5e": {
+"0": {
+"d": 11.76,
+"engine": "clone",
+"h": "4538b02aa7ef",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 10.22,
+"engine": "clone",
+"h": "584e5cb1a4fd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.07,
+"engine": "clone",
+"h": "e4a8298b9a68",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 14.52,
+"engine": "clone",
+"h": "0b6f07289e6a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.3,
+"engine": "clone",
+"h": "e26d1f26319a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 14.98,
+"engine": "clone",
+"h": "92ba92b1315f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 3.36,
+"engine": "clone",
+"h": "a9c3cb4415ef",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 10.49,
+"engine": "clone",
+"h": "48bd63946381",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.23,
+"engine": "clone",
+"h": "3f6de29ef9e6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 12.98,
+"engine": "clone",
+"h": "8d8c067024ec",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 9.86,
+"engine": "clone",
+"h": "fbc66615ab1a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.34,
+"engine": "clone",
+"h": "5397a7b200d8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 3.17,
+"engine": "clone",
+"h": "5d3c92b77f15",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 5.23,
+"engine": "clone",
+"h": "72b076f40184",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.36,
+"engine": "clone",
+"h": "e4386012bf5e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 13.32,
+"engine": "clone",
+"h": "a3cc69a2fde3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.43,
+"engine": "clone",
+"h": "af139067011b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 9.02,
+"engine": "clone",
+"h": "0d9c687fd692",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.77,
+"engine": "clone",
+"h": "6308b685fe62",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 12.53,
+"engine": "clone",
+"h": "f98052c99642",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.53,
+"engine": "clone",
+"h": "367dac0369b8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 12.67,
+"engine": "clone",
+"h": "23f11a68e7a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 15.86,
+"engine": "clone",
+"h": "e60faff8b2dc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 13.82,
+"engine": "clone",
+"h": "19f9e5ec260f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 3.34,
+"engine": "clone",
+"h": "18154f8d6d1f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 9.86,
+"engine": "clone",
+"h": "46ff3d1fbe5f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.7,
+"engine": "clone",
+"h": "4384a5cf171f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 12.77,
+"engine": "clone",
+"h": "3c1774a1eb69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.07,
+"engine": "clone",
+"h": "3eaa435a42b0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 11.18,
+"engine": "clone",
+"h": "f5783781b44d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-5f": {
+"0": {
+"d": 12.26,
+"engine": "clone",
+"h": "1316a13e83c6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 10.34,
+"engine": "clone",
+"h": "c3d83aef0cf1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 12.02,
+"engine": "clone",
+"h": "082d4fbb0caa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 9.98,
+"engine": "clone",
+"h": "d1bf7e009381",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.38,
+"engine": "clone",
+"h": "6f35dc08fbc2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 11.09,
+"engine": "clone",
+"h": "3167c1cf6e6d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 3.77,
+"engine": "clone",
+"h": "a3d0bd55240f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 8.4,
+"engine": "clone",
+"h": "d9d71e3da3a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.91,
+"engine": "clone",
+"h": "c33920ffe734",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 10.49,
+"engine": "clone",
+"h": "7d15d4159ada",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 3.29,
+"engine": "clone",
+"h": "216798e205ac",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 11.78,
+"engine": "clone",
+"h": "5c68889c96fc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 4.15,
+"engine": "clone",
+"h": "400a19a8b308",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 8.28,
+"engine": "clone",
+"h": "4a8895810249",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 5.21,
+"engine": "clone",
+"h": "66423a766112",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 13.68,
+"engine": "clone",
+"h": "8725ccf78321",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.46,
+"engine": "clone",
+"h": "f6108fa02c56",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 11.47,
+"engine": "clone",
+"h": "3f8b37475541",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.7,
+"engine": "clone",
+"h": "3c9cb6967d46",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 13.85,
+"engine": "clone",
+"h": "7d793a996096",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.6,
+"engine": "clone",
+"h": "a52a159905e2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 9.46,
+"engine": "clone",
+"h": "525b0bb911a6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 9.72,
+"engine": "clone",
+"h": "bdaf81553692",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 12.62,
+"engine": "clone",
+"h": "033b78496c10",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 3.26,
+"engine": "clone",
+"h": "fa34bcf1657f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 6.72,
+"engine": "clone",
+"h": "30825d4c3f9a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 3.79,
+"engine": "clone",
+"h": "1bce83fc4691",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"33": {
+"d": 11.83,
+"engine": "clone",
+"h": "cf019f77715e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"34": {
+"d": 3.7,
+"engine": "clone",
+"h": "09a019ee8d22",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"35": {
+"d": 9.43,
+"engine": "clone",
+"h": "bd8fad41f794",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"36": {
+"d": 15.02,
+"engine": "clone",
+"h": "f75c266b9a8c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 4.37,
+"engine": "clone",
+"h": "5723f2e985bc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 10.18,
+"engine": "clone",
+"h": "71d0ed0cb69e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.55,
+"engine": "clone",
+"h": "20a10bfba563",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 13.15,
+"engine": "clone",
+"h": "d41dcf004405",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 4.06,
+"engine": "clone",
+"h": "cd13b639da92",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 7.85,
+"engine": "clone",
+"h": "7cef1f507661",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-5g": {
+"0": {
+"d": 14.38,
+"engine": "clone",
+"h": "a6cf67a5ded2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 10.66,
+"engine": "clone",
+"h": "b9e9b58c3929",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.81,
+"engine": "clone",
+"h": "b55f658a3bc1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 3.79,
+"engine": "clone",
+"h": "3c9cb6967d46",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 7.37,
+"engine": "clone",
+"h": "5eb4ba119d61",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 5.93,
+"engine": "clone",
+"h": "9e6486422fd2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 11.16,
+"engine": "clone",
+"h": "b062085574c0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 2.95,
+"engine": "clone",
+"h": "83855f1f2c7f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 9.94,
+"engine": "clone",
+"h": "200c90f570ec",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 10.06,
+"engine": "clone",
+"h": "2fdce78a726a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.13,
+"engine": "clone",
+"h": "ba19ae90518b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 8.33,
+"engine": "clone",
+"h": "6025759142b7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 5.3,
+"engine": "clone",
+"h": "8c2e29af342a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 6.0,
+"engine": "clone",
+"h": "f3d9c21db7ee",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 10.01,
+"engine": "clone",
+"h": "158c246a7b3d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 4.82,
+"engine": "clone",
+"h": "5a022c83d8f4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 13.68,
+"engine": "clone",
+"h": "db085c5b7a8e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 8.47,
+"engine": "clone",
+"h": "a5b6a4f0c701",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 5.59,
+"engine": "clone",
+"h": "a68c7c430ae0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 12.05,
+"engine": "clone",
+"h": "f6bc4fcbabe2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.5,
+"engine": "clone",
+"h": "37d1ea2e1ff6",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 11.35,
+"engine": "clone",
+"h": "e5ed9e947366",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 11.02,
+"engine": "clone",
+"h": "8c836cb0df49",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 12.91,
+"engine": "clone",
+"h": "3f88c56a28d5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 11.42,
+"engine": "clone",
+"h": "35d6ce78c047",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 3.26,
+"engine": "clone",
+"h": "2f0125c99824",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 9.55,
+"engine": "clone",
+"h": "ec6047b0352b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.86,
+"engine": "clone",
+"h": "e63b2e6de147",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 10.56,
+"engine": "clone",
+"h": "1d9ced7daea2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 10.63,
+"engine": "clone",
+"h": "b7908c510a62",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 3.55,
+"engine": "clone",
+"h": "a679c4806dd1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-is-6a": {
+"0": {
+"d": 10.87,
+"engine": "clone",
+"h": "8b59084d94d1",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.54,
+"engine": "clone",
+"h": "f808aeced907",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 4.56,
+"engine": "clone",
+"h": "fdb392ea3981",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 10.01,
+"engine": "clone",
+"h": "0a24d5afd846",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.54,
+"engine": "clone",
+"h": "fb9ee9c27f29",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 8.38,
+"engine": "clone",
+"h": "de1e4a0c0f9b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 5.21,
+"engine": "clone",
+"h": "4de2f95f2483",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 9.19,
+"engine": "clone",
+"h": "988c33c261a1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.46,
+"engine": "clone",
+"h": "bf449a5a4881",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 10.15,
+"engine": "clone",
+"h": "850637b98767",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 9.24,
+"engine": "clone",
+"h": "8063bbcb11d1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 11.78,
+"engine": "clone",
+"h": "7e3ac216fb9c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 4.73,
+"engine": "clone",
+"h": "5dee5f495fb5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 4.7,
+"engine": "clone",
+"h": "0cb4e607e16f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 7.22,
+"engine": "clone",
+"h": "9b7fd423b618",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 4.44,
+"engine": "clone",
+"h": "73722170bd4d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 9.12,
+"engine": "clone",
+"h": "f361e1578797",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.7,
+"engine": "clone",
+"h": "090cec106f4c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 4.15,
+"engine": "clone",
+"h": "bb9698cca6bf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 7.37,
+"engine": "clone",
+"h": "ebc478b5367a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.19,
+"engine": "clone",
+"h": "f42a37b337be",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 7.46,
+"engine": "clone",
+"h": "dcb4b56baf33",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 8.3,
+"engine": "clone",
+"h": "f08a90d71e9d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 11.28,
+"engine": "clone",
+"h": "9d4cf2d0753c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 4.13,
+"engine": "clone",
+"h": "03c40842006c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 12.98,
+"engine": "clone",
+"h": "a2b18b0a750a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 7.87,
+"engine": "clone",
+"h": "3fd535d90320",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 4.78,
+"engine": "clone",
+"h": "d6bda9c9d480",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"34": {
+"d": 8.78,
+"engine": "clone",
+"h": "ead03af54fd0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"35": {
+"d": 7.97,
+"engine": "clone",
+"h": "5d675e332a01",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"36": {
+"d": 13.22,
+"engine": "clone",
+"h": "38699f59a87f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 4.9,
+"engine": "clone",
+"h": "e012839bd5f7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 9.98,
+"engine": "clone",
+"h": "bc138eb57ca0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 5.28,
+"engine": "clone",
+"h": "af5c3af712ff",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 5.45,
+"engine": "clone",
+"h": "6953c55ccad6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 5.57,
+"engine": "clone",
+"h": "00714402e137",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 10.97,
+"engine": "clone",
+"h": "c695f8145dd4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-6b": {
+"0": {
+"d": 10.32,
+"engine": "clone",
+"h": "f65296201808",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.9,
+"engine": "clone",
+"h": "281ab5e7033f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 11.76,
+"engine": "clone",
+"h": "e5fd3d32f182",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 3.91,
+"engine": "clone",
+"h": "f09608438d71",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 9.72,
+"engine": "clone",
+"h": "d7a2bc338338",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.26,
+"engine": "clone",
+"h": "4f99b3bff17d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 10.01,
+"engine": "clone",
+"h": "73fde6fd01f2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 9.26,
+"engine": "clone",
+"h": "97868b38fcc5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.69,
+"engine": "clone",
+"h": "a114a3c529d8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 11.23,
+"engine": "clone",
+"h": "a3e76a204148",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 4.06,
+"engine": "clone",
+"h": "0aec64c97754",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 9.74,
+"engine": "clone",
+"h": "4cca7fa843c0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 4.68,
+"engine": "clone",
+"h": "f2375134b576",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 3.74,
+"engine": "clone",
+"h": "fabd6af0877c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 8.3,
+"engine": "clone",
+"h": "9be154e6a53d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.89,
+"engine": "clone",
+"h": "59bdfa88e71d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 10.9,
+"engine": "clone",
+"h": "0a53b98609b7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.56,
+"engine": "clone",
+"h": "64a6f4d2d443",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 5.71,
+"engine": "clone",
+"h": "8656f98b6a75",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 9.74,
+"engine": "clone",
+"h": "8291c7b92786",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 9.82,
+"engine": "clone",
+"h": "96d8470022dd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.61,
+"engine": "clone",
+"h": "6e18ad33bd25",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 10.3,
+"engine": "clone",
+"h": "733def3814da",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 8.57,
+"engine": "clone",
+"h": "b3b9cd7505a4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 8.64,
+"engine": "clone",
+"h": "e7e186f1652f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 4.3,
+"engine": "clone",
+"h": "aed54117c4b3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"32": {
+"d": 9.1,
+"engine": "clone",
+"h": "45fc0163485c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"33": {
+"d": 12.19,
+"engine": "clone",
+"h": "4f0f55f4e4d7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 9.22,
+"engine": "clone",
+"h": "bded451be7c6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 9.19,
+"engine": "clone",
+"h": "8dd74b141b73",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 3.86,
+"engine": "clone",
+"h": "a9c1a9f313ed",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 6.72,
+"engine": "clone",
+"h": "aa1d1c476619",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 2.98,
+"engine": "clone",
+"h": "40ff7e0c81ea",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 9.86,
+"engine": "clone",
+"h": "cc20dc18d44b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-7a": {
+"0": {
+"d": 10.25,
+"engine": "clone",
+"h": "e408a9c1e296",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.3,
+"engine": "clone",
+"h": "90cb75d24150",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.58,
+"engine": "clone",
+"h": "29b240dba81b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 9.86,
+"engine": "clone",
+"h": "04462b8ff186",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.94,
+"engine": "clone",
+"h": "1d8e1910b8a4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 10.44,
+"engine": "clone",
+"h": "a8b69f55d7bd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 3.6,
+"engine": "clone",
+"h": "283478416368",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"15": {
+"d": 9.84,
+"engine": "clone",
+"h": "1450e6d63ad4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 7.1,
+"engine": "clone",
+"h": "5c69ed102434",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 3.7,
+"engine": "clone",
+"h": "2ee51a3c5267",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 9.84,
+"engine": "clone",
+"h": "34a670121c7c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.38,
+"engine": "clone",
+"h": "3c3efc919fc7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 5.23,
+"engine": "clone",
+"h": "53361a12a36c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 3.24,
+"engine": "clone",
+"h": "1761e7a6520a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.77,
+"engine": "clone",
+"h": "a04835ff130e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 9.6,
+"engine": "clone",
+"h": "4b08c3946473",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 8.66,
+"engine": "clone",
+"h": "0cc8b1b5fb9e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 3.02,
+"engine": "clone",
+"h": "f65cdddb6a52",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 7.87,
+"engine": "clone",
+"h": "826a90084698",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 4.03,
+"engine": "clone",
+"h": "e93f7f022ae4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 7.85,
+"engine": "clone",
+"h": "a00a07c82d04",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 9.12,
+"engine": "clone",
+"h": "cea4d7773d03",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 4.66,
+"engine": "clone",
+"h": "fe3f67a992c0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 7.92,
+"engine": "clone",
+"h": "08f2816dea69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 6.31,
+"engine": "clone",
+"h": "022e3578b579",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"31": {
+"d": 11.64,
+"engine": "clone",
+"h": "92e6478ad5a9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.71,
+"engine": "clone",
+"h": "83a89c8991ef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 3.72,
+"engine": "clone",
+"h": "715d254451ab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 6.89,
+"engine": "clone",
+"h": "0ee2d4cdf692",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 8.02,
+"engine": "clone",
+"h": "7bc85cc59428",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.31,
+"engine": "clone",
+"h": "50ffa531eb80",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 8.11,
+"engine": "clone",
+"h": "8cbb3b92971a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-is-7b": {
+"0": {
+"d": 9.48,
+"engine": "clone",
+"h": "9177cf834da8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 8.45,
+"engine": "clone",
+"h": "256349f440ac",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 2.88,
+"engine": "clone",
+"h": "7a67690f1f77",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 3.55,
+"engine": "clone",
+"h": "2742bedfe92e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 9.62,
+"engine": "clone",
+"h": "0a4e131014c4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 8.11,
+"engine": "clone",
+"h": "7f6bd8c2066b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.56,
+"engine": "clone",
+"h": "716db0ba1fb2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 5.04,
+"engine": "clone",
+"h": "4a52b08a4ecf",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 8.95,
+"engine": "clone",
+"h": "9e6d297b815e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 3.67,
+"engine": "clone",
+"h": "274f2ccbc342",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 4.66,
+"engine": "clone",
+"h": "560bbc892631",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.82,
+"engine": "clone",
+"h": "afe46a5b9606",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 4.66,
+"engine": "clone",
+"h": "02ad12d7dab3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 7.46,
+"engine": "clone",
+"h": "2babb380233f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 7.06,
+"engine": "clone",
+"h": "5ddd33dc188a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 9.89,
+"engine": "clone",
+"h": "39ea16c07908",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 3.5,
+"engine": "clone",
+"h": "5160e92100e4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"24": {
+"d": 6.96,
+"engine": "clone",
+"h": "6cb54a9923b9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 4.1,
+"engine": "clone",
+"h": "83884c6e9cac",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 7.85,
+"engine": "clone",
+"h": "f6315575fca1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 8.3,
+"engine": "clone",
+"h": "1bbd5235b4b1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 4.27,
+"engine": "clone",
+"h": "811cb9ef8d8c",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 6.05,
+"engine": "clone",
+"h": "274c762b098a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 9.65,
+"engine": "clone",
+"h": "f3294d310095",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 10.06,
+"engine": "clone",
+"h": "197622097dd8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 4.66,
+"engine": "clone",
+"h": "d4830e08c8f1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 7.85,
+"engine": "clone",
+"h": "2a80f16e1737",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 3.65,
+"engine": "clone",
+"h": "326b171ddfda",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 7.44,
+"engine": "clone",
+"h": "8dbf024cb671",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 9.5,
+"engine": "clone",
+"h": "1dacfde65f42",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 5.26,
+"engine": "clone",
+"h": "cca344bf29e5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 9.65,
+"engine": "clone",
+"h": "40ad9d7668d0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 5.54,
+"engine": "clone",
+"h": "a2a7ccfbc088",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-pp-1a": {
+"0": {
+"d": 10.85,
+"engine": "clone",
+"h": "470bfb971571",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.25,
+"engine": "clone",
+"h": "6e0f2dfb8a1f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 9.7,
+"engine": "clone",
+"h": "e557e113a390",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 8.38,
+"engine": "clone",
+"h": "51857cd10909",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 7.73,
+"engine": "clone",
+"h": "51838416ef44",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 5.54,
+"engine": "clone",
+"h": "f5d66a66b4bb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 6.89,
+"engine": "clone",
+"h": "88936d3e5969",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 5.76,
+"engine": "clone",
+"h": "04f4f25d2dc8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.3,
+"engine": "clone",
+"h": "01972ae2eb8c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 6.77,
+"engine": "clone",
+"h": "60174ff7a190",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.13,
+"engine": "clone",
+"h": "a739513e35d4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.62,
+"engine": "clone",
+"h": "aef3682eabba",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 5.98,
+"engine": "clone",
+"h": "82b5816eb634",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 6.5,
+"engine": "clone",
+"h": "3472e3f1b5a2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.38,
+"engine": "clone",
+"h": "d4cf0fb4d77a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 7.18,
+"engine": "clone",
+"h": "7727da6d0cdd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 7.58,
+"engine": "clone",
+"h": "00b31bbfd3dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 5.33,
+"engine": "clone",
+"h": "62e150d65d3a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 6.07,
+"engine": "clone",
+"h": "646d6ffc639c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 8.81,
+"engine": "clone",
+"h": "c1da842bd467",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 3.65,
+"engine": "clone",
+"h": "a8778cec6722",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"28": {
+"d": 7.18,
+"engine": "clone",
+"h": "52754fd1a7a3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"29": {
+"d": 5.88,
+"engine": "clone",
+"h": "77db6f017498",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 6.48,
+"engine": "clone",
+"h": "2746a2c69ed6",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"30": {
+"d": 8.42,
+"engine": "clone",
+"h": "65d1ffd417a0",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"31": {
+"d": 3.12,
+"engine": "clone",
+"h": "4b55bfc9c6f2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"32": {
+"d": 15.62,
+"engine": "clone",
+"h": "535a4a02291a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.28,
+"engine": "clone",
+"h": "c946d3deaae5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 4.63,
+"engine": "clone",
+"h": "210c982a01c2",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"6": {
+"d": 6.77,
+"engine": "clone",
+"h": "090cec5e5788",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 8.57,
+"engine": "clone",
+"h": "205c60b2da7e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.82,
+"engine": "clone",
+"h": "32f18fc890a7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 7.34,
+"engine": "clone",
+"h": "9a63bba78fa0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-pp-1b": {
+"0": {
+"d": 11.4,
+"engine": "clone",
+"h": "75570bf5a32d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.16,
+"engine": "clone",
+"h": "aeb0321bbdae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.06,
+"engine": "clone",
+"h": "cbabb6cf71ca",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.84,
+"engine": "clone",
+"h": "792fd25a1017",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 3.7,
+"engine": "clone",
+"h": "777e2032524b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 7.7,
+"engine": "clone",
+"h": "d84df630c2e1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.06,
+"engine": "clone",
+"h": "584b90d16de8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 2.88,
+"engine": "clone",
+"h": "047c5402356b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.85,
+"engine": "clone",
+"h": "b17b0098abc9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 7.1,
+"engine": "clone",
+"h": "37f2be7a1d6a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 5.95,
+"engine": "clone",
+"h": "236fb4d448b8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 6.86,
+"engine": "clone",
+"h": "4a6d9eb869ef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 7.01,
+"engine": "clone",
+"h": "dfb60b359543",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 3.58,
+"engine": "clone",
+"h": "600ddaaa9b2b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"21": {
+"d": 6.79,
+"engine": "clone",
+"h": "ceb8120d5cc2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.55,
+"engine": "clone",
+"h": "fa612c96d944",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.45,
+"engine": "clone",
+"h": "1bfd0a2e053e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.18,
+"engine": "clone",
+"h": "cacd2a4bbf20",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 3.67,
+"engine": "clone",
+"h": "eed0e84da0c4",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 8.52,
+"engine": "clone",
+"h": "f23a1464de9e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 6.31,
+"engine": "clone",
+"h": "f548ea5c0567",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 8.16,
+"engine": "clone",
+"h": "abe03188d3ab",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"29": {
+"d": 4.9,
+"engine": "clone",
+"h": "f6f205580cef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"3": {
+"d": 4.03,
+"engine": "clone",
+"h": "3079b8bebb91",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"30": {
+"d": 13.08,
+"engine": "clone",
+"h": "b52c589cb3ae",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 8.42,
+"engine": "clone",
+"h": "61c0b5f0a183",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.74,
+"engine": "clone",
+"h": "107743138df7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 8.04,
+"engine": "clone",
+"h": "754ff9f19f62",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 4.75,
+"engine": "clone",
+"h": "db2549d0ab5d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 7.51,
+"engine": "clone",
+"h": "89a1d0764c56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 7.1,
+"engine": "clone",
+"h": "e4da5defeefb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-pp-1c": {
+"0": {
+"d": 7.01,
+"engine": "clone",
+"h": "328de5f0a5b3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 4.85,
+"engine": "clone",
+"h": "016128562f32",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.85,
+"engine": "clone",
+"h": "fd3dd2a868f4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 5.98,
+"engine": "clone",
+"h": "92c1602c922a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.92,
+"engine": "clone",
+"h": "2260630d5fba",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 6.02,
+"engine": "clone",
+"h": "ab7ae924fba9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 7.66,
+"engine": "clone",
+"h": "55fa54f52f73",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 5.28,
+"engine": "clone",
+"h": "fa9db7767afe",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.51,
+"engine": "clone",
+"h": "de46f7740840",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 6.98,
+"engine": "clone",
+"h": "41cd26ae01a1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 4.75,
+"engine": "clone",
+"h": "ce20cebf9b45",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"19": {
+"d": 6.22,
+"engine": "clone",
+"h": "121c9e632bc4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"2": {
+"d": 8.35,
+"engine": "clone",
+"h": "0b2f4f54963e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.51,
+"engine": "clone",
+"h": "bc06b13f3dad",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 3.77,
+"engine": "clone",
+"h": "b96f1852493e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"22": {
+"d": 8.57,
+"engine": "clone",
+"h": "c6ff4ec30abb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 6.17,
+"engine": "clone",
+"h": "3bd88f005fd1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 4.39,
+"engine": "clone",
+"h": "026715ea267e",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 6.58,
+"engine": "clone",
+"h": "72660ba0d228",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 4.08,
+"engine": "clone",
+"h": "fc49f43b0237",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"27": {
+"d": 7.34,
+"engine": "clone",
+"h": "d5afbea97602",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"28": {
+"d": 16.99,
+"engine": "clone",
+"h": "c33b762f30d3",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 3.38,
+"engine": "clone",
+"h": "9383391797c9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 5.74,
+"engine": "clone",
+"h": "bccda14b0730",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 6.62,
+"engine": "clone",
+"h": "469b2bd2dbd4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 6.98,
+"engine": "clone",
+"h": "064d7fe239aa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.41,
+"engine": "clone",
+"h": "000b47f7a06f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 5.54,
+"engine": "clone",
+"h": "c51668dfae45",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 8.57,
+"engine": "clone",
+"h": "d781fed48236",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-pp-1d": {
+"0": {
+"d": 8.93,
+"engine": "clone",
+"h": "5298709d1476",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.9,
+"engine": "clone",
+"h": "69a6b9513929",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 8.14,
+"engine": "clone",
+"h": "1e628e9ada01",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 7.15,
+"engine": "clone",
+"h": "84ab29407aae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 4.06,
+"engine": "clone",
+"h": "903deda0a797",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"13": {
+"d": 6.14,
+"engine": "clone",
+"h": "96330ae5ac00",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"14": {
+"d": 5.33,
+"engine": "clone",
+"h": "2a95259965aa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 6.67,
+"engine": "clone",
+"h": "61520af2c9c2",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 5.16,
+"engine": "clone",
+"h": "1e46ea67033a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 6.53,
+"engine": "clone",
+"h": "bd02c60f16ed",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.56,
+"engine": "clone",
+"h": "6d688a152357",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 4.2,
+"engine": "clone",
+"h": "a53ed5088c44",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 7.34,
+"engine": "clone",
+"h": "70b4035e0fe0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 8.06,
+"engine": "clone",
+"h": "68da00d4616d",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.1,
+"engine": "clone",
+"h": "35a9ccc22e19",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.91,
+"engine": "clone",
+"h": "932dd70280d9",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.52,
+"engine": "clone",
+"h": "e6cb389273aa",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.9,
+"engine": "clone",
+"h": "3f4ac68f656e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 5.23,
+"engine": "clone",
+"h": "bdf626eb3d16",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"26": {
+"d": 5.54,
+"engine": "clone",
+"h": "19c068101236",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"27": {
+"d": 14.02,
+"engine": "clone",
+"h": "437aaeb33fbd",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 4.2,
+"engine": "clone",
+"h": "9cff83dc128b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"4": {
+"d": 9.14,
+"engine": "clone",
+"h": "071165cec9bf",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 8.16,
+"engine": "clone",
+"h": "08f25b586f56",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 4.32,
+"engine": "clone",
+"h": "e871272b9bee",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"7": {
+"d": 8.5,
+"engine": "clone",
+"h": "8839649ebf9e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 8.02,
+"engine": "clone",
+"h": "713ddaf6fa30",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 4.22,
+"engine": "clone",
+"h": "cd5444f9505d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+}
+},
+"v-pp-2a": {
+"0": {
+"d": 7.99,
+"engine": "clone",
+"h": "df7e099e1f81",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 7.56,
+"engine": "clone",
+"h": "8ac2b07378bb",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 2.88,
+"engine": "clone",
+"h": "34c3e6db7010",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 8.54,
+"engine": "clone",
+"h": "a4d87c910214",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 7.2,
+"engine": "clone",
+"h": "15aa20da8740",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 5.16,
+"engine": "clone",
+"h": "3044cbaaab75",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.04,
+"engine": "clone",
+"h": "8419749b701b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 5.81,
+"engine": "clone",
+"h": "74d09e4e3271",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 3.22,
+"engine": "clone",
+"h": "927d0bb94112",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 4.27,
+"engine": "clone",
+"h": "57dd9ed6d6b5",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"18": {
+"d": 9.96,
+"engine": "clone",
+"h": "87296b7ab43c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.5,
+"engine": "clone",
+"h": "18639e44f03b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 3.55,
+"engine": "clone",
+"h": "2b401b2cc7bb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"20": {
+"d": 7.63,
+"engine": "clone",
+"h": "e9118e248b08",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.07,
+"engine": "clone",
+"h": "f1c1a40b37a7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 6.29,
+"engine": "clone",
+"h": "f5b72bf0430c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"23": {
+"d": 7.54,
+"engine": "clone",
+"h": "7b8b72172efc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 9.02,
+"engine": "clone",
+"h": "2b8f123566fb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"25": {
+"d": 8.04,
+"engine": "clone",
+"h": "b2d656b1c0ae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"26": {
+"d": 15.24,
+"engine": "clone",
+"h": "a5ce8d68a6bc",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 6.6,
+"engine": "clone",
+"h": "abacb8e80af1",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 4.2,
+"engine": "clone",
+"h": "83faae344808",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"5": {
+"d": 8.81,
+"engine": "clone",
+"h": "3830755c6fee",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 5.35,
+"engine": "clone",
+"h": "18ec4411a70c",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.96,
+"engine": "clone",
+"h": "c68da0ca4c8f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 7.97,
+"engine": "clone",
+"h": "5aebdeef4734",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 6.48,
+"engine": "clone",
+"h": "1ad4cc3490a8",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-pp-2b": {
+"0": {
+"d": 8.02,
+"engine": "clone",
+"h": "5de4994aed61",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.88,
+"engine": "clone",
+"h": "44e7769e937f",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 7.97,
+"engine": "clone",
+"h": "4e77cced6e93",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"11": {
+"d": 6.79,
+"engine": "clone",
+"h": "44946f291825",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"12": {
+"d": 7.03,
+"engine": "clone",
+"h": "8c16b0f5d767",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.07,
+"engine": "clone",
+"h": "339908bd2124",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 9.17,
+"engine": "clone",
+"h": "83695c9beab0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 3.62,
+"engine": "clone",
+"h": "ffd3e9e10cd7",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"16": {
+"d": 7.37,
+"engine": "clone",
+"h": "61f3537986ff",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"17": {
+"d": 6.91,
+"engine": "clone",
+"h": "71abecaf10ef",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 8.26,
+"engine": "clone",
+"h": "aab5206a92f3",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 2.98,
+"engine": "clone",
+"h": "ad5b0fd4c202",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 5.35,
+"engine": "clone",
+"h": "d7c4f761e0d4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.1,
+"engine": "clone",
+"h": "ca2e57e2ccec",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 5.47,
+"engine": "clone",
+"h": "fc7a68997397",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.14,
+"engine": "clone",
+"h": "381d0ace9923",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.59,
+"engine": "clone",
+"h": "be59cfa30cc5",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 14.21,
+"engine": "clone",
+"h": "5aa13bbc7c7f",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 8.47,
+"engine": "clone",
+"h": "7a5b9e39af69",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 3.72,
+"engine": "clone",
+"h": "044aff6ab322",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 6.46,
+"engine": "clone",
+"h": "819f1f000951",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 6.94,
+"engine": "clone",
+"h": "563fbc57de06",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 7.78,
+"engine": "clone",
+"h": "6a0abb95a124",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"8": {
+"d": 3.84,
+"engine": "clone",
+"h": "d76d3b67a5e8",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"9": {
+"d": 6.17,
+"engine": "clone",
+"h": "26e31fbbcbe4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+},
+"v-pp-2c": {
+"0": {
+"d": 9.72,
+"engine": "clone",
+"h": "b15609f22d7b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"1": {
+"d": 5.5,
+"engine": "clone",
+"h": "f7b9c38c538a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"10": {
+"d": 3.65,
+"engine": "clone",
+"h": "0538afb87517",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"11": {
+"d": 7.27,
+"engine": "clone",
+"h": "5c8c7c0576a4",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"12": {
+"d": 6.17,
+"engine": "clone",
+"h": "e78e77d445ae",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"13": {
+"d": 3.07,
+"engine": "clone",
+"h": "b534656e996b",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"14": {
+"d": 8.52,
+"engine": "clone",
+"h": "470b0d5f5229",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"15": {
+"d": 6.74,
+"engine": "clone",
+"h": "253784fab702",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"16": {
+"d": 4.1,
+"engine": "clone",
+"h": "e6a2da03c560",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"17": {
+"d": 7.06,
+"engine": "clone",
+"h": "b28e847fa745",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"18": {
+"d": 7.9,
+"engine": "clone",
+"h": "bbb56637d03b",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"19": {
+"d": 3.31,
+"engine": "clone",
+"h": "f7a7663114fb",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"2": {
+"d": 9.55,
+"engine": "clone",
+"h": "cfc92f20a4f0",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"20": {
+"d": 7.44,
+"engine": "clone",
+"h": "3c62876af4dc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"21": {
+"d": 6.17,
+"engine": "clone",
+"h": "3bd9d5a2694a",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"22": {
+"d": 3.7,
+"engine": "clone",
+"h": "203d3536adee",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"23": {
+"d": 8.35,
+"engine": "clone",
+"h": "e1c112ea2850",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"24": {
+"d": 7.56,
+"engine": "clone",
+"h": "028bb0bab1ca",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"25": {
+"d": 13.7,
+"engine": "clone",
+"h": "c98446af2e1d",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"3": {
+"d": 10.2,
+"engine": "clone",
+"h": "2bf1158352bc",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"4": {
+"d": 3.26,
+"engine": "clone",
+"h": "982308c35d5a",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"5": {
+"d": 6.86,
+"engine": "clone",
+"h": "03bef3c730e7",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"6": {
+"d": 7.75,
+"engine": "clone",
+"h": "0f17fdffcafd",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"7": {
+"d": 3.14,
+"engine": "clone",
+"h": "524a734dabed",
+"v": "clone3|arale_prompt2.wav|1.0|1.0|fp32x8"
+},
+"8": {
+"d": 7.66,
+"engine": "clone",
+"h": "aa6601487ed9",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+},
+"9": {
+"d": 8.69,
+"engine": "clone",
+"h": "5e7eb018fc7e",
+"v": "clone2|allan_prompt.wav|1.0|1.0"
+}
+}
+}

@@ -1,0 +1,2796 @@
+{
+ "key": "is1",
+ "module": "IS",
+ "chapters": [
+  {
+   "id": "is-1",
+   "title": "Chapter 1 — IS Policies and Organization",
+   "title_en": "IS Policies and Organization",
+   "intro": [
+    "Chapter 1 is the foundation of the ISA Information Security module. It covers 6 sections and 14 controls: information security policies (1.1), organization of information security (1.2), asset management (1.3), information security risk management (1.4), assessments and reviews (1.5), and incident and crisis management (1.6). These controls decide whether an ISMS really exists and keeps running. Almost all technical and physical controls in the later chapters use this chapter's scope, asset inventory, classification and risk assessment as their input.",
+    "The main ISA 2027 changes in this chapter: in 1.1.1, \"the policies are made available to employees in a suitable form\" moved from should to must; the former ISA 6 control 1.2.4 has moved to 6.1.3 (supplier-related); and ISA 2027.1 revised the definition of \"project\", which affects the scope of 1.2.3. Software approval (1.3.4) and incident and crisis management (1.6.1–1.6.3) were added or rewritten in ISA 6 and continue in ISA 2027.",
+    "When you read this chapter, pay close attention to the difference between must, should, and the requirements for high / very high protection needs. A must is a hard requirement with no exceptions. A should must in principle be implemented; if it is not, you need a valid reason and must understand the impact. Requirements for high / very high protection needs apply in addition when the assessment scope has high or very high protection needs; the C, I, A in brackets show the related protection goal."
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Controls in this chapter"
+    },
+    {
+     "type": "table",
+     "head": [
+      "No.",
+      "Control",
+      "Key words"
+     ],
+     "rows": [
+      [
+       "1.1.1",
+       "Information security policies",
+       "Source of requirements, management approval, available to employees (must since 2027)"
+      ],
+      [
+       "1.2.1",
+       "Information security management (ISMS)",
+       "Scope, SoA / ISA self-assessment, management review"
+      ],
+      [
+       "1.2.2",
+       "Information security responsibilities",
+       "Appointment, qualification, authority, resources, segregation of duties"
+      ],
+      [
+       "1.2.3",
+       "Information security in projects",
+       "Project classification, early risk assessment"
+      ],
+      [
+       "1.3.1",
+       "Identification and recording of information assets",
+       "Information assets and supporting assets, OT equipment"
+      ],
+      [
+       "1.3.2",
+       "Classification and protection needs",
+       "Classification scheme, handling rules"
+      ],
+      [
+       "1.3.3",
+       "Approval of external IT services",
+       "Shadow IT, cloud service assessment"
+      ],
+      [
+       "1.3.4",
+       "Software approval",
+       "Allowlist, software repository, maintenance tools"
+      ],
+      [
+       "1.4.1",
+       "Information security risk management",
+       "Regular and event-driven, risk owner"
+      ],
+      [
+       "1.5.1",
+       "Compliance reviews",
+       "Internal audit, technical compliance checks"
+      ],
+      [
+       "1.5.2",
+       "Independent review",
+       "Independent and competent body"
+      ],
+      [
+       "1.6.1",
+       "Reporting of events and observations",
+       "Four categories, reporting channels, feedback"
+      ],
+      [
+       "1.6.2",
+       "Event management",
+       "Categorization and qualification, response times, escalation, communication"
+      ],
+      [
+       "1.6.3",
+       "Crisis preparedness",
+       "Crisis team, crisis communication, exercises"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "How the controls in this chapter fit together"
+    },
+    {
+     "type": "olist",
+     "items": [
+      "First determine the information security requirements and publish the policy (1.1.1). Management commissions the ISMS, defines its scope and the applicable controls (1.2.1), and appoints responsible persons with authority and resources (1.2.2).",
+      "Take inventory of information assets and supporting assets (1.3.1), classify them by protection needs and set handling rules (1.3.2). External IT services and software must be assessed and approved before they may process these assets (1.3.3, 1.3.4).",
+      "Use the assets and their classification as input for risk assessment and treatment (1.4.1). Projects apply the same method (1.2.3).",
+      "Check effectiveness with internal compliance reviews (1.5.1) and independent reviews (1.5.2). The results feed back into the management review (1.2.1).",
+      "Events are reported (1.6.1) and handled properly (1.6.2). When they become serious enough to disrupt key business operations, crisis management takes over (1.6.3). Lessons learned feed back into risk assessment and policy updates."
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "warn",
+     "title": "ISA 2027 change reminder",
+     "text": "In 1.1.1, \"the policies are made available to employees in a suitable form (e.g., intranet)\" has moved from should to **must**; the former 1.2.4 has been reworked into **6.1.3**; and the definition of \"project\" in the Definitions sheet now covers cross-departmental activities, not only technical ones."
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "If you do Chapter 1 well, the later chapters become much easier. When I support a company, I always make four things solid first: scope, asset inventory, classification and risk assessment. Only then do we move on to the technical side."
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "Note: a must has no exceptions; if you skip a should, you need a good reason; high / very high depends on the protection needs of the assessment scope, and the C, I, A in brackets are the related protection goals!"
+    }
+   ],
+   "controls": [
+    {
+     "id": "1.1.1",
+     "title": "Information Security Policies",
+     "q_en": "To what extent are information security policies available?",
+     "q_zh": "To what extent are information security policies available?",
+     "objective": "The organization needs at least one information security policy. A good policy reflects the importance and significance of information security and is adapted to meet the needs of the organization. Additional policies may be appropriate depending on the size and structure of the organization.",
+     "req": {
+      "must": [
+       "The requirements for information security have been determined, documented and adapted to the organization’s goals.",
+       "A policy exists, and is approved by the organization’s management.",
+       "The policy includes objectives and the significance of information security within the organization.",
+       "The policies are made available to employees in a suitable form (e.g., intranet).",
+       "Employees and external business partners are informed of any changes relevant to them."
+      ],
+      "should": [
+       "The information security requirements are based on the strategy of the organization. Legislation and contracts are considered in the policy.",
+       "The policy indicates consequences in case of non-conformance.",
+       "Other relevant security policies are established.",
+       "Periodic review and, if required, revision of the policies are established."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": [
+       "Policies are published and implemented in the entire assessment scope."
+      ]
+     },
+     "refs": "ISO 27001:2022 A.5.1 | ISA/IEC 62443-2-1 6.2.1 | NIST CSF 2.0 GV.PO-01, GV.PO-02 | Implementation references: BSI-Standard 200-2 3.2, 3.4; BSI IT-Grundschutz ISMS.1, ORP.1; NIST SP800-53r5 the \"-1\" policy controls of each family (AC-1, AT-1, IR-1 …) and PM-1, etc.",
+     "change2027": "ISA 2027 has moved \"the policies are made available to employees in a suitable form (e.g., intranet)\" from should to must. In other words, if the policy is written but sits in a manager's drawer where employees cannot find it, this now directly affects the maturity rating.",
+     "explain": [
+      "The original guidance explains that information security requirements come from the organization's security strategy and its context, such as company culture, customer requirements and legal requirements. These requirements form a \"document pyramid\": at the top is one overall information security policy, and below it are topic-specific rules, procedures, work instructions and forms. A small or medium company does not need many levels, but it needs at least one overall policy that is approved by management and explains the objectives and significance of information security.",
+      "The first must is often overlooked: \"The requirements for information security have been determined, documented and adapted to the organization's goals.\" This means that before you write the policy, you first collect the requirements of interested parties, such as confidentiality clauses from OEM customers, TISAX label requirements, data protection law (for example the EU GDPR or a national privacy law), trade secret law and ISO 27001 certification requirements. Then you map them to the company's business goals. The auditor will ask: \"What are your security requirements? Where do they come from?\" If you cannot name the sources, the policy is just text copied from a template.",
+      "The most important ISA 2027 change is that making the policy available to employees moved from should to must. The original guidance recommends a central location such as the intranet, so that everyone always gets the latest version, and points out the clear weakness of paper policies (they quickly become outdated). The must also requires that \"employees and external business partners are informed of any changes relevant to them\": for example on-site contractors, outsourced IT and cleaning or security service companies. If the policy binds them, they need to know what has changed.",
+      "The should requirements are: the requirements are based on the organization's strategy and consider legislation and contracts; the policy states the consequences of non-conformance (the guidance says employees should be able to find this in the policy); other relevant security policies exist; and the policies are reviewed periodically (the guidance suggests, for example, once a year). \"Other relevant security policies\" are defined as policies that are not part of the ISMS but are relevant to information security, such as facility access rules, HR disciplinary rules, or quality document control rules. The SGA requirement is: in a simplified group assessment (multiple sites), the policies are published and implemented in the entire assessment scope."
+     ],
+     "practice": [
+      "First create an \"information security requirements list\" (needs of interested parties). Columns: source of the requirement (customer contracts, TISAX, data protection law, trade secret law, national cybersecurity law where applicable such as NIS2 in the EU), content of the requirement, related company goal, responsible unit, related document.",
+      "Write an Information Security Policy of 1–3 pages. Include security objectives (for example measurable annual targets), what information security means for the company, scope, management commitment and consequences of violations (linked to HR disciplinary rules). It is signed by the managing director or the chairman.",
+      "Build the document pyramid: level 1 policy, level 2 rules (e.g., access control, asset management, incident management), level 3 procedures and work instructions, level 4 forms and records. Each document has a number, version, approver, effective date and next review date.",
+      "Publish the policy in one location that all employees can access, for example an \"Information Security\" area in M365 SharePoint or Google Sites, with read-only rights and version history. For production staff without a computer, use notice boards, QR codes or briefings at the start of each shift.",
+      "New employees sign a \"policy read and understood\" confirmation when they join. When the policy changes, announce it by e-mail or Teams and ask employees to confirm online (for example, collect confirmations with Microsoft Forms).",
+      "For external partners (outsourced IT, temporary staff, on-site contractors), prepare a \"summary of applicable rules\" and reference it in contracts, non-disclosure agreements (NDAs) or site entry instructions. When relevant parts of the policy change, notify them by letter or e-mail and keep a record of sending.",
+      "Hold a document review at least once a year (or when the organization, laws or customer requirements change significantly), and record the outcome in a document review log: keep, revise or withdraw."
+     ],
+     "audit": {
+      "questions": [
+       "Which information security requirements have you identified? Where do they come from (customers, laws, contracts)?",
+       "Who approved the information security policy? When?",
+       "What are the security objectives in the policy? How will they be achieved, and who is responsible?",
+       "Where can employees find the latest version of the policy? Please show me now.",
+       "When the policy was last revised, how did you inform employees and external partners?",
+       "What are the consequences of not following the policy? Where is this written?",
+       "Who is responsible for the regular review of the policy? When was the last review?"
+      ],
+      "evidence": [
+       "Information Security Policy signed by management, and the document list (with versions and approval dates)",
+       "List of information security requirements / needs of interested parties",
+       "Screenshot of the intranet / SharePoint publication page and its access rights",
+       "Employee read confirmations and training attendance lists",
+       "Records of notifications to external partners (e-mails, letters, contract clauses)",
+       "Records of regular document reviews and revision history"
+      ],
+      "findings": [
+       "The policy was copied from an online template. It mentions departments and systems the company does not have, and it is not linked to the company's real goals or customer requirements.",
+       "The policy is approved but stored only on the security officer's computer; employees do not know where to find it (a must non-conformity since ISA 2027).",
+       "After the policy was revised, only internal employees were informed; on-site contractor staff and the IT maintenance provider were not.",
+       "The policy does not state the consequences of violations, and the HR rules have no matching disciplinary clause.",
+       "The document review date is two years overdue, and the policy still refers to withdrawn standards or to a responsible person who has left the company."
+      ]
+     },
+     "tip": "A policy does not need to be long. What matters is that the boss really signed it, employees can really find it, and it really describes your company. One thing I always do in an audit is pick a production team leader at random and ask: where can you read the company's security policy?"
+    },
+    {
+     "id": "1.2.1",
+     "title": "Information Security Management (ISMS)",
+     "q_en": "To what extent is information security managed within the organization?",
+     "q_zh": "To what extent is information security managed within the organization?",
+     "objective": "Organizations create sustainable information security by including it as a part of their strategic goals. The information security management system (ISMS) is a control mechanism used by the organization’s management to ensure that information security is the result of sustainable management rather than coincidence and individual effort.",
+     "req": {
+      "must": [
+       "The scope of the ISMS (the organization managed by the ISMS) is defined.",
+       "The organization's requirements for the ISMS are determined.",
+       "The organizational management has commissioned and approved the ISMS.",
+       "The ISMS provides the organization’s management with suitable monitoring and control means (e.g., management review).",
+       "Applicable controls have been determined (e.g., ISO 27001 Statement of Applicability, or completed ISA catalogue).",
+       "The effectiveness of the ISMS is regularly reviewed by the management."
+      ],
+      "should": [],
+      "high": [],
+      "vhigh": [],
+      "sga": [
+       "The management system is approved by an entity that has the necessary authority for the entire assessment scope (i.e., all locations within the scope)."
+      ]
+     },
+     "refs": "ISO 27001:2022 Clause 4, 9.3 | NIST CSF 2.0 GV.OC-01, GV.OC-02, GV.OV-01–03, GV.RM-01, ID.IM-01, ID.IM-03, ID.IM-04 | Implementation references: BSI-Standard 200-2 3.1, 3.2.1–3.2.3, 3.3.4, 3.4.4, 10.1, 10.2; BSI IT-Grundschutz ISMS.1, ORP.1; NIST SP800-53r5 PL-7, PL-8, PL-9, PM-3, PM-23, PM-24, PM-26, PM-27, SA-2, etc.",
+     "change2027": "",
+     "explain": [
+      "This control is the backbone of the whole ISA. The original text defines the ISMS in one sentence: it is a control mechanism used by management to make information security the result of sustainable management, not of coincidence or the personal effort of one dedicated IT colleague. So the auditor does not look at whether you bought a firewall, but at whether you have a management cycle that keeps turning by itself: scope, requirements, approval, monitoring, applicable controls and effectiveness review.",
+      "The first key word is \"scope\". The scope of the ISMS is \"the organization managed by the ISMS\". You must state clearly which sites, departments, processes and systems are included. In a TISAX context, the ISMS scope must at least cover the TISAX assessment scope. A common approach is the whole legal entity, or the sites related to OEM projects. If the scope is unclear, the asset inventory and risk assessment that follow will lose focus.",
+      "The second key word is \"applicable controls have been determined\". The original text gives examples: the ISO 27001 Statement of Applicability (SoA), or a completed ISA catalogue (the VDA ISA self-assessment). For a company that only does TISAX, a fully completed ISA self-assessment (with the maturity level and an explanation for each question, and reasons for every N/A) is enough. A company with ISO 27001 certification can use its SoA, and should map the ISA to the SoA.",
+      "The last two musts both concern management: the ISMS provides management with monitoring and control means (e.g., management review meetings), and management regularly reviews the effectiveness of the ISMS. This control has no should or high / very high requirements, but the musts are already complete. The SGA requirement stresses that in a multi-site group assessment, the person approving the ISMS must have authority over all sites, for example the group CEO, not the manager of a single plant."
+     ],
+     "practice": [
+      "Write an ISMS scope statement: legal entity name, site addresses, included departments and processes, main systems, exclusions with reasons. It must match the TISAX assessment scope registered with ENX.",
+      "Create an \"ISMS requirements list\": collect the TISAX labels and assessment levels required by customers (OEMs, Tier 1), contractual confidentiality clauses and legal requirements, as input for the ISMS design.",
+      "The managing director formally commissions the ISMS with a signed mandate or approval document and approves the ISMS manual / policy, with a clear commitment of resources.",
+      "Complete the VDA ISA self-assessment (Information Security and, where applicable, the Prototype Protection / Data Protection modules), with the maturity level, implementation description and evidence location for each question; or maintain an ISO 27001 SoA mapped to the ISA.",
+      "Hold a management review meeting at least once a year. Inputs: follow-up of previous decisions, changes in internal and external issues, audit results, incident statistics, status of risk treatment, KPI achievement and improvement opportunities. Outputs: decisions and resource allocation. Keep minutes signed by top management.",
+      "Set up a monthly or quarterly security KPI report (e.g., patch completion rate, phishing simulation click rate, incident handling time), so management can monitor throughout the year and not only once a year."
+     ],
+     "audit": {
+      "questions": [
+       "What is the scope of your ISMS? Which sites and departments does it include? Does it match the TISAX assessment scope?",
+       "Where do the requirements for the ISMS come from?",
+       "Who approved and commissioned the ISMS? Is there written proof?",
+       "How does management keep track of the security situation? Please show me the minutes of the latest management review.",
+       "How were the applicable controls determined? Do you have an SoA or ISA self-assessment? What are the reasons for N/A?",
+       "Are decisions from the management review followed up until they are closed?"
+      ],
+      "evidence": [
+       "ISMS scope statement, organization chart and list of sites",
+       "Signed document in which management approves and commissions the ISMS",
+       "Completed ISA self-assessment or ISO 27001 SoA",
+       "Management review minutes (with inputs, outputs and follow-up of decisions)",
+       "Security KPI reports, monthly security reports"
+      ],
+      "findings": [
+       "The ISMS scope just says \"our company\", but the TISAX assessment scope also includes a separate warehouse site; the two do not match.",
+       "The management review record contains only an attendance list, with no real input data or decisions, so there is no sign that management reviewed effectiveness.",
+       "Many questions in the ISA self-assessment are marked N/A without any reason, or the maturity levels do not match the actual evidence.",
+       "In a multi-site company, the ISMS was approved by the manager of one plant who has no authority over the other sites (SGA case)."
+      ]
+     },
+     "tip": "A management review is more than \"hold a meeting and sign\". I look at the decisions from the last review and then check whether this review followed them up. If nobody follows up the decisions, the cycle is broken."
+    },
+    {
+     "id": "1.2.2",
+     "title": "Information Security Responsibilities",
+     "q_en": "To what extent are information security responsibilities organized?",
+     "q_zh": "To what extent are information security responsibilities organized?",
+     "objective": "A successful ISMS requires clear responsibilities within the organization.",
+     "req": {
+      "must": [
+       "Responsibilities for information security within the organization are defined, documented, and assigned.",
+       "The responsible employees are defined, qualified, and empowered for their task.",
+       "The required resources are available.",
+       "The contact persons are known within the organization and to relevant business partners."
+      ],
+      "should": [
+       "There is a definition and documentation of an adequate information security structure within the organization.",
+       "Security-relevant roles that are not part of the ISMS and are relevant for information security are considered."
+      ],
+      "high": [
+       "An appropriate organizational separation of responsibilities should be established in order to avoid conflict of interests (segregation of duties). (C, I, A)"
+      ],
+      "vhigh": [],
+      "sga": [
+       "A named person with overall responsibility for the management system exists and is available."
+      ]
+     },
+     "refs": "ISO 27001:2022 A.5.2, A.5.3 | ISA/IEC 62443-2-1 6.2.3, 6.2.5 | NIST CSF 2.0 GV.RR-02, GV.RR-03 | Implementation references: BSI-Standard 200-2 Chapter 4; BSI IT-Grundschutz ISMS.1, ORP.1; NIST SP800-53r5 AC-5, PM-2, PM-10, PM-19, PM-29, PT-2, etc.",
+     "change2027": "",
+     "explain": [
+      "This control answers the question \"Who is responsible for information security?\" The four musts are clear: responsibilities are defined, documented and assigned; responsible persons are named, qualified and empowered; resources are available; and contact persons are known inside the organization and to relevant business partners. Many companies only \"assign\" someone but give no authority or resources. For example, the IT section head is also the security officer but has no power to make other departments cooperate and no budget or working time. That is hard to accept as conformant.",
+      "\"Qualified\" means you can prove the person's competence, for example through ISO 27001 lead auditor training, TISAX-related courses or relevant experience, with training records kept. \"Empowered\" is usually done through the organization's rules, an appointment letter or a mandate that states the person's authority, for example the right to request asset lists from every department or to stop unsafe practices.",
+      "The should about \"other security-relevant roles\" refers to roles that are not part of the ISMS but are relevant for information security, for example the data protection officer (DPO), the prototype protection manager, the person managing facility access, the owner of OT production systems, or the legal department. These roles must also be considered and work together with the ISMS roles.",
+      "With high protection needs, segregation of duties is required to avoid conflicts of interest. Typical examples: the same person is the system administrator and also reviews the logs of their own actions; or the security officer is also the IT manager and audits their own work. If a small company has limited staff, it can use compensating measures, for example having logs reviewed by a different person, or having the internal audit done by a management representative or an external consultant. The SGA requirement is a named person who has overall responsibility for the management system and is available."
+     ],
+     "practice": [
+      "Create an \"Information Security Organization and Responsibilities\" rule that lists the duties of the security committee, CISO or management representative, information security officer (ISO), departmental security contacts, system administrators and asset owners. Show the main processes in a RACI chart.",
+      "The managing director issues an appointment letter naming the information security officer, stating the scope of authority and the reporting line (ideally reporting directly to the managing director).",
+      "Create a \"competence requirements for security staff\" table and training records: for example, the security officer needs an ISO 27001 lead auditor certificate or TISAX training and a minimum number of hours of security training per year. Keep copies of certificates.",
+      "Show security resources clearly in the annual budget and staffing plan (share of working time, external consultants, tool licenses such as EDR or SIEM), and check in the management review whether they are sufficient.",
+      "Publish the security contact: on the intranet home page, in the employee handbook, in supplier contracts and in site entry instructions, give the security mailbox (e.g., security@ your company domain) and phone number, so that customers and suppliers also know whom to contact.",
+      "For high protection needs, create a segregation-of-duties matrix: request, approval, execution and review are done by different people. For example, account creation is approved by the manager, carried out by IT and reviewed by security every quarter; the actions of AD administrators are reviewed by someone who is not an administrator."
+     ],
+     "audit": {
+      "questions": [
+       "Who is the information security officer? Where is the appointment document?",
+       "What qualifications does this person have? What training have they received?",
+       "What authority do they have? What happens if other departments do not cooperate?",
+       "What resources (people, budget, tools) are available for security work?",
+       "Whom should customers or suppliers contact about security issues? How do they know?",
+       "Which security-related roles outside the ISMS exist (e.g., data protection, prototypes, access control)? How do they work together?",
+       "Who reviews the actions of system administrators? Is there segregation of duties?"
+      ],
+      "evidence": [
+       "Information security organization chart, responsibilities rule and RACI chart",
+       "Appointment letter or mandate",
+       "CV, training certificates and training records of the responsible person",
+       "Security budget, staffing plan or records of working time",
+       "Published security contact (website, contract clauses, supplier notifications)",
+       "Segregation-of-duties matrix or records of access reviews"
+      ],
+      "findings": [
+       "The organization chart shows a security committee, but some members have left or changed roles and the document was never updated.",
+       "The security officer has no security training records, so their qualification cannot be shown.",
+       "The security contact is only announced internally; customers and main suppliers do not know who it is.",
+       "The IT manager is the security officer and also the internal auditor, auditing the processes they are responsible for: a conflict of interest (non-conformity for high protection needs).",
+       "The security officer says they have almost no time for security work and no budget at all: resources are insufficient."
+      ]
+     },
+     "tip": "I often say the security officer must not be \"the unlucky one who got picked\". Appointment, authority, time and budget: if even one of these four is missing, an auditor will notice."
+    },
+    {
+     "id": "1.2.3",
+     "title": "Information Security in Projects",
+     "q_en": "To what extent are information security requirements considered in projects?",
+     "q_zh": "To what extent are information security requirements considered in projects?",
+     "objective": "For project implementation, it is important to consider the information security requirements. This applies to projects within the organization regardless of their type. By appropriately establishing the information security process in the project management procedures of the organization, any overlooking of requirements is prevented.",
+     "req": {
+      "must": [
+       "Projects are classified while taking into account the information security requirements."
+      ],
+      "should": [
+       "The procedure and criteria for the classification of projects are documented.",
+       "During an early stage of the project, risk assessment is conducted based on the defined procedure and repeated in case of changes to the project.",
+       "For identified information security risks, measures are derived and considered in the project."
+      ],
+      "high": [
+       "The measures thus derived are reviewed regularly during the project and reassessed in case of changes to the assessment criteria. (C, I, A)"
+      ],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.8 | NIST CSF 2.0 GV.OC-04 | Implementation references: BSI-Standard 200-2 4.1, 4.6, 4.8; NIST SP800-53r5 PT-1, PL-2, PM-11",
+     "change2027": "ISA 2027.1 revised the definition of \"Project\" in the Definitions sheet: a project is an organizationally separate activity set up for a specific period, with clear objectives and dedicated roles and responsibilities. It may be started internally or driven by customers or partners, and it can take place in any part of the organization (product development, engineering, operations, logistics, compliance, management, IT, etc.); it is not limited to technical activities.",
+     "explain": [
+      "The scope of this control is wider than many people think. Under the ISA 2027.1 definition, a \"project\" is not only an R&D or IT implementation project. Logistics improvement, compliance or management projects also count if they have a clear period, objectives and dedicated roles. So you cannot classify projects only in R&D; projects in other departments must be included too.",
+      "The only must is \"projects are classified while taking into account the information security requirements\". The original examples give two ways to classify: CIAA (confidentiality, integrity, availability, authenticity) or CIA. In practice, a common approach is to add a security classification section to the project kick-off form, for example asking whether the project involves confidential customer drawings, prototypes or personal data, and then mapping this to normal / high / very high protection needs.",
+      "The should requirements are: document the classification procedure and criteria; carry out a risk assessment early in the project and repeat it when the project changes; derive measures for the identified risks and include them in the project. This is really the risk management method of 1.4.1 applied at project level. High protection needs add: the measures are reviewed regularly during the project and reassessed if the assessment criteria change (for example, the customer raises the project's confidentiality level from confidential to strictly confidential).",
+      "A common misunderstanding is \"we have no projects, so it is N/A\". In the automotive supply chain, a new vehicle model development, a tooling development, or the introduction of a new ERP or MES are all projects. The auditor will ask you to list recent projects and then pick one or two to look at their classification and risk assessment records."
+     ],
+     "practice": [
+      "Add a security section to the project management procedure: every project fills in a \"project security classification form\" when it is set up. Fields: project name, customer, whether confidential customer data / prototypes / personal data are involved, C/I/A levels, project security contact.",
+      "Define classification criteria, for example: involves unpublished OEM vehicle data, then C = high; involves prototype vehicles or parts, then prototype protection applies; customer contract requires strictly confidential, then C = very high.",
+      "Carry out a project risk assessment at the kick-off meeting (a simplified risk table is fine: threat, vulnerability, impact, likelihood, measure, owner), and update it when requirements or scope change (change request).",
+      "Put security measures into the project plan and WBS, for example access control on project folders, a dedicated Teams channel, signed NDAs, rules for photographing prototypes, and the secure method for exchanging data with external partners.",
+      "For projects with high protection needs, check the status of security measures at each milestone (gate review), and reassess when the customer's confidentiality level or the assessment criteria change.",
+      "Maintain a project list that shows each project's security classification and risk assessment date, so auditors can easily sample it."
+     ],
+     "audit": {
+      "questions": [
+       "Which projects are currently running? Which of them are relevant to information security?",
+       "How are projects classified? Where are the criteria written?",
+       "Please pick a project and show me its classification and risk assessment records.",
+       "Which measures were derived from the identified risks? Are they in the project plan?",
+       "When the project changed, was the risk reassessed?",
+       "How often are the measures in projects with high protection needs reviewed?"
+      ],
+      "evidence": [
+       "Project management procedure (including rules for security classification and risk assessment)",
+       "Project list and security classification records",
+       "Project risk assessment forms and measure tracking lists",
+       "Security check items in project plans or gate review records",
+       "Project change records and reassessment records"
+      ],
+      "findings": [
+       "Only R&D projects have a security classification; IT implementation projects (such as an ERP replacement) and logistics projects are not included.",
+       "The project classification form was filled in once at the start; later the customer raised the confidentiality level, but there was no reassessment.",
+       "The risk assessment identified risks, but the measures were not included in the project plan and have no owner or deadline.",
+       "The organization marked this question N/A, claiming to have no projects, but it is actually running a parts development project for a new vehicle model."
+      ]
+     },
+     "tip": "The easiest way to implement this is to add five fields to the project kick-off form. You do not need a new process; just build security into the project management forms you already use."
+    },
+    {
+     "id": "1.3.1",
+     "title": "Identification and Recording of Information Assets",
+     "q_en": "To what extent are information assets identified and recorded?",
+     "q_zh": "To what extent are information assets identified and recorded?",
+     "objective": "It is important for each organization to understand what information is critical to their business’ function (e.g., business secrets, critical business processes, know-how, patents). This information is referred to as “information assets.” To protect this information sustainably, a proper inventory of both the information assets and the supporting assets (e.g., IT systems, services/IT services, employees) is essential.",
+     "req": {
+      "must": [
+       "Information assets and other assets where security is relevant to the organization are identified and recorded.",
+       "The supporting assets processing the information assets are identified and recorded."
+      ],
+      "should": [
+       "A catalogue of the relevant information assets exists. The following aspects are considered: – The corresponding supporting assets are assigned to each relevant information asset – A person responsible for these information assets is assigned – The catalogue is subject to regular review."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.9 | ISA/IEC 62443-2-1 7.2.1 | NIST CSF 2.0 ID.AM-01, ID.AM-07 | Implementation references: BSI-Standard 200-2 8.1; BSI IT-Grundschutz ISMS.1, ORP.1, CON.9; NIST SP800-53r5 CM-8, PM-5, MA-2, MP-7, PE-16, SA-5, SR-4, etc.",
+     "change2027": "",
+     "explain": [
+      "ISA divides assets into two layers. Information assets (also called primary assets) are the valuable information itself, for example customer drawings, quotations, process parameters and HR data. Supporting assets (also called secondary assets or information carriers) are the things used to store, process and transmit information, for example servers, laptops, cloud services, paper documents and even employees. The original text stresses that supporting assets \"inherit\" the protection needs of the information assets they carry.",
+      "The guidance explains that the value of information comes from its economic benefit or legal necessity (for example laws or customer contracts), and from the cost of obtaining it. It recommends starting the inventory from the main business processes: which information does each process handle? Then find the information whose loss or disclosure would cause financial or reputational damage, for example patents, business documents, customer lists, customer contracts and personnel files.",
+      "The must also mentions \"other assets where security is relevant\". The original text defines these as all assets for which information or cyber security threats would have a major impact on the organization or its business, including IT systems, IT services, OT systems and IoT devices. For a plant with production lines, PLCs, HMIs, SCADA, industrial PCs and connected measuring equipment must be included; you cannot inventory only office computers.",
+      "The original example is very practical: you do not need to list every single information asset; you can work with categories, for example \"employee master data, responsible unit: HR\". The should requires that the asset catalogue links to supporting assets, assigns an owner and is reviewed regularly. Assets change as the organization, IT environment and processes change, so it is best to use one central process that covers the full life cycle from creation and use to disposal."
+     ],
+     "practice": [
+      "Take inventory based on processes: list the core processes (order intake, R&D design, purchasing, production, shipping, HR, finance) and interview each to fill in an \"information asset inventory\": information category, description, source (including data provided by customers), owner, C/I/A levels, supporting assets where it is stored, retention period.",
+      "Create a \"supporting asset inventory\": hardware (servers, laptops, NAS, printers), software and cloud services (M365, ERP, PLM, CAD), network devices, OT equipment (PLC, HMI, industrial PCs), physical media and paper filing cabinets, with location, administrator and the information assets they carry.",
+      "Automate the supporting asset inventory with tools, for example Intune or MDM device lists, AD computer accounts, GLPI, Snipe-IT or Lansweeper scans; on the OT side, passive network discovery tools. Export and compare the differences every month.",
+      "Manage information assets by category (e.g., \"customer CAD drawings\", \"quotation and cost data\", \"employee personal data\"), instead of registering every single file, which cannot be maintained.",
+      "Define an asset change process: when something is purchased, transferred, scrapped, or a cloud service is added or terminated, the requester or IT updates the inventory. Asset owners review and sign off at least once a year.",
+      "Use the asset inventory as input for classification (1.3.2) and risk assessment (1.4.1), with the same asset IDs in all three for traceability."
+     ],
+     "audit": {
+      "questions": [
+       "What are the company's core processes? Which important information does each process handle?",
+       "Which sensitive information do you receive from customers?",
+       "How are information assets identified, recorded and maintained? Who is responsible?",
+       "Which supporting assets (systems, devices, people) are linked to the information assets?",
+       "Are OT or IoT devices included in the asset inventory?",
+       "How often is the inventory reviewed? Who makes sure it is up to date?",
+       "Please tell me which information is stored on this server (on-site sample) and who is responsible for it."
+      ],
+      "evidence": [
+       "Information asset inventory (with categories, owners and linked supporting assets)",
+       "Supporting asset inventory (hardware, software, cloud services, OT equipment)",
+       "Asset management procedure and change records",
+       "Annual review records or sign-offs of the inventory",
+       "Screenshots or exported reports from asset management tools (MDM, inventory software)"
+      ],
+      "findings": [
+       "There is only the fixed asset register used for accounting (with values and depreciation); there is no information asset inventory.",
+       "The asset inventory does not include cloud services (such as M365 or online file sharing) or OT equipment on the production lines.",
+       "Information assets have no owner assigned, or the owner field just says \"IT department\" instead of a specific role.",
+       "On-site sampling found laptops and a NAS that are not in the inventory; the inventory has not been updated for over a year."
+      ]
+     },
+     "tip": "Do not start the asset inventory from a \"computer list\". Start from the question: \"Which data are we most afraid of losing?\" First find the treasure, then find which box the treasure is kept in."
+    },
+    {
+     "id": "1.3.2",
+     "title": "Classification and Protection Needs of Information Assets",
+     "q_en": "To what extent are information assets classified and managed in terms of their protection needs?",
+     "q_zh": "To what extent are information assets classified and managed in terms of their protection needs?",
+     "objective": "The objective of classifying information assets is the consistent determination of their protection needs. Once an organization determines the value of an information asset, and its protection needs, the asset can be classified according to its confidentiality, integrity, and availability. This enables the organization to implement adequate protective measures.",
+     "req": {
+      "must": [
+       "A consistent scheme for the classification of information assets regarding the protection goal of confidentiality is available.",
+       "Evaluation of the identified information assets is carried out according to the defined criteria, and assigned to the existing classification scheme.",
+       "Specifications for the handling of supporting assets (e.g., identification, usage, transport, storage, return, deletion/disposal) depending on the classification of information assets are in place and implemented."
+      ],
+      "should": [
+       "The protection goals of integrity and availability are taken into consideration."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.10, A.5.12, A.5.13, A.8.10 | ISA/IEC 62443-2-1 10.2.1, 10.2.2, 13.3.4 | NIST CSF 2.0 ID.AM-05, GV.OC-02, PR.PS-03, PR.DS-01, PR.DS-02, PR.DS-10 | Implementation references: BSI-Standard 200-2 8.1; BSI IT-Grundschutz ISMS.1, ORP.1, CON.9; NIST SP800-53r5 RA-2, RA-9, PM-7, PM-32, SC-3, MA-2–MA-6, etc.",
+     "change2027": "",
+     "explain": [
+      "This control puts a \"label\" on the assets identified in 1.3.1. The must requires a consistent classification scheme, at least for confidentiality. The ISA Definitions give the mapping: normal protection needs correspond to the confidentiality level \"internal\", high protection needs to \"confidential\", and very high protection needs to \"strictly confidential\". Many companies also have a \"public\" level, and that can be used alongside.",
+      "The second must: every identified information asset is evaluated according to the defined criteria and assigned to a class. This means the asset inventory needs a classification column; it is not enough to have a classification rule that nobody actually applies. The guidance explains that clear classification plus standardized handling measures greatly reduce room for personal interpretation, so that owners, users and departments such as IT all know how to handle the information correctly.",
+      "The third must is the one auditors most often find problems with: handling rules for supporting assets according to the classification, including labeling, use, transport, storage, return and deletion / disposal. For example: how is a \"confidential\" document labeled? May it be sent by e-mail? Must it be encrypted? What should you watch out for when traveling with a laptop? How are scrapped hard disks destroyed? All of this must be written in a handling matrix and actually applied.",
+      "The should requires that integrity and availability are also considered. This is especially important in the automotive supply chain: for example, tampered process parameters affect quality (integrity), and an MES outage affects delivery dates (availability). Under the ISA definitions of high / very high protection needs, high availability needs also make the high and very high requirements of the related controls apply."
+     ],
+     "practice": [
+      "Create an \"Information Classification and Handling\" rule with four levels: public, internal, confidential, strictly confidential, and write clear criteria (e.g., drawings marked Confidential by the customer are at least confidential; unpublished vehicle model data and prototype data are strictly confidential).",
+      "Create a \"classification handling matrix\": the columns are the classification levels, the rows are labeling, access, storage, printing, e-mail, external transfer, taking off-site, return and disposal. Each cell gives the concrete practice, for example for strictly confidential: project group only, encrypted transfer, no personal cloud storage, shredder of security level P-4 or higher, or an external disposal service with a certificate of destruction.",
+      "Technical implementation: use Microsoft Purview sensitivity labels or Google Workspace labels to automatically add watermarks, encryption and DLP rules to documents classified confidential or higher; for paper, use header and footer labels and classification stamps.",
+      "Add three classification columns C, I and A to the asset inventory. Asset owners rate them, and the security officer checks consistency. Also define the default handling for unlabeled documents (for example, treat them as internal).",
+      "Training: use real document examples to teach employees how to decide the classification, and provide a contact for questions (security mailbox or Teams channel).",
+      "Regular spot checks: every quarter, check shared folders, areas next to printers, meeting room whiteboards and recycling bins to confirm that confidential information is handled according to the rules."
+     ],
+     "audit": {
+      "questions": [
+       "Which classification levels has the company defined? What are the criteria?",
+       "Which protection measures apply to each level?",
+       "How do employees recognize the classification of a document? Please show me.",
+       "Who decides the classification of information? Whom can employees ask when they are not sure?",
+       "How are unlabeled documents handled?",
+       "What rules apply to confidential information during business travel, transport, storage and disposal?",
+       "Are integrity and availability considered in the classification?"
+      ],
+      "evidence": [
+       "Information classification and handling rule, classification handling matrix",
+       "Information asset inventory with classification columns",
+       "Screenshots of sensitivity label or DLP settings",
+       "Labeling examples (document headers, watermarks, paper stamps)",
+       "Disposal records or certificates of destruction from an external service",
+       "Classification training records"
+      ],
+      "findings": [
+       "There is a classification rule, but the asset inventory has no classification column and assets have not actually been rated.",
+       "The rule only defines the names of the levels, with no matching handling rules (transport, storage, disposal).",
+       "On site, customer drawings marked \"strictly confidential\" were found in a shared folder that the whole company can read.",
+       "Employees do not understand what the classification labels mean and do not know how to handle unlabeled documents.",
+       "Scrapped hard disks were given directly to a recycling company, without degaussing or a certificate of destruction as required by the classification."
+      ]
+     },
+     "tip": "Do not use more than four classification levels, and make the handling rules concrete enough to say \"allowed / not allowed\". The more levels you have, the less employees can tell them apart, and in the end everyone picks the middle one."
+    },
+    {
+     "id": "1.3.3",
+     "title": "Assessment and Approval of External IT Services",
+     "q_en": "To what extent is it ensured that only evaluated and approved external IT services are used for processing the organization’s information assets?",
+     "q_zh": "To what extent is it ensured that only evaluated and approved external IT services are used for processing the organization’s information assets?",
+     "objective": "Obtaining external IT services without proper consideration of information security places an organization at risk of cyber incidents. This is particularly common with IT services available online at little to no cost, as users may be able to obtain these services without following proper approval processes that consider information security.",
+     "req": {
+      "must": [
+       "External IT services are not used without explicit assessment and implementation of the information security requirements. The following aspects are considered: – Availability of a risk assessment of the external IT services – Legal, regulatory, and contractual requirements.",
+       "The external IT services have been harmonized with the protection need of the processed information assets."
+      ],
+      "should": [
+       "Requirements regarding the procurement, commissioning and release associated with the use of external IT services are determined and fulfilled.",
+       "A procedure for release in consideration of the protection need is established.",
+       "External IT services and their approval are documented.",
+       "It is verified at regular intervals that only approved external IT services are used."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.23 | ISO 27017 14.1.1 | NIST CSF 2.0 ID.RA-10, ID.AM-02, ID.AM-04, GV.SC-07, GV.SC-09, GV.SC-10, PR.PS-02, PR.PS-05 | Implementation references: BSI IT-Grundschutz OPS.2.1, OPS.2.2, OPS.3.1, CON.9, CON.2, ORP.5; NIST SP800-53r5 CM-5, CM-6, CM-7, MA-7, SA-22",
+     "change2027": "",
+     "explain": [
+      "The goal of this control is to deal with \"shadow IT\". The original text specifically points out that free or low-cost online services are the most dangerous, because employees can sign up without any approval: online PDF converters, free large-file transfer, personal cloud storage, online translation, AI chat tools. Once confidential customer drawings are uploaded, they are no longer under the company's control.",
+      "The must says: no use without explicit assessment and implementation of the information security requirements. The assessment must consider at least two things: a risk assessment of the service, and legal, regulatory and contractual requirements. For example, a customer contract may state that data must not be stored in certain countries or must not be processed by third parties without consent; data protection law may also restrict cross-border transfers.",
+      "The second must is that the external service is aligned with the protection needs of the information. In other words, the same cloud service may be approved for internal data but not for strictly confidential data. The approval should state \"the highest classification level it may process\". This links directly to the classification in 1.3.2.",
+      "The should requirements are: define and fulfill requirements for procurement, commissioning and release; have an approval procedure; document all external IT services and their approval; and verify regularly that only approved services are used. Regular verification can rely on technical means, for example firewall or proxy logs, or a CASB tool such as Microsoft Defender for Cloud Apps to find unapproved cloud services. This control is also linked to the external service controls in 5.3.x and supplier management in 6.1.x."
+     ],
+     "practice": [
+      "Create an \"External IT Services (Cloud Services) Management\" rule: define what counts as an external IT service (SaaS, IaaS, hosting, online tools, AI services) and require an application before use.",
+      "Design an \"external IT service assessment form\" with fields: service name, provider, purpose, classification of information processed, data storage region, provider certifications (ISO 27001, SOC 2, TISAX label), support for MFA and encryption, contract and data protection clauses, exit strategy, risk assessment result, highest approved classification, approver and approval date.",
+      "Maintain a list of approved external IT services and publish it on the intranet, so employees know \"what they may use and for which classification level\", for example: M365 may process confidential data; free online conversion websites are forbidden.",
+      "Technical controls: block unapproved file sharing and personal cloud storage with the firewall or a secure web gateway; use a CASB (such as Defender for Cloud Apps) to produce a monthly cloud app usage report to find shadow IT.",
+      "Link it to procurement: purchase requests for IT services in the purchasing system must include the security assessment form, otherwise no order is placed. Free services also need an application.",
+      "Review approved services every six months or every year: have the provider's certifications expired, have the terms of service changed, is the service still needed?"
+     ],
+     "audit": {
+      "questions": [
+       "Which external IT services or cloud services does the company use today? Where is the list?",
+       "What is the process for adding a new cloud service? Please give the latest example.",
+       "Which risks and legal or contractual requirements did the assessment consider?",
+       "Which classification level may this service process? How was that decided?",
+       "How do you make sure employees are not using unapproved services (for example free file transfer websites)?",
+       "How often are approved services reviewed again?"
+      ],
+      "evidence": [
+       "External IT services management rule",
+       "List of approved external IT services (with the classification levels they may process)",
+       "External IT service assessment forms and risk assessment records",
+       "Cloud app usage reports from the firewall or CASB, screenshots of blocking policies",
+       "Records of regular reviews"
+      ],
+      "findings": [
+       "Employees used a free large-file transfer website to send customer drawings to a subcontractor; the service had never been assessed.",
+       "The approved list contains only M365, but the sales department actually uses an online e-signature tool and a CRM on its own.",
+       "The assessment form only looks at features and price, with no risk assessment and no check of the customer contract's requirements on data storage location.",
+       "Approved services do not show which classification they may process, and employees put strictly confidential data into a service suitable only for internal data.",
+       "No regular verification has ever been done, so there is no proof that only approved services are used."
+      ]
+     },
+     "tip": "Before you block something, offer an alternative. If you block free file transfer websites, give employees an approved, secure way to transfer files; otherwise they will get around the block with their phone hotspot."
+    },
+    {
+     "id": "1.3.4",
+     "title": "Assessment and Approval of Software",
+     "q_en": "To what extent is it ensured that only evaluated and approved software is used for processing the organization’s information assets?",
+     "q_zh": "To what extent is it ensured that only evaluated and approved software is used for processing the organization’s information assets?",
+     "objective": "Security issues in software place an organization’s information at risk. Therefore, organizations should oversee and appropriately manage the software their work force uses for information processing.",
+     "req": {
+      "must": [
+       "Software is approved before installation or use. The following aspects are considered: – Limited approval for specific use-cases or roles – Conformance to the information security requirements – Software use rights and licensing – Source/reputation of the software.",
+       "Software approval also applies to special purpose software such as maintenance tools."
+      ],
+      "should": [
+       "The types of software such as firmware, operating systems, applications, libraries, device drivers to be managed are determined.",
+       "Repositories of managed software exist.",
+       "The software repositories are protected against unauthorized manipulation.",
+       "Approval of software is regularly reviewed.",
+       "Software versions and patch levels are known."
+      ],
+      "high": [],
+      "vhigh": [
+       "Additional requirements for software use (e.g., need for control or monitoring of usage) are determined (if any) (C, I, A)"
+      ],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.19 | ISA/IEC 62443-2-1 9.4.x | NIST CSF 2.0 ID.AM-02 | Implementation references: NIST SP800-53r5 CM-7(4), CM-10, CM-11, SC-18, SC-34, SC-49, SC-50, SI-16",
+     "change2027": "",
+     "explain": [
+      "This is the \"software approval\" control added in ISA 6 and continued in ISA 2027. The must requires software to be approved before installation or use, considering four aspects: limited approval for specific use cases or roles, conformance to information security requirements, software use rights and licensing, and source / reputation. It also specifically names special-purpose software such as \"maintenance tools\", for example remote diagnostic tools from equipment vendors, PLC programming software and network packet analyzers.",
+      "The guidance is very practical: the approval process must be \"simple enough to be workable\". If approval is too difficult or too slow, managers will not want to approve, and users will bypass the process. A good process adjusts the depth of assessment to the protection needs of the software. The guidance suggests three steps: first determine the use case and the applicable security requirements, then check whether the license allows that use, and finally consider whether the source is trustworthy. The results of these three steps decide whether a deeper assessment is needed.",
+      "The guidance also reminds us that testing and assessment reduce risk, but delay is a risk too. For example, if security patches are not installed because they have not been tested yet, the risk is often higher than the risk of the patch itself causing problems. Approvals can be broad: components and drivers that come with the base installation of an operating system can be approved as a whole; trusted software repositories (such as an operating system distribution or a mobile app store) can also serve as a basis for approval. A central list is not always necessary either: R&D can have its own assessment and approval capability within a central process framework. Versions and patch levels are usually tracked more accurately with automated management tools than with manual lists.",
+      "The original example has three levels. Software with normal protection needs can be approved as a group based on license terms and well-known, trusted publishers; software from unknown sources gets a simple test for adware or spyware. For software with high protection needs (e.g., server software offering external services, or browsers and other software that communicates with untrusted endpoints), maintain a list of trusted vendors and repositories; software not on the list is assessed individually for license and reputation and installed on a test system first.",
+      "For software with very high protection needs, only vendors with an excellent reputation are trusted and everything else is approved individually. This may require analysis of documentation or even a technical audit, and a review of change logs. Minor updates can inherit the approval, but release notes must be actively monitored; major versions are always reassessed. The very high requirement in the control is to determine additional requirements for software use, for example administration tools that need individual approval for use and the four-eyes principle."
+     ],
+     "practice": [
+      "Create a \"Software Management\" rule: define the types of managed software (firmware, operating systems, applications, libraries, drivers, browser extensions, maintenance tools) and the depth of approval for each level of protection needs.",
+      "Create an \"approved software list (allowlist)\" with fields: software name, version range, source or official download URL, license type and quantity, approved roles or use cases, approver, approval date, next review date.",
+      "Build a protected software repository, for example the Intune Company Portal, SCCM / MECM, Microsoft Store for Business, or a read-only installation share on an internal file server where only IT can write. Provide hash values (SHA-256) for installation files so they can be verified.",
+      "Remove local administrator rights from standard users, and restrict unapproved software with AppLocker, WDAC or the application control of your EDR.",
+      "Track versions and patch levels with automated tools: produce software inventory reports with Intune, WSUS, PDQ or Lansweeper, and compare them with the allowlist every month to find unapproved software.",
+      "Classify maintenance tools and high-risk tools (Wireshark, PsExec, PLC programming software, remote desktop tools) as \"restricted use\": they need an individual request with a limited period and named users. For very high protection needs, use them under the four-eyes principle and keep logs of the activities.",
+      "Review the approved list every year and remove software that is no longer used or no longer supported (end of life, EOL)."
+     ],
+     "audit": {
+      "questions": [
+       "What is your software approval strategy? Does it differ by protection needs or use case?",
+       "Which software is currently approved to process data with specific protection needs?",
+       "How does the software approval process work? Please show me one request.",
+       "What use case is software A approved for?",
+       "Where can I see which software is installed on a given client or server?",
+       "How does the software repository work? How do users or administrators get installation files? How do you prevent manipulation?",
+       "How are maintenance tools brought in by equipment vendors approved?"
+      ],
+      "evidence": [
+       "Software approval process document",
+       "List of approved software exported from the software repository",
+       "Screenshots of software management tools (e.g., MDM, Intune)",
+       "Software inventory reports and results of comparison with the allowlist",
+       "Requests and approvals for the use of maintenance tools",
+       "Records of regular reviews of the approved list"
+      ],
+      "findings": [
+       "Users have local administrator rights and can install any software; the inventory found several unapproved free tools and cracked software.",
+       "The approved list only shows names and does not consider license quantities; the number of installations exceeds the licenses.",
+       "A production equipment vendor connected to the PLC with a maintenance tool on the vendor's own laptop; the tool was not approved and the laptop was not scanned for malware.",
+       "Software installation files are stored in a shared folder that everyone can write to, so they could be manipulated.",
+       "The company cannot say which software versions and patch levels are on each computer."
+      ]
+     },
+     "tip": "The original text puts it well: if the approval process is too hard, people will go around it. I recommend three levels: a fast track for normal software, individual review for high-risk software, and time-limited use for administration tools."
+    },
+    {
+     "id": "1.4.1",
+     "title": "Information Security Risk Management",
+     "q_en": "To what extent are information security risks managed?",
+     "q_zh": "To what extent are information security risks managed?",
+     "objective": "Information security risk management aims at the timely detection, assessment and addressing of risks in order to achieve the protection goals of information security. It thus enables the organization to establish adequate measures for protecting its information assets under consideration of the associated prospects and risks. It is recommended to keep the information security risk management of an organization as simple as possible such as to enable its effective and efficient operation.",
+     "req": {
+      "must": [
+       "Risk assessments are carried out both at regular intervals and in response to events.",
+       "Information security risks are appropriately assessed (e.g., for probability of occurrence and potential damage).",
+       "Information security risks are documented.",
+       "A responsible person (risk owner) is assigned to each information security risk. This person is responsible for the assessment and handling of the information security risks."
+      ],
+      "should": [
+       "A procedure is in place defining how to identify, assess and address security risks within the organization.",
+       "Criteria for the assessment and handling of security risks exist.",
+       "Measures for handling security risks and the persons responsible for these are specified and documented, a plan of measures or an overview of their state of implementation is followed.",
+       "In case of changes to the environment (e.g., organizational structure, location, changes to regulations), reassessment is carried out in a timely manner."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 6.1, 6.2, 8.2, 8.3 | ISA/IEC 62443-2-1 6.3.1 | NIST CSF 2.0 GV.RM-01–04, GV.RM-06, ID.RA-03–06 | Implementation references: BSI IT-Grundschutz ISMS.1; NIST SP800-53r5 CA-7(4), PM-9, PM-28, RA-3, RA-7, RA-8, SR-2",
+     "change2027": "",
+     "explain": [
+      "The last sentence of the objective deserves a highlight: \"It is recommended to keep the information security risk management of an organization as simple as possible such as to enable its effective and efficient operation.\" Many companies hire a consultant who builds a risk table with hundreds of rows and a dozen columns, and then nobody maintains it. ISA wants risk management that really runs, not a complex mathematical model.",
+      "The four musts: risk assessments are carried out \"at regular intervals\" and also \"in response to events\"; risks are appropriately assessed (e.g., likelihood and damage); they are documented; and every risk has a risk owner. Examples of events: a security incident, introduction of a new system, moving a plant, new customer requirements. The risk owner should be a person with decision-making power over that business area, for example a sales manager or plant manager; it should not be \"IT\" for everything.",
+      "The should requires a documented procedure and criteria (acceptable risk level, scoring method, treatment options: reduce, avoid, transfer, accept), a plan of measures or an overview of their implementation status, and timely reassessment when the environment changes. For this control, high and very high both say \"None\", which means there are no additional requirements even for high protection needs.",
+      "This control links with many others: the asset inventory in 1.3.1 is the input for risk identification; project risk assessments in 1.2.3 follow the procedure defined here; lessons learned from events in 1.6.2 should feed back into the risk assessment; and the management review in 1.2.1 looks at the status of risk treatment. In addition, ISO 27001:2022 clauses 6.1.2, 6.1.3, 8.2 and 8.3 also require risk assessment, a treatment plan and retained records, so both can share the same method."
+     ],
+     "practice": [
+      "Create an \"Information Security Risk Management\" procedure: define the method (asset-based or scenario-based), scoring of likelihood and impact (e.g., 1–5 each), calculation of the risk value, acceptable risk threshold, treatment options and approval authority.",
+      "Create a risk register with fields: risk ID, related assets, threat, vulnerability, existing controls, likelihood, impact, risk value, risk owner, treatment option, measures, responsible person, deadline, residual risk, approval date.",
+      "Carry out a full risk assessment at least once a year. After a major incident, a new system going live, organizational or legal changes, or new customer requirements, carry out an event-driven reassessment within 30 days (or a deadline set by the company) and record the trigger.",
+      "Risk owners are the heads of the business units; they sign off the treatment plan and the acceptance of residual risk.",
+      "Track the progress of measures with a risk treatment plan tracker or a project management tool (such as Planner or Jira), and report in the security meeting every month or quarter.",
+      "Keep it simple: a small or medium company can start with 20–40 key risk scenarios (e.g., ransomware, leak of customer drawings, OT line stoppage, compromised cloud account). This is easier to maintain than calculating every single asset."
+     ],
+     "audit": {
+      "questions": [
+       "What is your risk assessment method? Where are the criteria written?",
+       "When was the last regular risk assessment? Have you done an assessment in response to an event?",
+       "How are risks scored? What is the acceptance threshold?",
+       "Please pick three high risks and explain the treatment measures and their current status.",
+       "Who is the owner of this risk? Does that person know they are the risk owner?",
+       "Were there changes in the organization or sites last year? Were risks reassessed?"
+      ],
+      "evidence": [
+       "Information security risk management procedure and assessment criteria",
+       "Risk register (with risk owners)",
+       "Risk treatment plan and tracking of implementation status",
+       "Sign-offs by risk owners or records of residual risk acceptance",
+       "Records of event-driven reassessments",
+       "Reports on risk topics in the management review"
+      ],
+      "findings": [
+       "The risk register has not been updated for three years and does not reflect newly introduced cloud services or the ransomware threat.",
+       "The owner of every risk is \"IT department\"; business managers do not know they are responsible for risk decisions.",
+       "After a security incident, the related risks were not reassessed.",
+       "High risks were identified, but there are no treatment measures, owners or deadlines, and no tracking records.",
+       "The risk assessment method is so complex that even the person responsible cannot explain how the scores were calculated."
+      ]
+     },
+     "tip": "When I support companies, I often ask a simple question to find the risk owner: if this risk happens, who will the boss call into the office? That person is the risk owner."
+    },
+    {
+     "id": "1.5.1",
+     "title": "Information Security Compliance Reviews (Internal Audit)",
+     "q_en": "To what extent is compliance with information security ensured in procedures and processes?",
+     "q_zh": "To what extent is compliance with information security ensured in procedures and processes?",
+     "objective": "It is not sufficient to only define information security requirements and prepare and publish policies. It is important to regularly review their effectiveness.",
+     "req": {
+      "must": [
+       "Observation of policies is verified throughout the organization.",
+       "Information security policies and procedures are reviewed at regular intervals.",
+       "Measures for correcting potential non-conformities (deviations) are initiated and pursued.",
+       "Compliance with information security requirements (e.g., technical specifications) is verified at regular intervals.",
+       "The results of the conducted reviews are recorded and retained."
+      ],
+      "should": [
+       "A plan for content and framework conditions (time schedule, scope, controls) of the reviews to be conducted is provided."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": [
+       "Internal controls are implemented for all entities within the assessment scope.",
+       "The implementation of all applicable security requirements and control objectives are included.",
+       "Suitably qualified and appropriate information security audit responsibilities and resources are defined.",
+       "A detailed internal audit plan and schedule is defined and followed. The following aspects are considered: – The entire assessment scope is covered – Internal audits are conducted regularly – Results of internal audits are tracked within the ISMS structures."
+      ]
+     },
+     "refs": "ISO 27001:2022 9.2, A.5.36 | ISA/IEC 62443-2-1 6.3.4 | NIST CSF 2.0 ID.RA-07, ID.IM-01 | Implementation references: BSI-Standard 200-2 10.1; BSI IT-Grundschutz ISMS.1; NIST SP800-53r5 CA-2, CA-5, PM-4, PM-6, PM-14, PM-31, PT-1",
+     "change2027": "",
+     "explain": [
+      "This control is about \"what is written must be done, and what is done must be checked\". The musts include two kinds of checks: checks of policy compliance (do employees follow the rules?) and checks of compliance with technical requirements (for example, do server settings meet the hardening baseline, is antivirus installed everywhere?). Both must be done regularly, and the results must be recorded and kept.",
+      "The musts also require that the policies and procedures themselves are reviewed regularly (this matches the periodic review that is a should in 1.1.1, but here it is a must), and that corrective actions are started and followed up when deviations are found. A typical audit sample: take last year's internal audit report, pick one finding, and check whether the corrective action was closed and its effectiveness verified.",
+      "The should requires a review plan covering schedule, scope and controls. In practice, this is the annual internal audit plan. Note: TISAX does not require internal audits to follow ISO 19011, but an internal audit with a plan, independence and records is the evidence most easily accepted.",
+      "The SGA (simplified group assessment) requirements are very specific: internal controls at all sites, coverage of all applicable requirements, qualified auditors and resources, a detailed internal audit plan covering the whole scope, regular execution, and tracking of results in the ISMS. The reason is that in an SGA the audit provider only samples some sites and must rely on the quality of the group's own internal audits."
+     ],
+     "practice": [
+      "Create an \"Internal Audit and Compliance Check\" procedure that separates management audits (policy compliance) from technical checks (settings, vulnerabilities, configuration compliance).",
+      "At the start of each year, set an \"annual security audit plan\": month, audited unit, ISA controls covered, auditor. All applicable controls are covered at least once in three years, and high-risk topics are audited every year.",
+      "Technical compliance checks: run vulnerability scans every quarter (e.g., Nessus, OpenVAS), and check encryption, antivirus and patch status every month with Intune or GPO compliance reports, against the company's security baseline (e.g., a simplified CIS Benchmark).",
+      "Open a corrective action request (CAR) for each audit finding, with fields: description of the finding, root cause analysis, corrective action, responsible person, deadline, verification result, closing date. Follow up regularly in the security meeting.",
+      "Keep audit reports, checklists and corrective action requests according to the document retention period (for example, at least until after the next TISAX assessment).",
+      "Internal auditors are trained as ISO 27001 internal auditors and do not audit their own work. If staff are limited, use cross-department audits or an external consultant."
+     ],
+     "audit": {
+      "questions": [
+       "How do you confirm that employees follow the security policies?",
+       "How are technical requirements (e.g., encryption, patching) checked regularly?",
+       "Please show me the annual audit plan and the latest internal audit report.",
+       "How are audit findings followed up? Please pick one and explain it through to closure.",
+       "When were the policies and procedures last reviewed?",
+       "Who are the internal auditors? What are their qualifications? Are they independent?"
+      ],
+      "evidence": [
+       "Annual audit / review plan",
+       "Internal audit reports and checklists",
+       "Technical compliance check reports (vulnerability scans, compliance reports)",
+       "Corrective action requests and tracking list",
+       "Records of policy and procedure reviews",
+       "Proof of auditor qualifications"
+      ],
+      "findings": [
+       "The internal audit only checks whether documents exist; it does not sample actual practice or technical settings.",
+       "Findings from last year's audit are still not closed, and there is no explanation for the delay.",
+       "The audit plan covers only the headquarters and not the other sites in the assessment scope (non-conformity in an SGA case).",
+       "The security officer carries out internal audits of processes they are responsible for: there is no objectivity.",
+       "The results of technical checks are not recorded; there is only a verbal statement that \"we are looking at it\"."
+      ]
+     },
+     "tip": "If the internal audit finds nothing, it does not mean everything is fine. Usually it means the audit did not go deep enough. I would rather see ten small findings that were closed than one report that says \"everything conforms\"."
+    },
+    {
+     "id": "1.5.2",
+     "title": "Independent Review",
+     "q_en": "To what extent is the ISMS reviewed by an independent authority?",
+     "q_zh": "To what extent is the ISMS reviewed by an independent authority?",
+     "objective": "Assessing the effectiveness of the ISMS from merely an internal point of view is insufficient. It is important that an independent and objective assessment is obtained at regular intervals and after fundamental changes.",
+     "req": {
+      "must": [
+       "Information security reviews are carried out by an independent and competent body at regular intervals and after fundamental changes.",
+       "Measures for correcting potential deviations are initiated and pursued."
+      ],
+      "should": [
+       "The results of conducted reviews are documented and reported to the management of the organization."
+      ],
+      "high": [],
+      "vhigh": [],
+      "sga": [
+       "In case of fundamental changes, audits are conducted by an independent and appropriately qualified entity (i.e., external entities or special internal departments which are objective, competent and free from undue influence (independent)).",
+       "Findings and implementation of corrective actions is tracked by the independent entity."
+      ]
+     },
+     "refs": "ISO 27001:2022 A.5.35 | ISA/IEC 62443-2-1 6.3.4 | Implementation references: ISO 19011",
+     "change2027": "",
+     "explain": [
+      "1.5.1 is checking yourself; 1.5.2 requires that \"someone looks from the outside\". The must requires reviews by an independent and competent body at regular intervals and also after fundamental changes, for example a merger, a large expansion of the ISMS scope, moving the whole IT architecture to the cloud, or replacing a main system.",
+      "Independence is the key. According to the explanation in the SGA requirement, the independent body can be an external entity, or a special internal department that is objective, competent and free from undue influence, such as a group audit department. For small and medium companies, a common approach is to hire an external consultant or third party for an annual ISMS audit, or to use the ISO 27001 certification audit as the independent review.",
+      "A common question: does the TISAX assessment itself count as an independent review? In practice, the TISAX assessment is carried out by an audit provider approved by ENX, so it is indeed an independent external assessment, but the cycle is usually three years. If you rely only on the TISAX assessment, there is no independent review in the two years in between. So we recommend an additional independent review every year, for example a pre-assessment by an external consultant, an ISO 27001 surveillance audit or a group audit.",
+      "The second must and the should require that corrective actions are started and followed up for deviations, and that the results are documented and reported to management (usually as an input to the management review). In an SGA case, the independent body itself tracks the findings and the implementation of corrective actions."
+     ],
+     "practice": [
+      "Define the form and frequency of the \"independent review\" in the ISMS manual, for example once a year by an external consultant or the group audit department, plus an additional review within six months after a fundamental change.",
+      "Define a list of \"fundamental changes\": reorganization, mergers and acquisitions, new sites, changes to the ISMS scope, changes to the core IT architecture (e.g., moving to the cloud, replacing the ERP), major security incidents.",
+      "When choosing a reviewer, confirm competence and independence, for example ISO 27001 lead auditor qualification and no involvement in building or operating this ISMS. Keep proof of the reviewer's qualification and a conflict-of-interest declaration.",
+      "The review results in a formal report. Findings get corrective action requests that the responsible units answer, and they are included in the management review report.",
+      "If you already have ISO 27001 certification, you can use the certification or surveillance audit report as evidence of the independent review, after confirming that its scope covers the TISAX assessment scope."
+     ],
+     "audit": {
+      "questions": [
+       "How often is the ISMS independently reviewed? Who carries out the review?",
+       "How does the reviewing body show its independence and competence?",
+       "Have there been fundamental changes? Was an independent review arranged after the change?",
+       "Please show me the latest independent review report and the follow-up of findings.",
+       "Were the review results reported to management?"
+      ],
+      "evidence": [
+       "External review or certification audit reports",
+       "Proof of the reviewer's qualification and independence",
+       "Records of corrective action follow-up",
+       "Results of independent reviews in the management review minutes",
+       "List of fundamental changes and the related review arrangements"
+      ],
+      "findings": [
+       "The so-called independent review was carried out by the same consultant who helped build the ISMS: there is no independence.",
+       "The last independent review was the TISAX assessment three years ago, with no other independent review since then.",
+       "After merging two plants, the company did not arrange any independent review.",
+       "Findings from the external review did not lead to corrective actions and were not reported to management."
+      ]
+     },
+     "tip": "The consultant who helped build your system is not the right person to be your independent reviewer. It is like writing your own exam and grading it yourself: no matter how high the score, it is not convincing."
+    },
+    {
+     "id": "1.6.1",
+     "title": "Reporting of Security Events and Observations",
+     "q_en": "To what extent are information security relevant events or observations reported?",
+     "q_zh": "To what extent are information security relevant events or observations reported?",
+     "objective": "Potential security events or observations are detected by anyone. It is vital that anyone can and knows when and how to report anything that one has observed and that has potential security implications (observations) or events so that the experts can decide if and how it needs to be handled.",
+     "req": {
+      "must": [
+       "A definition for a reportable security event or observation exists and is known by employees and relevant stakeholders. The following aspects are considered: – Events and observations related to personnel – Events and observations related to physical security (e.g., intrusion, theft, unauthorized access to security zones, vulnerabilities in the security zones) – Events and observations related to IT and cyber security (e.g., vulnerable IT-systems, detected successful or unsuccessful attacks) – Events and observations related to suppliers and other business partners (e.g., any incidents that can have negative effect on the security of own organization).",
+       "Adequate mechanisms based on perceived risks to report security events are defined, implemented, and known to all relevant potential reporters.",
+       "Adequate channels for communication with event reporters exist."
+      ],
+      "should": [
+       "A common point of contact for event reporting exists.",
+       "Different reporting channels according to perceived severity (i.e., real time communication for significant events / emergencies in addition to asynchronous mechanisms such as tickets or email) are available.",
+       "Employees are obligated and trained to report relevant events.",
+       "Security event reports can also be submitted by external parties. The following aspects are considered: – Availability and communication of a security event report channel for external parties – Timely processing of security event reports from external parties.",
+       "Mechanism to, and information how to, report incidents is accessible by all relevant reporters.",
+       "A feedback procedure to reporters is established."
+      ],
+      "high": [],
+      "vhigh": [
+       "Tests and exercises of event and observation reporting are conducted regularly. (C, I, A)"
+      ],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.24, A.6.8 | ISA/IEC 62443-2-1 6.2.6, 12.2.1, 12.2.2, 12.2.3 | NIST CSF 2.0 GV.RM-05, DE.CM-06 | Implementation references: BSI IT-Grundschutz DER.1; NIST SP800-53r5 AC-3(10), IR-4(8), IR-4(10), IR-4(13)",
+     "change2027": "",
+     "explain": [
+      "This control was rewritten in ISA 6. The focus widened from \"reporting security incidents\" to \"reporting events and observations\". An observation is something that has not yet caused an incident but may have security implications, for example a server room door left open, a stranger taking photos in the R&D area, or a vulnerability found on a server. If people dare to report and know how to report, the experts have a chance to act before an incident happens.",
+      "The first must requires a definition of \"what must be reported\", covering four categories: personnel (e.g., unusual data downloads by an employee, social engineering phone calls); physical security (intrusion, theft, unauthorized access to security zones, vulnerabilities in security zones); IT and cyber security (vulnerable systems, successful or unsuccessful attacks); and suppliers and business partners (e.g., a supplier hit by ransomware, which may affect your company). Employees and relevant stakeholders must know this definition.",
+      "The musts also require reporting mechanisms defined according to risk and known to all potential reporters, and channels for communication with the people who report. The should requirements go further: a single point of contact; different channels by severity (phone or instant messaging for emergencies, tickets or e-mail for normal cases); employees are obliged and trained to report; external parties can report and their reports are processed in time; reporting information is easy to find; and there is a feedback procedure for reporters.",
+      "Very high protection needs require regular tests and exercises of the reporting mechanism, for example checking in a social engineering exercise whether employees reported the suspicious e-mail, or testing whether someone answers the emergency phone at night. Note: the feedback procedure matters. If employees report something and never hear back, they will not report next time. This control is closely related to 1.6.2 event management and 2.1.3 security awareness training."
+     ],
+     "practice": [
+      "Create a \"Security Event Reporting and Handling\" procedure with a \"list of reportable events and observations\" that gives concrete examples in the four categories (personnel, physical, IT / cyber, suppliers), written in language employees understand.",
+      "Set up a single point of contact: a security mailbox (security@ your company domain), an internal phone extension, a Teams reporting channel, or an IT service desk ticket category \"security report\". For emergencies, provide a 24-hour phone number (for example an on-call mobile phone).",
+      "Install a \"report phishing\" button in Outlook (e.g., the Microsoft Report Message add-in) so employees can report suspicious e-mails with one click.",
+      "Publish an external reporting channel on the company website, for example a security.txt file or a \"report vulnerabilities and security incidents\" page. In supplier contracts, agree on the supplier's obligation and deadline to report security incidents.",
+      "Write the reporting obligation into the work rules or the NDA. Explain \"what to report, how and to whom\" in onboarding and annual security training. Put up reporting posters with QR codes at entrances and in production areas.",
+      "Set up feedback: confirm receipt within one working day, tell the reporter the outcome when the case is closed, and publicly recognize valuable reports.",
+      "Very high protection needs: test the reporting process at least once a year, for example by measuring the reporting rate in a social engineering exercise or testing whether the emergency phone is answered outside working hours, and record improvements."
+     ],
+     "audit": {
+      "questions": [
+       "Which events or observations must be reported? How do employees know?",
+       "If I find a suspicious e-mail or a stranger entering the site right now, how do I report it? Please ask an employee to show me.",
+       "Which channel can external parties or suppliers use to report a security event?",
+       "How do the reporting channels for emergencies differ from those for normal events?",
+       "What feedback does the reporter receive after reporting?",
+       "Have employees been trained on reporting?",
+       "Has the reporting mechanism been tested or exercised?"
+      ],
+      "evidence": [
+       "Event reporting procedure and list of reportable events",
+       "Announcements of reporting channels (intranet, posters, website, supplier contract clauses)",
+       "Reporting records or tickets (including feedback records)",
+       "Employee training materials and attendance records",
+       "Records of reporting exercises or social engineering exercises"
+      ],
+      "findings": [
+       "The definition of reportable events only covers IT and does not include physical security, personnel or supplier-related events.",
+       "Production employees who were asked did not know whom to report unusual situations to.",
+       "Neither the company website nor the contracts provide a reporting channel for external parties or suppliers.",
+       "The only reporting channel is e-mail; there is no real-time contact outside working hours or for major events.",
+       "Reporters never receive feedback on how their report was handled, so the number of reports goes down year after year."
+      ]
+     },
+     "tip": "For reporting, the rule is: \"No punishment for a false alarm, only for not reporting.\" The most successful company I have seen recognizes, every month, the colleague who reported the most suspicious e-mails. Their reporting rate tripled in one year."
+    },
+    {
+     "id": "1.6.2",
+     "title": "Management of Reported Security Events",
+     "q_en": "To what extent are reported security events managed?",
+     "q_zh": "To what extent are reported security events managed?",
+     "objective": "Once security events are reported, it is vital that the handling of the events is managed. This means to ensure that the type and criticality of the reported event as well as the persons responsible are quickly identified to ensure that time-critical aspects can be handled in time. Once identification is done, ensuring that the responsible persons become aware and deal with the event within a reasonable time frame is necessary. Furthermore, if the event affects multiple different persons, or management also include coordinating communication is an important part of event management. Finally, if there are external (contractual or regulatory) reporting requirements, it is important to ensure that these are also fulfilled in a professional way.",
+     "req": {
+      "must": [
+       "Reported events are processed without undue delay.",
+       "An adequate reaction to reported security events is ensured.",
+       "Lessons learned are incorporated into continuous improvement."
+      ],
+      "should": [
+       "During processing, reported events are categorized (e.g. by responsibility into personnel, physical and cyber), qualified (e.g., not security relevant, observation, suggested security improvement, security vulnerability, security incident) and prioritized (e.g., low, moderate, severe, critical).",
+       "Responsibilities for handling of events based on their category are defined and assigned. The following aspects are considered: – Coordination of incidents and vulnerabilities across multiple categories – Qualification and resources – Communication methods based on type and priority (e.g., non-time-critical communication, time-critical communication, emergency communication) – Absence-management.",
+       "A strategy for reporting potentially criminal aspects of security incidents to relevant authorities when necessary or appropriate. (C, I, A)."
+      ],
+      "high": [
+       "Maximum response times based on class, category and severity are defined. (C, I, A)",
+       "Events not processed appropriately according to their priority are escalated. The following aspects are considered: (C, I, A) – Conditions and thresholds (e.g., maximum reaction time before escalation) – Mechanisms, processes, and contacts for escalation – Escalation paths up to the organization’s top management.",
+       "Lawful, regulatory, and contractual reporting obligations, and respective contact information are known. (C, I, A)",
+       "A communication strategy for security related events exists. The following aspects are considered: (C, I, A) – To whom to communicate (e.g., shareholders, affected business partners and customers, other shareholders, general public) – When to communicate – Responsibilities for communication – Authorization and approval of communication – Legal and regulatory restrictions of communication – What to communicate (e.g., prepared templates and building blocks for specific scenarios) – How to communicate (e.g., communication channels).",
+       "Procedures for response to supplier security incidents are established. The following aspects are considered: (C, I, A) – Analysis of the impact on the own organization and invocation of appropriate internal mechanisms. – The need for reporting according to own reporting procedures."
+      ],
+      "vhigh": [
+       "Handling of events in different categories and priorities is regularly tested. The following aspects are considered: (A) – Exercise or simulation of rarely occurring categories and priorities – Exercise or simulation include escalation mechanisms."
+      ],
+      "sga": [
+       "Standard mechanisms to report and track relevant security events are established."
+      ]
+     },
+     "refs": "ISO 27001:2022 A.5.24–A.5.27 | ISA/IEC 62443-2-1 12.2.7, 12.2.8 | NIST CSF 2.0 RS.MA-01–05, RS.CO-02, RS.CO-03, RS.MI-01, RS.MI-02, RC.RP-01, RC.RP-02, RC.RP-04–06, RC.CO-03, RC.CO-04, GV.SC-08, ID.IM-02, ID.IM-04 | Implementation references: BSI IT-Grundschutz DER.2.1, DER.2.2, DER.2.3; NIST SP800-53r5 IR-6",
+     "change2027": "",
+     "explain": [
+      "1.6.1 deals with \"getting the reports in\"; 1.6.2 deals with \"what happens after a report comes in\". There are only three musts, but they are essential: process without undue delay, respond adequately, and feed lessons learned into continuous improvement. The auditor will pick a few event tickets and check whether the time from report to handling was reasonable, whether the handling was complete, and whether there was a review afterwards that led to improvement actions.",
+      "The should requirements provide a complete event management framework: categorization (personnel, physical, cyber), qualification (not security relevant, observation, suggested improvement, vulnerability, incident) and prioritization (low, moderate, severe, critical); responsibilities assigned by category, considering coordination across categories, qualification and resources, communication methods by priority, and deputies when the responsible person is absent. Another should, marked (C, I, A), requires a strategy for reporting criminal aspects of incidents to the authorities, for example whether to call the police in case of extortion or theft of trade secrets by an insider. Note: the right authority depends on your country and the type of case, for example the national police or a specialized cybercrime unit (in Taiwan, for example, the Criminal Investigation Bureau or the Investigation Bureau).",
+      "High protection needs bring the most requirements: define maximum response times; escalate events that are not handled in time, with defined conditions and thresholds, escalation mechanisms and contacts, and an escalation path up to top management; know the legal, regulatory and contractual reporting obligations and the related contact information; have a communication strategy for events covering to whom, when, who is responsible, who approves, legal restrictions, what to say and how; and have a procedure for supplier security incidents that analyzes the impact on your own organization and decides whether reporting is needed.",
+      "Contractual reporting obligations are especially important in the automotive supply chain. Many OEM and Tier 1 contracts require suppliers to report events that affect customer data within a certain time after discovery; check the exact deadline in each contract. Very high protection needs (A) require regular tests of event handling for different categories and priorities, including rare scenarios and the escalation mechanism. The SGA requirement is a standard mechanism to report and track events, for example a group-wide ticket system."
+     ],
+     "practice": [
+      "In the event handling procedure, define a \"categorization / qualification / priority\" matrix, for example critical = production stopped or customer confidential data leaked; severe = one system compromised; moderate = malware blocked by EDR; low = general observation.",
+      "Use a ticket system (such as Jira Service Management, GLPI, ServiceNow or M365 Planner) to record every event: time of report, category, qualification, priority, responsible person, handling steps, closing time, root cause, improvement measures.",
+      "High protection needs: define response time targets and escalation rules, for example respond to critical events within 1 hour and escalate to the CISO and managing director if not contained within 4 hours. Create an \"event contact list\" with main contacts and deputies.",
+      "Prepare a \"list of external reporting obligations\": reporting clauses in customer contracts (deadline, contact), personal data breach notification duties under your data-protection law (for example the 72-hour notification under the EU GDPR, or Taiwan's PDPA), authorities, insurance company, TISAX-related notifications, with contact details. Update it every six months.",
+      "Prepare communication templates: notification letter to customers, announcement to employees, statement for the media, inquiry letter to suppliers. Define who approves external statements (e.g., the managing director or the PR contact).",
+      "Set up a process for supplier incidents: when a supplier reports that it was hacked, assess which of your accounts, connections and data exchanges are affected; if needed, suspend VPN or EDI connections and reset shared credentials; and decide whether customers must be informed.",
+      "For every major event, hold a post-incident review within two weeks after closing, and add the improvement items to the risk register and corrective action tracking. For very high protection needs, run at least one tabletop exercise per year (e.g., a ransomware scenario), including escalation to the managing director."
+     ],
+     "audit": {
+      "questions": [
+       "Please show me the event records from the past year and explain one case from report to closure.",
+       "How are events categorized, qualified and prioritized?",
+       "Who is responsible for each category of events? Who is the deputy when that person is absent?",
+       "How are events escalated if they are not handled in time? What is the highest level of escalation?",
+       "What legal or contractual reporting obligations do you have? Who are the contacts?",
+       "If a supplier is attacked by ransomware, what would you do?",
+       "Do you hold a review after an event is over? What improvements came out of it?",
+       "Has the event handling process been exercised?"
+      ],
+      "evidence": [
+       "Event handling procedure (including categorization, priorities, response times and escalation rules)",
+       "Event tickets or event log",
+       "List of event contacts and deputies",
+       "List of external reporting obligations with contact information",
+       "Communication strategy and templates",
+       "Post-incident review reports and tracking of improvements",
+       "Records of event handling exercises"
+      ],
+      "findings": [
+       "Event records show only the report date and closing date; the handling steps and root cause are not visible, and there are no improvements afterwards.",
+       "No response times or escalation rules are defined; in one major event, management was only informed after two days (non-conformity for high protection needs).",
+       "The company does not know the security incident reporting deadlines in its customer contracts and has no list of customer contacts.",
+       "When the only person responsible for event handling was on vacation, there was no deputy and nobody handled the event.",
+       "There is no procedure for supplier security incidents; after a main supplier was hacked, the impact on the company was not assessed."
+      ]
+     },
+     "tip": "When an incident happens, what you lack most is not technology but phone numbers. Print the contact details of customer contacts, authorities, the insurer and an external forensics company, and keep a paper copy in the safe. Then you can still find them when every system is down."
+    },
+    {
+     "id": "1.6.3",
+     "title": "Preparedness for Crisis Situations",
+     "q_en": "To what extent is the organization prepared to handle crisis situations?",
+     "q_zh": "To what extent is the organization prepared to handle crisis situations?",
+     "objective": "A crisis situation occurs if exceptional situations (e.g., natural disasters, physical attacks, pandemics, exceptional social situations, cyber-attacks causing major infrastructure failures) are severely disrupting key business operations. In such cases, the main priority of the organization is to handle the situation as effectively as possible and recover as quickly as possible.",
+     "req": {
+      "must": [
+       "An appropriate plan to react to and recover from crisis situations exists and the required resources are available.",
+       "Responsibilities and authority for crisis management within the organization are defined, documented, and assigned.",
+       "The responsible employees are defined and qualified for their task."
+      ],
+      "should": [
+       "Methods to detect crisis situations are established. General indications for the existence or imminence of a crisis situation and specific predictable crisis are identified.",
+       "A procedure to invoke and/or escalate crisis management is in place.",
+       "Strategic goals and their priority in crisis situations are defined and known to relevant personnel. The following aspects are considered: – Ethical priorities (e.g., protection of life and health) – Core business processes (e.g., processes that ensure the survival of the organization) – Appropriate information security.",
+       "A crisis management team is defined and approved. The following aspects are considered: – Management commitment – Composition (e.g., participation of all major functions of the organization including organization leadership (management board), business operations (production), HR, information security, corporate security, corporate emergency services, IT/cyber security, communication, finance) – Structure and roles – Competences of members – Expectation and authority – Decision making procedures.",
+       "Crisis policies and procedures are defined and approved. The following aspects are considered: – Exceptional authorities and decision-making processes can be assigned beyond the crisis management team – Primary and backup means of communication – Emergency operating procedures – Crisis-specific organizational structures (e.g., reporting, information gathering, decision making) – Crisis-specific functions, responsibilities, and authority (including reporting) – Crisis tools.",
+       "Crisis planning is reviewed and updated regularly."
+      ],
+      "high": [
+       "Relevant different potential crisis scenarios are identified. The following aspects are considered: – Crisis situations with unavailability of key personnel (e.g. health crisis, kidnapping / accidents affecting organization leadership) – Crisis situations with unavailability of key physical resources (e.g. fire or natural disasters at specific sites) – Crisis situations with outage of key infrastructure (e.g., outage of key communication channels, complete outage of IT infrastructure).",
+       "Necessary resources and information to handle crisis (e.g., communication infrastructure, availability of necessary information such as contact information and relevant risks in different crisis situations) are identified. Appropriate measures to ensure availability of infrastructure or fallback planning and information considering different crisis scenarios are in place. (A)",
+       "A communication strategy for crisis situations exists. The following aspects are considered: (A) – To whom to communicate (e.g., shareholders, affected business partners and customers, other shareholders, general public) – When to communicate – Responsibilities for communication – Authorization and approval of communication – Legal and regulatory restrictions of communication (e.g., stock corporation regulations) – What to communicate (e.g., prepared templates for statements, contact information and building blocks for specific scenarios) – Communication channels (e.g., Media channels, social media) – Methods to monitor communication – Instructions and procedures for employees (in case of direct communication approaches such as direct contact of employees by business partners).",
+       "The efficiency, feasibility, and appropriateness of the crisis planning is evaluated regularly. (A)",
+       "Spot based testing of crisis planning is conducted (e.g., simulation, table-top-exercises involving key personnel). (A)"
+      ],
+      "vhigh": [
+       "Crisis exercises and simulations involving all relevant persons, including decision makers are conducted regularly. (A)"
+      ],
+      "sga": []
+     },
+     "refs": "ISO 27001:2022 A.5.29 | ISA/IEC 62443-2-1 13.2.1 | Implementation references: BSI IT-Grundschutz DER.4; ISO 22361:2022 (crisis management guidelines); NIST SP800-53r5 CP-2–CP-13, IR-4, IR-5, IR-7, IR-8, IR-9, PM-8, SI-17, PE-8, PE-13(2)",
+     "change2027": "",
+     "explain": [
+      "1.6.3 was added in ISA 6 and replaces the old 3.1.2 (the content of the old control was also split into 5.2.8 IT service continuity planning and 5.2.9 backup and recovery). The focus is on \"crisis\", not only on \"security incidents\": natural disasters, physical attacks, pandemics, exceptional social situations, or cyber-attacks that cause major infrastructure failures are crises whenever they severely disrupt key business operations. The main goal then is to handle the situation effectively and recover as quickly as possible.",
+      "There are three musts: a plan to react to and recover from crises exists, with the required resources; responsibilities and authority for crisis management are defined, documented and assigned; and the responsible persons are named and qualified. The should requirements outline a complete crisis management system: methods and indicators to detect a crisis; a procedure to invoke and escalate; strategic goals and priorities in a crisis (first protect life, then core business, while keeping appropriate information security); a crisis management team (including top management, production, HR, information security, corporate security, emergency services, IT, communication and finance); crisis policies and procedures (exceptional authority, primary and backup communication, emergency operating procedures, crisis organization, crisis tools); and regular review and updates.",
+      "The first high requirement is to identify different potential crisis scenarios. The original text names three main types: unavailability of key personnel (e.g., a health crisis, or a kidnapping or accident affecting the leadership); unavailability of key physical resources (e.g., fire or natural disaster at a specific site); and outage of key infrastructure (e.g., outage of main communication channels, complete IT outage). The other four, marked (A), are: backup for the resources and information needed in a crisis; a crisis communication strategy (compared with 1.6.2, it adds monitoring of communication and instructions for employees); regular evaluation of the efficiency and feasibility of the plan; and spot-based testing such as tabletop exercises.",
+      "Very high protection needs (A) require regular crisis exercises and simulations that involve all relevant persons and decision makers. A common misunderstanding is to treat crisis management as the IT disaster recovery plan, but ISA expects crisis management at top-management level. Many plants already run fire drills, and in some regions earthquake drills. You can build on these and add scenarios such as a ransomware attack that paralyzes everything, the failure of a key supplier, or key managers who cannot be reached."
+     ],
+     "practice": [
+      "Create a Crisis Management Plan: definition of a crisis and decision criteria, conditions for invoking and escalating, priorities of strategic goals (personal safety, core business, information security), crisis team members and deputies, decision-making procedure, conditions for recovery and for ending the crisis.",
+      "Set up a crisis management team led by the managing director, with the plant manager (production), HR, the security officer, IT, facilities (corporate security and emergency response), PR or sales contact, and finance. Approve it with an appointment document signed by the managing director, and provide crisis management training to meet the qualification requirement.",
+      "Prepare a \"crisis toolkit\": paper and offline contact lists (employees, customers, suppliers, insurer, external forensics, authorities), backup communication (e.g., a second channel besides your usual chat group such as WhatsApp, LINE or Teams, satellite phones, or numbers with a different mobile carrier), an alternative meeting location, and emergency operating procedures (e.g., handwritten delivery notes when the ERP is down).",
+      "High protection needs: create a \"list of crisis scenarios\" that covers at least three types: people (managing director cannot be reached, mass absence during a pandemic), physical (plant fire, earthquake, flood) and infrastructure (ransomware encrypting everything, power failure in the server room, telecom outage). For each scenario, list the resources needed and the backup solution.",
+      "Write a crisis communication plan: statement templates for customers, employees, media and authorities; a named spokesperson and approval process; monitoring of social media and news; and an instruction for employees: \"If a customer calls you directly, politely ask them to contact the designated contact person.\"",
+      "Hold at least one tabletop exercise per year (e.g., on Friday night ransomware encrypts all servers, and on Monday you must ship to the OEM), with key people taking part and a record of improvements. For very high protection needs, run full exercises or simulations that include the top-management decision makers.",
+      "Review the crisis plan every year or after major organizational changes, evaluate its efficiency, feasibility and appropriateness, and keep it consistent with the plans for IT service continuity (5.2.8) and backup and recovery (5.2.9)."
+     ],
+     "audit": {
+      "questions": [
+       "How do you define a crisis? How do you distinguish it from a normal security event?",
+       "When a crisis happens, who decides to invoke crisis management? What is the process?",
+       "Who are the members of the crisis management team? Who approved it? What training have the members received?",
+       "If the managing director cannot be reached, who makes the decisions?",
+       "If IT is completely down, how do you contact employees and customers? Where is the contact list kept?",
+       "Who is responsible for external communication in a crisis, and who approves it? Do you have prepared templates?",
+       "Which crisis scenarios have you identified?",
+       "When was the crisis plan last exercised or reviewed? What was the result?"
+      ],
+      "evidence": [
+       "Crisis management plan and invocation / escalation procedure",
+       "Appointment document of the crisis management team and training records of its members",
+       "List of crisis scenarios with the related resources and backup solutions",
+       "Offline contact lists and crisis toolkit",
+       "Crisis communication plan and statement templates",
+       "Records of tabletop exercises or crisis simulations and improvement reports",
+       "Records of crisis plan reviews"
+      ],
+      "findings": [
+       "There is only an IT disaster recovery plan, with no crisis management plan involving top management.",
+       "Several people on the crisis team list have left the company, and no deputies have been named.",
+       "All contact information is stored in M365; if a ransomware attack makes the accounts unusable, nobody can be contacted.",
+       "No crisis exercise has ever been held, so there is no proof that the plan works (non-conformity for high protection needs).",
+       "There is no crisis communication strategy; during an event, different managers answered customers individually and the messages were inconsistent."
+      ]
+     },
+     "tip": "The most valuable moment in a crisis exercise is when people discover: \"Oh, that thing is stored in the system that is already down.\" An exercise is not about performing well; it is about finding the holes before a real crisis does."
+    }
+   ],
+   "summary": [
+    "The information security policy must be based on determined security requirements, be approved by management, and include objectives and the significance of information security. Since ISA 2027, making it available to employees is a must, and relevant changes must also be communicated to external business partners.",
+    "The ISMS must have a defined scope and determined requirements, be commissioned and approved by management, have its applicable controls determined (SoA or ISA self-assessment), and have its effectiveness reviewed regularly by management.",
+    "Information security responsible persons must be appointed, qualified, empowered and given resources. Contact persons must be known inside the organization and to business partners. With high protection needs, segregation of duties is required.",
+    "Projects in all departments (not only R&D or IT) must be classified according to information security requirements, with a risk assessment early in the project that is repeated when the project changes.",
+    "Information assets (the treasure) and supporting assets (the containers, including OT, cloud services and people) must be identified and recorded. You can manage them by category and assign an owner.",
+    "You need at least a consistent classification scheme for confidentiality, plus handling rules for labeling, use, transport, storage, return and disposal for each class.",
+    "External IT services and software must be assessed and approved before use, and the approval should state which classification level they may process. Maintenance tools also need approval. The approval process must be scaled to protection needs to stay workable.",
+    "Risk assessments are carried out at regular intervals and in response to events. Every risk needs a risk owner, and the method should be as simple as possible.",
+    "Internal reviews cover policy compliance and technical compliance and track corrective actions. Independent reviews must be carried out by an independent and competent body at regular intervals and after fundamental changes.",
+    "Reporting of events and observations covers four categories: personnel, physical, IT / cyber, and suppliers, with a feedback mechanism. Event management must be timely, able to escalate, aware of reporting obligations, and feed lessons learned back into improvement.",
+    "Crisis management is preparation at top-management level: a crisis plan, a crisis management team, backup communication, crisis communication and regular exercises."
+   ]
+  }
+ ],
+ "video": [
+  {
+   "id": "v-is-1a",
+   "chapter": "is-1",
+   "title": "1.1.1 IS Policies and 1.2.1 ISMS Management",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Hello everyone, I'm ARALE! Today we start Chapter 1 of the ISA Information Security module: IS Policies and Organization. Allan, what's our first lesson?",
+     "slide": {
+      "title": "Chapter 1 IS Policies and Organization",
+      "bullets": [
+       "1.1.1 Information security policies",
+       "1.2.1 Information security management, ISMS",
+       "This part: from policy to management cycle"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Hi everyone, I'm Allan. Chapter 1 is the foundation of the whole ISA. In this part we cover two controls: 1.1.1, the security policy, and 1.2.1, how the ISMS is managed."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "A policy, I know that one. It's a document that says the company takes security seriously, right? There are tons of templates online. Can't we just copy one?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Ha, I've heard that sentence in audits more times than I can count. Then you open the policy and it lists departments the company doesn't have, and sometimes even another company's name."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Wow, really? Some people didn't even change the company name?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Really. And the boss had signed it! That's why the first must in 1.1.1 is: the security requirements are determined, documented, and adapted to the organization's goals.",
+     "slide": {
+      "title": "1.1.1 Must requirements",
+      "bullets": [
+       "Determine and document security requirements",
+       "Policy approved by management",
+       "Includes objectives and significance of security",
+       "Made available to employees in a suitable form",
+       "Inform employees and external partners of changes"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "That means you first find out where the requirements come from: confidentiality clauses in customer contracts, TISAX labels, data protection law, trade secret law. Then you map them to the company's business goals."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Next, management must approve the policy, and it must state the security objectives and what information security means for the company. All three are required."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And the fourth one, the policy is made available to employees. That sounds easy."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Pay special attention to this one! ISA 2027 moved it from should to must. Before, doing it badly cost you a little. Now, if nobody can find your well-written policy, it's a must non-conformity.",
+     "slide": {
+      "title": "Key ISA 2027 change",
+      "bullets": [
+       "Available to employees: should becomes must",
+       "Recommended: central intranet location",
+       "Paper copies go out of date quickly"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, upgraded to a must! Taking notes! So where is the best place to put it?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The guidance recommends a central place such as the intranet, so everyone always gets the latest version. It also says paper has a clear weakness: the moment you print it, it starts going out of date."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Many companies create a security area in M365 SharePoint, read-only with version history. For production staff without a computer, use the notice board plus a QR code."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "And the fifth one says external business partners must be informed too? They're not our employees."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Think about it. On-site IT contractors, temporary workers, security and cleaning companies all have to follow your rules. If the rules change and nobody tells them, how can they follow them?"
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "I see! So what's in the should part?",
+     "slide": {
+      "title": "1.1.1 Should requirements",
+      "bullets": [
+       "Based on strategy, considering laws and contracts",
+       "State consequences of violations",
+       "Establish other relevant security policies",
+       "Review regularly and revise as needed"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Four items. The requirements are based on company strategy and consider laws and contracts. The policy states the consequences of violations. Other relevant security policies exist. And regular review, say once a year."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What are other relevant security policies? Things like the access control rules?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "The guidance defines them as policies that are not part of the ISMS but are relevant to security. Like facility access rules, HR disciplinary rules, or quality document control. You need to look at these together."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "If you have several sites and use SGA, the simplified group assessment, the policies must be published and implemented in the whole assessment scope, not just at headquarters."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "OK, policy done! Next is 1.2.1, the ISMS. That name already sounds big.",
+     "slide": {
+      "title": "1.2.1 What is an ISMS",
+      "bullets": [
+       "A control mechanism for management",
+       "Security by management, not by luck",
+       "Scope, requirements, approval, monitoring, review"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The original definition is beautiful: the ISMS is management's control mechanism, so that security is the result of sustainable management, not coincidence or the personal effort of one dedicated colleague."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "I once supported a plant where security depended completely on one very hard-working IT guy. When he left, security dropped straight to zero. That's a classic case of personal effort."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Poor company, and poor IT guy."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "So 1.2.1 has six musts. One, the ISMS scope is defined. Two, the requirements for the ISMS are determined. Three, management commissions and approves the ISMS.",
+     "slide": {
+      "title": "1.2.1 Must requirements",
+      "bullets": [
+       "Define scope and ISMS requirements",
+       "Management commissions and approves",
+       "Monitoring means such as management review",
+       "Applicable controls, e.g. SoA or ISA",
+       "Management reviews effectiveness regularly"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Four, the ISMS gives management monitoring and control means, like the management review. Five, applicable controls are set, like an ISO 27001 SoA or a completed ISA. Six, management reviews effectiveness regularly."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "How should we define the scope? The whole company?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "At least the TISAX assessment scope you registered with ENX. I often see an ISMS scope that says our company, while the assessment scope includes an extra warehouse site. If they don't match, you get a finding."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Can the ISA self-assessment be used as the SoA?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Yes. The guidance itself gives a completed ISA catalogue as an example. But every question needs a maturity level, an explanation, and a reason for anything not applicable. You can't leave it blank."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Is the management review just a meeting once a year where everyone signs?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "That's the most common misunderstanding. In an audit I look at the last decisions and check whether they were followed up. If nobody follows up, the management cycle is broken, no matter how many signatures you have.",
+     "slide": {
+      "title": "A management review that counts",
+      "bullets": [
+       "Input: audits, incidents, risks, KPIs",
+       "Output: decisions and resources",
+       "Follow up previous decisions until closed"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "I also recommend a monthly security KPI report, for example the patch completion rate and the phishing simulation click rate. Then the boss sees it all year, and the annual review isn't a last-minute rush."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Finally, the SGA requirement: the person who approves the ISMS must have authority over all sites, like the group CEO, not the manager of just one plant."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Let me sum up! In 1.1.1, the policy needs real sources and approval, and employees must be able to find it, a new must in 2027. In 1.2.1, the ISMS needs a scope, applicable controls, and a management review that works.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Policy reflects real security requirements",
+       "Availability to employees is now a must",
+       "ISMS scope matches TISAX scope",
+       "Follow up management review decisions"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Very good. In the next part we'll talk about who is responsible for security and about security requirements in projects, that is 1.2.2 and 1.2.3."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Thank you, Allan! See you all in the next part, bye!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1b",
+   "chapter": "is-1",
+   "title": "1.2.2 IS Responsibilities and 1.2.3 Security in Projects",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Welcome back! In this part we answer a big question: who is actually responsible for security? And how do we handle security in projects?",
+     "slide": {
+      "title": "1.2.2 and 1.2.3",
+      "bullets": [
+       "1.2.2 Information security responsibilities",
+       "1.2.3 Information security in projects",
+       "Focus: authority, resources, segregation"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Who is responsible for security? In many companies the answer is: the person who can fix computers."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, that's so true. I think I know a colleague like that."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "1.2.2 has four musts. One, security responsibilities are defined, documented, and assigned. Two, the responsible persons are named, qualified, and empowered.",
+     "slide": {
+      "title": "1.2.2 Must requirements",
+      "bullets": [
+       "Responsibilities defined, documented, assigned",
+       "Responsible persons qualified and empowered",
+       "Required resources available",
+       "Contacts known internally and to partners"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Three, the required resources are available. Four, the contact persons are known inside the company and to relevant business partners."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What does qualified mean? Do you need a certificate?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Not a specific certificate, but you must be able to prove competence. For example, an ISO 27001 lead auditor course, TISAX training, or relevant experience. Remember to keep the certificates and training records."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "And empowered? If you've been assigned, aren't you empowered already?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Big difference. I met a security officer who asked the sales department for their asset list, and the sales manager replied: who are you? In the end the managing director had to step in."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "So you need an appointment letter or mandate that states the authority. For example, the right to request cooperation from all departments and to stop unsafe work. Ideally they report directly to the managing director."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "A security officer without authority sounds really sad."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Resources are the same. Working time, budget, tools such as EDR or SIEM licenses must be visible in the annual plan. I often check the management review minutes to see whether resources were discussed."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And the contact persons must be known to business partners. Should we put them on the website?",
+     "slide": {
+      "title": "How to publish the security contact",
+      "bullets": [
+       "Intranet home page and employee handbook",
+       "Supplier contracts and site entry rules",
+       "Security mailbox and phone number"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "The website, contract clauses, and site entry instructions all work. Customers need to know whom to call about a problem, and suppliers who get hacked need to know whom to inform. This links to reporting in 1.6.1."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "I see! What about the shoulds?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Two items. Define and document an adequate security organization structure, and consider roles outside the ISMS that are relevant to security.",
+     "slide": {
+      "title": "1.2.2 Should and high protection",
+      "bullets": [
+       "Document the security organization",
+       "Consider security roles outside the ISMS",
+       "High: segregation of duties"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "For example the data protection officer, the prototype protection manager, the person managing site access, or the owner of OT systems. They may not be on the security committee, but they must link to the ISMS."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "And high protection needs? I saw something about segregation of duties."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Right. High protection needs require segregation of duties to avoid conflicts of interest, for C, I and A. The classic mistake: the IT manager is also security officer and internal auditor, checking his own work."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "But our plant only has three people in IT. How can we separate duties?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Small companies can use compensating measures. Administrator logs are reviewed by a non-administrator, and internal audits are done by another department or an outside consultant. Just don't let one person do everything."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The SGA requirement is a named person who is available and has overall responsibility for the whole management system."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "OK! Next is 1.2.3, security in projects. Our company doesn't really have projects. Can we mark it not applicable?",
+     "slide": {
+      "title": "1.2.3 Definition of a project",
+      "bullets": [
+       "Defined period, goals and dedicated roles",
+       "Started internally or by customers",
+       "Not limited to R&D and IT"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "I always laugh when I hear that. You don't have a parts development project for a new vehicle model? You haven't introduced a new ERP?"
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Uh, now that you ask, we do have those."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "ISA 2027.1 revised the definition: a project is a separate activity with a clear period, goals, and dedicated roles. It can be in R&D, engineering, operations, logistics, compliance, management, or IT."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The only must is simple: projects are classified taking into account the security requirements. The guidance examples use CIAA or CIA for classification.",
+     "slide": {
+      "title": "1.2.3 Requirements overview",
+      "bullets": [
+       "Must: classify projects by security needs",
+       "Should: document the criteria",
+       "Should: early risk assessment, redo on change",
+       "High: review measures, reassess on change"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There are three shoulds. Document the classification procedure and criteria. Do a risk assessment early in the project and repeat it on changes. Derive measures for the identified risks and include them in the project."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "High protection needs add one more: review the measures regularly during the project and reassess when the criteria change. For example, when the customer raises the level from confidential to strictly confidential."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So how do we do this in practice without too much work?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "The easiest way is to add a few fields to the project kick-off form: customer confidential data, prototypes, personal data, C I A levels, project security contact. No need to start a new process."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "At the kick-off meeting, also do a simple risk table and put the measures into the WBS, like project folder permissions, a dedicated Teams channel, NDAs. Then check them at every gate review."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So how will the auditor check this on site?",
+     "slide": {
+      "title": "Common audit findings",
+      "bullets": [
+       "Only R&D projects are classified",
+       "Higher confidentiality, but no reassessment",
+       "Measures not in the project plan",
+       "Wrongly marked N/A, no projects claimed"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "They'll ask for your project list and pick one or two to look at the classification and risk assessment. The most common finding is that only R&D projects did it, and IT implementation projects did nothing."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Let me sum up! In 1.2.2, the security officer needs an appointment, qualification, authority, and resources, plus segregation of duties for high protection needs. In 1.2.3, all departments classify their projects."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Very good. In the next part we move into asset management: the inventory and classification of information assets. That's where many companies struggle the most."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "I can't wait! Thank you, Allan. See you in the next part, bye!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1c",
+   "chapter": "is-1",
+   "title": "1.3.1 Asset Inventory and 1.3.2 Information Classification",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Hi everyone! In this part we start asset management: 1.3.1, identifying and recording assets, and 1.3.2, information classification. I heard many companies get stuck here?",
+     "slide": {
+      "title": "1.3 Asset management",
+      "bullets": [
+       "1.3.1 Identify and record information assets",
+       "1.3.2 Classify and manage by protection needs",
+       "Information assets and supporting assets"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "That's right. Every time I ask to see the asset inventory, they hand me a fixed asset list with computer prices and depreciation periods."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Huh? Doesn't that list count as an asset inventory?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "That's the accounting fixed asset register. ISA's information assets are the valuable information itself, like customer drawings, quotations, process parameters, HR data, patents, and know-how."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "I like to use treasure and boxes as a picture. Information assets are the treasure. Supporting assets are the boxes that hold the treasure, like servers, laptops, cloud services, paper, and even employees.",
+     "slide": {
+      "title": "Treasure and boxes",
+      "bullets": [
+       "Information asset: the treasure itself",
+       "Supporting asset: the box holding it",
+       "The box inherits the treasure's protection needs"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, employees are boxes too! Because the information is in their heads, right?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Exactly. That's why everyone gets nervous when a senior engineer leaves. The guidance also says supporting assets inherit the protection needs of the information they carry."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "1.3.1 has two musts. Information assets and other security-relevant assets are identified and recorded. And the supporting assets that process this information are also identified and recorded.",
+     "slide": {
+      "title": "1.3.1 Requirements",
+      "bullets": [
+       "Must: identify and record information assets",
+       "Must: identify and record supporting assets",
+       "Should: catalogue linked to supporting assets",
+       "Should: assign owners, review regularly"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What does the control mean by other security-relevant assets?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The guidance says these are assets where security threats would hit the company hard: IT systems, IT services, OT systems, and IoT devices. In a plant with production lines, PLCs, HMIs, and industrial PCs must be listed."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "So do we have to record information assets file by file? That would take forever!"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "No. The guidance example says you can use categories, for example employee master data, responsible unit HR. Managing by category keeps the inventory maintainable."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The should requires a catalogue of information assets. Each one is linked to its supporting assets, has an owner assigned, and the catalogue is reviewed regularly."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Where should we start the inventory to be efficient?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Start from the processes. Order intake, R&D design, purchasing, production, shipping, HR. For each process ask: what information do you handle? Who would cry if it leaked? Then ask where that information is stored.",
+     "slide": {
+      "title": "Inventory assets from processes",
+      "bullets": [
+       "List the core processes",
+       "Find the information each process handles",
+       "Map it to systems and carriers",
+       "Assign owners and review regularly"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Supporting assets can be automated with tools, for example the Intune device list, AD computer accounts, or Lansweeper scans. Export and compare every month. Don't rely only on a manual Excel sheet."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Taking notes! What about 1.3.2, classification?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "1.3.2 has three musts. One, a consistent classification scheme, at least for confidentiality. Two, every information asset is evaluated against the criteria and assigned to a class.",
+     "slide": {
+      "title": "1.3.2 Must requirements",
+      "bullets": [
+       "Consistent scheme for confidentiality",
+       "Evaluate and classify every asset",
+       "Handling rules for supporting assets"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Three, handling rules for supporting assets are set and applied according to the classification: labeling, use, transport, storage, return, and deletion or disposal."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So how many classification levels are right?",
+     "slide": {
+      "title": "ISA protection needs mapping",
+      "bullets": {
+       "head": [
+        "Protection needs",
+        "Confidentiality class"
+       ],
+       "rows": [
+        [
+         "Normal",
+         "Internal"
+        ],
+        [
+         "High",
+         "Confidential"
+        ],
+        [
+         "Very high",
+         "Strictly confidential"
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The ISA definitions give a mapping: normal protection needs equal internal, high equals confidential, and very high equals strictly confidential. Many companies add public, so four levels in total is just right."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Don't create too many levels. I saw a company with seven levels, and the employees all picked the middle one, because they simply couldn't tell them apart."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, the whole company couldn't make up its mind."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The third must is what auditors catch most often. Many companies have a classification rule but never say if confidential documents may be e-mailed, if they need encryption, or how to destroy scrapped hard disks."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "I recommend a classification handling matrix. The columns are the four levels, the rows are labeling, access, storage, sending, taking off-site, and disposal. Each cell says clearly what you may and may not do."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Besides people doing it by hand, how can technology help?",
+     "slide": {
+      "title": "Technical tools",
+      "bullets": [
+       "Purview sensitivity labels",
+       "Automatic watermark and encryption",
+       "DLP to prevent data leaks",
+       "Paper headers and classification stamps"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "If you use M365, Purview sensitivity labels can add watermarks and encryption automatically, combined with DLP rules. For paper, use header and footer labels or a classification stamp."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "And what does the should in 1.3.2 require?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There's only one: integrity and availability are also considered. That's very important in automotive. If process parameters are changed, you get quality problems. If the MES stops, delivery dates are hit."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "How will the auditor check classification on site?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "They'll ask a random employee: what level is this document? How do you know? Can you send it to a supplier? They'll also check shared folders to see whether strictly confidential drawings are open to the whole company."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "The employee who gets picked must feel a lot of pressure."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "That's why training should use real documents as examples and tell people whom to ask when they're not sure. How to handle unlabeled documents must also be written down clearly."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Key points! In 1.3.1, inventory the treasure and the boxes, by category, including OT. In 1.3.2, at least a confidentiality scheme, with concrete handling rules.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Asset inventory is not a fixed asset list",
+       "Manage information assets by category",
+       "Use no more than four classification levels",
+       "Handling rules must be concrete"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "In the next part we'll talk about shadow IT and software approval, that's 1.3.3 and 1.3.4. These two are the closest to everyone's daily work."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Thank you, Allan! See you in the next part!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1d",
+   "chapter": "is-1",
+   "title": "1.3.3 External IT Services and 1.3.4 Software Approval",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Hello! This part is about shadow IT and software approval. I have to confess first: last time I used a free online tool to turn a Word file into a PDF. Does that count?",
+     "slide": {
+      "title": "1.3.3 and 1.3.4",
+      "bullets": [
+       "1.3.3 Assess and approve external IT services",
+       "1.3.4 Assess and approve software",
+       "Fighting shadow IT"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "It counts, and you've just shown the most common case in the guidance. The objective of 1.3.3 points out that free or low-cost online services are the most dangerous, because you can use them without approval."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Oh no, I just wanted to finish my work faster."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "Everyone wants to be faster. I audited a plant where sales used a free large-file transfer site to send OEM drawings to a subcontractor. No password, and the link stayed online for a month."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Wow, if the customer found out, they'd be furious."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "So the first must in 1.3.3 is: external IT services are not used without an explicit assessment and implementation of the security requirements. The assessment considers two things.",
+     "slide": {
+      "title": "1.3.3 Must requirements",
+      "bullets": [
+       "No external IT service without assessment",
+       "Risk assessment of the service",
+       "Consider legal, regulatory, contract needs",
+       "Service matches the information's needs"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "First, a risk assessment of the service. Second, legal, regulatory, and contractual requirements. For example, a customer contract may say data must not be processed by third parties without consent."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The second must is that the service matches the protection needs of the information. The same cloud service might be approved for internal data, but not for strictly confidential data."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So when we approve a service, we should write down which level of data it may hold?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Exactly! Add a column with the highest classification allowed, and employees see it at a glance. This connects with 1.3.2 classification from the last part."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what are the shoulds in 1.3.3?",
+     "slide": {
+      "title": "1.3.3 Should requirements",
+      "bullets": [
+       "Set procurement and release requirements",
+       "Approval procedure by protection needs",
+       "Document services and approval status",
+       "Verify regularly that only approved are used"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Four items. Set and meet requirements for procurement, commissioning, and release. Have an approval procedure based on protection needs. Document the approvals. And regularly check that only approved services are used."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "How do we verify that? We can't look at everyone's screen every day."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Use tools. Firewall or proxy logs, or a CASB like Defender for Cloud Apps, can produce a monthly cloud app usage report. Then it's clear who uses which service."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "But always remember: offer an alternative before you block something. If you block free file transfer sites, provide an approved secure way to share files, or people will get around it with their phone hotspot."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "I see! Now 1.3.4, software approval.",
+     "slide": {
+      "title": "1.3.4 Must requirements",
+      "bullets": [
+       "Approve before installation or use",
+       "Limit to specific use cases or roles",
+       "Meets security requirements",
+       "License and use rights",
+       "Source and reputation"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The must in 1.3.4 is that software is approved before installation or use, considering four aspects: limited use cases or roles, conformance to security requirements, licensing and use rights, and source and reputation."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The second must names special-purpose software like maintenance tools, which also needs approval. For example, remote diagnostic tools from equipment vendors, or PLC programming software."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "When an equipment vendor brings their own laptop to connect to the PLC, we have to control that too?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Yes, and that laptop is often the scariest thing. I've seen vendor laptops full of unknown tools, without antivirus, plugged straight into the production network."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "But if every piece of software needs a request, won't IT drown in paperwork?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "You've found the wisest part of the guidance. It says the approval process must be simple enough to work. If it's too hard or too slow, managers won't approve, and users will go around it.",
+     "slide": {
+      "title": "Scale approval to make it workable",
+      "bullets": [
+       "Normal: bulk approval, trusted source",
+       "High: assess software off the trusted list",
+       "Very high: approve individually, review changes",
+       "Major versions are always reassessed"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The guidance example has three levels. Normal software is approved in bulk by license and trusted publisher. For high protection needs, like browsers, keep a trusted vendor list and assess the rest one by one."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For very high protection needs, trust only top-reputation vendors and approve the rest one by one, maybe with a technical audit. Minor updates inherit the approval, but major versions are always reassessed."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "So does every security patch have to be tested before we install it?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The guidance says not necessarily. Often, not installing a security patch because it hasn't been tested is riskier than the patch itself causing problems. The point is to find the balance."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "What's in the should part of 1.3.4?",
+     "slide": {
+      "title": "1.3.4 Should and very high",
+      "bullets": [
+       "Define the software types to manage",
+       "Set up managed software repositories",
+       "Protect repositories against tampering",
+       "Review approvals regularly",
+       "Know versions and patch levels"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Five items. Define which types to manage, like firmware, operating systems, applications, libraries, and drivers. Have repositories and protect them from tampering. Review approvals. Know versions and patch levels."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "The guidance also says you don't always need a central list. R&D can approve on its own within a central framework. Tools like Intune or WSUS track versions and patches automatically, more accurately than a manual list."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What extra requirement is there for very high protection needs?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "For very high protection needs you set extra usage rules, like control or monitoring of use. Tools that can watch network traffic or change critical settings need individual approval and the four-eyes rule."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "In practice, what are the first basic steps?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "First remove local admin rights from users. Then use the Intune Company Portal as the software repository, plus AppLocker or the application control in your EDR. These three steps stop over half of the problems."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Key points! In 1.3.3, assess cloud services before use and state the classification they may handle. In 1.3.4, approve software before installing, control maintenance tools too, and keep the approval process workable.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Free online services are high risk",
+       "Approval states the allowed classification",
+       "Maintenance tools need approval too",
+       "Too hard a process gets bypassed"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "In the next part we'll talk about risk management and audits: 1.4.1, 1.5.1, and 1.5.2. That's the key to whether your ISMS really keeps turning."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Great! Thank you, Allan. See you all in the next part!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1e",
+   "chapter": "is-1",
+   "title": "1.4.1 Risk Management and 1.5 Internal and Independent Reviews",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Welcome back! This part has three controls: 1.4.1 risk management, 1.5.1 compliance reviews, and 1.5.2 independent review. They all sound so serious.",
+     "slide": {
+      "title": "1.4 and 1.5",
+      "bullets": [
+       "1.4.1 Information security risk management",
+       "1.5.1 Compliance reviews and internal audit",
+       "1.5.2 Independent review"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Relax. The last sentence of the 1.4.1 objective says: keep risk management as simple as possible, so it works effectively and efficiently."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, the standard itself tells us to keep it simple? That's so kind!"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Right. I've seen a company pay a consultant for a risk table with three hundred rows and twenty columns. When it was finished, nobody dared to open it again. That's an example of what not to do."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "1.4.1 has four musts. One, risk assessments are done at regular intervals and also in response to events. Two, risks are properly assessed, for example likelihood and potential damage.",
+     "slide": {
+      "title": "1.4.1 Must requirements",
+      "bullets": [
+       "Assess regularly and in response to events",
+       "Assess likelihood and potential damage",
+       "Document the risks",
+       "A risk owner for every risk"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Three, risks are documented. Four, every risk has a risk owner, who is responsible for assessing and handling that risk."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "In response to events means after a security incident?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Not only. A new system going live, moving a plant, reorganization, new customer requirements all count as triggers. When you record it, write down the trigger, and the auditor understands at once."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "So can we just write IT as the owner of every risk?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Here's my little trick. Ask yourself: if this risk happens, who will the boss call into the office? That person is the risk owner. If customer drawings leak, it's usually the sales or R&D manager, not IT."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, that test is very direct, but really useful."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There are four shoulds. A procedure to identify, assess, and treat risks. Criteria for assessment and treatment. Measures and owners documented, with status tracking. And timely reassessment when the environment changes.",
+     "slide": {
+      "title": "1.4.1 Should requirements",
+      "bullets": [
+       "Documented risk management procedure",
+       "Criteria for assessment and treatment",
+       "Plan of measures and status tracking",
+       "Timely reassessment when things change"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Note that for 1.4.1, the high protection needs field in the original says None. So there are no additional requirements."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "How can a small or medium company start in a practical way?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Start with twenty or thirty key scenarios, like ransomware, leaked customer drawings, an OT line stoppage, or a stolen cloud account. That's easier to maintain than scoring every asset, and managers understand it better."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Taking notes! Next is 1.5.1, compliance reviews."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The 1.5.1 objective is very direct: defining requirements and publishing policies is not enough, you must review their effectiveness regularly. In short: what's written must be done, and what's done must be checked.",
+     "slide": {
+      "title": "1.5.1 Must requirements",
+      "bullets": [
+       "Verify policy compliance across the company",
+       "Review policies and procedures regularly",
+       "Start and follow up corrective actions",
+       "Verify technical compliance regularly",
+       "Record and keep review results"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "There are five musts. Verify policy compliance across the organization. Review policies and procedures regularly. Start and follow up corrective actions. Verify technical compliance regularly. Keep the results."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "What does verifying technical compliance mean?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For example, do server settings meet the hardening baseline, does every computer have encryption and antivirus? You can use vulnerability scans or Intune compliance reports, run them regularly, and keep the records."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The should is a review plan with schedule, scope, and controls. In other words, the annual audit plan."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "If the internal audit finds that everything conforms, isn't that great?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Actually, that worries me. Everything conforms usually means the audit didn't go deep enough. I'd rather see ten small findings that were closed. That proves the system corrects itself."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "For SGA, it's more specific: internal controls at all sites, all applicable requirements covered, qualified auditors, a regular audit plan for the whole scope, and results tracked in the ISMS.",
+     "slide": {
+      "title": "1.5.1 SGA requirements",
+      "bullets": [
+       "Internal controls at all sites",
+       "Cover all applicable requirements",
+       "Qualified audit roles and resources",
+       "Audit plan covers the whole scope"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Last one is 1.5.2, independent review."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "1.5.2 means checking yourself is not enough. An independent and competent body must review regularly and after fundamental changes, and deviations must lead to corrective actions that are followed up.",
+     "slide": {
+      "title": "1.5.2 Requirements",
+      "bullets": [
+       "Must: review by an independent, competent body",
+       "Must: regularly and after fundamental changes",
+       "Must: correct deviations and follow up",
+       "Should: report results to management"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Does the TISAX assessment count as an independent review?"
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "It really is an independent external assessment, but it usually happens every three years. If you rely only on that, the two years in between have no independent review. So I recommend one extra review every year."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "It can be an external consultant, an ISO 27001 certification audit, or the group audit department. But careful: the consultant who helped build your system is not the right person to be your independent reviewer."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Writing your own exam and grading it yourself doesn't count, however high the score."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Exactly. The should requires the results to be documented and reported to management, usually in the management review. In an SGA case, the independent body itself tracks the corrective actions."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Key points! Keep risk management simple, with owners. Internal audits check documents and technology. Independent reviews must be truly independent and happen every year.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Keep risk management simple and running",
+       "Risk owners are business decision makers",
+       "Internal audits include technical checks",
+       "Independent review is not done by insiders"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "In the next part we move to event management: 1.6.1 reporting and 1.6.2 handling. These two were heavily rewritten in ISA 6."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "I'm looking forward to it! Thank you, Allan. See you in the next part, bye!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1f",
+   "chapter": "is-1",
+   "title": "1.6.1 Event Reporting and 1.6.2 Event Management",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Hi everyone! This part is about security events. 1.6.1 is how to report, and 1.6.2 is how to handle a report afterwards.",
+     "slide": {
+      "title": "1.6 Event and crisis management",
+      "bullets": [
+       "1.6.1 Reporting security events and observations",
+       "1.6.2 Managing reported events",
+       "Next part: 1.6.3 crisis"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "1.6.1 has one very important word: observation. It's something that hasn't caused a problem yet but may have security implications, like an open server room door or a stranger taking photos in the R&D area."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So we don't only report when we get hacked? If something looks strange, we report it?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Yes. The objective says anyone might notice something, so anyone must be able to report, and know when and how, so the experts can decide whether to act."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The first must is to define what has to be reported, and employees and stakeholders must know it. It covers four categories.",
+     "slide": {
+      "title": "Four categories to report",
+      "bullets": [
+       "Personnel",
+       "Physical: intrusion, theft, unauthorized entry",
+       "IT and cyber: vulnerabilities, attacks",
+       "Suppliers and business partners"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Personnel. Physical security, like intrusion, theft, or unauthorized access to security zones. IT and cyber security, like vulnerable systems or successful and unsuccessful attacks. And events at suppliers and partners."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Huh? Even attacks that didn't succeed must be reported?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Yes. An attack blocked by your EDR is still important information. It means someone is knocking on your door."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Two more musts: define and implement reporting mechanisms based on risk, known to all potential reporters, and have channels to communicate with the people who report.",
+     "slide": {
+      "title": "1.6.1 Should requirements",
+      "bullets": [
+       "Single point of contact",
+       "Real-time and other channels by severity",
+       "Employees obliged and trained",
+       "External parties can report, handled in time",
+       "Feedback procedure for reporters"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The shoulds include a single point of contact, channels by severity, a duty to report plus training for employees, reporting by external parties with timely handling, easy access to reporting information, and feedback."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Is feedback really that important? Reporting is enough, isn't it?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "It's extremely important. I saw a company where an employee reported suspicious e-mails three times and never heard back. The fourth time, he didn't bother. Silence after a report trains people not to report."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "So it's best to confirm receipt within one day, and tell the reporter the result at the end. One client recognizes the colleague with the most reports every month. Their reporting rate tripled in a year."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, using recognition instead of punishment. That's so clever!"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Very high protection needs require regular tests of reporting. For example, check in a phishing exercise whether people press the report button, or call the emergency number after hours to see if anyone answers."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And 1.6.2, what happens after a report comes in?",
+     "slide": {
+      "title": "1.6.2 Must requirements",
+      "bullets": [
+       "Process without undue delay",
+       "Respond adequately",
+       "Feed lessons learned into improvement"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Three musts: process without undue delay, respond adequately, and feed lessons learned into continuous improvement. The auditor picks a few event tickets and checks the timing, the handling, and the review afterwards."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The shoulds are categorize, qualify, and prioritize. Categories like personnel, physical, cyber. Qualification from not security relevant up to incident. Priority from low, moderate, and severe up to critical."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "The shoulds also include assigning responsibilities, right?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Right. Assign them by category, considering coordination, qualification and resources, communication by priority, and deputies. Very often the only responsible person is on vacation and nobody acts."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There's also a should marked C I A: a strategy for reporting criminal aspects to the authorities. For example, in case of extortion or an employee stealing trade secrets, do you call the police, and whom?"
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "I heard 1.6.2 has especially many requirements for high protection needs?",
+     "slide": {
+      "title": "1.6.2 High protection needs",
+      "bullets": [
+       "Define maximum response times",
+       "Escalate up to top management",
+       "Know legal and contract reporting duties",
+       "Communication strategy for events",
+       "Procedure for supplier incidents"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "There are five, so get your notes ready. One, define maximum response times by class, category, and severity. Two, escalate events not handled in time, with thresholds, mechanisms, and contacts, up to top management."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Three, know the legal, regulatory, and contractual reporting duties and the contact details. Many OEM contracts have a reporting deadline. How long exactly depends on your own contract."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Four, a communication strategy for events: to whom, when, who is responsible, who approves, legal limits, what to say, and through which channel. Five, a procedure for when a supplier has an incident."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "Why do we have to deal with it when the supplier has the problem?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Because they may have your VPN account, your EDI connection, or your drawings. You must analyze the impact on you, suspend connections if needed, reset shared passwords, and then decide whether to inform your customers."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For very high protection needs, for availability, regularly test event handling across categories and priorities, including rare cases and escalation. SGA needs a standard tracking mechanism, like one ticket system."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Can you recommend any tools for event management?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "A ticket system is enough, like Jira Service Management or GLPI. Record the report time, category, owner, handling steps, root cause, and improvements. And print the important phone numbers and keep a copy in the safe."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Key points! In 1.6.1, define four categories of events and observations, with several channels and feedback. In 1.6.2, categorize, prioritize, handle in time, escalate, know reporting duties, and review afterwards.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Observations must be reported too",
+       "Reports need feedback",
+       "High: response times and escalation",
+       "Supplier incidents need handling too"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "In the last part we'll talk about something bigger than an event: a crisis. 1.6.3, preparing for crisis situations."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Can't wait! Thank you, Allan. See you in the last part!"
+    }
+   ]
+  },
+  {
+   "id": "v-is-1g",
+   "chapter": "is-1",
+   "title": "1.6.3 Crisis Preparedness and Chapter Summary",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Welcome to the last part of Chapter 1! 1.6.3, crisis situations. What's the difference between a crisis and a security event?",
+     "slide": {
+      "title": "1.6.3 Preparing for crisis situations",
+      "bullets": [
+       "What is a crisis",
+       "Must: plan, responsibilities, qualification",
+       "Should: team, procedures, communication",
+       "High and very high: scenarios and exercises"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "The original definition: when natural disasters, physical attacks, pandemics, exceptional social situations, or cyber-attacks that take down key infrastructure severely disrupt key business, that's a crisis."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "This control was added in ISA 6 and replaces the old 3.1.2. The old content was also split into 5.2.8 IT service continuity and 5.2.9 backup and recovery."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So if IT has a disaster recovery plan, we have crisis management, right?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "That's the biggest misunderstanding. Disaster recovery is IT's job. Crisis management is top management's job. When ransomware hits the whole plant, which line to restart and what to tell the OEM is not IT's call."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "There are three musts: a plan to react to and recover from crises, with resources. Responsibilities and authority for crisis management defined, documented, and assigned. And the responsible persons named and qualified.",
+     "slide": {
+      "title": "1.6.3 Must requirements",
+      "bullets": [
+       "Crisis response and recovery plan, resources",
+       "Responsibilities and authority assigned",
+       "Responsible persons named and qualified"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "The shoulds in 1.6.3 seem especially long?",
+     "slide": {
+      "title": "1.6.3 Should requirements",
+      "bullets": [
+       "Methods and indicators to detect a crisis",
+       "Invocation and escalation procedure",
+       "Strategic goals and priorities in a crisis",
+       "Crisis management team",
+       "Crisis policies and procedures, regular updates"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Yes, there are six. Methods to detect a crisis and identify its indicators. A procedure to invoke and escalate crisis management. And strategic goals and priorities in a crisis."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The guidance is very clear on priorities: first ethical priorities, protecting life and health. Then the core business that keeps the company alive. And at the same time, appropriate information security."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So who should be on the crisis management team?"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The guidance gives a full list: top management, production, HR, information security, corporate security, emergency services, IT, communication, and finance. Also define roles, competences, and decision making."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Then crisis policies and procedures: exceptional authority beyond the team, primary and backup communication, emergency operating procedures, crisis roles, and crisis tools. Finally, regular review and updates."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "What does backup communication mean? Doesn't everyone just use a chat app like WhatsApp or LINE?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "That's exactly the point. I ran a tabletop exercise with a ransomware scenario. They said: let's meet on Teams. I said: your M365 accounts are locked. The whole room went quiet for ten seconds."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, those must have been a very awkward ten seconds."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "So prepare a crisis toolkit: a paper contact list, a second communication channel, an alternative meeting place, and a handwritten delivery note process for when the ERP is down."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "What are the high protection needs requirements for 1.6.3?",
+     "slide": {
+      "title": "1.6.3 High protection needs",
+      "bullets": [
+       "Identify three types of crisis scenarios",
+       "Backup for crisis resources and information",
+       "Crisis communication strategy",
+       "Evaluate the plan regularly",
+       "Spot tests such as tabletop exercises"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "There are five. The first is to identify different crisis scenarios, in three types: key people unavailable, key physical resources unavailable, and key infrastructure down."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For example, the managing director has an accident and can't be reached, a fire or flood at the plant, or a telecom outage or complete IT failure. The other four are all marked A, for availability."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Identify the resources and information needed in a crisis and prepare backups. Have a crisis communication strategy. Regularly evaluate the plan. And do spot tests, like tabletop exercises with key people."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "How is the crisis communication strategy different from the event communication strategy in 1.6.2?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Mostly the same, but it adds channels like social media, monitoring of communication, and instructions for employees. If a customer calls an employee directly, the employee refers them to the designated contact."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what more do very high protection needs require?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Very high protection needs require regular crisis exercises and simulations with all relevant people, including the decision makers. The boss must take part in person, not send a deputy."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Most plants already do fire drills, and in some countries earthquake drills too. Can we build on those?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Great idea! Add scenarios like ransomware paralyzing everything, a key supplier failing, or key managers who can't be reached. An exercise isn't about looking good. It's about finding the holes first."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "We've finally finished all of Chapter 1! Let's do a full summary!",
+     "slide": {
+      "title": "Chapter 1 summary",
+      "bullets": [
+       "Policy and ISMS are the foundation",
+       "Asset inventory and classification are the base",
+       "Approve cloud services and software before use",
+       "Risk, audit and independent review form a cycle",
+       "Event reporting, handling and crisis readiness"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Chapter 1 goes from policy, ISMS, responsibilities, and projects, to assets, classification, external services, and software, then to risks, reviews, events, and crises. Together they form a full management cycle."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Remember three sentences: requirements need a source, responsibilities need an owner, and the cycle must really turn. Auditors don't look at how thick your documents are. They look at evidence and real implementation."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Taking notes! In the next chapter we'll move into human resources: qualification of staff, confidentiality, and training. See you in the next chapter!"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2438 @@
+{
+ "key": "intro",
+ "module": "INTRO",
+ "chapters": [
+  {
+   "id": "intro-0",
+   "title": "Course Overview",
+   "title_en": "Course Overview",
+   "intro": [
+    "Welcome to the English edition of “ISA 2027 for TISAX — Requirements Explained”. This course is based on the original English text of VDA ISA 2027.1 (released 2026-09-30). It explains the controls of the three modules Information Security, Prototype Protection and Data Protection one by one, and turns each requirement into management practices and audit preparation points that automotive suppliers can apply directly.",
+    "Maybe you are a quality manager who hears about TISAX for the first time. Maybe you are an information security officer who has run ISO 27001 for years. In both cases, this course takes you from “What does the requirement say?” to “How will the auditor look at it?” and finally to “What does our company need to prepare?”"
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "Course objectives"
+    },
+    {
+     "type": "list",
+     "items": [
+      "Understand how TISAX works: ENX registration, assessment scope, assessment levels (AL2 and AL3), assessment objectives and labels, finding categories and the corrective action process.",
+      "Read the structure of the ISA 2027.1 workbook and every column, and correctly tell apart **Must**, **Should**, **high protection needs**, **very high protection needs** and **SGA** requirements.",
+      "Master how maturity levels 0–5 are determined, understand why the target maturity level is 3 (Established), and how the cutback calculation works.",
+      "Understand the controls of Information Security chapters 1–7, Prototype Protection (chapter 8) and Data Protection (chapter 9) one by one, and map them to your company’s existing processes.",
+      "Plan an implementation roadmap, complete the ISA self-assessment, prepare assessment evidence and, after receiving findings, write an effective corrective action plan (CAP)."
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Lecturer and assistant"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Role",
+      "Profile",
+      "Task in the course"
+     ],
+     "rows": [
+      [
+       "Lecturer Allan Lo",
+       "Consultant for ISMS and PIMS, and auditor at a certification body. Specialized in information security and corporate IT management. Has supported many automotive component, tooling and electronics suppliers.",
+       "Explains the requirements, shares real consulting and audit cases, and points out common findings."
+      ],
+      [
+       "Assistant ARALE",
+       "A cheerful virtual assistant who asks questions on behalf of the learners, makes jokes and sums up the key points.",
+       "Hosts the sessions, asks questions, takes notes and leads the reviews."
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "Course map"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Module",
+      "Content",
+      "Suggested time"
+     ],
+     "rows": [
+      [
+       "INTRO | TISAX overview",
+       "What TISAX is, relation to ISO 27001, participation process, assessment levels, assessment objectives and labels, finding categories, SGA",
+       "approx. 1 hour"
+      ],
+      [
+       "INTRO | ISA structure and maturity",
+       "ISA 2027.1 tabs and columns, Must and Should, protection needs and CIA, maturity levels 0–5, cutback, KPIs, change history, license terms",
+       "approx. 1.5 hours"
+      ],
+      [
+       "IS | Information Security chapters 1–7",
+       "Policies and organization, human resources, physical security, identity and access management, IT and network security, supplier relationships, compliance",
+       "approx. 8–10 hours"
+      ],
+      [
+       "PP | Prototype Protection (chapter 8)",
+       "8.1 Organizational requirements, 8.2 Physical and environmental security",
+       "approx. 2 hours"
+      ],
+      [
+       "DP | Data Protection (chapter 9)",
+       "Yes/no controls for processing on behalf of a controller according to Art. 28 GDPR",
+       "approx. 1 hour"
+      ],
+      [
+       "AUDIT | Audit practice",
+       "Implementation roadmap, document checklist, how to handle the assessment day, top 30 common findings and the CAP",
+       "approx. 2 hours"
+      ],
+      [
+       "Final test and certificate",
+       "After passing the online test, you can download a certificate of completion",
+       "approx. 0.5 hours"
+      ]
+     ]
+    },
+    {
+     "type": "h3",
+     "text": "How to learn with this course"
+    },
+    {
+     "type": "olist",
+     "items": [
+      "Finish the two INTRO chapters first. They build a common language for “how TISAX works” and “how to read the ISA”. Without them, the controls are hard to follow.",
+      "After each control, open your company’s own ISA self-assessment and write down “how we do it today” and “where the evidence is”.",
+      "You can review the videos at 1.25x speed, but we recommend normal speed for the sections on the maturity model and on Must and Should.",
+      "Take the “typical auditor questions” of each chapter and ask the responsible colleagues. This works like a mock interview before the real assessment.",
+      "When something is unclear, go back to the original ISA columns (Objective, Requirements, Examples) and read them again. Do not rely only on summaries."
+     ]
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "The situation I see most often: a company treats TISAX as a “fill in one Excel sheet” project. Then the auditor says “Please show me the records” and nobody can answer. Take this course and collect evidence at the same time. That works best."
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "Note this down! The “Key points” at the end of each chapter can go straight into your internal training slides."
+    },
+    {
+     "type": "callout",
+     "style": "info",
+     "title": "Version note",
+     "text": "This course is based on VDA ISA 2027.1 (2026-09-30). For TISAX assessment rules (for example the mapping of assessment objectives to labels, validity periods and process details), the latest ENX TISAX Participant Handbook and the announcements on the official ENX website apply. Please check them again before you register for an assessment."
+    }
+   ],
+   "controls": [],
+   "summary": [
+    "This course is based on the original English text of VDA ISA 2027.1 and covers the three modules Information Security, Prototype Protection and Data Protection.",
+    "Course map: TISAX overview → ISA structure and maturity → Information Security chapters 1–7 → Prototype Protection → Data Protection → Audit practice → Final test and certificate.",
+    "Keep your company’s self-assessment open while you learn, and collect evidence as you go.",
+    "For details of the assessment rules, the latest ENX Participant Handbook applies."
+   ]
+  },
+  {
+   "id": "intro-1",
+   "title": "What Is TISAX",
+   "title_en": "What is TISAX",
+   "intro": [
+    "TISAX (Trusted Information Security Assessment Exchange) is the information security assessment and exchange mechanism used across the European automotive industry. The idea is simple: instead of every car maker sending its own auditors to the same supplier, the industry uses one common catalog (VDA ISA), one common set of assessment rules and accredited audit providers. The supplier is assessed once, and the result is shared with the customers who need it through the ENX platform.",
+    "This chapter explains the background of TISAX, how it differs from and relates to ISO 27001, the full participant process from registration to label, assessment levels and assessment methods, assessment objectives and labels, finding categories, and the Simplified Group Assessment (SGA) for organizations with many sites."
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1. Background: VDA, ENX and ISA"
+    },
+    {
+     "type": "p",
+     "text": "**VDA** (Verband der Automobilindustrie, German Association of the Automotive Industry) has long driven information security requirements in the automotive industry. The **VDA ISA** (Information Security Assessment) is the information security catalog developed by industry working groups. It is based on the controls of ISO/IEC 27001 and adds requirements specific to the automotive industry for prototype protection and data protection. According to the License tab of ISA 2027.1, the ISA is a “work of ENX’s Working Group ISA” that was “provided to the VDA … by the **ENX Association** … published by the VDA as the VDA ISA”. The Data Protection tab is “provided, owned and copyrighted by” the VDA."
+    },
+    {
+     "type": "p",
+     "text": "The **ENX Association** is an organization of European car manufacturers, suppliers and industry associations. It operates the TISAX mechanism: it manages participant registration, accredits audit providers, maintains the assessment rules (the TISAX Participant Handbook and other documents) and runs the ENX Portal, where participants share their assessment results."
+    },
+    {
+     "type": "p",
+     "text": "The Welcome tab of the ISA states that “ISA provides the basis for” three uses: (1) “a self-assessment to determine the state of information security in an organization”; (2) “audits performed by internal departments (e.g., Internal Audit, Information Security)”; (3) “TISAX Assessments”. In other words, the ISA itself is a public catalog, and TISAX is the “assessment and exchange mechanism” that uses this catalog."
+    },
+    {
+     "type": "h3",
+     "text": "2. TISAX and ISO 27001: differences and relationship"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Aspect",
+      "ISO/IEC 27001",
+      "TISAX"
+     ],
+     "rows": [
+      [
+       "Nature",
+       "International management system standard; a certification body issues a “certificate”",
+       "Assessment and exchange mechanism of the automotive industry; you receive a “label”, not a certificate"
+      ],
+      [
+       "Basis of review",
+       "ISO/IEC 27001:2022 clauses 4–10 and the Annex A controls",
+       "VDA ISA (Information Security + Prototype Protection + Data Protection); controls are written as questions and rated by maturity level"
+      ],
+      [
+       "How results are determined",
+       "Conformity or non-conformity (based on the clauses and the Statement of Applicability, SoA)",
+       "Each control is rated at maturity level 0–5 with a target level of 3; findings are based on the Must, Should, high and very high requirements"
+      ],
+      [
+       "Scope",
+       "The organization defines the ISMS scope",
+       "The TISAX assessment scope (in practice usually the standard scope defined by ENX) and the selected assessment objectives decide which tabs and requirements are assessed"
+      ],
+      [
+       "Publication of results",
+       "Certificates can be checked publicly (depending on the certification body’s rules)",
+       "Results are stored in the ENX Portal; the assessed organization decides which customers see them and at which level of detail"
+      ],
+      [
+       "Industry-specific requirements",
+       "None",
+       "Prototype protection (physical security, camouflage, test drives, handling of images), data protection, automotive customer networks and passing on customer requirements"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "You can see the relationship like this: the controls of the ISA Information Security tab are based on ISO/IEC 27001, and every control in ISA 2027.1 lists the matching ISO 27001:2022 Annex A reference. A company with ISO 27001 usually already has the backbone of an ISMS: risk assessment, internal audit and management review. But **an ISO 27001 certificate does not automatically give you a TISAX label**. The gaps usually appear in three areas: the evidence of a “standardized and continuously operated” process needed for maturity level 3; ISA-specific details (for example approval of external IT services, approval of software, the life cycle of identification means, and the physical requirements of prototype protection); and the additional requirements for high and very high protection needs."
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "I once supported a tool-and-die maker that had held ISO 27001 for three years. In the self-assessment they confidently entered a whole column of 3s. Then we did the gap analysis: for just three controls, 1.3.3 external IT services, 1.3.4 software approval and 4.1.1 identification means, there were no records at all. ISO is a good foundation, but TISAX asks in more detail."
+    },
+    {
+     "type": "h3",
+     "text": "3. Participant process (from registration to sharing the result)"
+    },
+    {
+     "type": "olist",
+     "items": [
+      "**ENX registration**: register as a participant in the ENX Portal, enter company data and contact persons, and accept the TISAX participation terms. You need company identification data for the registration (the ISA Cover tab also has a field for the D-U-N-S number).",
+      "**Define the assessment scope and assessment objectives**: choose the locations to be assessed and the assessment objectives (for example Info high, Proto parts, Data). The assessment objectives usually depend on customer requirements. First ask your customer’s purchasing or information security contact which labels they need.",
+      "**Select an audit provider**: choose one of the accredited audit providers published by ENX, sign a contract and agree on the assessment dates. The cost depends on the number of locations, the assessment objectives and the assessment level. Ask the audit provider directly for a quote.",
+      "**ISA self-assessment**: complete the self-assessment with the latest ISA version. For each control, enter the maturity level, an implementation description and the reference documentation, and submit it to the audit provider before the assessment.",
+      "**Assessment (initial assessment)**: depending on the assessment level, the auditor reviews documents, conducts interviews and (for AL3) inspects on site. At the end, the auditor issues an assessment report and a list of findings.",
+      "**Corrective Action Plan (CAP)**: for each finding, define the root cause, measures, deadline and responsible person. The audit provider reviews and accepts the plan.",
+      "**Corrective action assessment (follow-up)**: the auditor confirms that the corrective actions are implemented and effective. Depending on the type of finding, this can be a document review or another on-site visit.",
+      "**Receive the label and share it in the ENX Portal**: after closure, the TISAX label is created in the ENX Portal. The assessed organization decides which customers (participants) it shares the result with.",
+      "**Validity and re-assessment**: a TISAX label is generally valid for three years. Before it expires, you need to plan a re-assessment. If the scope or the assessment objectives change in the meantime, an additional assessment may be needed."
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "warn",
+     "title": "Do not rely only on the time frames in this course",
+     "text": "The actual deadlines of each phase (for example how long you have to complete corrective actions, or how long a temporary label is valid) change when the ENX rules are updated. This course only describes the general situation. For your planning, the latest ENX TISAX Participant Handbook and the information from your audit provider apply."
+    },
+    {
+     "type": "h3",
+     "text": "4. Assessment levels and assessment methods"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Assessment level",
+      "Typical approach",
+      "Typical use"
+     ],
+     "rows": [
+      [
+       "AL1",
+       "Self-assessment only, without verification by an independent audit provider. Low credibility; in practice TISAX does not issue labels based on AL1.",
+       "Internal self-checks, or when a customer only asks for a completed self-assessment questionnaire."
+      ],
+      [
+       "AL2",
+       "The auditor performs a **plausibility check** of the self-assessment: reviews documents and evidence and confirms them in interviews. In practice this is mostly done remotely (video conference + document sharing); an on-site visit is possible if needed or requested by the assessed organization.",
+       "Information with high protection needs (Info high), high availability (Availability high), data protection (Data), etc."
+      ],
+      [
+       "AL3",
+       "The auditor performs a **thorough verification**: in addition to documents and interviews, usually an on-site inspection, observation of real operations, and sample checks of records and system settings.",
+       "Very high protection needs (Info very high), all prototype protection objectives, special categories of personal data (Special data), etc."
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "An easy way to remember it: **AL2 checks “Is what you say plausible, and is there evidence?” AL3 checks “Is what you do real, and does the site really look like this?”** An AL3 auditor will ask you to open system screens, walk to the server room and the prototype areas, and ask employees questions on the spot."
+    },
+    {
+     "type": "h3",
+     "text": "5. Assessment objectives and labels (common mapping)"
+    },
+    {
+     "type": "p",
+     "text": "TISAX participants choose “assessment objectives” at registration and receive the matching “labels” after a successful assessment. The table below shows the mapping commonly used in the industry. **The actual objective names, the corresponding assessment levels and the ISA controls in scope are defined in the latest ENX TISAX Participant Handbook** (ISA 2027 has rearranged the prototype protection controls, so the mapping may change accordingly)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Assessment objective (common name)",
+      "Common label name",
+      "Typical assessment level",
+      "Main coverage"
+     ],
+     "rows": [
+      [
+       "Info high",
+       "Confidential",
+       "AL2",
+       "Information Security tab (including confidentiality requirements for high protection needs)"
+      ],
+      [
+       "Info very high",
+       "Strictly confidential",
+       "AL3",
+       "Information Security tab (including confidentiality requirements for very high protection needs)"
+      ],
+      [
+       "Availability high",
+       "High availability",
+       "AL2",
+       "Information Security tab (including availability requirements for high protection needs)"
+      ],
+      [
+       "Availability very high",
+       "Very high availability",
+       "AL3",
+       "Information Security tab (including availability requirements for very high protection needs)"
+      ],
+      [
+       "Proto parts",
+       "Proto parts",
+       "AL3",
+       "Prototype protection: parts and components"
+      ],
+      [
+       "Proto vehicles",
+       "Proto vehicles",
+       "AL3",
+       "Prototype protection: prototype vehicles"
+      ],
+      [
+       "Test vehicles",
+       "Test vehicles",
+       "AL3",
+       "Prototype protection: use of test vehicles (e.g., road tests, test tracks)"
+      ],
+      [
+       "Proto events",
+       "Proto events",
+       "AL3",
+       "Prototype protection: events such as presentations and photo or film shootings"
+      ],
+      [
+       "Data",
+       "Data",
+       "AL2",
+       "Data Protection tab (processing of personal data on behalf of a controller according to Art. 28 GDPR)"
+      ],
+      [
+       "Special data",
+       "Special data",
+       "AL3",
+       "Data Protection tab (involving special categories of personal data)"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "I see! So we do not decide ourselves which label we want. It depends on what the customer asks for. Ask the customer first, then register, so you do not waste money."
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "Almost all prototype objectives need AL3, and the auditor will definitely come on site to look at fences, access control, video surveillance and screening. Some companies needed several months just to put privacy film on the windows of the prototype area and upgrade the access control system. Plan early."
+    },
+    {
+     "type": "h3",
+     "text": "6. The concept of finding categories"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Category",
+      "Concept",
+      "Impact on the label (general case)"
+     ],
+     "rows": [
+      [
+       "Major non-conformity",
+       "The control objective is not achieved, or Must requirements are clearly not implemented, so there is a significant information security risk. It can also be a systematic or widespread gap.",
+       "It must be corrected and confirmed by the audit provider before a regular label can be issued. Usually no temporary label is issued first."
+      ],
+      [
+       "Minor non-conformity",
+       "The control generally works, but some requirements are not fully met, or the evidence is not enough to show continuous operation. The risk is limited.",
+       "After an acceptable corrective action plan is submitted, a temporary label is often possible first; the corrections are then completed within the deadline."
+      ],
+      [
+       "Observation",
+       "Currently compliant, but there is a potential risk or trend to watch. If not handled, it may become a non-conformity in the future.",
+       "No impact on the label; it should be included in improvement activities."
+      ],
+      [
+       "Room for improvement",
+       "The requirements are met, but the auditor sees a better approach that could raise maturity or efficiency.",
+       "No impact on the label; it is a recommendation."
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "**Temporary label**: if the assessment shows no major non-conformities, only minor non-conformities, and the audit provider has accepted the corrective action plan, the participant can usually receive a temporary label with a shorter validity first. This tells customers that you are “in the process of correcting, and trustworthy overall”. After the corrective action assessment is completed, the temporary label is replaced by the regular label. For the conditions and validity of temporary labels, the latest ENX rules apply."
+    },
+    {
+     "type": "h3",
+     "text": "7. Simplified Group Assessment (SGA)"
+    },
+    {
+     "type": "p",
+     "text": "The ISA Definitions tab defines SGA as **“A simplified way to audit very large organizations with a high maturity. An example is the TISAX Simplified Group Assessment mechanism that is an option for TISAX Assessments of an assessment scope with a large number of sites.”** In practice, the idea of SGA is: the group manages all sites with one centrally managed, highly standardized ISMS. The audit provider first fully assesses the headquarters and the central processes, and then assesses only a sample of sites, instead of fully assessing every single site."
+    },
+    {
+     "type": "p",
+     "text": "For this reason, the Information Security tab of ISA 2027.1 has a column **“Additional requirements for Simplified Group Assessments (SGA)”**. Examples: 1.1.1 “Policies are published and implemented in the entire assessment scope.”; 1.2.1 “The management system is approved by an entity that has the necessary authority for the entire assessment scope (i.e., all locations within the scope).”; 1.2.2 “A named person with overall responsibility for the management system exists and is available.” Only organizations that use SGA need to meet this column. For SGA eligibility (for example number of sites, degree of central management, previous assessment results), the latest ENX rules apply."
+    },
+    {
+     "type": "callout",
+     "style": "ok",
+     "title": "This chapter in one sentence",
+     "text": "TISAX is the automotive industry’s “assess once, use many times” information security assessment and exchange mechanism: VDA ISA is the catalog, accredited audit providers assess at AL2 or AL3, and the result is shared as a label in the ENX Portal, generally valid for three years."
+    }
+   ],
+   "controls": [],
+   "summary": [
+    "VDA ISA is the catalog; TISAX is the assessment and exchange mechanism operated by ENX that uses the ISA. The ISA can also be used for self-assessments and internal audits.",
+    "ISO 27001 is a good foundation but is not the same as TISAX. Gaps often appear in the evidence of continuous operation for maturity level 3, in ISA-specific details and in the high and very high requirements.",
+    "Participant process: ENX registration → define scope and assessment objectives → select an audit provider → ISA self-assessment → assessment → corrective action plan → confirmation of corrections → receive the label and share it in the ENX Portal. A label is generally valid for three years.",
+    "AL2 is a plausibility check based on documents and interviews, mostly remote; AL3 is a thorough verification, mainly on site.",
+    "Common assessment objectives and labels: Info high / Confidential, Info very high / Strictly confidential, Availability high / very high, Proto parts, Proto vehicles, Test vehicles, Proto events, Data, Special data. The latest Participant Handbook defines the actual mapping.",
+    "Findings are classified as major non-conformity, minor non-conformity, observation and room for improvement. If there are only minor non-conformities and the CAP is accepted, a temporary label is usually possible first.",
+    "SGA is for organizations with many sites, central management and high maturity. The ISA has a separate column for SGA requirements."
+   ]
+  },
+  {
+   "id": "intro-2",
+   "title": "Structure and Interpretation of ISA 2027",
+   "title_en": "Structure and Interpretation of ISA 2027",
+   "intro": [
+    "The ISA is an Excel workbook. When people open it for the first time, many are scared by the dense columns. But once you understand which tabs exist, what each column means, how Must differs from Should and how maturity is rated, you can read every control with the same method.",
+    "Based on the original text of ISA 2027.1 (2026-09-30), this chapter explains the workbook structure, the meaning of the columns, protection needs and the CIA markers, the maturity model 0–5 and the cutback calculation, KPI examples, the main changes in ISA 2027, and the key points of the license terms."
+   ],
+   "blocks": [
+    {
+     "type": "h3",
+     "text": "1. Structure of the workbook (tabs)"
+    },
+    {
+     "type": "p",
+     "text": "The Welcome tab recommends: “We recommend gaining an overview of the individual ISA tabs by using the ‘Definitions’ tab. Then, commence with the ‘Information Security’ tab.” The tabs, based on the descriptions in the Definitions tab, are summarized below:"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Tab",
+      "Content",
+      "Intended use of tab"
+     ],
+     "rows": [
+      [
+       "Welcome",
+       "Welcome page: explains that the ISA provides the basis for self-assessments, internal audits and TISAX Assessments. 2027.1 added a feedback link (ENX ISA-Feedback).",
+       "Information"
+      ],
+      [
+       "Cover",
+       "“The cover contains boxes for information on the implementing organization, the scope of review, the auditor and the contact person of the organization under review”: organization, address, Scope / TISAX Scope ID, D-U-N-S number, assessment date, contact person, author and signature; version label 2027.1 | 2026-09-30.",
+       "To be completed by the organization"
+      ],
+      [
+       "Maturity levels",
+       "Name, principle, definition (including Process Attributes) and possible evidence for maturity levels 0–5. “With this VDA ISA version, the target maturity level for all control questions is consistently 3 (Established).”",
+       "Information"
+      ],
+      [
+       "Definitions",
+       "Description of the tabs, key terms (protection classes, Must and Should, high and very high requirements, “The following aspects are considered”, protection goals) and a glossary.",
+       "Information"
+      ],
+      [
+       "Information Security",
+       "“All basic controls based on the standard ISO/IEC 27001” (chapters 1–7). “The controls themselves are formulated as questions” and are rated by maturity level.",
+       "Implementation requirements"
+      ],
+      [
+       "Prototype Protection",
+       "Prototype protection controls (chapter 8: 8.1 Organizational requirements, 8.2 Physical and environmental security), rated by maturity level.",
+       "Implementation requirements"
+      ],
+      [
+       "Data Protection",
+       "“To be edited additionally in case of processing within the meaning of Art. 28 of the EU General Data Protection Regulation and contains controls requiring merely yes/no answers” (chapter 9).",
+       "Implementation requirements"
+      ],
+      [
+       "Results",
+       "Summary of the results of all tabs, with the spider web diagram, results per chapter and per subchapter, and the overall result with cutback.",
+       "Presentation of results"
+      ],
+      [
+       "Examples KPI",
+       "Examples of KPIs to support “identifying own suitable KPIs”. “It does not present mandatory requirements for achieving maturity level 4.”",
+       "Examples and support"
+      ],
+      [
+       "License",
+       "“License conditions under which the VDA ISA is published”: CC BY-ND 4.0 plus special terms for distributing derivatives.",
+       "Information"
+      ],
+      [
+       "Change history",
+       "“List of changes over the VDA ISA lifecycle.”",
+       "Information"
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "info",
+     "title": "Important note on what is assessed",
+     "text": "The original text clearly states: “Requirements always refer to the own company with respect to its organization, processes and infrastructure. **Requirements never refer to products put on the market by your company.** Requirements for secure product development are not part of this module.” In other words, the ISA does not audit whether your ECU software has Secure Boot. It audits how your company protects information."
+    },
+    {
+     "type": "h3",
+     "text": "2. Control columns (example: Information Security tab)"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Column",
+      "Meaning and how to read it"
+     ],
+     "rows": [
+      [
+       "Control question",
+       "A question that starts with “To what extent…”. The answer is not yes or no but a maturity level."
+      ],
+      [
+       "Objective",
+       "What the control wants to achieve. In the end, the auditor judges whether the objective is achieved; the requirements are only the minimum conditions to achieve it."
+      ],
+      [
+       "Requirements (must)",
+       "“Strict requirements without any exemptions.”"
+      ],
+      [
+       "Requirements (should)",
+       "In principle they must be implemented. With a valid justification they may not be met, but the organization must understand the effects of the deviation and justify it plausibly."
+      ],
+      [
+       "Additional requirements for high protection needs",
+       "Must additionally be met if the assessed scope has high protection needs. The relevant protection goals are marked with (C, I, A) at the end of the requirement."
+      ],
+      [
+       "Additional requirements for very high protection needs",
+       "Must additionally be met if the assessed scope has very high protection needs; also marked with (C, I, A)."
+      ],
+      [
+       "Additional requirements for SGA",
+       "Apply only to organizations that use the Simplified Group Assessment."
+      ],
+      [
+       "Reference to other standards",
+       "References to ISO 27001:2022 Annex A, ISA/IEC 62443-2-1 and NIST CSF 2.0, to help organizations that already use other standards."
+      ],
+      [
+       "Implementation guidance",
+       "References for implementation, for example BSI-Standard 200-2, modules of the BSI IT-Grundschutz-Compendium and NIST SP800-53r5 controls."
+      ],
+      [
+       "Supplementary information / Examples",
+       "Supplementary information (Introduction, Justification, Basic information) and implementation examples for normal, high and very high protection needs."
+      ],
+      [
+       "Possible questions",
+       "Questions the auditor may ask. This is the best question bank for interview preparation."
+      ],
+      [
+       "Possible evidence",
+       "Possible evidence, for example policies, records, system screens. This is the starting point for your evidence list."
+      ],
+      [
+       "Maturity level",
+       "Enter 0–5 or na in the self-assessment or assessment; the value is transferred automatically to the Results tab."
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "Here is how I teach people to read a control: first read the Objective, then the Must, then the Possible questions. After these three columns, you know what yardstick the auditor has in mind. The Examples are a reference, not the one correct answer."
+    },
+    {
+     "type": "h3",
+     "text": "3. Definitions of Must and Should"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Type",
+      "Original definition",
+      "Practical interpretation"
+     ],
+     "rows": [
+      [
+       "Must",
+       "“The requirements indicated in this column are strict requirements without any exemptions.”",
+       "If one item is missing, it can be rated as a non-conformity. There is no room for negotiation."
+      ],
+      [
+       "Should",
+       "“Principally, the requirements indicated in this column must be implemented by the organization. In certain circumstances, however, there may be a valid justification for non-compliance with these requirements. In case of any deviation, its effects must be understood by the organization and it must be plausibly justified.”",
+       "It does not mean “optional”. It means “if you do not do it, you need a written, plausible and assessed justification”."
+      ],
+      [
+       "Additional requirements for high protection needs",
+       "“The requirements indicated in this column must additionally be met if the assessed scope has high protection needs.”",
+       "Applies when you select objectives such as Info high or Availability high."
+      ],
+      [
+       "Additional requirements for very high protection needs",
+       "“The requirements indicated in this column must additionally be met if the assessed scope has very high protection needs.”",
+       "Applies when you select objectives such as Info very high or Availability very high; the high protection needs requirements must also be met."
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "warn",
+     "title": "Common misunderstanding",
+     "text": "Many people read Should as “recommended” and skip the whole column in the self-assessment. According to the ISA definition, Should means “principally must”. The auditor will ask: “You did not do this one. What is the justification? Where is the impact assessment? Who approved it?” If you cannot answer, it is a finding."
+    },
+    {
+     "type": "h3",
+     "text": "4. Protection needs normal / high / very high and the CIA markers"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Protection class",
+      "Original explanation",
+      "Examples"
+     ],
+     "rows": [
+      [
+       "normal",
+       "“The potential damage to the organization is limited and manageable.”",
+       "Confidentiality classification “internal”"
+      ],
+      [
+       "high",
+       "“The potential damage to the organization may be substantial.”",
+       "Confidentiality classification “confidential”, or high availability"
+      ],
+      [
+       "very high",
+       "“The potential damage can reach a level of potentially threatening or disastrous impact on the organization’s existence.”",
+       "Confidentiality classification “strictly confidential”, or very high availability"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The additional requirements for high and very high protection needs are marked by protection goal: **C = Confidentiality, I = Integrity, A = Availability**. For example, the high protection needs requirement of 5.1.2 “Information is transported or transferred in encrypted form (at least transport-encryption) or protected by similarly effective measures. (C)” concerns only confidentiality. The very high protection needs requirement of 5.2.9 “(Additional) Backups are performed via offline procedures, immutable backups or by using an isolated IAM solution. (I, A)” concerns integrity and availability. In practice, if your assessment objective is Availability high, pay special attention to the additional requirements marked A; for Info high, focus on C (and related I). Which requirements actually apply depends on the definition of the assessment objectives in the Participant Handbook."
+    },
+    {
+     "type": "h3",
+     "text": "5. The meaning of “The following aspects are considered”"
+    },
+    {
+     "type": "p",
+     "text": "Many ISA requirements continue with “The following aspects are considered:” and then list several sub-items. The Definitions tab defines this phrase clearly: **“The phrase ‘the following aspects are considered’ means that, for each listed aspect, a conscious and reasoned decision should have been made as to whether, to what extent, and how a measure is implemented. In an audit situation, the auditee should be able to explain the underlying reasoning and the resulting decision.”**"
+    },
+    {
+     "type": "p",
+     "text": "In other words, these sub-items are not a list of things you must “all do”, but a list of things you must “all think through”. For example, the Must of 2.1.4 mobile work lists “Behavior in private surroundings (e.g., working in a dedicated office at home or in a coworking space)”, “Behavior in public surroundings”, “Secure handling of and access to information … while considering the protection needs and the contractual requirements”, “Protection from theft in public surroundings” and “Measures to ensure a secure access to organization’s IT-services”. You can decide to cover one item with a technical control and another with rules and awareness, but every item needs a decision and a reason."
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "Note this down! When you see “The following aspects are considered”, add a small table next to your self-assessment: aspect / our decision / reason / evidence."
+    },
+    {
+     "type": "h3",
+     "text": "6. The maturity model 0–5"
+    },
+    {
+     "type": "p",
+     "text": "The original text says: “The answer to the control questions is a maturity level in a generic maturity model used to quantify the maturity of the corresponding processes. Determination of the maturity level requires that **objective evidence** of compliance with the requirements of the respective level is provided during the assessment. This is achieved, for example, by means of work products resulting from the processes of the control questions or by means of interview statements by persons carrying out the process.” The model is based on the concepts of SPICE (ISO/IEC 33001)."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Level",
+      "Name",
+      "Principle (original)",
+      "Possible evidence (GWP)"
+     ],
+     "rows": [
+      [
+       "0",
+       "Incomplete",
+       "A process does not exist, is not followed or not suitable to achieve the objective. There is little or no evidence of systematic process performance.",
+       "—"
+      ],
+      [
+       "1",
+       "Performed",
+       "A process is followed which is not or insufficiently documented (“informal process”) and there is some evidence that it achieves its objective. The implemented process achieves its (process) purpose; the intended base practices are verifiably performed.",
+       "Work products providing evidence of process outcomes"
+      ],
+      [
+       "2",
+       "Managed",
+       "A process achieving its objectives is followed. Process documentation and process implementation evidence are available.",
+       "Process documentation, process plan, quality plan/records, process implementation records"
+      ],
+      [
+       "3",
+       "Established",
+       "A standard process integrated into the overall system is followed. Dependencies on other processes are documented and suitable interfaces are created. Evidence exists that the process has been used sustainably and actively over an extended period.",
+       "Process documentation, process plan, quality records, policies and standards, process implementation records"
+      ],
+      [
+       "4",
+       "Predictable",
+       "An established process is followed. The effectiveness of the process is continually monitored by collecting key figures. Limit values are defined at which the process is considered to be insufficiently effective and requires adjustment (Key Performance Indicators).",
+       "Process documentation, process control plan, process improvement plan, process measurement plan, process implementation records"
+      ],
+      [
+       "5",
+       "Optimizing",
+       "A predictable process with continual improvement as a major objective is followed. Improvement is actively advanced by means of dedicated resources.",
+       "Process improvement plan, process measurement plan, process implementation records"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "The Process Attributes (PA) of each level are as follows:"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Level",
+      "Process attribute",
+      "Key content (condensed from the original)"
+     ],
+     "rows": [
+      [
+       "2",
+       "PA 2.1 Control of process implementation",
+       "Objectives for the performance of the process are identified; implementation is planned, monitored and adjusted to meet plans; responsibilities and authorities are defined, assigned and communicated; necessary resources and information are identified, made available, assigned and used; interfaces between the involved parties are managed to ensure effective communication and clear assignment of responsibilities."
+      ],
+      [
+       "2",
+       "PA 2.2 Work Product Management",
+       "Requirements for the work products are defined; requirements for documentation and control of the work products are defined; work products are appropriately identified, documented and controlled; work products are reviewed in accordance with planned measures and adjusted as necessary."
+      ],
+      [
+       "3",
+       "PA 3.1 Process Definition",
+       "A standard process, including appropriately adapted requirements, is defined; the sequence and interaction of the standard process with other processes are determined; required competencies and roles are identified; required infrastructure and work environment are identified; suitable methods for monitoring the effectiveness and suitability of the process are determined."
+      ],
+      [
+       "3",
+       "PA 3.2 Process Deployment",
+       "A defined process based on an appropriately selected and/or tailored standard process is deployed; roles, responsibilities and authorities are assigned and communicated; personnel are competent on the basis of appropriate education, training and experience; necessary resources and information are made available, allocated and used; necessary infrastructure and work environment are available, managed and maintained; appropriate data is collected and analysed to understand the behaviour of the process, demonstrate its suitability and effectiveness, and evaluate where continuous improvement can be made."
+      ],
+      [
+       "4",
+       "PA 4.1 Process Measurement",
+       "Process information requirements in support of business goals are established; process measurement objectives and quantitative objectives for process performance are derived; characteristic values and frequency of measurements are defined; results of measurement are collected, analysed and reported; measurement results are used to characterize process performance."
+      ],
+      [
+       "4",
+       "PA 4.2 Process control",
+       "Analysis and control techniques are determined and applied; variable control limits are established for normal process implementation; measurement data is analysed for special variations; corrective actions are taken to address special variations; control limits are re-established as necessary."
+      ],
+      [
+       "5",
+       "PA 5.1 Process Innovation",
+       "Process improvement objectives are defined; data are analysed to identify common causes of variations; data are analysed to identify options for best practice and innovation; improvement options from new technologies and new process concepts are identified; an implementation strategy is established to achieve the improvement objectives."
+      ],
+      [
+       "5",
+       "PA 5.2 Continuous optimization",
+       "The impact of all proposed changes is assessed against the objectives of the defined process and the standard process; implementation of all agreed changes is managed so that any disruption to process performance is understood and addressed; based on actual performance, the effectiveness of process change is evaluated."
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "ok",
+     "title": "Target maturity level = 3",
+     "text": "The Definitions tab clearly states: “With this VDA ISA version, the target maturity level for all control questions is consistently 3 (Established).” So you must show more than “we do it” (1) and “we have documents and records” (2). You must show “we have a standard process, it is integrated with other processes, and it has been running continuously for some time” (3)."
+    },
+    {
+     "type": "h3",
+     "text": "7. Results and the cutback calculation"
+    },
+    {
+     "type": "p",
+     "text": "The Results tab summarizes the results of all controls automatically. The original text says: **“When calculating the overall result, the results of controls overachieving their target maturity level are cutback and averaged. This ensures that the requirements are comprehensively fulfilled and that there is no compensation of overachieved and underachieved controls.”** In addition, “the line for the target maturity level does not consider controls marked ‘N/A’. When calculating the average, however, the maximum achievable target maturity level is taken into account.” The results per chapter and per subchapter are shown “without cutback”."
+    },
+    {
+     "type": "table",
+     "head": [
+      "Control",
+      "Assessment result",
+      "After cutback"
+     ],
+     "rows": [
+      [
+       "1.1.1",
+       "4",
+       "3"
+      ],
+      [
+       "1.2.1",
+       "3",
+       "3"
+      ],
+      [
+       "1.2.2",
+       "2",
+       "2"
+      ],
+      [
+       "1.3.1",
+       "5",
+       "3"
+      ],
+      [
+       "1.3.2",
+       "3",
+       "3"
+      ],
+      [
+       "Average",
+       "Without cutback: 17 ÷ 5 = 3.4",
+       "With cutback: 14 ÷ 5 = 2.8"
+      ]
+     ]
+    },
+    {
+     "type": "p",
+     "text": "This example shows: without cutback, the average of 3.4 looks above target. After cutback it is only 2.8, which correctly shows that 1.2.2 does not reach the target. The maximum score is 3. In the industry you sometimes hear that “the total score must reach a certain threshold”, but whether TISAX issues a label depends mainly on the auditor’s findings for individual controls and on the corrective actions. Do not focus only on the average score."
+    },
+    {
+     "type": "tip",
+     "who": "allan",
+     "text": "The sentence I hear most often during audits is: “We are at level 4 for this one!” I always smile and say: thank you, but the system will cut you back to 3, and I still need to see what you do about that other control at 2."
+    },
+    {
+     "type": "h3",
+     "text": "8. KPI examples (Examples KPI)"
+    },
+    {
+     "type": "p",
+     "text": "The Examples KPI tab gives KPI examples for many controls. Each KPI belongs to one of two types, COVERAGE and EFFECTIVENESS, and describes the objective (vision), recipients, frequency, threshold levels, measurement, interfaces and components. The original text stresses that the tab “**does not present mandatory requirements for achieving maturity level 4**. Definition of KPIs is not mandatory, but may be helpful for a central management of information security at many locations.” Here are some commonly used examples:"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Control",
+      "KPI name",
+      "Type",
+      "Measurement (original)",
+      "Example threshold"
+     ],
+     "rows": [
+      [
+       "2.1.3",
+       "Coverage degree of awareness measures",
+       "COVERAGE",
+       "Quotient: number of participants / total number of employees",
+       "To be determined individually, e.g., Green > 90%, Yellow 70–90%, Red < 70%"
+      ],
+      [
+       "2.1.3",
+       "Effectiveness of awareness measures",
+       "EFFECTIVENESS",
+       "Determining the number of security incidents with human error as a cause",
+       "E.g., 0–20 low, 20–50 medium, 50+ high; for comparability, e.g., incidents per 100 employees"
+      ],
+      [
+       "4.1.3",
+       "Coverage degree review “User accounts”",
+       "COVERAGE",
+       "Quotient: number of performed reviews / total number of IT systems in scope",
+       "E.g., Green > 90%, Yellow 70–90%, Red < 70%"
+      ],
+      [
+       "4.1.3",
+       "“Collective accounts”",
+       "EFFECTIVENESS",
+       "Determining the number of collective accounts (adjusted for authorized exceptions)",
+       "Red > 0, Green = 0"
+      ],
+      [
+       "5.2.1",
+       "Change - error rate",
+       "EFFECTIVENESS",
+       "Quotient: number of reversed changes / total number of performed changes",
+       "E.g., Green < 10%, Yellow 10–30%, Red > 30%"
+      ],
+      [
+       "5.2.3",
+       "Coverage degree Endpoint Security",
+       "COVERAGE",
+       "Quotient: number of protected IT systems / total number of IT systems (adjusted for authorized exceptions)",
+       "E.g., Green > 90%, Yellow 70–90%, Red < 70%"
+      ],
+      [
+       "5.2.5",
+       "Effectiveness of patch installation",
+       "EFFECTIVENESS",
+       "Time comparison: average actual rollout state vs. target state",
+       "E.g., target: 100% after max. 10 days"
+      ],
+      [
+       "5.2.9",
+       "Coverage degree of restoration tests",
+       "COVERAGE",
+       "Quotient: number of IT systems with tested restoration from backup / total number of all backed-up IT systems",
+       "E.g., Green > 90%, Yellow 70–90%, Red < 70%"
+      ],
+      [
+       "1.1.1",
+       "Actuality of required policies/documentations",
+       "COVERAGE",
+       "Quotient: number of policies reviewed according to cycle / population of policies to be reviewed",
+       "Target coverage = 100%"
+      ]
+     ]
+    },
+    {
+     "type": "tip",
+     "who": "arale",
+     "text": "Wow, so KPIs do not mean we have to build dozens at once. Pick the 3 to 5 most meaningful ones, for example user account reviews, patching and backup restore tests, and track them every quarter in the management review report. That already helps a lot."
+    },
+    {
+     "type": "h3",
+     "text": "9. Main changes in ISA 2027 (according to the Change history)"
+    },
+    {
+     "type": "p",
+     "text": "Starting with ISA 2027, versions are named by year. The table below is based on the “2027” and “2027.1” entries in the Change history:"
+    },
+    {
+     "type": "table",
+     "head": [
+      "Version",
+      "Area",
+      "Change"
+     ],
+     "rows": [
+      [
+       "2027",
+       "General",
+       "Changed naming convention according to the year (now 2027)."
+      ],
+      [
+       "2027",
+       "General",
+       "Translation corrections and some rewordings for better understanding."
+      ],
+      [
+       "2027",
+       "General",
+       "NIST CSF 2.0 mapping added; ISO 27001:2013 mappings removed."
+      ],
+      [
+       "2027",
+       "General",
+       "Column “O” in the Information Security tab and column “M” in the Prototype Protection tab, “Usual person responsible for process implementation”, deleted."
+      ],
+      [
+       "2027",
+       "Information Security 1.1.1",
+       "Requirement (should) changed to Requirement (must): “The policies are made available to employees in a suitable form (e.g., intranet).”"
+      ],
+      [
+       "2027",
+       "Information Security 1.2.4 → 6.1.3",
+       "Control-ID 1.2.4 was changed to 6.1.3 (responsibilities between external IT service providers and the own organization)."
+      ],
+      [
+       "2027",
+       "Information Security 2.1.3",
+       "Added specific training programs for senior management/executive leadership."
+      ],
+      [
+       "2027",
+       "Information Security 2.1.4",
+       "Reformulation of Requirement (must)."
+      ],
+      [
+       "2027",
+       "Information Security 4.1.1",
+       "Requirement for high protection needs: time limitation of identification means has been deleted."
+      ],
+      [
+       "2027",
+       "Information Security 4.1.2",
+       "Requirement (should): minus changed to plus (password according to the state of the art), so it became a formal requirement item."
+      ],
+      [
+       "2027",
+       "Information Security 5.2.3",
+       "Requirement (should): deletion of “Case-related staff awareness measures” (reason: covered by 2.1.3)."
+      ],
+      [
+       "2027",
+       "Information Security 5.2.8",
+       "Requirements for high protection needs: “-” changed to “+”; very high protection needs: “Tests and any lessons learned are documented. (I, A)” changed to “Results and any lessons learned are recorded. (I, A)”."
+      ],
+      [
+       "2027",
+       "Information Security 5.3.1",
+       "Control question: “IT system” changed to “IT service”."
+      ],
+      [
+       "2027",
+       "Information Security 6.1.1",
+       "Requirement (must) “Compliance with contractual agreements will be verified.” moved to requirements for high protection needs; new requirements defined for very high protection needs."
+      ],
+      [
+       "2027",
+       "Prototype Protection (general)",
+       "All controls for prototype protection have been rearranged; controls 8.3–8.5 deleted; column “L” deleted."
+      ],
+      [
+       "2027",
+       "Prototype Protection (specific)",
+       "8.1 Physical and Environmental Security changed to 8.2 with all associated controls except 8.1.7; 8.1.7 moved to 8.1.8; 8.2 Organizational Requirements changed to 8.1, with new controls 8.1.1, 8.1.2, 8.1.4, 8.1.11, 8.1.12, 8.1.13 and deleted control 8.2.4."
+      ],
+      [
+       "2027.1",
+       "General",
+       "Corrections of spelling and punctuation errors."
+      ],
+      [
+       "2027.1",
+       "Welcome",
+       "Feedback URL added."
+      ],
+      [
+       "2027.1",
+       "Definitions",
+       "Definitions for “coworking space” and “office-less” added; revised definition of “project”."
+      ],
+      [
+       "2027.1",
+       "Information Security 4.1.2",
+       "“State-of-the-art” phrasing replaced."
+      ],
+      [
+       "2027.1",
+       "Prototype Protection 8.1.1",
+       "Should requirement removed."
+      ],
+      [
+       "2027.1",
+       "Prototype Protection 8.1.8",
+       "Protection against unauthorized access to security areas: “including traceable documentation” added."
+      ],
+      [
+       "2027.1",
+       "Results",
+       "Errors in the calculation and the spider chart have been corrected."
+      ],
+      [
+       "2027.1",
+       "Change history",
+       "6.1.3 Must requirement: Supplier SOA removed; the 2027 change of control 2.1.3 added to the record."
+      ]
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "info",
+     "title": "Version transition reminder",
+     "text": "If your self-assessment or internal documents still say 1.2.4, change it to 6.1.3. The prototype protection numbering has been completely rearranged, so check all your old mapping tables again."
+    },
+    {
+     "type": "h3",
+     "text": "10. Key points of the license terms"
+    },
+    {
+     "type": "list",
+     "items": [
+      "The ISA is licensed under **Creative Commons Attribution - No Derivative Works 4.0 International (CC BY-ND 4.0)**. You are free to “copy and redistribute the material in any medium or format for any purpose, even commercially.”",
+      "**Attribution**: “You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.”",
+      "**Distribution of derivatives (Section 9, additional rights not part of the Creative Commons license)**: if you change or build upon the material, you may distribute the modified material only if (1) it is “clearly marked as **a modified version not approved by the Licensor**”; (2) “the license terms have not been modified”; and (3) “**any logos and/or trademarks of the Licensor have been removed**”.",
+      "**No additional restrictions**: “You may not apply any additional legal terms or technological measures that legally restrict others from doing anything the license permits.”",
+      "Copyright: © 2026 ENX Association; the Data Protection tab is “provided, owned and copyrighted by” the VDA."
+     ]
+    },
+    {
+     "type": "callout",
+     "style": "warn",
+     "title": "Statement of this course",
+     "text": "This course contains excerpts, summaries and explanations of ISA 2027.1. It is a modified version not approved by the ENX Association or the VDA and does not represent the views of the licensors. The original English text of the ISA is authoritative for all formal requirements."
+    }
+   ],
+   "controls": [],
+   "summary": [
+    "The ISA consists of the tabs Welcome, Cover, Maturity levels, Definitions, Information Security, Prototype Protection, Data Protection, Results, Examples KPI, License and Change history.",
+    "Order for reading a control: Objective → Must → Should → high / very high → Possible questions → Possible evidence.",
+    "Must has no exemptions; Should must principally be implemented, and any deviation must be understood and plausibly justified.",
+    "Protection needs are normal, high and very high; additional requirements are marked C, I or A for the related protection goal.",
+    "“The following aspects are considered” means every aspect needs a conscious and reasoned decision.",
+    "Maturity levels 0–5: Incomplete, Performed, Managed, Established, Predictable, Optimizing; the target is always 3.",
+    "In the Results calculation, results above the target are cut back to 3 before averaging, so high and low results cannot compensate each other.",
+    "KPI examples are of the types COVERAGE and EFFECTIVENESS and are not mandatory for maturity level 4.",
+    "Key changes in ISA 2027: providing policies in 1.1.1 is now a Must, 1.2.4 became 6.1.3, 2.1.3 adds training for senior management, the 6.1.1 requirements were adjusted, and prototype protection was completely rearranged.",
+    "The license is CC BY-ND 4.0; derivatives must be marked as not approved by the licensor and all logos and trademarks must be removed."
+   ]
+  }
+ ],
+ "video": [
+  {
+   "id": "v-intro-0",
+   "chapter": "intro-0",
+   "title": "Course opening and course map",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Hello everyone, and welcome to ISA 2027 for TISAX, Requirements Explained, the English edition! I'm ARALE, your assistant, and today we'll learn TISAX from start to finish together!",
+     "slide": {
+      "title": "ISA 2027 for TISAX — Requirements Explained",
+      "bullets": [
+       "Based on the original English text of VDA ISA 2027.1",
+       "Information Security, Prototype and Data Protection",
+       "Requirements explained plus audit practice"
+      ]
+     }
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "First, let me introduce our lecturer, Allan! He is a consultant for ISMS and PIMS, and he is also an auditor at a certification body.",
+     "slide": {
+      "title": "Your lecturer: Allan Lo",
+      "bullets": [
+       "Consultant for ISMS and PIMS",
+       "Auditor at a certification body",
+       "Information security and corporate IT management"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Hi everyone, I'm Allan. In this course, just think of me as an old friend who has visited a lot of factories and seen a lot of server rooms."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Half of my time I help companies prepare for assessments, and the other half I sit on the other side of the table as the auditor. So I know how both sides think, and sometimes both sides complain about me."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, so you're stuck in the middle! Allan, what is the one thing you most want people to take away from this course?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "In one sentence: understand the requirements, know how the auditor will ask, and go back to your company knowing exactly what evidence to prepare.",
+     "slide": {
+      "title": "Course objectives",
+      "bullets": [
+       "Understand TISAX and the ISA structure",
+       "Understand Must and Should, control by control",
+       "Know how auditors ask and decide",
+       "Write the self-assessment and the CAP"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "I've seen too many companies treat TISAX as filling in one Excel sheet. The self-assessment looks beautiful, then the auditor says, please show me the records, and the whole room goes quiet."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Oh no, I can picture it. Everybody looking at each other, right?"
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Exactly. The IT manager looks at quality, quality looks at facilities, facilities looks at the boss, and the boss looks at me. So I say, we'll be ready next time."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Okay, now let's look at the course map! There are seven modules in total. Let's go through them one by one.",
+     "slide": {
+      "title": "Course map",
+      "bullets": [
+       "TISAX overview",
+       "ISA structure and maturity",
+       "Information Security chapters 1 to 7",
+       "Prototype Protection and Data Protection",
+       "Audit practice, final test and certificate"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Module one is the TISAX overview: VDA, ENX, the assessment process, assessment levels and labels. This is our common language. Without it, the rest will be confusing."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Module two is ISA structure and maturity. I'll show you how to read that Excel workbook, what Must and Should mean, and what maturity level 3 really requires."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Module three is the main part, Information Security chapters 1 to 7. From policies and organization, HR and physical security, all the way to identity and access, IT security, suppliers and compliance."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "And what about prototype protection and data protection? My company makes vehicle lighting, and our customers keep asking about prototypes."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Prototype protection is chapter 8 and data protection is chapter 9. Each has its own module. If you make lighting or interior parts, take the prototype chapter very seriously."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Finally there's audit practice. I'll share an implementation roadmap, a document checklist, how to handle the assessment day, and the 30 most common findings I've seen."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "And when you pass the final test, you get a certificate of completion! Good luck, everyone!",
+     "slide": {
+      "title": "How to learn with this course",
+      "bullets": [
+       "Finish the two overview chapters first",
+       "Keep your self-assessment open while learning",
+       "Use auditor questions for mock interviews",
+       "Check the original ISA text when unsure"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "I have three tips for learning. First, finish the two overview chapters before anything else. Don't jump straight into the controls."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Second, after each control, open your company's self-assessment and write down how you do it today and where the evidence is."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Third, take the typical auditor questions in each chapter and ask your colleagues. It's a free mock interview. Better they get stuck now than on the assessment day."
+    },
+    {
+     "who": "arale",
+     "emo": "wink",
+     "text": "Note this down! Also, this course is based on ISA 2027.1, and for details of the assessment rules, the latest ENX Participant Handbook applies."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Exactly. The rules get updated, and the original text is what counts. Okay, ready? Let's start with what TISAX is."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "In the next part, we'll get to know the background of TISAX and the participation process! See you soon!"
+    }
+   ]
+  },
+  {
+   "id": "v-intro-1a",
+   "chapter": "intro-1",
+   "title": "TISAX background, relation to ISO 27001, participant process",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Welcome back! In this part we answer the most basic question. What exactly is TISAX? And how is it different from ISO 27001?",
+     "slide": {
+      "title": "What is TISAX",
+      "bullets": [
+       "How VDA, ENX and the ISA relate",
+       "TISAX compared with ISO 27001",
+       "From registration to label"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "TISAX stands for Trusted Information Security Assessment Exchange. The key is the last word, Exchange."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "In the past, every car maker sent its own people to audit suppliers. One supplier could be audited five or six times a year, and every audit asked almost the same questions."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Wow, so the supplier spends the whole year hosting audits?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Right. I know a quality manager who said his yearly calendar was just one big audit schedule. So the industry decided: assess once, and everyone shares the result."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "This mechanism is operated by the ENX Association. ENX manages participant registration, accredits the audit providers and runs the ENX Portal where assessment results are shared.",
+     "slide": {
+      "title": "VDA, ENX and the ISA",
+      "bullets": [
+       "VDA publishes the VDA ISA",
+       "The ISA is written by an ENX working group",
+       "ENX operates TISAX and the ENX Portal",
+       "ISA for self-checks, internal audits, TISAX"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The catalog is the VDA ISA. According to the License tab, it is written by the ENX Working Group ISA and provided to the VDA, which publishes it as the VDA ISA."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So the ISA is the exam paper, TISAX is the exam system, and ENX is the exam center. Is that right?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Great comparison! And this exam paper is public. The Welcome tab says clearly that the ISA can be used for self-assessments, internal audits and TISAX assessments."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "But my company already has an ISO 27001 certificate. Can we just exchange it for TISAX?",
+     "slide": {
+      "title": "TISAX and ISO 27001",
+      "bullets": [
+       "ISO gives a certificate, TISAX a label",
+       "ISO checks conformity, ISA rates maturity",
+       "ISA controls map to ISO 27001:2022",
+       "ISO does not mean automatic TISAX"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "I get this question in every single class. The answer is: ISO 27001 is a very good foundation, but you cannot simply exchange it."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "ISO 27001 is a management system standard, and the result is a certificate. TISAX is an industry assessment mechanism, the result is a label, and every control is rated by maturity, with a target of 3."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The controls in the ISA Information Security tab are based on ISO 27001, and each one maps to ISO 27001:2022 Annex A. So you can reuse the backbone of your ISMS."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "The gaps are usually in three places. First, evidence of continuous operation for level 3. Second, ISA-specific details. Third, the extra requirements for high and very high protection needs."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For example, I supported a tool-and-die maker with ISO for three years. They rated everything 3. In the gap analysis, external IT service approval, software approval and identification means had no records."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "Ouch, no records for three controls. What did they do then?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "They added the processes and the records, ran them for three months, and then went to the assessment. So if you have ISO, always redo a gap analysis against the original ISA text."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Next is the process everyone cares about! From registration to the label, what steps do we go through?",
+     "slide": {
+      "title": "Participant process",
+      "bullets": [
+       "Register with ENX, define scope and objectives",
+       "Select an audit provider",
+       "Complete and submit the ISA self-assessment",
+       "Assessment and corrective action plan",
+       "Receive the label and share it in ENX Portal"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Step one, register in the ENX Portal with your company data and contact persons. Step two, define the assessment scope, meaning which locations and which assessment objectives."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "You don't choose assessment objectives just because you like them. They depend on your customers. Ask your customer's purchasing or security contact which labels they need."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Step three, choose one of the audit providers accredited by ENX and sign a contract. The cost depends on locations, objectives and assessment level, so ask the provider for a quote."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Step four, the ISA self-assessment. For each control, enter the maturity level, an implementation description and reference documents, and send it to the audit provider in advance. It's the script for the assessment."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So the auditor checks the things we wrote ourselves?"
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Exactly, so never exaggerate. Whatever you write, the auditor will check. If you write something wrong, you only create trouble for yourself."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Step five is the assessment itself. Step six, if there are findings, you submit a corrective action plan with root cause, measures, deadline and responsible person."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Step seven, the audit provider confirms that the corrections are effective. Finally the label is created in the ENX Portal, and you decide which customers can see it."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "We work so hard for that label. How long is it valid?",
+     "slide": {
+      "title": "Label validity",
+      "bullets": [
+       "Generally valid for three years",
+       "Re-assessment needed before expiry",
+       "Scope or objective changes may need more",
+       "Details follow the latest ENX rules"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Generally three years, and you need a re-assessment before it expires. For the detailed deadlines, for example how fast corrections must be done, the latest ENX Participant Handbook applies."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "My advice: from the day you decide to do TISAX, manage the three years as one continuous cycle, not as a big rush every three years."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Note this down! The ISA is the exam paper, TISAX is the system, labels depend on the customer, and they are generally valid for three years."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "In the next part, we'll talk about assessment levels AL2 and AL3, the different labels, and the finding categories!"
+    }
+   ]
+  },
+  {
+   "id": "v-intro-1b",
+   "chapter": "intro-1",
+   "title": "Assessment levels, objectives and labels, finding categories and SGA",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "In this part we cover three things: assessment levels, assessment objectives and labels, and how findings are classified. At the end, we add SGA, which only big groups use.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "Assessment levels AL1, AL2, AL3",
+       "Assessment objectives and labels",
+       "Finding categories and temporary labels",
+       "Simplified Group Assessment"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Let's start with assessment levels. AL1 is a self-assessment only, with no check by an independent audit provider. It has the lowest credibility, and in practice it does not lead to a TISAX label.",
+     "slide": {
+      "title": "Assessment levels",
+      "bullets": [
+       "AL1: self-assessment only, no label",
+       "AL2: plausibility check, mostly remote",
+       "AL3: thorough verification, mainly on site"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "AL2 is a plausibility check. The auditor reviews your self-assessment, documents and evidence, and confirms them in interviews. In practice it's mostly done remotely by video."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "AL3 is a thorough verification. The auditor usually comes on site, looks at the server room and the prototype areas, asks employees questions and opens system screens to check the settings."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So can we simply remember it like this: AL2 checks whether what you say makes sense, and AL3 checks whether what you do is real?"
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Perfect! The sentence I say most often at AL3 sites is, could you show me, please? Everyone gets a bit nervous when they hear it."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Once I asked to see the prototype storage. The supervisor said the key was with the manager, and the manager was on vacation. We waited at the door for forty minutes. That itself was a finding."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, so key management is part of the exam too!"
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Next are assessment objectives and labels. There are lots of names, so let me list the common ones first.",
+     "slide": {
+      "title": "Common assessment objectives and labels",
+      "table": {
+       "head": [
+        "Assessment objective",
+        "Label",
+        "Level"
+       ],
+       "rows": [
+        [
+         "Info high",
+         "Confidential",
+         "AL2"
+        ],
+        [
+         "Info very high",
+         "Strictly confidential",
+         "AL3"
+        ],
+        [
+         "Availability high",
+         "High availability",
+         "AL2"
+        ],
+        [
+         "Availability very high",
+         "Very high availability",
+         "AL3"
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For information security, Info high matches the Confidential label, usually at AL2. Info very high matches Strictly confidential, usually at AL3."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "There are also two for availability, Availability high and Availability very high, usually at AL2 and AL3."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "For prototypes there are four: Proto parts, Proto vehicles, Test vehicles and Proto events. They are usually all AL3, so the auditor will definitely come on site.",
+     "slide": {
+      "title": "Prototype and data protection objectives",
+      "bullets": [
+       "Proto parts: parts and components",
+       "Proto vehicles: prototype vehicles",
+       "Test vehicles",
+       "Proto events: events and shootings",
+       "Data and Special data"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For data protection there are Data and Special data. Data is usually AL2, and Special data, which involves special categories of personal data, is usually AL3."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "There are so many labels. Does my company need all of them?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Of course not. Get the ones your customer asks for. This is the common industry mapping. For the actual names and mapping, the latest ENX Participant Handbook applies."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "One special reminder: ISA 2027 completely rearranged the prototype protection controls, so please confirm with your audit provider which controls each objective covers."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Okay, after the assessment there will always be findings. How many types of findings are there?",
+     "slide": {
+      "title": "Finding categories",
+      "bullets": [
+       "Major non-conformity",
+       "Minor non-conformity",
+       "Observation",
+       "Room for improvement"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "A major non-conformity means the control objective is not achieved, or a Must is clearly not done, with a high risk or a systematic problem. You must correct it before you get a regular label."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "A minor non-conformity means the control generally works, but some requirements are not met, or the evidence doesn't show continuous operation. The risk is relatively limited."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Observations and room for improvement do not affect the label. The auditor is pointing out a possible risk, or something you could do better."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "So what is a temporary label? It sounds like getting a learner's driving permit first.",
+     "slide": {
+      "title": "Temporary label",
+      "bullets": [
+       "No major non-conformities",
+       "CAP for minor findings accepted",
+       "Label with shorter validity first",
+       "Regular label after confirmed corrections"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "That's a very good comparison! If there are no major non-conformities, only minor ones, and your corrective action plan is accepted, you can usually get a temporary label with a shorter validity first."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "After the corrective action assessment is done, it is replaced by the regular label. For the exact conditions and validity, again, the latest ENX rules apply."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "In practice, I advise you not to aim for a temporary label. When customers see temporary, they will usually ask what you still haven't finished."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And the last one, SGA, Simplified Group Assessment. What is that?",
+     "slide": {
+      "title": "Simplified Group Assessment",
+      "bullets": [
+       "For very large organizations, high maturity",
+       "Many sites, centrally managed ISMS",
+       "Full assessment of HQ, sample of sites",
+       "ISA has a separate SGA column"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The ISA defines it as a simplified way to audit very large organizations with a high maturity, for an assessment scope with a large number of sites."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The idea is that the group uses one centrally managed ISMS. The audit provider fully assesses the headquarters and the central processes, and then checks a sample of sites."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "That's why the ISA has a column of additional SGA requirements. For example, 1.1.1 requires policies to be published and implemented in the entire scope, and 1.2.2 requires a named person with overall responsibility."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So only companies using SGA need to look at that column?"
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Right. Most small and medium suppliers can skip it for now. For eligibility, the latest ENX rules apply."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "I see! To sum up: AL2 checks plausibility, AL3 checks on site, labels depend on the customer, and with only minor findings you may get a temporary label first."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "In the next part, we'll open the big ISA workbook and see how to read every tab and column!"
+    }
+   ]
+  },
+  {
+   "id": "v-intro-2a",
+   "chapter": "intro-2",
+   "title": "ISA tabs, columns, Must and Should, protection needs",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "Welcome to the part on reading the ISA! The first time I opened the ISA Excel file, I was honestly shocked. So many tabs and so many columns.",
+     "slide": {
+      "title": "Structure of ISA 2027.1",
+      "bullets": [
+       "11 tabs, each with its own purpose",
+       "How to read the control columns",
+       "The difference between Must and Should",
+       "Protection needs and CIA markers"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "Everyone feels that way the first time. Don't worry. Once you understand the structure, you can read every control with the same method."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Let's start with the tabs. Welcome is the welcome page. Cover is the cover sheet, where you enter the company, address, Scope ID, D-U-N-S number and contact person.",
+     "slide": {
+      "title": "Overview of the tabs",
+      "bullets": [
+       "Welcome, Cover",
+       "Maturity levels, Definitions",
+       "Information Security",
+       "Prototype Protection, Data Protection",
+       "Results, Examples KPI, License and more"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Maturity levels describes the maturity model, and Definitions explains the key terms. The Welcome tab recommends starting with Definitions."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The actual requirements are in three tabs: Information Security, Prototype Protection and Data Protection."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Data Protection is special. You only fill it in when you process personal data on behalf of a customer under Article 28 of the GDPR, and you only answer yes or no. No maturity levels."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "After that come Results with the summary, Examples KPI, License with the license terms, and Change history with the version changes."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "There's one sentence I think is really important. The original text says the requirements refer only to the organization itself, not to products?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Yes, this is key. The ISA audits how your company protects information. It does not check whether the ECU you sell has Secure Boot. Secure product development is not part of this module."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "So what columns does each control have?",
+     "slide": {
+      "title": "Control columns",
+      "bullets": [
+       "Control question and Objective",
+       "Must, Should, high, very high, SGA",
+       "References: ISO 27001, 62443, NIST CSF",
+       "Guidance: BSI and NIST SP800-53",
+       "Examples, possible questions and evidence"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "On the far left is the Control question. It starts with, to what extent. So the answer is a maturity level, not yes or no."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Next is the Objective, then Must, Should, high protection needs, very high protection needs, and the additional SGA requirements."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Then come the references to other standards, ISO 27001:2022, ISA IEC 62443 and NIST CSF 2.0, plus implementation guidance from BSI and NIST SP800-53."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "Finally there are supplementary information, examples, possible questions and possible evidence. These are super useful. Possible questions is basically the auditor's question bank."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Here is how I read a control. First the Objective, then the Must, then the possible questions. After these three columns, you know the yardstick in the auditor's head."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "So what exactly is the difference between Must and Should? I always thought Should was just a recommendation.",
+     "slide": {
+      "title": "Must and Should",
+      "bullets": [
+       "Must: strict, without any exemptions",
+       "Should: principally must be implemented",
+       "Deviation: understand effects, justify it",
+       "High and very high: must additionally be met"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "That's the most common misunderstanding! The original text says Must requirements are strict requirements without any exemptions."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Should requirements principally must be implemented. In certain cases there may be a valid justification not to, but the organization must understand the effects of the deviation and justify it plausibly."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "So when the auditor sees that you skipped a Should, they ask three things. What is the justification, where is the impact assessment, and who approved it."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "I once audited a company where the whole Should column was empty. I asked why, and they said, because it's only a Should. Of course that control got a finding."
+    },
+    {
+     "who": "arale",
+     "emo": "sad",
+     "text": "That's scary. So Should is not something we can just skip."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Next up are protection needs: normal, high and very high. What does each one mean?",
+     "slide": {
+      "title": "Protection needs",
+      "table": {
+       "head": [
+        "Class",
+        "Potential damage",
+        "Example"
+       ],
+       "rows": [
+        [
+         "normal",
+         "Limited and manageable",
+         "internal"
+        ],
+        [
+         "high",
+         "May be substantial",
+         "confidential"
+        ],
+        [
+         "very high",
+         "May threaten existence",
+         "strictly confidential"
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Normal means the potential damage is limited and manageable, for example internal data. High means the damage may be substantial, for example confidential data or high availability."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Very high means the damage could threaten the existence of the organization, for example strictly confidential data or very high availability."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The additional high and very high requirements are marked C, I or A. C is confidentiality, I is integrity, A is availability. They show which protection goal the requirement relates to."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For example, the high requirement in 5.1.2 says information is transferred at least with transport encryption, marked C. The very high requirement in 5.2.9 calls for offline or immutable backups, marked I and A."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "There's also a phrase that appears a lot: The following aspects are considered. How should we read it?",
+     "slide": {
+      "title": "The following aspects are considered",
+      "bullets": [
+       "A conscious decision for every aspect",
+       "Whether, to what extent and how",
+       "Explain your reasoning in the audit",
+       "Not a do-all list, a think-through list"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The original definition says that for each listed aspect, a conscious and reasoned decision should have been made: whether, to what extent and how a measure is implemented."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "So it's not a list where you must do everything. It's a list where you must think about everything. In the audit, you need to explain your reasoning and your decision."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "In practice I ask my clients to make a small table with four columns: aspect, our decision, reason and evidence. In the interview, it is very convincing."
+    },
+    {
+     "who": "arale",
+     "emo": "wink",
+     "text": "Note this down! Must has no exemptions, Should needs a justification, CIA markers show the goal, and every aspect needs a decision."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "In the next part, we take on the maturity model from 0 to 5, and the mysterious cutback calculation!"
+    }
+   ]
+  },
+  {
+   "id": "v-intro-2b",
+   "chapter": "intro-2",
+   "title": "Maturity model 0–5 and the cutback calculation",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "This part is the most important basic skill of the whole course, the maturity model! Allan, why doesn't the ISA just ask whether we do something or not?",
+     "slide": {
+      "title": "The maturity model",
+      "bullets": [
+       "The answer is a maturity level, not yes or no",
+       "Objective evidence is required",
+       "Based on SPICE, ISO IEC 33001",
+       "The target is always 3"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "Because doing something and doing it well are very different. The ISA uses maturity to measure how mature a process is, and the original text says objective evidence is required."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The evidence can be work products from the process, such as records and reports, or interview statements from the people who actually carry out the process."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The model is based on the concepts of SPICE, that is ISO IEC 33001. There are six levels, from 0 to 5.",
+     "slide": {
+      "title": "Levels 0 to 2",
+      "bullets": [
+       "0 Incomplete: no process, or not effective",
+       "1 Performed: done, but not documented",
+       "2 Managed: documented, planned, recorded"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Level 0 is Incomplete. A process does not exist, is not followed, or is not suitable to achieve the objective. There is little or no evidence of systematic performance."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Level 1 is Performed. The process is followed but not documented or not well documented, an informal process, and there is some evidence that it achieves its objective."
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Many small companies have IT at this level. Accounts do get removed, but it all depends on the memory of one IT guy, let's call him Tom. When Tom is on vacation, nobody knows anything."
+    },
+    {
+     "who": "arale",
+     "emo": "laugh",
+     "text": "Ha ha, so Tom is the company's human process, and he can never take a day off!"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Level 2 is Managed. There is process documentation and evidence of implementation. It has two process attributes: PA 2.1 control of process implementation, and PA 2.2 work product management."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "PA 2.1 means objectives are defined, implementation is planned and monitored, responsibilities and authorities are assigned, resources are provided, and interfaces between the parties are managed."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "PA 2.2 is about work products, such as forms and records. Their requirements are defined, documentation is controlled, and they are reviewed and adjusted."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what about our target, level 3? How far do we need to go?",
+     "slide": {
+      "title": "Level 3 Established",
+      "bullets": [
+       "PA 3.1 Define a standard process",
+       "PA 3.2 Deploy it and keep it running",
+       "Integrated with other processes",
+       "Evidence of use over an extended period"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Level 3 is Established. A standard process integrated into the overall system is followed, dependencies on other processes are documented, and there is evidence it has been used sustainably over an extended period."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "PA 3.1, process definition: there is a standard process, its interaction with other processes is defined, and the needed competencies, roles, infrastructure and monitoring methods are identified."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "PA 3.2, process deployment: roles and responsibilities are assigned and communicated, people are competent, resources and environment are in place, and data is collected to prove the process works and find improvements."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "I like to use a comparison. Level 1 is grandma's special dish, delicious but no recipe. Level 2 is a written recipe you follow. Level 3 is a restaurant chain's standard, the same in every branch, for years."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "Wow, that comparison is so easy to understand! So the key to level 3 is standardization plus continuous operation."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Exactly. If your process was released only last month and you have just one record, it's hard for the auditor to give you a 3, because continuous operation is not visible yet."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "And what about the higher levels, 4 and 5?",
+     "slide": {
+      "title": "Levels 4 and 5",
+      "bullets": [
+       "4 Predictable: monitored and controlled by KPIs",
+       "PA 4.1 measurement, PA 4.2 control",
+       "5 Optimizing: continual improvement as focus",
+       "PA 5.1 innovation, PA 5.2 optimization"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Level 4 is Predictable. Key figures continually monitor the effectiveness of the process, limit values are defined, and below them you adjust. That means KPIs, with PA 4.1 measurement and PA 4.2 control."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Level 5 is Optimizing. Continual improvement is a major objective, driven by dedicated resources. It matches PA 5.1 process innovation and PA 5.2 continuous optimization."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "But remember, in this ISA version the target for all controls is 3. Reaching 4 or 5 is great, but in the calculation it is cut back to 3."
+    },
+    {
+     "who": "arale",
+     "emo": "confused",
+     "text": "Cut back to 3? Is that what cutback means?",
+     "slide": {
+      "title": "Cutback calculation example",
+      "table": {
+       "head": [
+        "Control",
+        "Result",
+        "After cutback"
+       ],
+       "rows": [
+        [
+         "1.1.1",
+         "4",
+         "3"
+        ],
+        [
+         "1.2.2",
+         "2",
+         "2"
+        ],
+        [
+         "1.3.1",
+         "5",
+         "3"
+        ],
+        [
+         "Average of five",
+         "3.4",
+         "2.8"
+        ]
+       ]
+      }
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Yes. When Results calculates the overall result, any result above the target is first cut back to the target and then averaged, so high results cannot compensate for low ones."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For example, five controls with the results 4, 3, 2, 5 and 3. Without cutback, the total is 17 and the average is 3.4, which looks above target."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "After cutback they become 3, 3, 2, 3 and 3. The total is 14 and the average is only 2.8, which correctly shows that the control with 2 is below target."
+    },
+    {
+     "who": "allan",
+     "emo": "think",
+     "text": "The original text also says the target line in the spider web diagram does not consider controls marked not applicable, and the results per chapter and subchapter are shown without cutback."
+    },
+    {
+     "who": "allan",
+     "emo": "laugh",
+     "text": "On site I often hear, we're at level 4 on this one. I just smile and say thank you, the system will cut you back to 3, and I still need to see what you do about that other control at 2."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "So the average score is not the point. The point is that every control reaches 3?"
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "Right. The label mainly depends on the auditor's findings for each control and on your corrections. Don't stare at the average. Every control needs to stand firmly at 3."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Note this down! 0 incomplete, 1 performed, 2 managed, 3 standardized and running, 4 controlled by KPIs, 5 optimizing. The target is 3, and higher results get cut back."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "In the next part, we'll look at the KPI examples, the main changes in ISA 2027, and the license terms!"
+    }
+   ]
+  },
+  {
+   "id": "v-intro-2c",
+   "chapter": "intro-2",
+   "title": "KPI examples, main changes in ISA 2027 and license terms",
+   "lines": [
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "This is the last part of the overview! We'll look at the KPI examples, what changed in ISA 2027, and what to watch out for in the license terms.",
+     "slide": {
+      "title": "Key points of this part",
+      "bullets": [
+       "How to use Examples KPI",
+       "Main changes in ISA 2027 and 2027.1",
+       "Key points of the CC BY-ND 4.0 license"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Let's start with KPIs. The Examples KPI tab gives many examples, and each KPI is one of two types, COVERAGE or EFFECTIVENESS.",
+     "slide": {
+      "title": "KPI examples",
+      "bullets": [
+       "COVERAGE",
+       "EFFECTIVENESS",
+       "Not mandatory for maturity level 4",
+       "Helpful for central management of many sites"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The original text says these examples are not mandatory requirements for level 4, and defining KPIs is not mandatory, but they can help with central management at many locations."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Some examples. For 2.1.3, coverage of awareness measures is participants divided by total employees. Example thresholds: green above 90 percent, yellow 70 to 90, red below 70."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "2.1.3 also has an effectiveness KPI, the number of security incidents caused by human error. You can express it per 100 employees to compare different plants."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For 4.1.3 there is one I really like: the number of collective accounts, minus approved exceptions. Above zero is red. Only zero is green."
+    },
+    {
+     "who": "arale",
+     "emo": "surprise",
+     "text": "Wow, that's a strict standard, but it's really clear!"
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "For 5.2.1, the change error rate is reversed changes divided by all changes. For 5.2.9, restoration test coverage is systems with a tested restore divided by all backed-up systems."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "My advice is to pick the 3 to 5 most meaningful ones first, like account reviews, patching and backup restore tests, and track them every quarter in the management review report."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Next are the main changes in ISA 2027. The first big change is the version name?",
+     "slide": {
+      "title": "ISA 2027 general changes",
+      "bullets": [
+       "Versions are now named by year",
+       "NIST CSF 2.0 mapping added",
+       "ISO 27001:2013 mappings removed",
+       "Column for usual responsible person deleted"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Yes, from this version on, versions are named by year, so it's ISA 2027. A NIST CSF 2.0 mapping was added, and the ISO 27001:2013 mappings were removed."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Both the Information Security and the Prototype Protection tabs dropped the column for the usual person responsible for process implementation, and translations were corrected and reworded."
+    },
+    {
+     "who": "arale",
+     "emo": "think",
+     "text": "And what are the important changes to the controls themselves?",
+     "slide": {
+      "title": "Specific Information Security changes",
+      "bullets": [
+       "1.1.1 policies available to staff is now Must",
+       "1.2.4 renumbered to 6.1.3",
+       "2.1.3 adds training for senior management",
+       "6.1.1 verifying compliance moved to high"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "First, in 1.1.1, the Should that policies are made available to employees in a suitable form, for example the intranet, is now a Must."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Second, 1.2.4 on responsibilities of external IT service providers was renumbered to 6.1.3. Remember to update your old mapping tables."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Third, 2.1.3 added specific training programs for senior management and executive leadership. Fourth, the Must for mobile work in 2.1.4 was reformulated."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "In 4.1.1, the high requirement for a time limitation of identification means was deleted. In 4.1.2, the password according to the state of the art changed from a minus item to a plus item, a formal requirement."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "In 5.2.3, case-related staff awareness measures were deleted because 2.1.3 covers them. In 5.2.8, the very high requirement now says results and lessons learned are recorded."
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "In 5.3.1, the question changed from IT system to IT service. In 6.1.1, the Must on verifying compliance with contractual agreements moved to high, and new very high requirements were defined."
+    },
+    {
+     "who": "arale",
+     "emo": "wow",
+     "text": "I heard prototype protection changed the most this time?",
+     "slide": {
+      "title": "Prototype Protection changes",
+      "bullets": [
+       "All controls rearranged",
+       "Controls 8.3 to 8.5 deleted",
+       "Old 8.2 Organizational is now 8.1",
+       "Old 8.1 Physical security is now 8.2"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "scratch",
+     "text": "Yes, it was turned upside down. The old 8.1 physical and environmental security is now 8.2, the old 8.2 organizational requirements is now 8.1, and 8.3 to 8.5 were deleted."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "The organizational part has new controls such as 8.1.1, 8.1.2, 8.1.4, 8.1.11, 8.1.12 and 8.1.13. If you work with prototypes, re-map all the numbers in your old documents."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "Version 2027.1 is a minor update. Definitions added coworking space and office-less and revised the definition of project, and the state-of-the-art wording in 4.1.2 was replaced."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "In prototype protection, the Should of 8.1.1 was removed, and 8.1.8 added including traceable documentation. Results fixed the calculation and spider chart errors, and the 6.1.3 Must dropped the Supplier SOA."
+    },
+    {
+     "who": "arale",
+     "emo": "present",
+     "text": "Finally, the license terms. Can we translate the ISA directly for our internal training material?",
+     "slide": {
+      "title": "Key points of the license",
+      "bullets": [
+       "CC BY-ND 4.0: copy and redistribute",
+       "Give credit and a link to the license",
+       "Mark derivatives as not approved",
+       "Remove the licensor's logos and trademarks"
+      ]
+     }
+    },
+    {
+     "who": "allan",
+     "emo": "point",
+     "text": "The ISA uses the CC BY-ND 4.0 license. You can copy and redistribute it, even commercially, but you must give appropriate credit, provide a link to the license and indicate if changes were made."
+    },
+    {
+     "who": "allan",
+     "emo": "talk",
+     "text": "What's special is Section 9. You may distribute derivatives if they are clearly marked as a modified version not approved by the licensor, the license terms are unchanged, and the licensor's logos are removed."
+    },
+    {
+     "who": "allan",
+     "emo": "wink",
+     "text": "So if your company makes an internal translated version, state clearly on the cover that it's a modified version not approved by the licensor and remove the original logos. Then you're safe. This course does the same."
+    },
+    {
+     "who": "arale",
+     "emo": "cheer",
+     "text": "Note this down! KPIs are optional but useful. Key 2027 changes: 1.1.1 is now a Must, 1.2.4 became 6.1.3, and prototypes were rearranged. Derivatives must be marked as not approved, without logos."
+    },
+    {
+     "who": "allan",
+     "emo": "smile",
+     "text": "That's the end of the overview. You now have a common language, and next we officially start Information Security chapter 1, beginning with policies and organization."
+    },
+    {
+     "who": "arale",
+     "emo": "happy",
+     "text": "See you in the next module! And remember to open your company's self-assessment first!"
+    }
+   ]
+  }
+ ]
+}

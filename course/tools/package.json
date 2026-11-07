@@ -1,0 +1,7 @@
+{
+  "name": "isa2027-tisax-course-tools",
+  "private": true,
+  "description": "Build tools for the ISA 2027 for TISAX course (instructor PPTX)",
+  "scripts": { "pptx": "node build_pptx.js" },
+  "dependencies": { "pptxgenjs": "^3.12.0", "jszip": "^3.10.1" }
+}

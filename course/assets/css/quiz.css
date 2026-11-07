@@ -1,0 +1,41 @@
+.qhead{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.qhead img{width:96px}
+.qcards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.qcard{padding:18px;display:flex;flex-direction:column;gap:8px}
+.qcard h3{margin:0;font-size:19px}
+.qcard .st{font-size:13px}
+.qcard .btn{align-self:flex-start;margin-top:auto}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:20px;margin-top:14px}
+.form label{display:flex;flex-direction:column;gap:4px;font-weight:700;font-size:14px}
+.form input{padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font-size:16px;font-family:inherit}
+.form input:invalid:not(:placeholder-shown){border-color:var(--red)}
+.form .full{grid-column:1/-1}
+.q{padding:16px 20px;margin:14px 0}
+.q .qn{font-weight:800;color:var(--teal);font-size:14px}
+.q .qt{font-size:17px;font-weight:700;margin:4px 0 10px}
+.opt{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer}
+.opt:hover{background:var(--bg)}
+.opt input{margin-top:6px}
+.opt.sel{border-color:var(--teal);background:var(--teal-2)}
+.opt.right{border-color:var(--green);background:var(--green-2)}
+.opt.wrong{border-color:var(--red);background:var(--red-2)}
+.qbar{position:sticky;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:10px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px;margin:0 -16px;flex-wrap:wrap}
+.result{padding:22px;text-align:center}
+.result .score{font-size:56px;font-weight:900;line-height:1.1}
+.result.pass .score{color:var(--green)} .result.fail .score{color:var(--red)}
+.result .acts{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:14px}
+.result img.face{width:110px}
+.certprev{max-width:900px;margin:16px auto;display:block;border-radius:8px;box-shadow:var(--shadow);width:100%}
+.explain{font-size:14.5px;background:var(--bg);border-radius:10px;padding:8px 12px;margin-top:8px}
+.wrongs{text-align:left;max-width:720px;margin:14px auto}
+#printArea{display:none}
+@media (max-width:800px){.qcards{grid-template-columns:1fr}.form{grid-template-columns:1fr}}
+@media print{
+  @page{size:A4;margin:12mm}
+  body>*:not(#printArea){display:none!important}
+  #printArea{display:block!important;color:#000;font-size:11pt;line-height:1.6}
+  #printArea .pcert{width:100%;page-break-after:always}
+  #printArea h2{font-size:15pt;margin:0 0 6pt}
+  #printArea .pq{page-break-inside:avoid;margin:0 0 8pt;padding:6pt 8pt;border:1px solid #ccc;border-radius:4pt}
+  #printArea .pq .ok{color:#1e8e4e;font-weight:700}
+}

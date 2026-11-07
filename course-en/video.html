@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interactive Video | ISA 2027 for TISAX — Requirements Explained</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23f2b705%22/%3E%3Ctext x=%2232%22 y=%2242%22 font-size=%2224%22 font-weight=%22900%22 text-anchor=%22middle%22 fill=%22%230f2a44%22 font-family=%22Arial%22%3EISA%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/video.css">
+<link rel="preload" as="image" href="assets/img/ch/allan-smile.webp">
+<link rel="preload" as="image" href="assets/img/ch/arale-happy.webp">
+<script src="assets/js/license.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="data/toc.js"></script>
+</head>
+<body>
+<header id="topbar"></header>
+<div class="wrap vlayout">
+  <main>
+    <div class="stage paused" id="stage">
+      <div class="bgdeco"></div>
+      <div class="screen" id="screen"><div class="chip" id="chip"></div><div id="slide"></div></div>
+      <div class="cast">
+        <figure class="actor allan dim" id="a-allan"><img id="img-allan" src="assets/img/ch/allan-smile.webp" alt="Allan"><figcaption>Allan</figcaption></figure>
+        <figure class="actor arale dim" id="a-arale"><img id="img-arale" src="assets/img/ch/arale-happy.webp" alt="ARALE"><figcaption>ARALE</figcaption></figure>
+      </div>
+      <div class="subtitle" id="sub"><b id="subwho"></b><span id="subtext"></span></div>
+      <div class="loading" id="loading">Loading audio…</div>
+      <div class="overlay" id="overlay"><div class="big">▶</div><div class="t" id="ovt">Get ready</div><div class="s" id="ovs"></div></div>
+    </div>
+    <div class="controls">
+      <button class="btn btn-ghost" id="bPrevSeg" title="Previous part">⏮</button>
+      <button class="btn btn-ghost" id="bPrev" title="Previous line (←)">◀</button>
+      <button class="btn btn-primary" id="bPlay" title="Play / pause (space)">▶ Play</button>
+      <button class="btn btn-ghost" id="bNext" title="Next line (→)">▶</button>
+      <button class="btn btn-ghost" id="bNextSeg" title="Next part">⏭</button>
+      <select id="speed" title="Speed"><option value="0.85">0.85x</option><option value="1" selected>1.0x</option><option value="1.15">1.15x</option><option value="1.3">1.3x</option><option value="1.5">1.5x</option></select>
+      <label class="small"><input type="checkbox" id="cc" checked> Subtitles</label>
+      <label class="small"><input type="checkbox" id="auto" checked> Autoplay next part</label>
+      <div class="seek" id="seek" title="Click to jump to a line"></div>
+    </div>
+    <div class="seginfo"><div><div class="small muted" id="segpath"></div><h1 id="segtitle"></h1></div>
+      <div class="small muted" id="segtime"></div></div>
+    <p class="small muted">Tip: each part starts as soon as its first line is downloaded; the following lines load while you watch. Afterwards, review the full requirements and audit tips in the <a id="readlink" href="text.html">online textbook</a>.</p>
+  </main>
+  <aside class="panel card">
+    <div class="ptabs"><button class="on" data-p="segs">Chapters</button><button data-p="trans">Transcript</button></div>
+    <div id="p-segs"><select id="chsel" aria-label="Choose a chapter"></select><div id="seglist"></div></div>
+    <div id="p-trans" style="display:none"></div>
+  </aside>
+</div>
+<script src="assets/js/player.js"></script>
+<div id="unzip-hint" style="display:none;margin:40px auto;max-width:720px;padding:24px 28px;border:3px solid #c8323c;border-radius:14px;background:#fff4f4;color:#1b2430;font:18px/1.6 Arial,Helvetica,sans-serif">
+  <b style="font-size:22px;color:#c8323c">⚠ Please extract the ZIP file first</b><br>
+  This page was opened directly from inside a ZIP file, so its styles, images and scripts were not extracted and the page cannot work.<br>
+  Right-click the ZIP file → <b>Extract All…</b>, then open <b>index.html</b> in the extracted folder.
+</div>
+<script>if (!window.renderTopbar) { var h = document.getElementById('unzip-hint'); h.style.display = 'block'; document.body.insertBefore(h, document.body.firstChild); }</script>
+</body>
+</html>
